@@ -1,0 +1,49 @@
+<template>
+  <div>
+    <section class="hero is-dark">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="header-container">
+            <img src="@/assets/not-found.svg" alt="Not Found Img" />
+            <div class="back-home">
+              <a href="/" class="title is-4 has-text-grey">Back to homepage</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style scoped>
+.header-container {
+  max-width: 550px;
+}
+
+@media only screen and (max-width: 560px) {
+  .header-container > h1 {
+    font-size: 1.5rem;
+  }
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+.back-home {
+  padding-top: 2rem;
+}
+
+.back-home > a {
+  transition: color 0.2s;
+}
+
+.back-home:hover > a {
+  color: rgb(255, 255, 255) !important;
+}
+</style>

@@ -1,0 +1,18 @@
+body, html {
+    background-color: $darkest !important;
+}
+
+.has-text-gradient {
+    background: -webkit-linear-gradient(#fff, #fa9c1de6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-burger {
+    color: $white-light !important;
+}
+
+.dropdown-menu {
+    border-radius: 1.5rem !important;
+}

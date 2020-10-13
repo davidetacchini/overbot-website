@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$family-primary: 'Poppins', sans-serif;
+
+// Custom colors
+$bright-orange: #fa9c1d;
+$white-light: rgba(255, 255, 255, 0.5);
+$white-primary: rgb(255, 255, 255);
+$sea-blue: #2997ff;
+$darker: #1e2023;
+$darkest: #18191c;
+
+// Bulma colors override
+$primary: $bright-orange;
+$dark: $darkest;
+
+// Footer
+$footer-background-color: $darker;
+
+@import "./customs/custom.scss";
+@import "./customs/navbar.scss";
+
+@import "~bulma/sass/utilities/_all";
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
