@@ -10,6 +10,7 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+firebase-debug.log
 
 # Editor directories and files
 .idea
@@ -21,5 +22,3 @@ yarn-error.log*
 *.sw?
 
 .env
-
-firebase-debug.log
