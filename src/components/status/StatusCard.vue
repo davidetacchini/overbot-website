@@ -29,10 +29,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .box.data {
   border: unset !important;
-  background-color: var(--ob-theme-bg) !important;
+  background-color: $color-bravo !important;
   padding: 12px;
 }
 

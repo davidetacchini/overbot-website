@@ -43,21 +43,14 @@ export default {
 };
 </script>
 
-<style>
-:root {
-  --ob-primary: rgb(250, 156, 29);
-  --ob-theme-color: ##fff;
-  --ob-theme-bg: #18191c;
-  --ob-theme-bg2: #1e2023;
-}
-
-.header-container {
+<style lang="scss">
+.wrapper {
   max-width: 700px;
   margin: 0 auto;
 }
 
 .box {
-  background-color: var(--ob-theme-bg2) !important;
+  background-color: $color-charlie !important;
   border-radius: 0.5rem !important;
 }
 
@@ -71,30 +64,25 @@ hr {
 }
 
 .button {
-  background-color: #141417 !important;
+  background-color: $color-alpha !important;
+  padding: 25px 10px !important;
   border-radius: 3rem !important;
   font-size: 1rem !important;
   border: unset !important;
+  font-weight: bolder !important;
 }
 
 .button__content {
-  color: rgb(255, 255, 255);
-}
-
-@media only screen and (max-width: 560px) {
-  .header-container > h1 {
-    font-size: 2.6rem;
-  }
+  color: $color-bravo;
 }
 
 @media only screen and (max-width: 768px) {
-  .header-container {
-    max-width: 700px;
+  .wrapper {
     margin: 0 auto;
     text-align: center;
   }
 
-  .button.is-stretched {
+  .is-stretched {
     max-width: 200px !important;
     margin: 0 auto !important;
   }

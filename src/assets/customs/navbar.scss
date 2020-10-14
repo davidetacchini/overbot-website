@@ -1,13 +1,13 @@
 $navbar-background-color: transparent;
-$navbar-item-color: $white-light;
-$navbar-item-hover-color: $white-primary;
+$navbar-item-color: $white-opacity-lightner-5;
+$navbar-item-hover-color: $white-opacity-full;
 $navbar-item-hover-background-color: transparent;
 
-$dropdown-content-background-color: $darker;
-$dropdown-item-color: $white-light;
-$dropdown-item-hover-color: $white-primary;
+$dropdown-content-background-color: $color-charlie;
+$dropdown-item-color: $white-opacity-lightner-5;
+$dropdown-item-hover-color: $white-opacity-full;
 $dropdown-divider-background-color: rgba(255, 255, 255, 0.1);
 $dropdown-item-hover-background-color: transparent;
 
-// burger
-$navbar-burger-color: $white-light;
+/* burger */
+$navbar-burger-color: $white-opacity-lightner-5;

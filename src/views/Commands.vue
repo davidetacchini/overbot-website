@@ -96,7 +96,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .commands-not-found {
   text-align: center !important;
 }
@@ -105,7 +105,7 @@ input {
   width: 100%;
   padding: 12px 20px;
   font-size: 18px;
-  background-color: var(--ob-theme-bg2);
+  background-color: $color-charlie;
   border: unset;
   border-radius: 2rem;
   outline: none;
@@ -156,7 +156,7 @@ h2 {
 
 .box.info {
   border: unset !important;
-  background-color: var(--ob-theme-bg) !important;
+  background-color: $color-bravo !important;
   padding: 12px;
 }
 

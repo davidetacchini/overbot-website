@@ -2,11 +2,17 @@
   <section :class="['hero is-dark', `is-${sectionSize}`]">
     <div class="hero-body">
       <div class="container">
-        <div class="header-container">
+        <div class="wrapper">
           <h1
-            :class="['title has-text-gradient', `is-${titleSize}`, {'is-spaced': isSpaced}]"
-          >{{ title }}</h1>
-          <h2 class="header-subtitle subtitle is-4">{{ subtitle }}</h2>
+            :class="[
+              'title has-text-gradient',
+              `is-${titleSize}`,
+              { 'is-spaced': isSpaced },
+            ]"
+          >
+            {{ title }}
+          </h1>
+          <h2 class="header-subtitle subtitle is-5">{{ subtitle }}</h2>
           <slot></slot>
         </div>
       </div>
@@ -16,7 +22,7 @@
 
 <script>
 export default {
-  name: "Section",
+  name: "home-section",
 
   props: {
     sectionSize: String,

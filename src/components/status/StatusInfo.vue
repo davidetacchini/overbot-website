@@ -18,7 +18,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .circles-status {
   position: absolute;
   right: 20px;
@@ -28,7 +28,7 @@ export default {
   align-items: center;
   width: 120px;
   padding: 10px;
-  background-color: var(--ob-theme-bg);
+  background-color: $color-bravo;
   border-radius: 3rem;
 }
 

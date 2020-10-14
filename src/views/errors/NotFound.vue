@@ -3,7 +3,7 @@
     <section class="hero is-dark">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <div class="header-container">
+          <div class="wrapper">
             <img src="@/assets/not-found.svg" alt="Not Found Img" />
             <div class="back-home">
               <a href="/" class="title is-4 has-text-grey">Back to homepage</a>
@@ -20,12 +20,12 @@ export default {};
 </script>
 
 <style scoped>
-.header-container {
+.wrapper {
   max-width: 550px;
 }
 
 @media only screen and (max-width: 560px) {
-  .header-container > h1 {
+  .wrapper > h1 {
     font-size: 1.5rem;
   }
 }

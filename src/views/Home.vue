@@ -1,23 +1,24 @@
 <template>
   <div>
-    <Section
+    <home-section
       title="The best Overwatch bot for Discord"
-      titleSize="1"
+      titleSize="2"
       subtitle="OverBot has many features for Overwatch players that allow them to view their overall statistics very easily!"
       :isSpaced="true"
     >
       <div class="columns is-mobile">
-        <div class="column is-one-third-tablet is-half-mobile">
+        <div class="column is-one-quarter-tablet is-half-mobile is-stretched">
           <button-dropdown buttonText="Invite" :dropItems="dropItems" />
         </div>
-        <div class="column is-one-third-tablet is-half-mobile">
+        <div class="column is-one-quarter-tablet is-half-mobile">
           <custom-button
             link="https://top.gg/bot/547546531666984961/vote"
             action="Upvote"
+            :isStretched="true"
           />
         </div>
       </div>
-    </Section>
+    </home-section>
 
     <section class="hero is-medium is-dark features">
       <div class="hero-body">
@@ -54,19 +55,19 @@
 
     <hr />
 
-    <servers title="Five most active server" :data="servers" />
+    <servers :data="servers" />
 
     <hr />
 
-    <Section
+    <home-section
       sectionSize="medium"
       title="Need Help?"
-      titleSize="2"
+      titleSize="3"
       subtitle="If you got any questions or issues with OverBot don't hesitate to join the official Discord server!"
       :isSpaced="true"
     >
       <div class="columns">
-        <div class="column is-4">
+        <div class="column is-3">
           <custom-button
             link="https://discord.gg/8g3jnxv"
             color="is-primary"
@@ -75,7 +76,7 @@
           />
         </div>
       </div>
-    </Section>
+    </home-section>
   </div>
 </template>
 
@@ -109,7 +110,7 @@ export default {
   components: {
     Servers,
     Feature,
-    Section,
+    "home-section": Section,
     CustomButton,
     ButtonDropdown,
   },
@@ -127,11 +128,12 @@ export default {
 </script>
 
 <style scoped>
-svg {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
+h1 {
+  font-size: 1.3rem !important;
+}
+
+h2 {
+  font-size: 2.3rem !important;
 }
 
 hr {

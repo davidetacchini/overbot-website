@@ -2,20 +2,21 @@
 
 $family-primary: 'Poppins', sans-serif;
 
-// Custom colors
-$bright-orange: #fa9c1d;
-$white-light: rgba(255, 255, 255, 0.5);
-$white-primary: rgb(255, 255, 255);
-$sea-blue: #2997ff;
-$darker: #1e2023;
-$darkest: #18191c;
+/* Custom colors */
+$color-alpha: rgb(67, 163, 255);
+$color-alpha-opacity-lightner-2: rgba(67, 163, 255, 0.2);
+$color-bravo: #18191c;
+$color-charlie: #1e2023;
 
-// Bulma colors override
-$primary: $bright-orange;
-$dark: $darkest;
+$white-opacity-full: rgb(255, 255, 255);
+$white-opacity-lightner-5: rgba(255, 255, 255, 0.5);
 
-// Footer
-$footer-background-color: $darker;
+/* Bulma colors override */
+$primary: $color-alpha;
+$dark: $color-bravo;
+
+/* Footer */
+$footer-background-color: $color-charlie;
 
 @import "./customs/custom.scss";
 @import "./customs/navbar.scss";

@@ -1,6 +1,9 @@
 <template>
   <div
-    :class="['columns is-multiline is-mobile is-centered has-text-centered', {'column-reverse': isReversed}]"
+    :class="[
+      'columns is-multiline is-mobile is-centered has-text-centered',
+      { 'column-reverse': isReversed },
+    ]"
   >
     <div class="column is-two-fifths-desktop is-full-mobile">
       <img :src="image" :alt="imageAlt" />

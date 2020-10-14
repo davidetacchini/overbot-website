@@ -1,16 +1,16 @@
 body, html {
-    background-color: $darkest !important;
+    background-color: $color-bravo !important;
 }
 
 .has-text-gradient {
-    background: -webkit-linear-gradient(#fff, #fa9c1de6);
+    background: -webkit-linear-gradient(#fff, $color-alpha-opacity-lightner-2);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .navbar-burger {
-    color: $white-light !important;
+    color: $white-opacity-lightner-5 !important;
 }
 
 .dropdown-menu {
