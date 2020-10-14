@@ -34,7 +34,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -122,18 +122,19 @@ export default {
 }
 
 .accept-button {
-  background-color: rgb(25, 113, 227);
+  background-color: $color-alpha;
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: unset;
   margin-top: 10px;
   outline: none;
-  padding: 8px 12px;
+  padding: 10px 12px;
   border-radius: 2rem;
   font-size: 14px;
   cursor: pointer;
+  color: $color-bravo;
 }
 
 p {
-  font-size: 18px;
+  font-size: 1rem;
 }
 </style>
