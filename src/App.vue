@@ -99,6 +99,10 @@ hr {
   transition: color 0.1s ease-in-out !important;
 }
 
+.router-link-active {
+  color: rgb(255, 255, 255) !important;
+}
+
 @media only screen and (max-width: 768px) {
   .wrapper {
     margin: 0 auto;
