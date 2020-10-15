@@ -17,14 +17,9 @@
           <div class="columns is-multiline is-mobile is-full-tablet">
             <div class="column">
               <h1 class="title is-5 has-text-white">Navigation</h1>
-              <a
-                href="https://discord.com/oauth2/authorize?client_id=547546531666984961&permissions=321600&scope=bot"
-                target="_blank"
-                class="link"
-                >Add to Discord</a
-              >
-              <br />
               <a href="/commands" class="link">Commands</a>
+              <br />
+              <a href="/permissions" class="link">Permissions</a>
               <br />
               <a href="/status" class="link">Status</a>
             </div>
@@ -65,10 +60,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 p {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
+  color: $white-opacity-lightner-5;
 }
 
 .content {
@@ -77,7 +72,7 @@ p {
 }
 
 .link {
-  color: rgba(255, 255, 255, 0.5);
+  color: $white-opacity-lightner-5;
   font-size: 14px;
   transition: color 0.2s ease-in-out;
   display: inline-block;
@@ -88,7 +83,7 @@ p {
 }
 
 .link:hover {
-  color: rgb(255, 255, 255);
+  color: $white-opacity-full;
 }
 
 .subtitle {

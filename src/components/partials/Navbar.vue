@@ -18,6 +18,12 @@
       >
       <b-navbar-item
         tag="router-link"
+        :to="{ path: '/permissions' }"
+        class="navbar-item"
+        >Permissions</b-navbar-item
+      >
+      <b-navbar-item
+        tag="router-link"
         :to="{ path: '/status' }"
         class="navbar-item"
         >Status</b-navbar-item
@@ -26,7 +32,7 @@
         href="https://www.patreon.com/overbot_"
         class="navbar-item"
         target="_blank"
-        >Patreon</b-navbar-item
+        >Premium</b-navbar-item
       >
       <b-dropdown
         v-model="navigation"

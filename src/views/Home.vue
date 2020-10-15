@@ -59,6 +59,27 @@
 
     <hr />
 
+    <home-section
+      sectionSize="medium"
+      title="More features with premium!"
+      titleSize="3"
+      subtitle="Increase your experience by subscribing to the official patreon page! By subscribing to premium, 
+      you will unlock new features such as Overwatch news feed notification."
+      :isSpaced="true"
+    >
+      <div class="columns">
+        <div class="column is-3">
+          <custom-button
+            link="https://patreon.com/overbot_"
+            color="is-primary"
+            action="Subscribe"
+            :isStretched="true"
+          />
+        </div></div
+    ></home-section>
+
+    <hr />
+
     <servers />
 
     <hr />

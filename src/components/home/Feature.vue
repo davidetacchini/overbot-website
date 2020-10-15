@@ -61,7 +61,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   img {
-    width: 10rem;
+    width: 9rem;
     display: flex;
     margin: 0 auto;
   }

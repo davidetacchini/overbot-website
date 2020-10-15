@@ -44,6 +44,6 @@ img {
 }
 
 .back-home:hover > a {
-  color: rgb(255, 255, 255) !important;
+  color: $white-opacity-full !important;
 }
 </style>

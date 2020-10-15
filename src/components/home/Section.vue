@@ -12,7 +12,7 @@
           >
             {{ title }}
           </h1>
-          <h2 class="wrapper-subtitle subtitle is-5">{{ subtitle }}</h2>
+          <h2 class="wrapper__subtitle subtitle is-5">{{ subtitle }}</h2>
           <slot></slot>
         </div>
       </div>
@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style scoped>
-.wrapper-subtitle {
+.wrapper__subtitle {
   margin-bottom: 3rem !important;
 }
 

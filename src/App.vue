@@ -81,7 +81,7 @@ hr {
 }
 
 .menu-title {
-  color: rgb(255, 255, 255) !important;
+  color: $white-opacity-full !important;
   font-weight: bolder !important;
 }
 
@@ -100,7 +100,7 @@ hr {
 }
 
 .router-link-active {
-  color: rgb(255, 255, 255) !important;
+  color: $white-opacity-full !important;
 }
 
 @media only screen and (max-width: 768px) {
