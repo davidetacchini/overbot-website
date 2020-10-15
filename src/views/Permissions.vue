@@ -70,12 +70,12 @@ export default {
         {
           name: "Manage Messages",
           icon: "cog",
-          desc: "Used to toggle reactions when using its paginator",
+          desc: "Used to toggle reactions when reacting to the bot paginator",
         },
         {
           name: "Embed Links",
           icon: "link",
-          desc: "Allows OverBot to insert links in embeds",
+          desc: "Allows OverBot to use links in embeds",
         },
         {
           name: "Add Reactions",
@@ -85,7 +85,7 @@ export default {
         {
           name: "Use External Emojis",
           icon: "external-link-alt",
-          desc: "Enables the bot to use custom external emojis",
+          desc: "Enables the bot to use external emojis",
         },
       ],
     };
