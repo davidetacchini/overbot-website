@@ -101,14 +101,6 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  font-size: 1.3rem !important;
-}
-
-h2 {
-  font-size: 2.3rem !important;
-}
-
 hr {
   background-color: rgba(255, 255, 255, 0.1) !important;
   height: 2px !important;
