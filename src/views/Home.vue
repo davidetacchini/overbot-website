@@ -7,8 +7,12 @@
       :isSpaced="true"
     >
       <div class="columns is-mobile">
-        <div class="column is-one-quarter-tablet is-half-mobile is-stretched">
-          <button-dropdown buttonText="Invite" :dropItems="dropItems" />
+        <div class="column is-one-quarter-tablet is-half-mobile">
+          <custom-button
+            link="https://discord.com/api/oauth2/authorize?client_id=547546531666984961&permissions=288832&scope=bot"
+            action="Invite"
+            :isStretched="true"
+          />
         </div>
         <div class="column is-one-quarter-tablet is-half-mobile">
           <custom-button
@@ -55,7 +59,7 @@
 
     <hr />
 
-    <servers :data="servers" />
+    <servers />
 
     <hr />
 
@@ -85,44 +89,13 @@ import Servers from "@/components/home/Servers";
 import Feature from "@/components/home/Feature";
 import Section from "@/components/home/Section";
 import CustomButton from "@/components/CustomButton";
-import ButtonDropdown from "@/components/ButtonDropdown";
 
 export default {
-  data: () => {
-    return {
-      dropItems: [
-        {
-          text: "Normal Permissions",
-          icon: "fab fa-discord",
-          link:
-            "https://discordapp.com/oauth2/authorize?client_id=547546531666984961&permissions=257025&scope=bot",
-        },
-        {
-          text: "Admin Permissions",
-          icon: "fab fa-discord",
-          link:
-            "https://discordapp.com/api/oauth2/authorize?client_id=547546531666984961&permissions=8&scope=bot",
-        },
-      ],
-    };
-  },
-
   components: {
     Servers,
     Feature,
     "home-section": Section,
     CustomButton,
-    ButtonDropdown,
-  },
-
-  computed: {
-    servers() {
-      return this.$store.getters.servers;
-    },
-  },
-
-  mounted() {
-    this.$store.dispatch("getServers");
   },
 };
 </script>

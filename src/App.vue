@@ -76,6 +76,29 @@ hr {
   color: $color-bravo;
 }
 
+.dropdown-more .icon {
+  font-size: 0.7rem;
+}
+
+.menu-title {
+  color: rgb(255, 255, 255) !important;
+  font-weight: bolder !important;
+}
+
+.menu-title:not(:first-of-type) {
+  margin-top: 10px !important;
+}
+
+.menu-item {
+  display: block !important;
+  margin-left: 10px !important;
+  position: relative !important;
+}
+
+.menu-item > a {
+  transition: color 0.1s ease-in-out !important;
+}
+
 @media only screen and (max-width: 768px) {
   .wrapper {
     margin: 0 auto;

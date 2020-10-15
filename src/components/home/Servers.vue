@@ -7,7 +7,7 @@
   >
     <div class="columns is-scrollable is-mobile" v-dragscroll.x>
       <div
-        v-for="(value, key) in data"
+        v-for="(value, key) in servers"
         :key="key"
         class="column is-two-fifths-desktop is-two-fifths-tablet is-full-mobile server-column"
       >
@@ -38,8 +38,14 @@ export default {
     "home-section": Section,
   },
 
-  props: {
-    data: [Array, Function],
+  computed: {
+    servers() {
+      return this.$store.getters.servers;
+    },
+  },
+
+  mounted() {
+    this.$store.dispatch("getServers");
   },
 };
 </script>

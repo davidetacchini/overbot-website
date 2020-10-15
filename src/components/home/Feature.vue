@@ -30,6 +30,11 @@ export default {
 </script>
 
 <style scoped>
+.title {
+  margin-bottom: 35px !important;
+  font-size: 1.9rem !important;
+}
+
 .column-reverse {
   display: flex;
   flex-direction: row-reverse;
