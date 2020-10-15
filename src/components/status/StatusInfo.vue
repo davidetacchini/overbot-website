@@ -1,12 +1,12 @@
 <template>
   <div class="circles-status">
-    <b-tooltip type="is-dark" label="Stable connection" :delay="50">
+    <b-tooltip type="is-black" label="Stable connection" :delay="50">
       <div class="circle has-background-success"></div>
     </b-tooltip>
-    <b-tooltip type="is-dark" label="High ping (> 150ms)" :delay="50">
+    <b-tooltip type="is-black" label="High ping (> 150ms)" :delay="50">
       <div class="circle has-background-warning"></div>
     </b-tooltip>
-    <b-tooltip type="is-dark" label="Bad connection" :delay="50">
+    <b-tooltip type="is-black" label="Bad connection" :delay="50">
       <div class="circle has-background-danger"></div>
     </b-tooltip>
   </div>

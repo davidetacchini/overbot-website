@@ -55,7 +55,7 @@ export default {
 }
 
 hr {
-  background-color: rgba(255, 255, 255, 0.1) !important;
+  background-color: $hr-color !important;
   height: 1px !important;
 }
 
@@ -70,10 +70,10 @@ hr {
   font-size: 1rem !important;
   border: unset !important;
   font-weight: bolder !important;
-}
 
-.button__content {
-  color: $color-bravo;
+  &__content {
+    color: $color-bravo;
+  }
 }
 
 .dropdown-more .icon {
@@ -105,7 +105,6 @@ hr {
 
 @media only screen and (max-width: 768px) {
   .wrapper {
-    margin: 0 auto;
     text-align: center;
   }
 

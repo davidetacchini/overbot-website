@@ -29,7 +29,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .title {
   margin-bottom: 35px !important;
   font-size: 1.9rem !important;

@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.box.data {
+.data {
   border: unset !important;
   background-color: $color-bravo !important;
   padding: 12px;

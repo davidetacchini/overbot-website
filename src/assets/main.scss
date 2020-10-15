@@ -2,7 +2,7 @@
 
 $family-primary: 'Poppins', sans-serif;
 
-/* Custom colors */
+// Custom colors
 $color-alpha: rgb(67, 163, 255);
 $color-alpha-opacity-lightner-2: rgba(67, 163, 255, 0.2);
 $color-bravo: #18191c;
@@ -10,12 +10,13 @@ $color-charlie: #1e2023;
 
 $white-opacity-full: rgb(255, 255, 255);
 $white-opacity-lightner-5: rgba(255, 255, 255, 0.5);
+$hr-color: rgba(255, 255, 255, 0.1);
 
-/* Bulma colors override */
+// Bulma colors override
 $primary: $color-alpha;
 $dark: $color-bravo;
 
-/* Footer */
+// Footer
 $footer-background-color: $color-charlie;
 
 @import "./customs/custom.scss";

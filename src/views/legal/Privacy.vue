@@ -55,7 +55,7 @@
   </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .margin-top {
   margin-top: 3rem;
 }

@@ -121,9 +121,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 hr {
-  background-color: rgba(255, 255, 255, 0.1) !important;
+  background-color: $hr-color !important;
   height: 2px !important;
   width: 80% !important;
   margin: 0 auto !important;

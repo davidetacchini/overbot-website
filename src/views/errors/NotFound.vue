@@ -19,7 +19,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .wrapper {
   max-width: 550px;
 }

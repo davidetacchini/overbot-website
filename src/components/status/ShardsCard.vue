@@ -47,17 +47,17 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 p {
   font-size: 0.875rem;
 }
 
-.shard {
-  padding: 10px;
+.shards {
+  position: relative;
 }
 
-.box.shards {
-  position: relative;
+.shard {
+  padding: 10px;
 }
 
 @media only screen and (max-width: 400px) {

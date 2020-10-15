@@ -123,7 +123,7 @@ export default {
 
 .accept-button {
   background-color: $color-alpha;
-  color: #fff;
+  color: $color-bravo;
   border: unset;
   margin-top: 10px;
   outline: none;
@@ -131,7 +131,6 @@ export default {
   border-radius: 2rem;
   font-size: 14px;
   cursor: pointer;
-  color: $color-bravo;
 }
 
 p {

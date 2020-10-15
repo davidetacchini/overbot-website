@@ -70,7 +70,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .countdown {
   font-size: 0.875rem !important;
 }
