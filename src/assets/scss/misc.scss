@@ -8,15 +8,3 @@ body, html {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-  
-.animate {
-    animation: shimmer 2s infinite;
-    background: linear-gradient(
-        to right,
-        rgba($skeleton-color, 0.5) 0,
-        rgba($skeleton-color, 0.6) 20%,
-        rgba($skeleton-color, 0.7) 60%,
-        rgba($skeleton-color, 0.5)
-    );
-    background-size: 1000px 100%;
-}
