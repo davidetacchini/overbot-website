@@ -80,7 +80,13 @@
 
     <hr />
 
-    <servers />
+    <home-section
+      sectionSize="medium"
+      title="Five most active servers"
+      titleSize="3"
+      :isSpaced="true"
+      ><servers
+    /></home-section>
 
     <hr />
 
@@ -106,14 +112,13 @@
 </template>
 
 <script>
-import Servers from "@/components/home/Servers";
 import Feature from "@/components/home/Feature";
 import Section from "@/components/home/Section";
 import CustomButton from "@/components/CustomButton";
 
 export default {
   components: {
-    Servers,
+    Servers: () => import("@/components/home/Servers"),
     Feature,
     "home-section": Section,
     CustomButton,

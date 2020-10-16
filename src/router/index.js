@@ -1,11 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Commands from '../views/Commands.vue'
-import Status from '../views/Status.vue'
-import Privacy from '../views/legal/Privacy.vue'
 import NotFound from '../views/errors/NotFound.vue'
-import Permissions from '../views/Permissions.vue'
 
 Vue.use(VueRouter)
 
@@ -21,7 +17,7 @@ const routes = [
   {
     path: '/commands',
     name: 'Commands',
-    component: Commands,
+    component: () => import(/* webpackChunkName: "commands" */ "../views/Commands.vue"),
     meta: {
       title: 'Commands - OverBot',
     }
@@ -29,7 +25,7 @@ const routes = [
   {
     path: '/status',
     name: 'Status',
-    component: Status,
+    component: () => import(/* webpackChunkName: "status" */ "../views/Status.vue"),
     meta: {
       title: 'Status - OverBot',
     }
@@ -37,7 +33,7 @@ const routes = [
   {
     path: '/permissions',
     name: 'Permissions',
-    component: Permissions,
+    component: () => import(/* webpackChunkName: "permissions" */ "../views/Permissions.vue"),
     meta: {
       title: 'Permissions - OverBot',
     }
@@ -45,7 +41,7 @@ const routes = [
   {
     path: '/privacy',
     name: 'Privacy',
-    component: Privacy,
+    component: () => import(/* webpackChunkName: "privacy" */ "../views/legal/Privacy.vue"),
     meta: {
       title: 'Privacy Policy - OverBot',
     }

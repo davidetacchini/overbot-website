@@ -11,6 +11,7 @@ $color-charlie: #1e2023;
 $white-opacity-full: rgb(255, 255, 255);
 $white-opacity-lightner-5: rgba(255, 255, 255, 0.5);
 $hr-color: rgba(255, 255, 255, 0.1);
+$skeleton-color: #2f2f32;
 
 // Bulma colors override
 $primary: $color-alpha;
@@ -19,8 +20,9 @@ $dark: $color-bravo;
 // Footer
 $footer-background-color: $color-charlie;
 
-@import "./customs/custom.scss";
-@import "./customs/navbar.scss";
+@import "./scss/misc.scss";
+@import "./scss/navbar.scss";
+@import "./scss/animations.scss";
 
 @import "~bulma/sass/utilities/_all";
 @import "~bulma";

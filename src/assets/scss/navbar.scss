@@ -10,3 +10,7 @@ $dropdown-divider-background-color: $hr-color;
 $dropdown-item-hover-background-color: transparent;
 
 $navbar-burger-color: $white-opacity-lightner-5;
+
+.navbar-burger {
+    color: $white-opacity-lightner-5 !important;
+}
