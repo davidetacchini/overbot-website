@@ -1,6 +1,6 @@
 <template>
   <div>
-    <home-section
+    <hero-section
       title="The best Overwatch bot for Discord"
       titleSize="2"
       subtitle="OverBot has many features for Overwatch players that allow them to view their overall statistics very easily!"
@@ -22,7 +22,7 @@
           />
         </div>
       </div>
-    </home-section>
+    </hero-section>
 
     <section class="hero is-medium is-dark features">
       <div class="hero-body">
@@ -59,7 +59,7 @@
 
     <hr />
 
-    <home-section
+    <hero-section
       sectionSize="medium"
       title="More features with premium!"
       titleSize="3"
@@ -76,21 +76,21 @@
             :isStretched="true"
           />
         </div></div
-    ></home-section>
+    ></hero-section>
 
     <hr />
 
-    <home-section
+    <hero-section
       sectionSize="medium"
       title="Five most active servers"
       titleSize="3"
       :isSpaced="true"
       ><servers
-    /></home-section>
+    /></hero-section>
 
     <hr />
 
-    <home-section
+    <hero-section
       sectionSize="medium"
       title="Need Help?"
       titleSize="3"
@@ -107,20 +107,20 @@
           />
         </div>
       </div>
-    </home-section>
+    </hero-section>
   </div>
 </template>
 
 <script>
 import Feature from "@/components/home/Feature";
-import Section from "@/components/home/Section";
+import HeroSection from "@/components/home/HeroSection";
 import CustomButton from "@/components/CustomButton";
 
 export default {
   components: {
     Servers: () => import("@/components/home/Servers"),
     Feature,
-    "home-section": Section,
+    HeroSection,
     CustomButton,
   },
 };
