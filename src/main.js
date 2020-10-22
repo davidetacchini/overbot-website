@@ -32,7 +32,7 @@ Vue.use(VueProgressBar, options)
 Vue.use(VueDragscroll)
 
 
-axios.defaults.baseURL = "http://localhost:8000/"
+axios.defaults.baseURL = "http://35.196.134.3:8000/"
 
 Vue.config.productionTip = false
 

@@ -57,7 +57,7 @@
       </div>
     </section>
 
-    <hr />
+    <!-- <hr />
 
     <hero-section
       sectionSize="medium"
@@ -86,7 +86,7 @@
       titleSize="3"
       :isSpaced="true"
       ><servers
-    /></hero-section>
+    /></hero-section> -->
 
     <hr />
 
@@ -118,7 +118,7 @@ import CustomButton from "@/components/CustomButton";
 
 export default {
   components: {
-    Servers: () => import("@/components/home/Servers"),
+    // Servers: () => import("@/components/home/Servers"),
     Feature,
     HeroSection,
     CustomButton,
