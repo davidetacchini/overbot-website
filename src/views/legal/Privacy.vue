@@ -1,7 +1,7 @@
 <template>
   <section class="hero is-dark">
     <div class="hero-body">
-      <div class="container is-fluid">
+      <div class="container">
         <h1 class="title is-spaced">Privacy Policy</h1>
         <div class="columns is-mobile">
           <div
@@ -60,14 +60,11 @@
 </template>
 
 <style scoped lang="scss">
-.margin-top {
-  margin-top: 3rem;
+.hero-body {
+  margin: 0 auto !important;
 }
 
-@media only screen and (max-width: 768px) {
-  .is-fluid {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+.margin-top {
+  margin-top: 3rem;
 }
 </style>
