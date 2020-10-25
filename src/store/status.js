@@ -1,14 +1,14 @@
 import axios from 'axios';
 
 const state = {
-    statistics: Array,
+    bot: Array,
     host: Array,
     shards: Array,
 };
 
 const getters = {
-    statistics: (state) => {
-        return state.statistics;
+    bot: (state) => {
+        return state.bot;
     },
     host: (state) => {
         return state.host;
@@ -20,7 +20,7 @@ const getters = {
 
 const mutations = {
     setStats: (state, payload) => {
-        state.statistics = payload.bot
+        state.bot = payload.bot
         state.host = payload.host
         state.shards = payload.shards
     }
@@ -29,7 +29,7 @@ const mutations = {
 const actions = {
     async getStats({ commit }) {
         await axios
-            .get('stats')
+            .get('/statistics')
             .then((res) => {
                 commit('setStats', res.data);
             })

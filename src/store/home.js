@@ -19,7 +19,7 @@ const mutations = {
 const actions = {
     async getServers({ commit }) {
         await axios
-            .get('servers')
+            .get('/servers')
             .then((res) => {
                 commit('setServers', res.data)
             })

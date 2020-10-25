@@ -27,6 +27,10 @@
               name, server icon, channel names, channel IDs, member IDs)
             </li>
             <li>
+              Public information about members (member ID, member name, member
+              icon)
+            </li>
+            <li>
               Some information listed above may only be stored when specific
               commands are runned.
             </li>

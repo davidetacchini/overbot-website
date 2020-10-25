@@ -34,7 +34,7 @@ const mutations = {
 const actions = {
     async getCommands({ commit }) {
         await axios
-            .get('commands')
+            .get('/commands')
             .then((res) => {
                 commit('setCommands', res.data)
             })
