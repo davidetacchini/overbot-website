@@ -57,9 +57,7 @@
       </div>
     </section>
 
-    <!-- <hr />
-
-    <hero-section
+    <!-- <hero-section
       sectionSize="medium"
       title="More features with premium!"
       titleSize="3"
