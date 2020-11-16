@@ -43,7 +43,7 @@ img {
   transition: color 0.2s;
 }
 
-.back-home:hover > a {
+.back-home > a:hover {
   color: $white-opacity-full !important;
 }
 </style>
