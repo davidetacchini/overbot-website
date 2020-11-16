@@ -30,24 +30,24 @@
               Public information about members (member ID, member name, member
               icon)
             </li>
-            <li>
-              Some information listed above may only be stored when specific
-              commands are runned.
-            </li>
           </ul>
+          <p>
+            Some information listed above may only be stored when specific
+            commands are runned.
+          </p>
         </div>
         <h1 class="title is-4 margin-top">How do we use your information?</h1>
         <div class="content">
           <ul>
             <li>
               Your information is used within the Bot for features which require
-              said information.
-            </li>
-            <li>
-              The above information is visible only to those who are part of the
-              OverBot staff.
+              them.
             </li>
           </ul>
+          <p>
+            The above information is visible only to those who are part of the
+            OverBot staff.
+          </p>
         </div>
         <h1 class="title is-4 margin-top">Agreement</h1>
         <p>
