@@ -56,7 +56,7 @@ export default {
 
 .server {
   position: relative;
-  transition: box-shadow 0.3s linear;
+  transition: transform 0.3s, box-shadow 0.3s linear;
   transition-delay: 0.05s;
   cursor: pointer;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
