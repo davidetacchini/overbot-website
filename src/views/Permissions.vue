@@ -35,6 +35,7 @@
                         label="Required"
                         :delay="50"
                         class="permission__required"
+                        v-if="value['required']"
                       >
                         <span class="icon">
                           <i class="fas fa-exclamation-circle"></i>
