@@ -25,7 +25,7 @@
               <div class="box permission">
                 <div class="columns">
                   <div class="column">
-                    <span class="icon permission__icon has-text-gradient">
+                    <span class="icon permission__icon">
                       <i :class="['fas', `fa-${value['icon']}`]"></i>
                     </span>
                     <span class="permission__title">
