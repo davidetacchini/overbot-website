@@ -56,14 +56,14 @@ export default {
 
 .server {
   position: relative;
-  transition: transform 0.3s, box-shadow 0.3s linear;
+  transition: box-shadow 0.3s linear;
   transition-delay: 0.05s;
   cursor: pointer;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 
   &:hover {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-    transform: scale(1.02) translateY(-5px);
+    transform: translateY(-5px);
   }
 
   &__title {
