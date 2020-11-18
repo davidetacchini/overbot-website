@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: "status-info",
+  name: 'status-info',
 };
 </script>
 

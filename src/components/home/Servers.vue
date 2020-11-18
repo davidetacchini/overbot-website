@@ -12,9 +12,9 @@
           </span>
         </div>
         <img class="server__img" :src="value['icon']" :alt="value['name']" />
-        <h1 class="server__title title is-4">{{ value["name"] }}</h1>
+        <h1 class="server__title title is-4">{{ value['name'] }}</h1>
         <h2 class="server__subtitle subtitle is-6 has-text-grey runned">
-          Commands runned: {{ value["commands_runned"] }}
+          Commands runned: {{ value['commands_runned'] }}
         </h2>
       </div>
     </div>
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: "servers",
+  name: 'servers',
 
   computed: {
     servers() {
@@ -32,7 +32,7 @@ export default {
   },
 
   created() {
-    this.$store.dispatch("getServers");
+    this.$store.dispatch('getServers');
   },
 };
 </script>

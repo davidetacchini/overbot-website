@@ -1,13 +1,11 @@
 module.exports = {
-    css: {
-        loaderOptions: {
-            sass: {
-                prependData: `@import "@/assets/main.scss";`
-            }
-        }
+  css: {
+    loaderOptions: {
+      sass: {
+        prependData: `@import "@/assets/main.scss";`,
+      },
     },
+  },
 
-    publicPath: process.env.NODE_ENV === 'production'
-        ? ''
-        : '',
-}
+  publicPath: process.env.NODE_ENV === 'production' ? '' : '',
+};

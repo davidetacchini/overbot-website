@@ -31,10 +31,10 @@
 </template>
 
 <script>
-import StatusInfo from "@/components/status/StatusInfo";
+import StatusInfo from '@/components/status/StatusInfo';
 
 export default {
-  name: "shards-card",
+  name: 'shards-card',
 
   components: {
     StatusInfo,

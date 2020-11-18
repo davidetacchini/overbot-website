@@ -8,15 +8,15 @@
       </span>
     </div>
     <h1 class="command__title title is-5">
-      {{ value["name"] }} {{ value["signature"] }}
+      {{ value['name'] }} {{ value['signature'] }}
     </h1>
     <div class="command__info box">
       <h2 class="command__info__description subtitle is-6">
-        {{ value["description"].split(".")[0] + "." }}
+        {{ value['description'].split('.')[0] + '.' }}
       </h2>
       <div class="command__info__aliases" v-if="value['aliases']">
         <h2 class="subtitle is-6 opacity-75">
-          Aliases: {{ value["aliases"].join(", ") }}
+          Aliases: {{ value['aliases'].join(', ') }}
         </h2>
       </div>
     </div>
@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name: "command",
+  name: 'command',
 
   props: {
     value: Object,

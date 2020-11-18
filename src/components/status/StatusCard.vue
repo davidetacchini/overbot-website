@@ -6,7 +6,7 @@
         <div v-for="(value, key) in data" :key="key" class="column is-6">
           <div class="box data has-text-white">
             <p>
-              <span class="has-text-grey">{{ key + ": " }}</span>
+              <span class="has-text-grey">{{ key + ': ' }}</span>
               <span class="has-text-weight-bold has-text-white">{{
                 value
               }}</span>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: "status-card",
+  name: 'status-card',
 
   props: {
     title: String,

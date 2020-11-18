@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "feature",
+  name: 'feature',
 
   props: {
     image: String,

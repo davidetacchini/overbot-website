@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import Command from "@/components/commands/Command";
-import Results from "@/components/commands/Results";
+import Command from '@/components/commands/Command';
+import Results from '@/components/commands/Results';
 export default {
   components: {
     Command,
@@ -37,7 +37,7 @@ export default {
         return this.$store.getters.search;
       },
       set(value) {
-        this.$store.commit("setSearch", value);
+        this.$store.commit('setSearch', value);
         if (!value) {
           document.title = this.$route.meta.title;
         } else {
@@ -47,7 +47,7 @@ export default {
     },
   },
   created() {
-    this.$store.dispatch("getCommands");
+    this.$store.dispatch('getCommands');
   },
 };
 </script>
@@ -64,10 +64,10 @@ input {
   color: rgba(255, 255, 255, 0.7);
   transition: padding-left 0.2s linear;
 }
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
   -webkit-appearance: none !important;
 }
 input::placeholder {

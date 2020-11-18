@@ -29,7 +29,7 @@
                       <i :class="['fas', `fa-${value['icon']}`]"></i>
                     </span>
                     <span class="permission__title">
-                      {{ value["name"] }}
+                      {{ value['name'] }}
                       <b-tooltip
                         type="is-black"
                         label="Required"
@@ -45,7 +45,7 @@
                   </div>
                   <div class="column is-two-thirds">
                     <span class="permission__subtitle opacity-75">{{
-                      value["desc"]
+                      value['desc']
                     }}</span>
                   </div>
                 </div>
@@ -59,7 +59,7 @@
 </template>
 
 <script>
-import permissions from "@/assets/permissions.json";
+import permissions from '@/assets/permissions.json';
 
 export default {
   data: () => {

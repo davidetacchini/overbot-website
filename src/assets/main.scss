@@ -19,10 +19,10 @@ $dark: $color-bravo;
 // Footer
 $footer-background-color: $color-charlie;
 
-@import "./scss/misc.scss";
-@import "./scss/navbar.scss";
-@import "./scss/animations.scss";
+@import './scss/misc.scss';
+@import './scss/navbar.scss';
+@import './scss/animations.scss';
 
-@import "~bulma/sass/utilities/_all";
-@import "~bulma";
-@import "~buefy/src/scss/buefy";
+@import '~bulma/sass/utilities/_all';
+@import '~bulma';
+@import '~buefy/src/scss/buefy';

@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import Navbar from "./components/partials/Navbar";
-import Footer from "./components/partials/Footer";
-import CookieMessage from "./components/CookieMessage";
+import Navbar from './components/partials/Navbar';
+import Footer from './components/partials/Footer';
+import CookieMessage from './components/CookieMessage';
 
 export default {
-  name: "app",
+  name: 'app',
 
   components: {
     Navbar,

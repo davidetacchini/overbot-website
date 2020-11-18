@@ -1,16 +1,15 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import store from './store';
 // Styling
-import Buefy from 'buefy'
-import 'buefy/dist/buefy.css'
-import '@/assets/main.scss'
+import Buefy from 'buefy';
+import 'buefy/dist/buefy.css';
+import '@/assets/main.scss';
 // Third Parties
-import axios from 'axios'
-import VueProgressBar from 'vue-progressbar'
-import VueDragscroll from 'vue-dragscroll'
-
+import axios from 'axios';
+import VueProgressBar from 'vue-progressbar';
+import VueDragscroll from 'vue-dragscroll';
 
 const options = {
   color: 'rgb(0, 113, 227)',
@@ -19,25 +18,24 @@ const options = {
   transition: {
     speed: '0.2s',
     opacity: '1',
-    termination: 300
+    termination: 300,
   },
   autoRevert: true,
   location: 'top',
-  inverse: false
+  inverse: false,
 };
 
-Vue.use(axios)
-Vue.use(Buefy)
-Vue.use(VueProgressBar, options)
-Vue.use(VueDragscroll)
+Vue.use(axios);
+Vue.use(Buefy);
+Vue.use(VueProgressBar, options);
+Vue.use(VueDragscroll);
 
+axios.defaults.baseURL = 'http://localhost:5000/api';
 
-axios.defaults.baseURL = "http://localhost:8000"
-
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
   router,
   store,
-  render: h => h(App)
-}).$mount('#app')
+  render: (h) => h(App),
+}).$mount('#app');

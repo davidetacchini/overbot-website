@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: "cookie-message",
+  name: 'cookie-message',
 
   mounted() {
     this.hasAllowed();
@@ -20,14 +20,14 @@ export default {
 
   methods: {
     hasAllowed: () => {
-      return localStorage.getItem("cookie_consent");
+      return localStorage.getItem('cookie_consent');
     },
 
     cookieConsent: () => {
-      localStorage.setItem("cookie_consent", "true");
-      document.querySelector(".cookie-message").classList.add("fade-out");
+      localStorage.setItem('cookie_consent', 'true');
+      document.querySelector('.cookie-message').classList.add('fade-out');
       setTimeout(() => {
-        document.querySelector(".cookie-message").remove();
+        document.querySelector('.cookie-message').remove();
       }, 790);
     },
   },

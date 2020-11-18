@@ -110,9 +110,9 @@
 </template>
 
 <script>
-import Feature from "@/components/home/Feature";
-import HeroSection from "@/components/home/HeroSection";
-import CustomButton from "@/components/CustomButton";
+import Feature from '@/components/home/Feature';
+import HeroSection from '@/components/home/HeroSection';
+import CustomButton from '@/components/CustomButton';
 
 export default {
   components: {

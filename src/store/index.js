@@ -8,11 +8,11 @@ import commands from './commands';
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
-    modules: {
-        home,
-        status,
-        commands,
-    }
+  modules: {
+    home,
+    status,
+    commands,
+  },
 });
 
 export default store;

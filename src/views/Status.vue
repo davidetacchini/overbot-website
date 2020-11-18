@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import StatusCard from "@/components/status/StatusCard";
-import ShardsCard from "@/components/status/ShardsCard";
+import StatusCard from '@/components/status/StatusCard';
+import ShardsCard from '@/components/status/ShardsCard';
 export default {
   data: () => {
     return {
@@ -45,7 +45,7 @@ export default {
     },
   },
   created() {
-    this.$store.dispatch("getStats");
+    this.$store.dispatch('getStats');
   },
   watch: {
     countDown: {
@@ -55,7 +55,7 @@ export default {
             this.countDown--;
           }, 1000);
         } else {
-          this.$store.dispatch("getStats");
+          this.$store.dispatch('getStats');
           this.countDown = 30;
         }
       },

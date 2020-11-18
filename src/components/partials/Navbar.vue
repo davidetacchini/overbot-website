@@ -99,11 +99,11 @@
 
 <script>
 export default {
-  name: "navbar",
+  name: 'navbar',
 
   data: () => {
     return {
-      navigation: "home",
+      navigation: 'home',
     };
   },
 };
