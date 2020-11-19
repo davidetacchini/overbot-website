@@ -28,12 +28,6 @@
         class="navbar-item"
         >Status</b-navbar-item
       >
-      <b-navbar-item
-        href="https://www.patreon.com/overbot_"
-        class="navbar-item"
-        target="_blank"
-        >Premium</b-navbar-item
-      >
       <b-dropdown
         v-model="navigation"
         position="is-bottom-left"

@@ -2,11 +2,6 @@
   <div
     :class="['command box', { command__premium: value['brief'] === 'premium' }]"
   >
-    <div v-if="value['brief'] === 'premium'">
-      <span class="command__premium__icon icon">
-        <i class="fab fa-patreon"></i>
-      </span>
-    </div>
     <h1 class="command__title title is-5">
       {{ value['name'] }} {{ value['signature'] }}
     </h1>

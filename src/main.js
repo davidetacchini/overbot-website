@@ -30,7 +30,9 @@ Vue.use(Buefy);
 Vue.use(VueProgressBar, options);
 Vue.use(VueDragscroll);
 
-axios.defaults.baseURL = 'http://localhost:5000/api';
+axios.defaults.baseURL = process.env.VUE_APP_OVERBOT_API_URL;
+axios.defaults.headers.common['Authorization'] =
+  process.env.VUE_APP_SECRET_ACCESS_TOKEN;
 
 Vue.config.productionTip = false;
 
