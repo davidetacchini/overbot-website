@@ -84,14 +84,6 @@
             Support Server
           </a>
         </b-dropdown-item>
-
-        <b-dropdown-item custom class="menu-title"> More </b-dropdown-item>
-
-        <b-dropdown-item has-link aria-role="menuitem" class="menu-item">
-          <a href="https://overbot.statuspage.io/" target="_blank"
-            >System Status
-          </a>
-        </b-dropdown-item>
       </b-dropdown>
     </template>
   </b-navbar>
