@@ -28,6 +28,12 @@
         class="navbar-item"
         >Status</b-navbar-item
       >
+      <b-navbar-item
+        href="https://www.paypal.com/paypalme/DavideTacchini"
+        class="navbar-item"
+        target="_blank"
+        >Donate</b-navbar-item
+      >
       <b-dropdown
         v-model="navigation"
         position="is-bottom-left"
