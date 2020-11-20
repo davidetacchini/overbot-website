@@ -1,7 +1,5 @@
 <template>
-  <div
-    :class="['command box', { command__premium: value['brief'] === 'premium' }]"
-  >
+  <div class="command box">
     <h1 class="command__title title is-5">
       {{ value['name'] }} {{ value['signature'] }}
     </h1>
@@ -39,19 +37,6 @@ h2 {
 
   &__title {
     margin-bottom: 12px !important;
-  }
-
-  &__premium {
-    position: relative !important;
-    border: 1px solid #ffdd57 !important;
-
-    &__icon {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 1.3rem;
-      color: #ffdd57;
-    }
   }
 
   &__info {

@@ -1,4 +1,4 @@
-import axios from 'axios';
+import api from '../services/api';
 
 const state = {
   servers: Array,
@@ -11,17 +11,17 @@ const getters = {
 };
 
 const mutations = {
-  setServers: (state, payload) => {
+  SET_SERVERS: (state, payload) => {
     state.servers = payload;
   },
 };
 
 const actions = {
-  async getServers({ commit }) {
-    await axios
+  async GET_SERVERS({ commit }) {
+    await api
       .get('/servers')
       .then((res) => {
-        commit('setServers', res.data);
+        commit('SET_SERVERS', res.data);
       })
       .catch((err) => {
         console.log(err);

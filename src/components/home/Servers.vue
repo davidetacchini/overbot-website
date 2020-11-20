@@ -32,7 +32,7 @@ export default {
   },
 
   created() {
-    this.$store.dispatch('getServers');
+    this.$store.dispatch('GET_SERVERS');
   },
 };
 </script>

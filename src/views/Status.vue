@@ -45,7 +45,7 @@ export default {
     },
   },
   created() {
-    this.$store.dispatch('getStats');
+    this.$store.dispatch('GET_STATS');
   },
   watch: {
     countDown: {
@@ -55,7 +55,7 @@ export default {
             this.countDown--;
           }, 1000);
         } else {
-          this.$store.dispatch('getStats');
+          this.$store.dispatch('GET_STATS');
           this.countDown = 30;
         }
       },

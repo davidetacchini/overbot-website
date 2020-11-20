@@ -1,4 +1,4 @@
-import axios from 'axios';
+import api from '../services/api';
 
 const state = {
   bot: Array,
@@ -19,7 +19,7 @@ const getters = {
 };
 
 const mutations = {
-  setStats: (state, payload) => {
+  SET_STATS: (state, payload) => {
     state.bot = payload.bot;
     state.host = payload.host;
     state.shards = payload.shards;
@@ -27,11 +27,11 @@ const mutations = {
 };
 
 const actions = {
-  async getStats({ commit }) {
-    await axios
+  async GET_STATS({ commit }) {
+    await api
       .get('/statistics')
       .then((res) => {
-        commit('setStats', res.data);
+        commit('SET_STATS', res.data);
       })
       .catch((err) => {
         console.log(err);

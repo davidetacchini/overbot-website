@@ -8,9 +8,9 @@
           </div>
           <results />
           <div
-            class="column is-full"
-            v-for="(value, key) in filteredCommands"
+            v-for="(value, key) in filteredBySearch"
             :key="key"
+            class="column is-full"
           >
             <command :value="value" />
           </div>
@@ -23,31 +23,27 @@
 <script>
 import Command from '@/components/commands/Command';
 import Results from '@/components/commands/Results';
+
 export default {
   components: {
     Command,
     Results,
   },
   computed: {
-    filteredCommands() {
-      return this.$store.getters.filteredCommands;
+    filteredBySearch() {
+      return this.$store.getters.filteredBySearch;
     },
     search: {
       get() {
         return this.$store.getters.search;
       },
       set(value) {
-        this.$store.commit('setSearch', value);
-        if (!value) {
-          document.title = this.$route.meta.title;
-        } else {
-          document.title = `Command: ${value.toLowerCase()}`;
-        }
+        this.$store.commit('SET_SEARCH', value);
       },
     },
   },
   created() {
-    this.$store.dispatch('getCommands');
+    this.$store.dispatch('GET_COMMANDS');
   },
 };
 </script>

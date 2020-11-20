@@ -1,4 +1,5 @@
-import axios from 'axios';
+import api from '../services/api';
+import { getBySearch } from './helpers.js';
 
 const state = {
   commands: [],
@@ -6,15 +7,11 @@ const state = {
 };
 
 const getters = {
-  filteredCommands: (state) => {
-    return state.commands.filter((command) => {
-      return command.name
-        .toLowerCase()
-        .includes(state.search.toLowerCase().trim());
-    });
+  filteredBySearch: (state) => {
+    return getBySearch(state.commands, state.search);
   },
   totalFilteredCommands: (state, getters) => {
-    return getters.filteredCommands.length;
+    return getters.filteredBySearch.length;
   },
   totalCommands: (state) => {
     return state.commands.length;
@@ -25,20 +22,20 @@ const getters = {
 };
 
 const mutations = {
-  setCommands: (state, payload) => {
+  SET_COMMANDS: (state, payload) => {
     state.commands = payload;
   },
-  setSearch: (state, payload) => {
+  SET_SEARCH: (state, payload) => {
     state.search = payload;
   },
 };
 
 const actions = {
-  async getCommands({ commit }) {
-    await axios
+  async GET_COMMANDS({ commit }) {
+    await api
       .get('/commands')
       .then((res) => {
-        commit('setCommands', res.data);
+        commit('SET_COMMANDS', res.data);
       })
       .catch((err) => {
         console.log(err);
