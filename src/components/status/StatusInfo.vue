@@ -6,7 +6,7 @@
     <b-tooltip type="is-black" label="High ping (> 150ms)" :delay="50">
       <div class="circle has-background-warning"></div>
     </b-tooltip>
-    <b-tooltip type="is-black" label="Ping > 1000ms" :delay="50">
+    <b-tooltip type="is-black" label="Bad connection" :delay="50">
       <div class="circle has-background-danger"></div>
     </b-tooltip>
   </div>
