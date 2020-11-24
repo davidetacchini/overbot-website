@@ -6,6 +6,19 @@
     <div class="command__info box">
       <h2 class="command__info__description subtitle is-6">
         {{ value['description'].split('.')[0] + '.' }}
+        <a
+          @click.prevent="readMore = !readMore"
+          v-if="value['description'].split('.').length > 2"
+          class="command__info__description__read-more"
+          href="#"
+        >
+          <span v-if="!readMore">Read more</span>
+          <span v-else>Read less</span></a
+        >
+        <br />
+        <div v-if="readMore" class="command__info__description__more">
+          {{ formatLongDescription(value['description']) }}
+        </div>
       </h2>
       <div class="command__info__aliases" v-if="value['aliases']">
         <h2 class="subtitle is-6 opacity-75">
@@ -19,6 +32,24 @@
 <script>
 export default {
   name: 'command',
+
+  data: () => {
+    return {
+      readMore: false,
+    };
+  },
+
+  methods: {
+    formatLongDescription(value) {
+      return value
+        .split('.')
+        .slice(1)
+        .join('.')
+        .replace(/-/g, '•')
+        .replace(/`/g, '')
+        .replace('\n', '');
+    },
+  },
 
   props: {
     value: Object,
@@ -46,6 +77,17 @@ h2 {
 
     &__description {
       font-size: 1rem !important;
+
+      &__read-more {
+        font-size: 0.875rem !important;
+        color: $color-alpha !important;
+      }
+
+      &__more {
+        background-color: $color-bravo !important;
+        color: $white-opacity-full !important;
+        white-space: pre-line !important;
+      }
     }
 
     &__aliases {
