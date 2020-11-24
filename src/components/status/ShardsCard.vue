@@ -15,7 +15,7 @@
             :class="[
               'box shard has-text-dark has-background-success',
               { 'has-background-warning': value > 150 },
-              { 'has-background-red': value === null },
+              { 'has-background-red': value > 1000 },
             ]"
           >
             <p>
