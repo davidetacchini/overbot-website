@@ -12,7 +12,7 @@
             :key="key"
             class="column is-full"
           >
-            <command :value="value" />
+            <command v-if="!$store.getters.loading" :value="value" />
           </div>
         </div>
       </div>

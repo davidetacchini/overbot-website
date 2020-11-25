@@ -18,7 +18,7 @@
         </p>
         <h1 class="title is-4 margin-top">
           What personal information do we collect from the users that use
-          OverBot?
+          Overcord?
         </h1>
         <div class="content">
           <ul>
@@ -46,12 +46,12 @@
           </ul>
           <p>
             The above information is visible only to those who are part of the
-            OverBot staff.
+            Overcord staff.
           </p>
         </div>
         <h1 class="title is-4 margin-top">Agreement</h1>
         <p>
-          By using OverBot, you agree to the terms of this Privacy Policy. If
+          By using Overcord, you agree to the terms of this Privacy Policy. If
           you do not agree to these terms you must not use our service.
         </p>
       </div>

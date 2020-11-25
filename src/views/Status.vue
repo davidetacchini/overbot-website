@@ -1,28 +1,27 @@
 <template>
-  <div>
-    <section class="hero is-dark">
-      <div class="hero-body">
-        <div class="container">
-          <div class="box countdown has-text-white">
-            This page automatically refreshes every 30 seconds. Next update in:
-            {{ countDown }}
-          </div>
-          <div class="columns is-multiline is-mobile">
-            <status-card title="Bot Status" :data="bot" />
-            <status-card title="Host Status" :data="host" />
-          </div>
-          <div class="columns">
-            <shards-card title="Shards" :data="shards" />
-          </div>
+  <section class="hero is-dark">
+    <div class="hero-body">
+      <div class="container">
+        <div class="box countdown has-text-white">
+          This page automatically refreshes every 30 seconds. Next update in:
+          {{ countDown }}
+        </div>
+        <div class="columns is-multiline is-mobile">
+          <status title="Bot Status" :data="bot" />
+          <status title="Host Status" :data="host" />
+        </div>
+        <div class="columns">
+          <shards title="Shards" :data="shards" />
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
-import StatusCard from '@/components/status/StatusCard';
-import ShardsCard from '@/components/status/ShardsCard';
+import Status from '@/components/status/Status';
+import Shards from '@/components/status/Shards';
+
 export default {
   data: () => {
     return {
@@ -30,8 +29,8 @@ export default {
     };
   },
   components: {
-    StatusCard,
-    ShardsCard,
+    Status,
+    Shards,
   },
   computed: {
     bot() {

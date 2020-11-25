@@ -3,7 +3,7 @@
     <hero-section
       title="The best Overwatch bot for Discord"
       titleSize="2"
-      subtitle="OverBot has many features for Overwatch players that allow them to view their overall statistics very easily!"
+      subtitle="Overcord has many features for Overwatch players that allow them to view their overall statistics very easily!"
       :isSpaced="true"
     >
       <div class="columns is-mobile">
@@ -31,26 +31,26 @@
             :image="require('@/assets/home/rank.svg')"
             alt="Rank"
             title="Check your ranks"
-            content="OverBot allows you to check your ranks and more!"
+            content="Overcord allows you to check your ranks and more!"
           />
           <feature
             :image="require('@/assets/home/statistics.svg')"
             alt="Statistics"
             title="Statistics"
-            content="OverBot also allows you to check both your quick play and competitive statistics in a single embed, so you can easily compare them!"
+            content="Overcord also allows you to check both your quick play and competitive statistics in a single embed, so you can easily compare them!"
             :isReversed="true"
           />
           <feature
             :image="require('@/assets/home/link.svg')"
             alt="Link"
             title="Link your profile"
-            content="OverBot offers you an easy way to link your profile to your Discord ID and check your stats in a much easier and faster way!"
+            content="Overcord offers you an easy way to link your profile to your Discord ID and check your stats in a much easier and faster way!"
           />
           <feature
             :image="require('@/assets/home/news.svg')"
             alt="News"
             title="News and more"
-            content="When using OverBot, you can check the latest Overwatch news, patch notes and server status information!"
+            content="When using Overcord, you can check the latest Overwatch news, patch notes and server status information!"
             :isReversed="true"
           />
         </div>
@@ -73,7 +73,7 @@
       sectionSize="medium"
       title="Need Help?"
       titleSize="3"
-      subtitle="If you got any questions or issues with OverBot don't hesitate to join the official Discord server!"
+      subtitle="If you got any questions or issues with Overcord don't hesitate to join the official Discord server!"
       :isSpaced="true"
     >
       <div class="columns">
