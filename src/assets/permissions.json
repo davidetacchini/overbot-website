@@ -8,7 +8,7 @@
     {
         "name": "Manage Messages",
         "icon": "cog",
-        "desc": "Used to deleted and edit messages",
+        "desc": "Used to delete and edit messages",
         "required": true
     },
     {
