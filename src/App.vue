@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <navbar />
+    <error-message v-if="$store.getters.error" />
     <router-view />
     <custom-footer />
     <cookie-message />
@@ -12,6 +13,7 @@
 import Navbar from './components/partials/Navbar';
 import CustomFooter from './components/partials/CustomFooter';
 import CookieMessage from './components/CookieMessage';
+import ErrorMessage from './components/ErrorMessage';
 
 export default {
   name: 'app',
@@ -20,6 +22,7 @@ export default {
     Navbar,
     CustomFooter,
     CookieMessage,
+    ErrorMessage,
   },
 
   mounted() {
@@ -29,6 +32,8 @@ export default {
   created() {
     this.$Progress.start();
     this.$router.beforeEach((to, from, next) => {
+      // Reset the index.js state on every request
+      this.$store.dispatch('RESET_STATE');
       if (to.meta.progress !== undefined) {
         let meta = to.meta.progress;
         this.$Progress.parseMeta(meta);
