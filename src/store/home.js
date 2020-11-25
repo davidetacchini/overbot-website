@@ -25,6 +25,10 @@ const actions = {
       })
       .catch((err) => {
         console.log(err);
+        commit('SET_ERROR', true);
+      })
+      .finally(() => {
+        commit('SET_LOADING', false);
       });
   },
 };

@@ -24,3 +24,10 @@ const sortAlphabetically = (commands) => {
     return a.name.localeCompare(b.name);
   });
 };
+
+export const defaultState = () => {
+  return {
+    loading: true,
+    error: false,
+  };
+};

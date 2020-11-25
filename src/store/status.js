@@ -34,7 +34,11 @@ const actions = {
         commit('SET_STATS', res.data);
       })
       .catch((err) => {
-        console.log(err);
+        commit('SET_ERROR', true);
+        throw err;
+      })
+      .finally(() => {
+        commit('SET_LOADING', false);
       });
   },
 };
