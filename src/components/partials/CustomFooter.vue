@@ -13,7 +13,7 @@
             Overcord is not affiliated with Blizzard Entertainment.
           </p>
           <p class="has-text-grey">
-            Made with <span class="icon"><i class="fas fa-heart"></i></span> by
+            Made by
             <a
               href="https://github.com/davidetacchini"
               target="_blank"
