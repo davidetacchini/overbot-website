@@ -4,7 +4,7 @@
       <div class="hero-body">
         <div class="container has-text-centered">
           <div class="wrapper">
-            <img src="@/assets/not-found.svg" alt="Not Found Img" />
+            <img src="@/assets/images/not-found.svg" alt="Not Found Img" />
             <div class="back-home">
               <a href="/" class="title is-4 has-text-grey">Back to homepage</a>
             </div>

@@ -28,26 +28,26 @@
       <div class="hero-body">
         <div class="container">
           <feature
-            :image="require('@/assets/home/rank.svg')"
+            :image="require('@/assets/images/home/rank.svg')"
             alt="Rank"
             title="Check your ranks"
             content="Overcord allows you to check your ranks and more!"
           />
           <feature
-            :image="require('@/assets/home/statistics.svg')"
+            :image="require('@/assets/images/home/statistics.svg')"
             alt="Statistics"
             title="Statistics"
             content="Overcord also allows you to check both your quick play and competitive statistics in a single embed, so you can easily compare them!"
             :isReversed="true"
           />
           <feature
-            :image="require('@/assets/home/link.svg')"
+            :image="require('@/assets/images/home/link.svg')"
             alt="Link"
             title="Link your profile"
             content="Overcord offers you an easy way to link your profile to your Discord ID and check your stats in a much easier and faster way!"
           />
           <feature
-            :image="require('@/assets/home/news.svg')"
+            :image="require('@/assets/images/home/news.svg')"
             alt="News"
             title="News and more"
             content="When using Overcord, you can check the latest Overwatch news, patch notes and server status information!"
