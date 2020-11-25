@@ -1,12 +1,14 @@
 <template>
-  <div class="column is-full-mobile">
+  <div class="column">
     <div class="box shards has-text-white">
       <h1 class="title is-5">
         {{ title }}
       </h1>
       <status-info />
       <div class="columns is-multiline is-mobile">
+        <loader v-if="$store.getters.loading" />
         <div
+          v-else
           v-for="(value, key) in data"
           :key="key"
           class="column shard-column is-one-fifth-desktop is-one-third-tablet is-half-mobile"
@@ -32,12 +34,14 @@
 
 <script>
 import StatusInfo from '@/components/status/StatusInfo';
+import Loader from '../Loader';
 
 export default {
   name: 'shards-card',
 
   components: {
     StatusInfo,
+    Loader,
   },
 
   props: {

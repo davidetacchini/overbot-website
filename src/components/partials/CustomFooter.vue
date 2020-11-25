@@ -5,12 +5,21 @@
         <div
           class="column is-two-fifths-desktop is-two-fifths-tablet is-full-mobile"
         >
-          <h1 class="title is-3 has-text-white is-spaced">OverBot</h1>
+          <h1 class="title is-3 has-text-white is-spaced">Overcord</h1>
           <p class="has-text-grey">
-            Copyright &copy; {{ currentYear }} OverBot. All rights reserved.
+            Copyright &copy; {{ currentYear }} Overcord. All rights reserved.
           </p>
           <p class="has-text-grey">
-            OverBot is not affiliated with Blizzard Entertainment.
+            Overcord is not affiliated with Blizzard Entertainment.
+          </p>
+          <p class="has-text-grey">
+            Made with <span class="icon"><i class="fas fa-heart"></i></span> by
+            <a
+              href="https://github.com/davidetacchini"
+              target="_blank"
+              class="link has-text-primary"
+              >Davide</a
+            >
           </p>
         </div>
         <div class="column is-full-mobile">

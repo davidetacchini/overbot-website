@@ -5,20 +5,22 @@
     </h1>
     <div class="command__info box">
       <h2 class="command__info__description subtitle is-6">
-        {{ value['description'].split('.')[0] + '.' }}
+        {{ shortDescription(value['description']) }}
         <a
           @click.prevent="readMore = !readMore"
           v-if="value['description'].split('.').length > 2"
           class="command__info__description__read-more"
           href="#"
         >
-          <span v-if="!readMore">Read more</span>
-          <span v-else>Read less</span></a
+          <span v-if="!readMore">Show more</span>
+          <span v-else>Show less</span></a
         >
         <br />
-        <div v-if="readMore" class="command__info__description__more">
-          {{ formatLongDescription(value['description']) }}
-        </div>
+        <transition name="slide-fade">
+          <div v-if="readMore" class="command__info__description__more">
+            {{ fullDescription(value['description']) }}
+          </div>
+        </transition>
       </h2>
       <div class="command__info__aliases" v-if="value['aliases']">
         <h2 class="subtitle is-6 opacity-75">
@@ -40,7 +42,11 @@ export default {
   },
 
   methods: {
-    formatLongDescription(value) {
+    shortDescription(value) {
+      return value.split('.')[0] + '.';
+    },
+
+    fullDescription(value) {
       return value
         .split('.')
         .slice(1)
@@ -58,6 +64,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
 h2 {
   padding: 0 !important;
   margin: 0 !important;
