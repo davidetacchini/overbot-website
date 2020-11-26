@@ -60,11 +60,8 @@ export default {
   transition-delay: 0.05s;
   cursor: pointer;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-
-  &:hover {
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-    transform: translateY(-5px);
-  }
+  min-height: 320px;
+  user-select: none !important;
 
   &__title {
     padding: 12px 0;
@@ -76,7 +73,6 @@ export default {
   &__img {
     border-radius: 50%;
     pointer-events: none;
-    user-select: none;
   }
 
   &__icon {
@@ -88,6 +84,15 @@ export default {
 
   &__subtitle {
     line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .server {
+    &:hover {
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+      transform: translateY(-5px);
+    }
   }
 }
 </style>
