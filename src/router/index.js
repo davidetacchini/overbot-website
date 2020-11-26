@@ -11,7 +11,7 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: {
-      title: 'Overcord - The best Overwatch bot for Discord',
+      title: 'OverBot - The best Overwatch bot for Discord',
     },
   },
   {
@@ -20,7 +20,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "commands" */ '../views/Commands.vue'),
     meta: {
-      title: 'Commands - Overcord',
+      title: 'Commands - OverBot',
     },
   },
   {
@@ -29,7 +29,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "status" */ '../views/Status.vue'),
     meta: {
-      title: 'Status - Overcord',
+      title: 'Status - OverBot',
     },
   },
   {
@@ -38,7 +38,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "permissions" */ '../views/Permissions.vue'),
     meta: {
-      title: 'Permissions - Overcord',
+      title: 'Permissions - OverBot',
     },
   },
   {
@@ -47,7 +47,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "privacy" */ '../views/legal/Privacy.vue'),
     meta: {
-      title: 'Privacy Policy - Overcord',
+      title: 'Privacy Policy - OverBot',
     },
   },
   {
@@ -55,7 +55,7 @@ const routes = [
     name: 'Not Found',
     component: NotFound,
     meta: {
-      title: 'Page Not Found - Overcord',
+      title: 'Page Not Found - OverBot',
     },
   },
 ];

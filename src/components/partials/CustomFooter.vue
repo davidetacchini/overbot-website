@@ -5,12 +5,12 @@
         <div
           class="column is-two-fifths-desktop is-two-fifths-tablet is-full-mobile"
         >
-          <h1 class="title is-3 has-text-white is-spaced">Overcord</h1>
+          <h1 class="title is-3 has-text-white is-spaced">OverBot</h1>
           <p class="has-text-grey">
-            Copyright &copy; {{ currentYear }} Overcord. All rights reserved.
+            Copyright &copy; {{ currentYear }} OverBot. All rights reserved.
           </p>
           <p class="has-text-grey">
-            Overcord is not affiliated with Blizzard Entertainment.
+            OverBot is not affiliated with Blizzard Entertainment.
           </p>
           <p class="has-text-grey">
             Made by

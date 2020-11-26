@@ -5,7 +5,7 @@
         tag="router-link"
         :to="{ path: '/' }"
         class="is-size-4 has-text-weight-bold has-text-white"
-        >Overcord</b-navbar-item
+        >OverBot</b-navbar-item
       >
     </template>
 
@@ -75,7 +75,7 @@
         <b-dropdown-item custom class="menu-title"> Social </b-dropdown-item>
 
         <b-dropdown-item has-link aria-role="menuitem" class="menu-item">
-          <a href="https://github.com/davidetacchini/overcord" target="_blank">
+          <a href="https://github.com/davidetacchini/overbot" target="_blank">
             GitHub
           </a>
         </b-dropdown-item>

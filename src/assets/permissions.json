@@ -2,7 +2,7 @@
     {
         "name": "Send Messages",
         "icon": "comment",
-        "desc": "Allows Overcord to send messages to your Discord server",
+        "desc": "Allows OverBot to send messages to your Discord server",
         "required": true
     },
     {
@@ -14,7 +14,7 @@
     {
         "name": "Embed Links",
         "icon": "link",
-        "desc": "Allows Overcord to send a link and an embed version of it",
+        "desc": "Allows OverBot to send a link and an embed version of it",
         "required": false
     },
     {
