@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <navbar />
-    <error-message v-if="$store.getters.error" />
     <router-view />
     <custom-footer />
     <cookie-message />
@@ -13,7 +12,6 @@
 import Navbar from './components/partials/Navbar';
 import CustomFooter from './components/partials/CustomFooter';
 import CookieMessage from './components/CookieMessage';
-import ErrorMessage from './components/ErrorMessage';
 
 export default {
   name: 'app',
@@ -22,7 +20,6 @@ export default {
     Navbar,
     CustomFooter,
     CookieMessage,
-    ErrorMessage,
   },
 
   mounted() {

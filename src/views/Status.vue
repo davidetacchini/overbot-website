@@ -6,12 +6,16 @@
           This page automatically refreshes every 30 seconds. Next update in:
           {{ countDown }}
         </div>
-        <div class="columns is-multiline is-mobile">
-          <status title="Bot Status" :data="bot" />
-          <status title="Host Status" :data="host" />
-        </div>
-        <div class="columns">
-          <shards title="Shards" :data="shards" />
+        <loader v-if="$store.getters.loading" />
+        <error-message v-else-if="$store.getters.error" />
+        <div v-else>
+          <div class="columns is-multiline is-mobile">
+            <status title="Bot Status" :data="bot" />
+            <status title="Host Status" :data="host" />
+          </div>
+          <div class="columns">
+            <shards title="Shards" :data="shards" />
+          </div>
         </div>
       </div>
     </div>
@@ -19,6 +23,8 @@
 </template>
 
 <script>
+import Loader from '@/components/Loader';
+import ErrorMessage from '@/components/ErrorMessage';
 import Status from '@/components/status/Status';
 import Shards from '@/components/status/Shards';
 
@@ -28,7 +34,10 @@ export default {
       countDown: 30,
     };
   },
+
   components: {
+    Loader,
+    ErrorMessage,
     Status,
     Shards,
   },

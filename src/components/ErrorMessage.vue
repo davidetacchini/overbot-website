@@ -23,8 +23,8 @@ export default {
 
 <style scoped lang="scss">
 .message {
-  margin: 0 auto !important;
-  max-width: fit-content !important;
+  margin: 25px auto !important;
+  max-width: 100% !important;
 
   p {
     font-size: 0.875rem !important;

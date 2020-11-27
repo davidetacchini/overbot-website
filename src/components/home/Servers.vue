@@ -1,6 +1,9 @@
 <template>
   <div class="columns is-scrollable is-mobile" v-dragscroll.x>
+    <loader v-if="$store.getters.loading" />
+    <error-message v-else-if="$store.getters.error" />
     <div
+      v-else
       v-for="(value, key) in servers"
       :key="key"
       class="column is-two-fifths-desktop is-two-fifths-tablet is-full-mobile server-column"
@@ -22,8 +25,16 @@
 </template>
 
 <script>
+import Loader from '../Loader';
+import ErrorMessage from '../ErrorMessage';
+
 export default {
   name: 'servers',
+
+  components: {
+    Loader,
+    ErrorMessage,
+  },
 
   computed: {
     servers() {

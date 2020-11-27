@@ -6,9 +6,7 @@
       </h1>
       <status-info />
       <div class="columns is-multiline is-mobile">
-        <loader v-if="$store.getters.loading" />
         <div
-          v-else
           v-for="(value, key) in data"
           :key="key"
           class="column shard-column is-one-fifth-desktop is-one-third-tablet is-half-mobile"
@@ -16,7 +14,7 @@
           <div
             :class="[
               'box shard has-text-dark has-background-success',
-              { 'has-background-warning': value > 150 },
+              { 'has-background-warning': value > 150 && value < 1000 },
               { 'has-background-red': value > 1000 },
             ]"
           >
@@ -34,14 +32,12 @@
 
 <script>
 import StatusInfo from '@/components/status/StatusInfo';
-import Loader from '../Loader';
 
 export default {
   name: 'shards-card',
 
   components: {
     StatusInfo,
-    Loader,
   },
 
   props: {

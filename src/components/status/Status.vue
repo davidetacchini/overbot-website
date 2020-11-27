@@ -3,8 +3,7 @@
     <div class="box has-text-white">
       <h1 class="title is-5">{{ title }}</h1>
       <div class="columns is-multiline">
-        <loader v-if="$store.getters.loading" />
-        <div v-else v-for="(value, key) in data" :key="key" class="column is-6">
+        <div v-for="(value, key) in data" :key="key" class="column is-6">
           <div class="box data has-text-white">
             <p>
               <span class="has-text-grey">{{ key + ': ' }}</span>
@@ -20,14 +19,8 @@
 </template>
 
 <script>
-import Loader from '../Loader';
-
 export default {
   name: 'status-card',
-
-  components: {
-    Loader,
-  },
 
   props: {
     title: String,
