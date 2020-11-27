@@ -34,11 +34,13 @@ const actions = {
   async GET_COMMANDS({ commit }) {
     await api
       .get('/commands')
-      .then((res) => {
-        commit('SET_COMMANDS', res.data);
+      .then(({ data }) => {
+        if (!Array.isArray(data)) {
+          throw Error('Expected array of objects.');
+        } else commit('SET_COMMANDS', data);
       })
       .catch((err) => {
-        console.log(err);
+        console.error(err);
         commit('SET_ERROR', true);
       })
       .finally(() => {

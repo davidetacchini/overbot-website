@@ -20,11 +20,13 @@ const actions = {
   async GET_SERVERS({ commit }) {
     await api
       .get('/servers')
-      .then((res) => {
-        commit('SET_SERVERS', res.data);
+      .then(({ data }) => {
+        if (!Array.isArray(data)) {
+          throw Error('Expected array of objects.');
+        } else commit('SET_SERVERS', data);
       })
       .catch((err) => {
-        console.log(err);
+        console.error(err);
         commit('SET_ERROR', true);
       })
       .finally(() => {

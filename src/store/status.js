@@ -30,12 +30,12 @@ const actions = {
   async GET_STATS({ commit }) {
     await api
       .get('/statistics')
-      .then((res) => {
-        commit('SET_STATS', res.data);
+      .then(({ data }) => {
+        commit('SET_STATS', data);
       })
       .catch((err) => {
+        console.error(err);
         commit('SET_ERROR', true);
-        throw err;
       })
       .finally(() => {
         commit('SET_LOADING', false);
