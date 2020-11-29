@@ -15,7 +15,6 @@
           <span v-if="!readMore">Show more</span>
           <span v-else>Show less</span>
         </a>
-        <br />
         <transition name="slide-fade">
           <div v-if="readMore" class="command__info__description__more">
             {{ formatDescription(value['long_desc']) }}
