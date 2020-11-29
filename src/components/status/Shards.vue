@@ -19,9 +19,11 @@
             ]"
           >
             <p>
-              Shard: {{ key }}
+              Shard: {{ value['id'] }}
               <br />
-              Ping: {{ value }}ms
+              Latency: {{ value['latency'] }}ms
+              <br />
+              Server count: {{ value['guild_count'] }}
             </p>
           </div>
         </div>
