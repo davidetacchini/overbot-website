@@ -5,10 +5,10 @@
     </h1>
     <div class="command__info box">
       <h2 class="command__info__description subtitle is-6">
-        {{ shortDescription(value['description']) }}
+        {{ value['short_desc'] }}
         <a
           @click.prevent="readMore = !readMore"
-          v-if="value['description'].split('.').length > 2"
+          v-if="value['long_desc'].split('.').length > 2"
           class="command__info__description__read-more"
           href="#"
         >
@@ -18,7 +18,7 @@
         <br />
         <transition name="slide-fade">
           <div v-if="readMore" class="command__info__description__more">
-            {{ fullDescription(value['description']) }}
+            {{ formatDescription(value['long_desc']) }}
           </div>
         </transition>
       </h2>
@@ -42,17 +42,13 @@ export default {
   },
 
   methods: {
-    shortDescription(value) {
-      return value.split('.')[0] + '.';
-    },
-
-    fullDescription(value) {
+    formatDescription(value) {
       return value
         .split('.')
         .slice(1)
         .join('.')
-        .replace(/`/g, '')
-        .replace('\n', '');
+        .replace('\n', '')
+        .replace(/`/g, '');
     },
   },
 

@@ -7,7 +7,7 @@ export const getBySearch = (commands, keyword) => {
   }
   return commands.filter((command) => {
     let base =
-      command.description.toLowerCase().includes(search) ||
+      command.long_desc.toLowerCase().includes(search) ||
       command.name.toLowerCase().includes(search);
     if (command.aliases) {
       base = base + command.aliases.includes(search);
