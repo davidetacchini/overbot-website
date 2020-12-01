@@ -2,7 +2,7 @@
   <section :class="['hero is-dark', `is-${sectionSize}`]">
     <div class="hero-body">
       <div class="container">
-        <div class="wrapper">
+        <div :class="['wrapper', { 'full-width': isFullWidth }]">
           <h1
             :class="[
               'title has-text-gradient',
@@ -26,6 +26,7 @@ export default {
 
   props: {
     sectionSize: String,
+    isFullWidth: Boolean,
     title: String,
     titleSize: String,
     subtitle: String,
@@ -37,6 +38,10 @@ export default {
 <style scoped lang="scss">
 .wrapper__subtitle {
   margin-bottom: 3rem !important;
+}
+
+.full-width {
+  min-width: 100% !important;
 }
 
 .subtitle {

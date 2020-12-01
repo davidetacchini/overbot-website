@@ -1,5 +1,5 @@
 <template>
-  <div class="columns is-scrollable is-mobile" v-dragscroll.x>
+  <div id="servers" class="columns is-scrollable is-mobile" v-smooth-scroll>
     <loader v-if="$store.getters.loading" />
     <error-message v-else-if="$store.getters.error" />
     <div
@@ -14,10 +14,15 @@
             <i class="fas fa-medal"></i>
           </span>
         </div>
+        <span class="server__region">
+          {{ getRegionEmoji(value['region']) }}
+        </span>
         <img class="server__img" :src="value['icon']" :alt="value['name']" />
-        <h1 class="server__title title is-4">{{ value['name'] }}</h1>
-        <h2 class="server__subtitle subtitle is-6 has-text-grey runned">
-          Commands runned: {{ value['commands_runned'] }}
+        <h1 class="server__title title is-4">
+          {{ value['name'] }}
+        </h1>
+        <h2 class="server__subtitle subtitle is-6 has-text-grey">
+          Commands run: {{ value['commands_runned'] }}
         </h2>
       </div>
     </div>
@@ -25,6 +30,7 @@
 </template>
 
 <script>
+import regions from '@/assets/regions.json';
 import Loader from '../Loader';
 import ErrorMessage from '../ErrorMessage';
 
@@ -39,6 +45,16 @@ export default {
   computed: {
     servers() {
       return this.$store.getters.servers;
+    },
+  },
+
+  methods: {
+    get(object, key, default_value) {
+      var result = object[key];
+      return typeof result !== 'undefined' ? result : default_value;
+    },
+    getRegionEmoji(region) {
+      return this.get(regions, region, region);
     },
   },
 
@@ -69,10 +85,24 @@ export default {
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s linear;
   transition-delay: 0.05s;
-  cursor: pointer;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-  min-height: 320px;
+  min-height: 300px;
   user-select: none !important;
+  text-align: center;
+
+  transition: all 0.3s linear;
+
+  &:hover &__title {
+    white-space: normal;
+    overflow: auto;
+    text-overflow: initial;
+  }
+
+  &__img {
+    border-radius: 50%;
+    pointer-events: none;
+    max-width: 70%;
+  }
 
   &__title {
     padding: 12px 0;
@@ -81,15 +111,17 @@ export default {
     text-overflow: ellipsis;
   }
 
-  &__img {
-    border-radius: 50%;
-    pointer-events: none;
-  }
-
   &__icon {
     position: absolute;
     top: 10px;
     left: 10px;
+    font-size: 25px;
+  }
+
+  &__region {
+    position: absolute;
+    top: 0;
+    right: 10px;
     font-size: 25px;
   }
 

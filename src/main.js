@@ -8,7 +8,7 @@ import 'buefy/dist/buefy.css';
 import '@/assets/main.scss';
 // Third Parties
 import VueProgressBar from 'vue-progressbar';
-import VueDragscroll from 'vue-dragscroll';
+import VueSmoothScroll from 'vue2-smooth-scroll';
 
 const options = {
   color: 'rgb(0, 113, 227)',
@@ -18,7 +18,7 @@ const options = {
 
 Vue.use(Buefy);
 Vue.use(VueProgressBar, options);
-Vue.use(VueDragscroll);
+Vue.use(VueSmoothScroll);
 
 Vue.config.productionTip = false;
 

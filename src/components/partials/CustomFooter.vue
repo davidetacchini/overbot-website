@@ -34,8 +34,20 @@
             </div>
             <div class="column is-one-third-desktop is-full-mobile">
               <h1 class="title is-5 has-text-white">Resources</h1>
-              <a href="https://www.freepik.com" target="_blank" class="link"
+              <a
+                href="https://www.flaticon.com/authors/freepik"
+                title="Freepik"
+                target="_blank"
+                class="link"
                 >Freepik</a
+              >
+              <br />
+              <a
+                href="https://www.flaticon.com/"
+                title="Flaticon"
+                target="_blank"
+                class="link"
+                >Flaticon</a
               >
               <br />
               <a href="https://ow-api.com/" target="_blank" class="link"

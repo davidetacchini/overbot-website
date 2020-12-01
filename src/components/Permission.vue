@@ -8,11 +8,12 @@
         <span class="permission__title">
           {{ value['name'] }}
           <b-tooltip
-            type="is-black"
-            label="Required"
-            :delay="50"
-            class="permission__required"
             v-if="value['required']"
+            class="permission__required"
+            type="is-danger"
+            animated="true"
+            delay="50"
+            label="Required"
           >
             <span class="icon">
               <i class="fas fa-exclamation-circle"></i>

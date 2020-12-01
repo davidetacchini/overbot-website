@@ -47,11 +47,17 @@
             content="OverBot offers you an easy way to link your profile to your Discord ID and check your stats in a much easier and faster way!"
           />
           <feature
+            :image="require('@/assets/images/home/trivia.svg')"
+            alt="Trivia"
+            title="Overwatch trivia"
+            content="You can play Overwatch trivia with OverBot! It has few commands which makes it more immersive, such as statistics and best trivia players! You can also contribute and submit new questions to be added to the game!"
+            :isReversed="true"
+          />
+          <feature
             :image="require('@/assets/images/home/news.svg')"
             alt="News"
             title="News and more"
             content="When using OverBot, you can check the latest Overwatch news, patch notes and server status information!"
-            :isReversed="true"
           />
         </div>
       </div>
@@ -61,7 +67,8 @@
 
     <hero-section
       sectionSize="medium"
-      title="Five most active servers"
+      isFullWidth="true"
+      title="Most active servers"
       titleSize="3"
       :isSpaced="true"
       ><servers
