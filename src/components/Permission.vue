@@ -11,8 +11,8 @@
             v-if="value['required']"
             class="permission__required"
             type="is-danger"
-            animated="true"
-            delay="50"
+            :animated="true"
+            :delay="50"
             label="Required"
           >
             <span class="icon">

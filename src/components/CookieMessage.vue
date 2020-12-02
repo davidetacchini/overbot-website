@@ -4,7 +4,7 @@
       This website uses cookies for gathering and analyzing anonymous user
       statistics in order to improve the services.
     </p>
-    <button class="accept-button" @click="cookieConsent()">
+    <button class="button" @click="cookieConsent()">
       Accept and close
     </button>
   </div>
@@ -49,16 +49,10 @@ export default {
   z-index: 9999 !important;
 }
 
-.accept-button {
-  background-color: $color-alpha;
-  color: $color-bravo;
-  border: unset;
-  margin-top: 10px;
-  outline: none;
-  padding: 10px 12px;
-  border-radius: 2rem;
-  font-size: 14px;
-  cursor: pointer;
+.button {
+  margin-top: 10px !important;
+  padding: 10px 12px !important;
+  font-size: 0.875rem !important;
 }
 
 p {

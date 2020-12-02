@@ -4,19 +4,18 @@
       {{ value['name'] }} {{ value['signature'] }}
     </h1>
     <div class="command__info box">
-      <h2 class="command__info__description subtitle is-6">
+      <h2 class="command__info__description subtitle">
         {{ value['short_desc'] }}
         <a
-          @click.prevent="readMore = !readMore"
+          @click.prevent="showMore = !showMore"
           v-if="value['long_desc'].split('.').length > 2"
           class="command__info__description__read-more"
           href="#"
         >
-          <span v-if="!readMore">Show more</span>
-          <span v-else>Show less</span>
+          <span>{{ showMore ? 'Show less' : 'Show more' }}</span>
         </a>
         <transition name="slide-fade">
-          <div v-if="readMore" class="command__info__description__more">
+          <div v-if="showMore" class="command__info__description__more">
             {{ formatDescription(value['long_desc']) }}
           </div>
         </transition>
@@ -36,7 +35,7 @@ export default {
 
   data: () => {
     return {
-      readMore: false,
+      showMore: false,
     };
   },
 
@@ -71,6 +70,7 @@ export default {
   transform: translateX(10px);
   opacity: 0;
 }
+
 h2 {
   padding: 0 !important;
   margin: 0 !important;
@@ -98,7 +98,6 @@ h2 {
 
       &__more {
         background-color: $color-bravo !important;
-        color: $white-opacity-full !important;
         white-space: pre-line !important;
       }
     }

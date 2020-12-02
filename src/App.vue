@@ -68,10 +68,15 @@ hr {
 .button {
   background-color: $color-alpha !important;
   padding: 25px 10px !important;
-  border-radius: 3rem !important;
+  border-radius: 0.5rem !important;
   font-size: 1rem !important;
   border: unset !important;
   font-weight: bolder !important;
+  transition: background-color 0.2s ease-out !important;
+
+  &:hover {
+    background-color: rgb(50, 197, 242) !important;
+  }
 
   &__content {
     color: $color-bravo;
@@ -98,14 +103,14 @@ hr {
 }
 
 .menu-item > a {
-  transition: color 0.1s ease-in-out !important;
+  transition: color 175ms ease-out !important;
 }
 
 .router-link-active {
   color: $white-opacity-full !important;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .wrapper {
     text-align: center;
   }

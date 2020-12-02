@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-$family-primary: 'Poppins', sans-serif;
+$family-primary: 'Open Sans', sans-serif;
 
 // Custom colors
-$color-alpha: rgb(67, 163, 255);
-$color-alpha-opacity-lightner-2: rgba(67, 163, 255, 0.2);
-$color-bravo: #18191c;
-$color-charlie: #1e2023;
+$color-alpha: rgb(100, 204, 240);
+$color-bravo: rgb(36, 37, 42);
+$color-charlie: rgb(23, 24, 27);
 
 $white-opacity-full: rgb(255, 255, 255);
 $white-opacity-lightner-5: rgba(255, 255, 255, 0.5);
@@ -15,6 +14,7 @@ $hr-color: rgba(255, 255, 255, 0.1);
 // Bulma colors override
 $primary: $color-alpha;
 $dark: $color-bravo;
+$danger: rgb(255, 102, 102);
 
 // Footer
 $footer-background-color: $color-charlie;

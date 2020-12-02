@@ -2,10 +2,8 @@
   <footer class="footer">
     <div class="content">
       <div class="columns is-multiline is-mobile">
-        <div
-          class="column is-two-fifths-desktop is-two-fifths-tablet is-full-mobile"
-        >
-          <h1 class="title is-3 has-text-white is-spaced">OverBot</h1>
+        <div class="column">
+          <h1 class="title is-4 has-text-white">OverBot</h1>
           <p class="has-text-grey">
             Copyright &copy; {{ currentYear }} OverBot. All rights reserved.
           </p>
@@ -17,15 +15,21 @@
             <a
               href="https://github.com/davidetacchini"
               target="_blank"
-              class="link has-text-primary"
+              class="link link__primary-text"
               >Davide</a
             >
           </p>
+          <a href="https://github.com/davidetacchini/overbot" target="_blank">
+            <img
+              alt="GitHub Repo stars"
+              src="https://img.shields.io/github/stars/davidetacchini/overbot?style=social"
+            />
+          </a>
         </div>
         <div class="column is-full-mobile">
           <div class="columns is-multiline is-mobile is-full-tablet">
             <div class="column">
-              <h1 class="title is-5 has-text-white">Navigation</h1>
+              <h1 class="title is-6 has-text-white">Navigation</h1>
               <a href="/commands" class="link">Commands</a>
               <br />
               <a href="/permissions" class="link">Permissions</a>
@@ -33,20 +37,15 @@
               <a href="/status" class="link">Status</a>
             </div>
             <div class="column is-one-third-desktop is-full-mobile">
-              <h1 class="title is-5 has-text-white">Resources</h1>
+              <h1 class="title is-6 has-text-white">Resources</h1>
               <a
                 href="https://www.flaticon.com/authors/freepik"
-                title="Freepik"
                 target="_blank"
                 class="link"
                 >Freepik</a
               >
               <br />
-              <a
-                href="https://www.flaticon.com/"
-                title="Flaticon"
-                target="_blank"
-                class="link"
+              <a href="https://www.flaticon.com/" target="_blank" class="link"
                 >Flaticon</a
               >
               <br />
@@ -59,7 +58,7 @@
               >
             </div>
             <div class="column is-one-third-desktop is-full-mobile">
-              <h1 class="title is-5 has-text-white">Legal</h1>
+              <h1 class="title is-6 has-text-white">Legal</h1>
               <a href="/privacy" class="link">Privacy Policy</a>
             </div>
           </div>
@@ -88,23 +87,27 @@ p {
 }
 
 .content {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
 .link {
   color: $white-opacity-lightner-5;
   font-size: 14px;
-  transition: color 0.2s ease-in-out;
+  transition: color 175ms ease-out;
   display: inline-block;
+
+  &__primary-text {
+    color: $primary !important;
+  }
 }
 
 .link:not(:first-of-type) {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .link:hover {
-  color: $white-opacity-full;
+  color: $white-opacity-full !important;
 }
 
 .subtitle {

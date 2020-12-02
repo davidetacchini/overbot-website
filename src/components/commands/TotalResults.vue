@@ -4,8 +4,7 @@
       <div class="total-results">
         <h2 class="subtitle is-6">
           {{ totalFilteredCommands }}
-          <span v-if="totalFilteredCommands === 1"> result</span>
-          <span v-else>results</span>
+          <span>{{ totalFilteredCommands === 1 ? 'result' : 'results' }}</span>
         </h2>
       </div>
     </div>

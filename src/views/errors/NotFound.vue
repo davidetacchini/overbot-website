@@ -24,7 +24,7 @@ export default {};
   max-width: 550px;
 }
 
-@media only screen and (max-width: 560px) {
+@media screen and (max-width: 560px) {
   .wrapper > h1 {
     font-size: 1.5rem;
   }

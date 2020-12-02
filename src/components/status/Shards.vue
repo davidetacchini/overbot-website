@@ -14,16 +14,24 @@
           <div
             :class="[
               'box shard has-text-dark has-background-success',
-              { 'has-background-warning': value > 150 && value < 1000 },
-              { 'has-background-red': value > 1000 },
+              {
+                'has-background-warning':
+                  value['latency'] >= 150 && value['latency'] < 1000,
+              },
+              { 'has-background-danger': value['latency'] >= 1000 },
             ]"
           >
             <p>
-              Shard: {{ value['id'] }}
+              Shard:
+              <span class="has-text-weight-bold">{{ value['id'] }}</span>
               <br />
-              Latency: {{ value['latency'] }}ms
+              Latency:
+              <span class="has-text-weight-bold">{{ value['latency'] }}ms</span>
               <br />
-              Server count: {{ value['guild_count'] }}
+              Server count:
+              <span class="has-text-weight-bold">{{
+                value['guild_count']
+              }}</span>
             </p>
           </div>
         </div>
@@ -44,7 +52,7 @@ export default {
 
   props: {
     title: String,
-    data: [Object, Function],
+    data: Array,
   },
 };
 </script>
@@ -62,7 +70,7 @@ p {
   padding: 10px;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .shard-column {
     width: 100% !important;
   }

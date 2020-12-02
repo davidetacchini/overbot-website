@@ -1,5 +1,5 @@
 <template>
-  <div id="servers" class="columns is-scrollable is-mobile" v-smooth-scroll>
+  <div class="columns is-mobile is-scrollable" v-dragscroll.x="!touchDevice">
     <loader v-if="$store.getters.loading" />
     <error-message v-else-if="$store.getters.error" />
     <div
@@ -37,6 +37,13 @@ import ErrorMessage from '../ErrorMessage';
 export default {
   name: 'servers',
 
+  data: () => {
+    return {
+      touchDevice:
+        'ontouchstart' in window || navigator.msMaxTouchPoints || false,
+    };
+  },
+
   components: {
     Loader,
     ErrorMessage,
@@ -49,9 +56,9 @@ export default {
   },
 
   methods: {
-    get(object, key, default_value) {
+    get(object, key, defaultValue) {
       var result = object[key];
-      return typeof result !== 'undefined' ? result : default_value;
+      return typeof result !== 'undefined' ? result : defaultValue;
     },
     getRegionEmoji(region) {
       return this.get(regions, region, region);
@@ -66,15 +73,23 @@ export default {
 
 <style scoped lang="scss">
 .is-scrollable {
-  overflow-x: scroll !important;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: -o-grab;
+  cursor: grab;
+}
+
+.is-scrollable:active {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: -o-grabbing;
+  cursor: grabbing;
 }
 
 .is-scrollable::-webkit-scrollbar {
   display: none;
-}
-
-.servers-title-padding {
-  padding-bottom: 20px;
 }
 
 .server-column {
@@ -83,14 +98,11 @@ export default {
 
 .server {
   position: relative;
-  transition: transform 0.3s, box-shadow 0.3s linear;
-  transition-delay: 0.05s;
+  transition: transform 175ms ease-in-out, box-shadow 175ms ease-in-out;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
   min-height: 300px;
   user-select: none !important;
   text-align: center;
-
-  transition: all 0.3s linear;
 
   &:hover &__title {
     white-space: normal;
@@ -130,7 +142,7 @@ export default {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .server {
     &:hover {
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);

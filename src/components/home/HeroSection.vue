@@ -5,9 +5,10 @@
         <div :class="['wrapper', { 'full-width': isFullWidth }]">
           <h1
             :class="[
-              'title has-text-gradient',
+              'title has-text-white',
               `is-${titleSize}`,
               { 'is-spaced': isSpaced },
+              { 'is-desktop-centered': isDesktopCentered },
             ]"
           >
             {{ title }}
@@ -31,6 +32,7 @@ export default {
     titleSize: String,
     subtitle: String,
     isSpaced: Boolean,
+    isDesktopCentered: Boolean,
   },
 };
 </script>
@@ -41,10 +43,14 @@ export default {
 }
 
 .full-width {
-  min-width: 100% !important;
+  max-width: fit-content !important;
 }
 
 .subtitle {
   line-height: 1.5;
+}
+
+.is-desktop-centered {
+  text-align: center !important;
 }
 </style>

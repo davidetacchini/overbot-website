@@ -1,9 +1,12 @@
 <template>
   <div>
     <hero-section
+      sectionSize="medium"
       title="The best Overwatch bot for Discord"
       titleSize="2"
-      subtitle="OverBot has many features for Overwatch players that allow them to view their overall statistics very easily!"
+      subtitle="OverBot has many features for Overwatch players that allow 
+      them to view their overall statistics, stay up to date with the latest 
+      news, play Overwatch trivia and more!"
       :isSpaced="true"
     >
       <div class="columns is-mobile">
@@ -36,28 +39,33 @@
           <feature
             :image="require('@/assets/images/home/statistics.svg')"
             alt="Statistics"
-            title="Statistics"
-            content="OverBot also allows you to check both your quick play and competitive statistics in a single embed, so you can easily compare them!"
+            title="Check your statistics"
+            content="OverBot also allows you to check both your quick play
+            and competitive statistics in a single embed, so you can easily compare them!"
             :isReversed="true"
           />
           <feature
             :image="require('@/assets/images/home/link.svg')"
             alt="Link"
             title="Link your profile"
-            content="OverBot offers you an easy way to link your profile to your Discord ID and check your stats in a much easier and faster way!"
+            content="OverBot offers you an easy way to link your profile to
+            your Discord ID and check your stats in a much easier and faster way!"
           />
           <feature
             :image="require('@/assets/images/home/trivia.svg')"
             alt="Trivia"
-            title="Overwatch trivia"
-            content="You can play Overwatch trivia with OverBot! It has few commands which makes it more immersive, such as statistics and best trivia players! You can also contribute and submit new questions to be added to the game!"
+            title="Play Overwatch trivia"
+            content="You can play Overwatch trivia with OverBot! It has few commands 
+            which makes it more immersive, such as statistics and best trivia players! 
+            You can also contribute and submit new questions to be added to the game!"
             :isReversed="true"
           />
           <feature
             :image="require('@/assets/images/home/news.svg')"
             alt="News"
             title="News and more"
-            content="When using OverBot, you can check the latest Overwatch news, patch notes and server status information!"
+            content="When using OverBot, you can check the latest Overwatch news, 
+            patch notes and server status information!"
           />
         </div>
       </div>
@@ -67,10 +75,11 @@
 
     <hero-section
       sectionSize="medium"
-      isFullWidth="true"
+      :isFullWidth="true"
       title="Most active servers"
       titleSize="3"
       :isSpaced="true"
+      :isDesktopCentered="true"
       ><servers
     /></hero-section>
 
@@ -116,7 +125,7 @@ export default {
 hr {
   background-color: $hr-color !important;
   height: 2px !important;
-  width: 80% !important;
-  margin: 0 auto !important;
+  width: 20% !important;
+  margin: 50px auto !important;
 }
 </style>

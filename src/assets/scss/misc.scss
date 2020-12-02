@@ -2,10 +2,3 @@ body,
 html {
   background-color: $color-bravo !important;
 }
-
-.has-text-gradient {
-  background: -webkit-linear-gradient(#fff, $color-alpha-opacity-lightner-2);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}

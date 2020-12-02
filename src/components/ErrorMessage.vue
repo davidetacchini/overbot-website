@@ -31,7 +31,7 @@ export default {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .message {
     margin: 0 20px !important;
   }

@@ -48,7 +48,7 @@ img {
 
 .features .columns {
   align-items: center;
-  padding: 1rem 0;
+  padding: 3rem 0;
 }
 
 .features .columns:first-child {
@@ -59,15 +59,11 @@ img {
   padding-bottom: unset !important;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   img {
     width: 9rem;
     display: flex;
     margin: 0 auto;
-  }
-
-  .features .columns {
-    padding: 2rem 0;
   }
 }
 </style>

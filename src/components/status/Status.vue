@@ -6,10 +6,10 @@
         <div v-for="(value, key) in data" :key="key" class="column is-6">
           <div class="box data has-text-white">
             <p>
-              <span class="has-text-grey">{{ key + ': ' }}</span>
-              <span class="has-text-weight-bold has-text-white">{{
-                value
-              }}</span>
+              <span class="has-text-white opacity-75">{{ key + ': ' }}</span>
+              <span class="has-text-weight-bold has-text-white">
+                {{ formatNumber(value) }}
+              </span>
             </p>
           </div>
         </div>
@@ -24,7 +24,15 @@ export default {
 
   props: {
     title: String,
-    data: [Object, Function],
+    data: Object,
+  },
+
+  methods: {
+    formatNumber(value) {
+      if (Number.isInteger(value)) {
+        return value.toLocaleString();
+      } else return value;
+    },
   },
 };
 </script>
