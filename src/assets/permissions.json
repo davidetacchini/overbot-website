@@ -1,32 +1,38 @@
 [
-    {
-        "name": "Send Messages",
-        "icon": "comment",
-        "desc": "Allows OverBot to send messages to your Discord server",
-        "required": true
-    },
-    {
-        "name": "Manage Messages",
-        "icon": "cog",
-        "desc": "Used to delete and edit messages",
-        "required": true
-    },
-    {
-        "name": "Embed Links",
-        "icon": "link",
-        "desc": "Allows OverBot to send a link and an embed version of it",
-        "required": false
-    },
-    {
-        "name": "Add Reactions",
-        "icon": "plus",
-        "desc": "Enables the bot to add reactions when using paginate embeds",
-        "required": true
-    },
-    {
-        "name": "Use External Emojis",
-        "icon": "external-link-alt",
-        "desc": "Enables the bot to use external emojis",
-        "required": true
-    }
+  {
+    "name": "Send Messages",
+    "icon": "comment",
+    "desc": "Allows OverBot to send messages to your Discord server",
+    "required": true
+  },
+  {
+    "name": "Manage Messages",
+    "icon": "cog",
+    "desc": "Used to delete and edit messages",
+    "required": true
+  },
+  {
+    "name": "Manage Nicknames",
+    "icon": "user",
+    "desc": "Used to change member's nicknames",
+    "required": true
+  },
+  {
+    "name": "Embed Links",
+    "icon": "link",
+    "desc": "Allows OverBot to send a link and an embed version of it",
+    "required": false
+  },
+  {
+    "name": "Add Reactions",
+    "icon": "plus",
+    "desc": "Enables the bot to add reactions when using paginate embeds",
+    "required": true
+  },
+  {
+    "name": "Use External Emojis",
+    "icon": "external-link-alt",
+    "desc": "Enables the bot to use external emojis",
+    "required": true
+  }
 ]

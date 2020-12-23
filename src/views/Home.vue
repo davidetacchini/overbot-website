@@ -33,8 +33,8 @@
           <feature
             :image="require('@/assets/images/home/rank.svg')"
             alt="Rank"
-            title="Check your ranks"
-            content="OverBot allows you to check your ranks and more!"
+            title="Check your SR"
+            content="OverBot allows you to check your SR and more!"
           />
           <feature
             :image="require('@/assets/images/home/statistics.svg')"
@@ -47,9 +47,10 @@
           <feature
             :image="require('@/assets/images/home/link.svg')"
             alt="Link"
-            title="Link your profile"
-            content="OverBot offers you an easy way to link your profile to
-            your Discord ID and check your stats in a much easier and faster way!"
+            title="Link your profiles"
+            content="OverBot offers you an easy way to link up to 5 profiles to
+            your Discord ID and check your stats in a much easier and faster way 
+            without using any external links!"
           />
           <feature
             :image="require('@/assets/images/home/trivia.svg')"

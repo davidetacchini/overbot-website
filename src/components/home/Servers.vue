@@ -22,7 +22,7 @@
           {{ value['name'] }}
         </h1>
         <h2 class="server__subtitle subtitle is-6 has-text-grey">
-          Commands run: {{ value['commands_runned'] }}
+          Commands run: {{ value['commands_run'] }}
         </h2>
       </div>
     </div>
