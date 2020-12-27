@@ -14,7 +14,7 @@
   {
     "name": "Manage Nicknames",
     "icon": "user",
-    "desc": "Used to change member's nicknames",
+    "desc": "Used to change member nicknames",
     "required": true
   },
   {
