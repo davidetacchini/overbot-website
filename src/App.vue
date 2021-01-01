@@ -29,7 +29,7 @@ export default {
   created() {
     this.$Progress.start();
     this.$router.beforeEach((to, from, next) => {
-      // Reset the store/index.js state on every request
+      // Reset the store/index.js state every request
       this.$store.dispatch('RESET_STATE');
       if (to.meta.progress !== undefined) {
         let meta = to.meta.progress;

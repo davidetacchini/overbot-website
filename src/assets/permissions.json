@@ -20,8 +20,8 @@
   {
     "name": "Embed Links",
     "icon": "link",
-    "desc": "Allows OverBot to send a link and an embed version of it",
-    "required": false
+    "desc": "Allows OverBot to add links in embeds",
+    "required": true
   },
   {
     "name": "Add Reactions",
