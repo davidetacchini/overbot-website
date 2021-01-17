@@ -11,13 +11,22 @@
     <div class="column is-two-fifths-desktop is-full-mobile">
       <h1 class="title is-3">{{ title }}</h1>
       <h2 class="subtitle is-5">{{ content }}</h2>
+      <div v-if="hasButton" class="button">
+        <custom-button :link="buttonLink" :action="buttonAction" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import CustomButton from '@/components/CustomButton';
+
 export default {
   name: 'feature',
+
+  components: {
+    CustomButton,
+  },
 
   props: {
     image: String,
@@ -25,6 +34,9 @@ export default {
     content: String,
     imageAlt: String,
     isReversed: Boolean,
+    hasButton: Boolean,
+    buttonLink: String,
+    buttonAction: String,
   },
 };
 </script>
@@ -57,6 +69,10 @@ img {
 
 .features .columns:last-child {
   padding-bottom: unset !important;
+}
+
+.features .button {
+  max-width: fit-content !important;
 }
 
 @media screen and (max-width: 768px) {

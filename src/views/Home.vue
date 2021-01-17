@@ -31,6 +31,19 @@
       <div class="hero-body">
         <div class="container">
           <feature
+            :image="require('@/assets/images/home/multilingual.svg')"
+            alt="Multilingual"
+            title="Multilingual"
+            content="OverBot supports up
+            to 7 languages: English, Italian, German, Russian, French, South
+            Korean and Japanese! You can help translating if your language is not
+            available yet!"
+            :isReversed="true"
+            :hasButton="true"
+            buttonLink="https://github.com/davidetacchini/overbot"
+            buttonAction="Help translating"
+          />
+          <feature
             :image="require('@/assets/images/home/rank.svg')"
             alt="Rank"
             title="Check your SR"
