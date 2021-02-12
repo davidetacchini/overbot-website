@@ -35,6 +35,8 @@
               <a href="/permissions" class="link">Permissions</a>
               <br />
               <a href="/status" class="link">Status</a>
+              <br />
+              <a href="https://ko-fi.com/overbot" class="link">Support</a>
             </div>
             <div class="column is-one-third-desktop is-full-mobile">
               <h1 class="title is-6 has-text-white">Resources</h1>

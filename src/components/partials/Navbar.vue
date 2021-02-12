@@ -29,10 +29,10 @@
         >Status</b-navbar-item
       >
       <b-navbar-item
-        href="https://www.paypal.com/paypalme/DavideTacchini"
+        href="https://ko-fi.com/overbot"
         class="navbar-item"
         target="_blank"
-        >Donate</b-navbar-item
+        >Support</b-navbar-item
       >
       <b-dropdown
         v-model="navigation"

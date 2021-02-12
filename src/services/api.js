@@ -1,10 +1,9 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.VUE_APP_OVERBOT_API_URL,
+  baseURL: 'https://overbot-api.herokuapp.com/api',
   headers: {
     'Content-Type': 'application/json',
-    Authorization: process.env.VUE_APP_SECRET_ACCESS_TOKEN,
   },
 });
 
