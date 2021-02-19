@@ -14,7 +14,23 @@
             <status title="Host Status" :data="host" />
           </div>
           <div class="columns">
-            <shards title="Shards" :data="shards" />
+            <div class="column">
+              <div class="box shards has-text-white">
+                <h1 class="title is-5">
+                  Shards
+                </h1>
+                <status-info />
+                <div class="columns is-multiline is-mobile">
+                  <div
+                    v-for="(value, key) in shards"
+                    :key="key"
+                    class="column shard-column is-one-fifth-desktop is-one-third-tablet is-half-mobile"
+                  >
+                    <shard :value="value" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -26,7 +42,8 @@
 import Loader from '@/components/Loader';
 import ErrorMessage from '@/components/ErrorMessage';
 import Status from '@/components/status/Status';
-import Shards from '@/components/status/Shards';
+import StatusInfo from '@/components/status/StatusInfo';
+import Shard from '@/components/status/Shard';
 
 export default {
   data: () => {
@@ -34,12 +51,12 @@ export default {
       countDown: 30,
     };
   },
-
   components: {
     Loader,
     ErrorMessage,
     Status,
-    Shards,
+    StatusInfo,
+    Shard,
   },
   computed: {
     bot() {
@@ -76,5 +93,15 @@ export default {
 <style scoped lang="scss">
 .countdown {
   font-size: 0.875rem !important;
+}
+
+.shards {
+  position: relative;
+}
+
+@media screen and (max-width: 400px) {
+  .shard-column {
+    width: 100% !important;
+  }
 }
 </style>

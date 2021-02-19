@@ -6,7 +6,12 @@
           <div class="column is-full-desktop is-full-tablet is-full-mobile">
             <input placeholder="Search..." type="search" v-model="search" />
           </div>
-          <results />
+          <loader v-if="$store.getters.loading" />
+          <error-message v-else-if="$store.getters.error" />
+          <not-found
+            v-else-if="$store.getters.search && totalFilteredCommands === 0"
+          />
+          <total-results v-else />
           <div
             v-for="(value, key) in filteredBySearch"
             :key="key"
@@ -22,16 +27,28 @@
 
 <script>
 import Command from '@/components/commands/Command';
-import Results from '@/components/commands/Results';
+import Loader from '@/components/Loader';
+import ErrorMessage from '@/components/ErrorMessage';
+import NotFound from '@/components/commands/NotFound';
+import TotalResults from '@/components/commands/TotalResults';
 
 export default {
   components: {
     Command,
-    Results,
+    Loader,
+    ErrorMessage,
+    NotFound,
+    TotalResults,
   },
   computed: {
     filteredBySearch() {
       return this.$store.getters.filteredBySearch;
+    },
+    totalFilteredCommands() {
+      return this.$store.getters.totalFilteredCommands;
+    },
+    totalCommands() {
+      return this.$store.getters.totalCommands;
     },
     search: {
       get() {
@@ -60,18 +77,22 @@ input {
   color: rgba(255, 255, 255, 0.7);
   transition: padding-left 0.2s linear;
 }
+
 input[type='search']::-webkit-search-decoration,
 input[type='search']::-webkit-search-cancel-button,
 input[type='search']::-webkit-search-results-button,
 input[type='search']::-webkit-search-results-decoration {
   -webkit-appearance: none !important;
 }
+
 input::placeholder {
   transition: transform 0.2s linear, opacity 0.2s ease-in-out;
 }
+
 input:focus {
   padding-left: 25px;
 }
+
 input:focus::placeholder {
   transform: translateX(5px);
   opacity: 0;

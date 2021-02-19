@@ -12,13 +12,16 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-
 export default {
   name: 'total-results',
 
   computed: {
-    ...mapGetters(['totalFilteredCommands', 'totalCommands']),
+    totalFilteredCommands() {
+      return this.$store.getters.totalFilteredCommands;
+    },
+    totalCommands() {
+      return this.$store.getters.totalCommands;
+    },
   },
 };
 </script>
