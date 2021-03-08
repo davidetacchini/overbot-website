@@ -26,7 +26,7 @@
   {
     "name": "Add Reactions",
     "icon": "plus",
-    "desc": "Enables the bot to add reactions when using paginate embeds",
+    "desc": "Enables the bot to add reactions to messages",
     "required": true
   },
   {

@@ -1,7 +1,7 @@
 <template>
   <div class="box permission">
-    <div class="columns">
-      <div class="column">
+    <div class="columns is-multiline">
+      <div class="column is-full">
         <span class="icon permission__icon">
           <i :class="['fas', `fa-${value['icon']}`]"></i>
         </span>
@@ -21,7 +21,7 @@
           </b-tooltip>
         </span>
       </div>
-      <div class="column is-two-thirds">
+      <div class="column">
         <span class="permission__subtitle opacity-75">{{ value['desc'] }}</span>
       </div>
     </div>

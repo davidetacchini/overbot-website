@@ -2,28 +2,26 @@
   <section class="hero is-dark">
     <div class="hero-body">
       <div class="container">
-        <div class="wrapper__permissions">
-          <h1 class="title is-spaced">
-            Bot Permissions
-            <span class="tag is-danger">
-              <span class="icon">
-                <i class="fas fa-exclamation-circle"></i>
-              </span>
-              Required
+        <h1 class="title is-spaced">
+          Bot Permissions
+          <span class="tag is-danger">
+            <span class="icon">
+              <i class="fas fa-exclamation-circle"></i>
             </span>
-          </h1>
-          <h2 class="subtitle is-6 has-text-white opacity-75">
-            The following list details what permissions OverBot requires to
-            ensure proper operation.
-          </h2>
-          <div class="columns is-multiline is-mobile">
-            <div
-              class="column is-full"
-              v-for="(value, key) in permissions"
-              :key="key"
-            >
-              <permission :value="value" />
-            </div>
+            Required
+          </span>
+        </h1>
+        <h2 class="subtitle is-6 has-text-white opacity-75">
+          The following list details what permissions OverBot requires to ensure
+          proper operation.
+        </h2>
+        <div class="columns is-multiline is-mobile">
+          <div
+            class="column is-half-desktop is-half-tablet is-full-mobile"
+            v-for="(value, key) in permissions"
+            :key="key"
+          >
+            <permission :value="value" />
           </div>
         </div>
       </div>
@@ -49,8 +47,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.wrapper__permissions {
-  max-width: 800px;
+.container {
+  max-width: 1000px;
   margin: 0 auto;
 }
 </style>
