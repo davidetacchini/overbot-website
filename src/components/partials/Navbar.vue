@@ -24,15 +24,15 @@
       >
       <b-navbar-item
         tag="router-link"
+        :to="{ path: '/support' }"
+        class="navbar-item"
+        >Support</b-navbar-item
+      >
+      <b-navbar-item
+        tag="router-link"
         :to="{ path: '/status' }"
         class="navbar-item"
         >Status</b-navbar-item
-      >
-      <b-navbar-item
-        href="https://ko-fi.com/overbot"
-        class="navbar-item"
-        target="_blank"
-        >Support</b-navbar-item
       >
       <b-dropdown
         v-model="navigation"
