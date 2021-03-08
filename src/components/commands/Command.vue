@@ -4,23 +4,23 @@
       {{ value['name'] }} {{ value['signature'] }}
     </h1>
     <div class="command__info box">
-      <h2 class="command__info__description subtitle">
+      <h2 class="command__description subtitle">
         {{ value['short_desc'] }}
         <a
           @click.prevent="showMore = !showMore"
           v-if="value['long_desc'].split('.').length > 2"
-          class="command__info__description__read-more"
+          class="command__description--read-more"
           href="#"
         >
           <span>{{ showMore ? 'Show less' : 'Show more' }}</span>
         </a>
         <transition name="slide-fade">
-          <div v-if="showMore" class="command__info__description__more">
+          <div v-if="showMore" class="command__description--more">
             {{ formatDescription(value['long_desc']) }}
           </div>
         </transition>
       </h2>
-      <div class="command__info__aliases" v-if="value['aliases']">
+      <div class="command__aliases" v-if="value['aliases']">
         <h2 class="subtitle is-6 opacity-75">
           Aliases: {{ value['aliases'].join(', ') }}
         </h2>
@@ -87,24 +87,24 @@ h2 {
     border: unset !important;
     background-color: $color-bravo !important;
     padding: 12px !important;
+  }
 
-    &__description {
-      font-size: 1rem !important;
+  &__description {
+    font-size: 1rem !important;
 
-      &__read-more {
-        font-size: 0.875rem !important;
-        color: $color-alpha !important;
-      }
-
-      &__more {
-        background-color: $color-bravo !important;
-        white-space: pre-line !important;
-      }
+    &--read-more {
+      font-size: 0.875rem !important;
+      color: $color-alpha !important;
     }
 
-    &__aliases {
-      padding-top: 10px !important;
+    &--more {
+      background-color: $color-bravo !important;
+      white-space: pre-line !important;
     }
+  }
+
+  &__aliases {
+    padding-top: 10px !important;
   }
 }
 </style>
