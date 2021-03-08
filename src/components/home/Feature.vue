@@ -12,20 +12,20 @@
       <h1 class="title is-3">{{ title }}</h1>
       <h2 class="subtitle is-5">{{ content }}</h2>
       <div v-if="hasButton" class="button">
-        <custom-button :link="buttonLink" :action="buttonAction" />
+        <base-button :link="buttonLink" :action="buttonAction" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import CustomButton from '@/components/CustomButton';
+import BaseButton from '@/components/BaseButton';
 
 export default {
   name: 'feature',
 
   components: {
-    CustomButton,
+    BaseButton,
   },
 
   props: {

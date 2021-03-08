@@ -2,7 +2,7 @@
   <div id="app">
     <navbar />
     <router-view />
-    <custom-footer />
+    <base-footer />
     <cookie-message />
     <vue-progress-bar />
   </div>
@@ -10,7 +10,7 @@
 
 <script>
 import Navbar from './components/partials/Navbar';
-import CustomFooter from './components/partials/CustomFooter';
+import BaseFooter from './components/partials/BaseFooter';
 import CookieMessage from './components/CookieMessage';
 
 export default {
@@ -18,7 +18,7 @@ export default {
 
   components: {
     Navbar,
-    CustomFooter,
+    BaseFooter,
     CookieMessage,
   },
 

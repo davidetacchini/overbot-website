@@ -11,14 +11,14 @@
     >
       <div class="columns is-mobile">
         <div class="column is-one-quarter-tablet is-half-mobile">
-          <custom-button
+          <base-button
             link="https://discord.com/api/oauth2/authorize?client_id=547546531666984961&permissions=288832&scope=bot"
             action="Invite"
             :isStretched="true"
           />
         </div>
         <div class="column is-one-quarter-tablet is-half-mobile">
-          <custom-button
+          <base-button
             link="https://top.gg/bot/547546531666984961/vote"
             action="Upvote"
             :isStretched="true"
@@ -69,7 +69,7 @@
     >
       <div class="columns">
         <div class="column is-3">
-          <custom-button
+          <base-button
             link="https://discord.gg/8g3jnxv"
             color="is-primary"
             action="Join here"
@@ -84,7 +84,7 @@
 <script>
 import Feature from '@/components/home/Feature';
 import HeroSection from '@/components/home/HeroSection';
-import CustomButton from '@/components/CustomButton';
+import BaseButton from '@/components/BaseButton';
 import features from '@/assets/features.json';
 
 export default {
@@ -98,7 +98,7 @@ export default {
     Servers: () => import('@/components/home/Servers'),
     Feature,
     HeroSection,
-    CustomButton,
+    BaseButton,
   },
 };
 </script>
