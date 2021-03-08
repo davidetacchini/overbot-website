@@ -31,53 +31,16 @@
       <div class="hero-body">
         <div class="container">
           <feature
-            :image="require('@/assets/images/home/multilingual.svg')"
-            alt="Multilingual"
-            title="Multilingual"
-            content="OverBot supports up to 7 languages by far!
-            You can help translating if your language is not available yet!"
-            :isReversed="true"
-            :hasButton="true"
-            buttonLink="https://github.com/davidetacchini/overbot"
-            buttonAction="Help translating"
-          />
-          <feature
-            :image="require('@/assets/images/home/rank.svg')"
-            alt="Rank"
-            title="Check your SR"
-            content="OverBot allows you to check your SR and more!"
-          />
-          <feature
-            :image="require('@/assets/images/home/statistics.svg')"
-            alt="Statistics"
-            title="Check your statistics"
-            content="OverBot also allows you to check both your quick play
-            and competitive statistics in a single embed, so you can easily compare them!"
-            :isReversed="true"
-          />
-          <feature
-            :image="require('@/assets/images/home/link.svg')"
-            alt="Link"
-            title="Link your profiles"
-            content="OverBot offers you an easy way to link up to 5 profiles to
-            your Discord ID and check your stats in a much easier and faster way 
-            without using any external links!"
-          />
-          <feature
-            :image="require('@/assets/images/home/trivia.svg')"
-            alt="Trivia"
-            title="Play Overwatch trivia"
-            content="You can play Overwatch trivia with OverBot! It has few commands 
-            which makes it more immersive, such as statistics and best trivia players! 
-            You can also contribute and submit new questions to be added to the game!"
-            :isReversed="true"
-          />
-          <feature
-            :image="require('@/assets/images/home/news.svg')"
-            alt="News"
-            title="News and more"
-            content="When using OverBot, you can check the latest Overwatch news, 
-            patch notes and server status information!"
+            v-for="(value, key) in features"
+            :key="key"
+            :image="require(`@/assets/images/home/${value['image']}`)"
+            :alt="value['image']"
+            :title="value['title']"
+            :content="value['content']"
+            :isReversed="value['reversed']"
+            :hasButton="value['button']"
+            :buttonLink="value['button-link']"
+            :buttonAction="value['button-action']"
           />
         </div>
       </div>
@@ -122,8 +85,15 @@
 import Feature from '@/components/home/Feature';
 import HeroSection from '@/components/home/HeroSection';
 import CustomButton from '@/components/CustomButton';
+import features from '@/assets/features.json';
 
 export default {
+  data: () => {
+    return {
+      features,
+    };
+  },
+
   components: {
     Servers: () => import('@/components/home/Servers'),
     Feature,
