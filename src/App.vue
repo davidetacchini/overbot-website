@@ -68,7 +68,7 @@ hr {
 .button {
   background-color: $color-alpha !important;
   padding: 25px 10px !important;
-  border-radius: 0.5rem !important;
+  border-radius: 5px !important;
   font-size: 1rem !important;
   border: unset !important;
   font-weight: bolder !important;
