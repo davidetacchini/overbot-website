@@ -72,7 +72,7 @@
 
 <script>
 export default {
-  name: 'custom-footer',
+  name: 'base-footer',
 
   computed: {
     currentYear: () => {
