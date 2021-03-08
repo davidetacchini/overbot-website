@@ -1,0 +1,59 @@
+[
+  {
+    "level": "Bronze",
+    "image": "bronze.svg",
+    "rewards": ["Link up to 8 profiles to your Discord ID"],
+    "price": "$1 - $2,99",
+    "special": false
+  },
+  {
+    "level": "Silver",
+    "image": "silver.svg",
+    "rewards": ["Link up to 10 profiles to your Discord ID"],
+    "price": "$3 - $4.99",
+    "special": false
+  },
+  {
+    "level": "Gold",
+    "image": "gold.svg",
+    "rewards": [
+      "Link up to 15 profiles to your Discord ID",
+      "Reduce commands cooldown by 25%"
+    ],
+    "price": "$5 - $9.99",
+    "special": false
+  },
+  {
+    "level": "Platinum",
+    "image": "platinum.svg",
+    "rewards": [
+      "Link up to 20 profiles to your Discord ID",
+      "Reduce commands cooldown by 50%",
+      "Unlock 'profile graph' command"
+    ],
+    "price": "$10 - $14.99",
+    "special": false
+  },
+  {
+    "level": "Diamond",
+    "image": "diamond.svg",
+    "rewards": [
+      "Link up to 30 profiles to your Discord ID",
+      "Reduce commands cooldown by 75%",
+      "Unlock 'profile graph' command"
+    ],
+    "price": "$15 - $19.99",
+    "special": false
+  },
+  {
+    "level": "Dark Matter",
+    "image": "dark-matter.svg",
+    "rewards": [
+      "Link up to 50 profiles to your Discord ID",
+      "1 second cooldown on every command",
+      "Unlock 'profile graph' command"
+    ],
+    "price": "$20+",
+    "special": true
+  }
+]
