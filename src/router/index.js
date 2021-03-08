@@ -42,6 +42,15 @@ const routes = [
     },
   },
   {
+    path: '/support',
+    name: 'Support',
+    component: () =>
+      import(/* webpackChunkName: "support" */ '../views/Support.vue'),
+    meta: {
+      title: 'Become a Supporter - OverBot',
+    },
+  },
+  {
     path: '/privacy',
     name: 'Privacy',
     component: () =>
