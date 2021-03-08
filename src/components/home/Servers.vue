@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import regions from '@/assets/regions.json';
+import regions from '@/assets/json/regions.json';
 import Loader from '../Loader';
 import ErrorMessage from '../ErrorMessage';
 

@@ -85,7 +85,7 @@
 import Feature from '@/components/home/Feature';
 import HeroSection from '@/components/home/HeroSection';
 import BaseButton from '@/components/BaseButton';
-import features from '@/assets/features.json';
+import features from '@/assets/json/features.json';
 
 export default {
   data: () => {

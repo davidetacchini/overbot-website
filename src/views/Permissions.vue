@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import permissions from '@/assets/permissions.json';
+import permissions from '@/assets/json/permissions.json';
 import Permission from '@/components/Permission';
 
 export default {
