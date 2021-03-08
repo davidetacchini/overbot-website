@@ -5,7 +5,7 @@
     <div
       v-else
       v-for="(value, key) in servers"
-      :key="key"
+      :key="value.id"
       class="column is-two-fifths-desktop is-two-fifths-tablet is-full-mobile server-column"
     >
       <div class="server box">
