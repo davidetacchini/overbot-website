@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 $family-primary: 'Open Sans', sans-serif;
@@ -10,6 +12,7 @@ $color-charlie: rgb(23, 24, 27);
 $white-opacity-full: rgb(255, 255, 255);
 $white-opacity-lightner-5: rgba(255, 255, 255, 0.5);
 $hr-color: rgba(255, 255, 255, 0.1);
+$border-radius: 0.5rem;
 
 // Bulma colors override
 $primary: $color-alpha;
@@ -21,9 +24,7 @@ $footer-background-color: $color-charlie;
 
 @import './scss/misc.scss';
 @import './scss/navbar.scss';
-@import './scss/animations.scss';
 @import './scss/loader.scss';
 
-@import '~bulma/sass/utilities/_all';
 @import '~bulma';
 @import '~buefy/src/scss/buefy';
