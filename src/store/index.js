@@ -4,7 +4,7 @@ import Vuex from 'vuex';
 import home from './home';
 import status from './status';
 import commands from './commands';
-import { defaultState } from './helpers.js';
+import { defaultState } from '../common/helpers.js';
 
 Vue.use(Vuex);
 
