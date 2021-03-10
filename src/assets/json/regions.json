@@ -1,15 +1,15 @@
 {
-  "brazil": "🇧🇷",
-  "europe": "🇪🇺",
-  "hong-kong": "🇭🇰",
-  "india": "🇮🇳",
-  "japan": "🇯🇵",
-  "russia": "🇷🇺",
-  "singapore": "🇸🇬",
-  "south-africa": "🇿🇦",
-  "sydney": "🇦🇺",
-  "us-central": "🇺🇸",
-  "us-east": "🇺🇸",
-  "us-south": "🇺🇸",
-  "us-west": "🇺🇸"
+  "brazil": "brazil.svg",
+  "europe": "europe.svg",
+  "hong-kong": "hong-kong.svg",
+  "india": "india.svg",
+  "japan": "japan.svg",
+  "russia": "russia.svg",
+  "singapore": "singapore.svg",
+  "south-africa": "south-africa.svg",
+  "sydney": "australia.svg",
+  "us-central": "usa.svg",
+  "us-east": "usa.svg",
+  "us-south": "usa.svg",
+  "us-west": "usa.svg"
 }
