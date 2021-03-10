@@ -2,6 +2,7 @@
   <a
     :href="link"
     target="_blank"
+    rel="noopener"
     :class="['button is-fullwidth', color, { 'is-stretched': isStretched }]"
   >
     <span class="button__content">{{ action }}</span>
@@ -10,7 +11,7 @@
 
 <script>
 export default {
-  name: 'base-button',
+  name: 'BaseButton',
 
   props: {
     action: String,

@@ -6,7 +6,7 @@
       titleSize="2"
       subtitle="OverBot has many features for Overwatch players that allow 
       them to view their overall statistics, stay up to date with the latest 
-      news, play Overwatch trivia and more!"
+      news, link their Overwatch profiles and more!"
       :isSpaced="true"
     >
       <div class="columns is-mobile">
@@ -33,14 +33,14 @@
           <feature
             v-for="(value, key) in features"
             :key="key"
-            :image="require(`@/assets/images/home/${value['image']}`)"
-            :alt="value['image']"
-            :title="value['title']"
-            :content="value['content']"
-            :isReversed="value['reversed']"
-            :hasButton="value['button']"
-            :buttonLink="value['button-link']"
-            :buttonAction="value['button-action']"
+            :image="require(`@/assets/images/home/${value.image}`)"
+            :alt="value.image"
+            :title="value.title"
+            :content="value.content"
+            :isReversed="value.reversed"
+            :hasButton="value.button"
+            :buttonLink="value.buttonLink"
+            :buttonAction="value.buttonAction"
           />
         </div>
       </div>

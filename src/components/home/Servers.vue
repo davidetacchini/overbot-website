@@ -14,15 +14,17 @@
             <i class="fas fa-medal"></i>
           </span>
         </div>
-        <span class="server__region">
-          {{ getRegionEmoji(value['region']) }}
-        </span>
-        <img class="server__img" :src="value['icon']" :alt="value['name']" />
+        <img
+          class="server__region"
+          :src="require(`@/assets/images/flags/${getRegionFlag(value.region)}`)"
+          :alt="value.region"
+        />
+        <img class="server__image" :src="value.icon" :alt="value.name" typ />
         <h1 class="server__title title is-4">
-          {{ value['name'] }}
+          {{ value.name }}
         </h1>
         <h2 class="server__subtitle subtitle is-6 has-text-grey">
-          Commands run: {{ value['commands_run'] }}
+          Commands run: {{ value.commands_run }}
         </h2>
       </div>
     </div>
@@ -35,12 +37,11 @@ import Loader from '../Loader';
 import ErrorMessage from '../ErrorMessage';
 
 export default {
-  name: 'servers',
+  name: 'Servers',
 
   data: () => {
     return {
-      touchDevice:
-        'ontouchstart' in window || navigator.msMaxTouchPoints || false,
+      touchDevice: 'ontouchstart' in window || navigator.msMaxTouchPoints || false,
     };
   },
 
@@ -60,12 +61,12 @@ export default {
       var result = object[key];
       return typeof result !== 'undefined' ? result : defaultValue;
     },
-    getRegionEmoji(region) {
+    getRegionFlag(region) {
       return this.get(regions, region, region);
     },
   },
 
-  created() {
+  mounted() {
     this.$store.dispatch('GET_SERVERS');
   },
 };
@@ -110,10 +111,10 @@ export default {
     text-overflow: initial;
   }
 
-  &__img {
+  &__image {
     border-radius: 50%;
-    pointer-events: none;
-    max-width: 70%;
+    // pointer-events: none;
+    width: 70%;
   }
 
   &__title {
@@ -132,9 +133,9 @@ export default {
 
   &__region {
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 10px;
-    font-size: 25px;
+    width: 30px;
   }
 
   &__subtitle {

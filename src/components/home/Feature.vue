@@ -22,7 +22,7 @@
 import BaseButton from '@/components/BaseButton';
 
 export default {
-  name: 'feature',
+  name: 'Feature',
 
   components: {
     BaseButton,

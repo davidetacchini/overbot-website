@@ -15,13 +15,14 @@
             <a
               href="https://github.com/davidetacchini"
               target="_blank"
-              class="link link__primary-text"
+              rel="noopener"
+              class="link has-text-primary"
               >Davide</a
             >
           </p>
-          <a href="https://github.com/davidetacchini/overbot" target="_blank">
+          <a href="https://github.com/davidetacchini/overbot" target="_blank" rel="noopener">
             <img
-              alt="GitHub Repo stars"
+              alt="GitHub Repo Stars"
               src="https://img.shields.io/github/stars/davidetacchini/overbot?style=social"
             />
           </a>
@@ -30,38 +31,43 @@
           <div class="columns is-multiline is-mobile is-full-tablet">
             <div class="column">
               <h1 class="title is-6 has-text-white">Navigation</h1>
-              <a href="/commands" class="link">Commands</a>
+              <router-link to="/commands" class="link">Commands</router-link>
               <br />
-              <a href="/permissions" class="link">Permissions</a>
+              <router-link to="/permissions" class="link">
+                Permissions
+              </router-link>
               <br />
-              <a href="/support" class="link">Support</a>
+              <router-link to="/premium" class="link">Premium</router-link>
               <br />
-              <a href="/status" class="link">Status</a>
+              <router-link to="/status" class="link">Status</router-link>
             </div>
             <div class="column is-one-third-desktop is-full-mobile">
               <h1 class="title is-6 has-text-white">Resources</h1>
               <a
                 href="https://www.flaticon.com/authors/freepik"
                 target="_blank"
+                rel="noopener"
                 class="link"
                 >Freepik</a
               >
               <br />
-              <a href="https://www.flaticon.com/" target="_blank" class="link"
+              <a href="https://www.flaticon.com/" target="_blank" rel="noopener" class="link"
                 >Flaticon</a
               >
               <br />
-              <a href="https://ow-api.com/" target="_blank" class="link"
-                >Ow-API</a
-              >
+              <a href="https://ow-api.com/" target="_blank" rel="noopener" class="link">Ow-API</a>
               <br />
-              <a href="https://undraw.co/" target="_blank" class="link"
-                >unDraw</a
-              >
+              <a href="https://undraw.co/" target="_blank" rel="noopener" class="link">unDraw</a>
             </div>
             <div class="column is-one-third-desktop is-full-mobile">
               <h1 class="title is-6 has-text-white">Legal</h1>
-              <a href="/privacy" class="link">Privacy Policy</a>
+              <router-link to="/privacy" class="link">
+                Privacy Policy
+              </router-link>
+              <br />
+              <router-link to="/terms" class="link">
+                Terms of Service
+              </router-link>
             </div>
           </div>
         </div>
@@ -72,7 +78,7 @@
 
 <script>
 export default {
-  name: 'base-footer',
+  name: 'BaseFooter',
 
   computed: {
     currentYear: () => {
@@ -98,10 +104,6 @@ p {
   font-size: 14px;
   transition: color 175ms ease-out;
   display: inline-block;
-
-  &__primary-text {
-    color: $primary !important;
-  }
 }
 
 .link:not(:first-of-type) {

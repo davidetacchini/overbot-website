@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'status-card',
+  name: 'Status',
 
   props: {
     title: String,

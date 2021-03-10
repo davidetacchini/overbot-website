@@ -3,11 +3,9 @@
     <div class="message-body">
       <p>
         Ops! Something bad happened. Please refresh the page.
-        <a href="https://discord.gg/8g3jnxv" target="_blank">Support Server</a>
+        <a href="https://discord.gg/8g3jnxv" target="_blank" rel="noopener"> Support Server</a>
         •
-        <a
-          href="https://github.com/davidetacchini/overbot-website"
-          target="_blank"
+        <a href="https://github.com/davidetacchini/overbot-website" target="_blank" rel="noopener"
           >GitHub issues</a
         >
       </p>
@@ -17,7 +15,7 @@
 
 <script>
 export default {
-  name: 'error-message',
+  name: 'ErrorMessage',
 };
 </script>
 

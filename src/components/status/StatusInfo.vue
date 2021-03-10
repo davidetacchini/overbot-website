@@ -1,27 +1,12 @@
 <template>
   <div class="circles-status">
-    <b-tooltip
-      type="is-black"
-      :animated="true"
-      :delay="50"
-      label="Stable connection"
-    >
+    <b-tooltip type="is-black" :animated="true" :delay="50" label="Stable connection">
       <div class="circle has-background-success"></div>
     </b-tooltip>
-    <b-tooltip
-      type="is-black"
-      :animated="true"
-      :delay="50"
-      label="High ping (> 150ms)"
-    >
+    <b-tooltip type="is-black" :animated="true" :delay="50" label="High ping (> 150ms)">
       <div class="circle has-background-warning"></div>
     </b-tooltip>
-    <b-tooltip
-      type="is-black"
-      :animated="true"
-      :delay="50"
-      label="Bad connection"
-    >
+    <b-tooltip type="is-black" :animated="true" :delay="50" label="Bad connection">
       <div class="circle has-background-danger"></div>
     </b-tooltip>
   </div>
@@ -29,7 +14,7 @@
 
 <script>
 export default {
-  name: 'status-info',
+  name: 'StatusInfo',
 };
 </script>
 

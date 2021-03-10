@@ -11,19 +11,17 @@
         <div v-else>
           <div class="columns is-multiline is-mobile">
             <status title="Bot Status" :data="bot" />
-            <status title="Host Status" :data="host" />
+            <status title="Server Information" :data="host" />
           </div>
           <div class="columns">
             <div class="column">
               <div class="box shards has-text-white">
-                <h1 class="title is-5">
-                  Shards
-                </h1>
+                <h1 class="title is-5">Shards</h1>
                 <status-info />
                 <div class="columns is-multiline is-mobile">
                   <div
-                    v-for="(value, key) in shards"
-                    :key="key"
+                    v-for="value in shards"
+                    :key="value.id"
                     class="column shard-column is-one-fifth-desktop is-one-third-tablet is-half-mobile"
                   >
                     <shard :value="value" />
@@ -69,7 +67,7 @@ export default {
       return this.$store.getters.shards;
     },
   },
-  created() {
+  mounted() {
     this.$store.dispatch('GET_STATS');
   },
   watch: {

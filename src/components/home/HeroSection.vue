@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'hero-section',
+  name: 'HeroSection',
 
   props: {
     sectionSize: String,
