@@ -3,7 +3,6 @@
     <navbar />
     <router-view />
     <base-footer />
-    <cookie-message />
     <vue-progress-bar />
   </div>
 </template>
@@ -11,7 +10,6 @@
 <script>
 import Navbar from './components/partials/Navbar';
 import BaseFooter from './components/partials/BaseFooter';
-import CookieMessage from './components/CookieMessage';
 
 export default {
   name: 'app',
@@ -19,7 +17,6 @@ export default {
   components: {
     Navbar,
     BaseFooter,
-    CookieMessage,
   },
 
   mounted() {
@@ -53,7 +50,7 @@ export default {
 
 .box {
   background-color: $color-charlie !important;
-  border-radius: 0.5rem !important;
+  border-radius: $border-radius !important;
 }
 
 hr {
@@ -68,7 +65,7 @@ hr {
 .button {
   background-color: $color-alpha !important;
   padding: 25px 10px !important;
-  border-radius: 5px !important;
+  border-radius: $border-radius !important;
   font-size: 1rem !important;
   border: unset !important;
   font-weight: bolder !important;
@@ -81,10 +78,6 @@ hr {
   &__content {
     color: $color-bravo;
   }
-}
-
-.dropdown-more .icon {
-  font-size: 0.7rem;
 }
 
 .menu-title {
