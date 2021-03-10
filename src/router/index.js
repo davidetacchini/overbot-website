@@ -17,8 +17,7 @@ const routes = [
   {
     path: '/commands',
     name: 'Commands',
-    component: () =>
-      import(/* webpackChunkName: "commands" */ '../views/Commands.vue'),
+    component: () => import(/* webpackChunkName: "commands" */ '../views/Commands.vue'),
     meta: {
       title: 'Commands - OverBot',
     },
@@ -26,8 +25,7 @@ const routes = [
   {
     path: '/status',
     name: 'Status',
-    component: () =>
-      import(/* webpackChunkName: "status" */ '../views/Status.vue'),
+    component: () => import(/* webpackChunkName: "status" */ '../views/Status.vue'),
     meta: {
       title: 'Status - OverBot',
     },
@@ -35,28 +33,33 @@ const routes = [
   {
     path: '/permissions',
     name: 'Permissions',
-    component: () =>
-      import(/* webpackChunkName: "permissions" */ '../views/Permissions.vue'),
+    component: () => import(/* webpackChunkName: "permissions" */ '../views/Permissions.vue'),
     meta: {
       title: 'Permissions - OverBot',
     },
   },
   {
-    path: '/support',
-    name: 'Support',
-    component: () =>
-      import(/* webpackChunkName: "support" */ '../views/Support.vue'),
+    path: '/premium',
+    name: 'Premium',
+    component: () => import(/* webpackChunkName: "premium" */ '../views/Premium.vue'),
     meta: {
-      title: 'Become a Supporter - OverBot',
+      title: 'Upgrade to Premium - OverBot',
     },
   },
   {
     path: '/privacy',
     name: 'Privacy',
-    component: () =>
-      import(/* webpackChunkName: "privacy" */ '../views/legal/Privacy.vue'),
+    component: () => import(/* webpackChunkName: "privacy" */ '../views/legal/Privacy.vue'),
     meta: {
       title: 'Privacy Policy - OverBot',
+    },
+  },
+  {
+    path: '/terms',
+    name: 'Terms',
+    component: () => import(/* webpackChunkName: "terms" */ '../views/legal/Terms.vue'),
+    meta: {
+      title: 'Terms of Service - OverBot',
     },
   },
   {
@@ -72,6 +75,9 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   routes,
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
 });
 
 router.beforeEach((to, from, next) => {
