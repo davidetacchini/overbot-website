@@ -1,6 +1,6 @@
 <template>
   <div class="column is-full info-title">
-    <h1 class="title is-5 has-text-grey">No commands found...</h1>
+    <h1 class="title is-5 has-text-grey">No commands found!</h1>
   </div>
 </template>
 
