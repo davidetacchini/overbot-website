@@ -25,8 +25,7 @@ const actions = {
           throw Error('Expected array of objects.');
         } else commit('SET_SERVERS', data);
       })
-      .catch((err) => {
-        console.error(err);
+      .catch(() => {
         commit('SET_ERROR', true);
       })
       .finally(() => {

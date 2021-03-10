@@ -31,10 +31,11 @@ const actions = {
     await api
       .get('/statistics')
       .then(({ data }) => {
-        commit('SET_STATS', data);
+        if (typeof data !== 'object' || data === null) {
+          throw Error('Expected object of objects.');
+        } else commit('SET_STATS', data);
       })
-      .catch((err) => {
-        console.error(err);
+      .catch(() => {
         commit('SET_ERROR', true);
       })
       .finally(() => {
