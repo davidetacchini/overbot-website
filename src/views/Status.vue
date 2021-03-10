@@ -2,12 +2,12 @@
   <section class="hero is-dark">
     <div class="hero-body">
       <div class="container">
+        <error-message v-if="$store.getters.error" />
         <div class="box countdown has-text-white">
           This page automatically refreshes every 30 seconds. Next update in:
           {{ countDown }}
         </div>
         <loader v-if="$store.getters.loading" />
-        <error-message v-else-if="$store.getters.error" />
         <div v-else>
           <div class="columns is-multiline is-mobile">
             <status title="Bot Status" :data="bot" />
