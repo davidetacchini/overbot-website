@@ -6,8 +6,8 @@
     "content": "OverBot supports up to 7 languages by far! You can help translating if your language is not available yet!",
     "reversed": true,
     "button": true,
-    "button-link": "https://github.com/davidetacchini/overbot",
-    "button-action": "Help translating"
+    "buttonLink": "https://github.com/davidetacchini/overbot",
+    "buttonAction": "Help translating"
   },
   {
     "image": "rank.svg",
@@ -16,8 +16,8 @@
     "content": "OverBot allows you to check your SR and more!",
     "reversed": false,
     "button": false,
-    "button-link": null,
-    "button-action": null
+    "buttonLink": null,
+    "buttonAction": null
   },
   {
     "image": "statistics.svg",
@@ -26,18 +26,18 @@
     "content": "OverBot also allows you to check both your quick play and competitive statistics in a single embed, so you can easily compare them!",
     "reversed": true,
     "button": false,
-    "button-link": null,
-    "button-action": null
+    "buttonLink": null,
+    "buttonAction": null
   },
   {
     "image": "link.svg",
     "alt": "Link",
     "title": "Link your profiles",
-    "content": "OverBot offers you an easy way to link up to 5 profiles to your Discord ID and check your stats in a much easier and faster way without using any external links! Become a supporter to be able to link more profiles!",
+    "content": "OverBot offers you an easy way to link up to 5 profiles to your Discord ID and check your stats in a much easier and faster way without using any external links! Upgrade to Premium to be able to link more profiles!",
     "reversed": false,
     "button": true,
-    "button-link": "/support",
-    "button-action": "Become a Supporter"
+    "buttonLink": "/premium",
+    "buttonAction": "Upgrade to Premium"
   },
   {
     "image": "trivia.svg",
@@ -46,8 +46,8 @@
     "content": "You can play Overwatch trivia with OverBot! It has few commands which makes it more immersive, such as statistics and best trivia players! You can also contribute and submit new questions to be added to the game!",
     "reversed": true,
     "button": false,
-    "button-link": null,
-    "button-action": null
+    "buttonLink": null,
+    "buttonAction": null
   },
   {
     "image": "news.svg",
@@ -56,7 +56,7 @@
     "content": "When using OverBot, you can check the latest Overwatch news,  patch notes and server status information!",
     "reversed": false,
     "button": false,
-    "button-link": null,
-    "button-action": null
+    "buttonLink": null,
+    "buttonAction": null
   }
 ]
