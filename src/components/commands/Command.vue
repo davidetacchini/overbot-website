@@ -1,29 +1,25 @@
 <template>
   <div class="command box">
-    <h1 class="command__title title is-5">
-      {{ value['name'] }} {{ value['signature'] }}
-    </h1>
+    <h1 class="command__title title is-5">{{ value.name }} {{ value.signature }}</h1>
     <div class="command__info box">
       <h2 class="command__description subtitle">
-        {{ value['short_desc'] }}
-        <a
+        {{ value.short_desc }}
+        <button
           @click.prevent="showMore = !showMore"
-          v-if="value['long_desc'].split('.').length > 2"
+          v-if="value.long_desc.split('.').length > 2"
           class="command__description--read-more"
           href="#"
         >
           <span>{{ showMore ? 'Show less' : 'Show more' }}</span>
-        </a>
+        </button>
         <transition name="slide-fade">
           <div v-if="showMore" class="command__description--more">
-            {{ formatDescription(value['long_desc']) }}
+            {{ formatDescription(value.long_desc) }}
           </div>
         </transition>
       </h2>
-      <div class="command__aliases" v-if="value['aliases']">
-        <h2 class="subtitle is-6 opacity-75">
-          Aliases: {{ value['aliases'].join(', ') }}
-        </h2>
+      <div class="command__aliases" v-if="value.aliases">
+        <h2 class="subtitle is-6 opacity-75">Aliases: {{ value.aliases.join(', ') }}</h2>
       </div>
     </div>
   </div>
@@ -31,7 +27,11 @@
 
 <script>
 export default {
-  name: 'command',
+  name: 'Command',
+
+  props: {
+    value: Object,
+  },
 
   data: () => {
     return {
@@ -48,10 +48,6 @@ export default {
         .replace('\n', '')
         .replace(/`/g, '');
     },
-  },
-
-  props: {
-    value: Object,
   },
 };
 </script>
@@ -93,8 +89,14 @@ h2 {
     font-size: 1rem !important;
 
     &--read-more {
-      font-size: 0.875rem !important;
-      color: $color-alpha !important;
+      font-size: 0.875rem;
+      color: $color-alpha;
+      background-color: transparent;
+      outline: unset;
+      border: unset;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
     }
 
     &--more {
