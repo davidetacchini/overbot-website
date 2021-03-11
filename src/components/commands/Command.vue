@@ -1,7 +1,7 @@
 <template>
   <div class="command box">
     <h1 class="command__title title is-5">{{ value.name }} {{ value.signature }}</h1>
-    <div class="command__info box">
+    <div class="command__info box inner-shadow">
       <h2 class="command__description subtitle">
         {{ value.short_desc }}
         <button
@@ -18,6 +18,7 @@
           </div>
         </transition>
       </h2>
+      <hr v-if="value.aliases" />
       <div class="command__aliases" v-if="value.aliases">
         <h2 class="subtitle is-6 opacity-75">Aliases: {{ value.aliases.join(', ') }}</h2>
       </div>
@@ -67,6 +68,10 @@ export default {
   opacity: 0;
 }
 
+hr {
+  margin: 1rem auto !important;
+}
+
 h2 {
   padding: 0 !important;
   margin: 0 !important;
@@ -103,10 +108,6 @@ h2 {
       background-color: $color-bravo !important;
       white-space: pre-line !important;
     }
-  }
-
-  &__aliases {
-    padding-top: 10px !important;
   }
 }
 </style>
