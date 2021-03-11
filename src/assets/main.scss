@@ -5,17 +5,17 @@
 $family-primary: 'Open Sans', sans-serif;
 
 // Custom colors
-$color-bravo: rgb(36, 37, 42);
-$color-charlie: rgb(23, 24, 27);
+$color-bravo: rgb(23, 24, 27);
+$color-charlie: rgb(36, 37, 42);
 
-$white-opacity-full: rgb(255, 255, 255);
-$white-opacity-lightner-5: rgba(255, 255, 255, 0.5);
+$white-high-emphasis: rgba(255, 255, 255, 0.87);
+$white-medium-emphasis: rgba(255, 255, 255, 0.6);
 $hr-color: rgba(255, 255, 255, 0.1);
 $border-radius: 0.5rem;
 $button-border-radius: 4px !important;
 
 // Bulma colors override
-$primary: rgb(100, 204, 240);
+$primary: rgb(100, 201, 255);
 $dark: $color-bravo;
 $danger: rgb(255, 102, 102);
 
