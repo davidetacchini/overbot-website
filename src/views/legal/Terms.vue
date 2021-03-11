@@ -145,7 +145,7 @@
 }
 
 .block {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 a {

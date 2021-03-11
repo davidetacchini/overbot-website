@@ -54,6 +54,6 @@
 }
 
 .block {
-  margin-top: 3rem !important;
+  margin-top: 2.5rem !important;
 }
 </style>
