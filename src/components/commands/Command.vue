@@ -63,7 +63,7 @@ export default {
 
 .slide-fade-enter,
 .slide-fade-leave-to {
-  transform: translateX(10px);
+  transform: translateX(5px);
   opacity: 0;
 }
 
