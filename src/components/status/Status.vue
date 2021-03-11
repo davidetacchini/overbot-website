@@ -1,12 +1,12 @@
 <template>
   <div class="column is-half-desktop is-full-tablet is-full-mobile">
-    <div class="box has-text-white">
+    <div class="box">
       <h1 class="title is-5">{{ title }}</h1>
       <div class="columns is-multiline">
         <div v-for="(value, key) in data" :key="key" class="column is-6">
-          <div class="box data has-text-white">
+          <div class="box data inner-shadow">
             <p>
-              <span class="has-text-white opacity-75">{{ key + ': ' }}</span>
+              <span class="has-text-grey">{{ key + ': ' }}</span>
               <span class="has-text-weight-bold has-text-white">
                 {{ formatNumber(value) }}
               </span>

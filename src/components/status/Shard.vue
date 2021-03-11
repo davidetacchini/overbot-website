@@ -3,9 +3,9 @@
     :class="[
       'box has-text-dark has-background-success',
       {
-        'has-background-warning': value.latency >= 150 && value.latency < 1000,
+        'has-background-warning': value.latency >= 150 && value.latency < 500,
       },
-      { 'has-background-danger': value.latency >= 1000 },
+      { 'has-background-danger': value.latency >= 500 },
     ]"
   >
     <p>

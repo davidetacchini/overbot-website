@@ -3,20 +3,20 @@
     <div class="content">
       <div class="columns is-multiline is-mobile">
         <div class="column">
-          <h1 class="title is-4 has-text-white">OverBot</h1>
+          <h1 class="title is-4">OverBot</h1>
           <p>Copyright &copy; {{ currentYear }} OverBot. All rights reserved.</p>
           <p>OverBot is not affiliated with Blizzard Entertainment.</p>
         </div>
         <div class="column is-full-mobile">
           <div class="columns is-multiline is-mobile is-full-tablet">
             <div class="column">
-              <h1 class="title is-6 has-text-white">Navigation</h1>
+              <h1 class="title is-6">Navigation</h1>
               <router-link v-for="(value, key) in navigation" :key="key" :to="value" class="link">
                 {{ key }}
               </router-link>
             </div>
             <div class="column is-one-third-desktop is-full-mobile">
-              <h1 class="title is-6 has-text-white">Resources</h1>
+              <h1 class="title is-6">Resources</h1>
               <a
                 v-for="(value, key) in resources"
                 :key="key"
@@ -28,7 +28,7 @@
               >
             </div>
             <div class="column is-one-third-desktop is-full-mobile">
-              <h1 class="title is-6 has-text-white">Legal</h1>
+              <h1 class="title is-6">Legal</h1>
               <router-link v-for="(value, key) in legal" :key="key" :to="value" class="link">
                 {{ key }}
               </router-link>
@@ -76,7 +76,7 @@ export default {
 <style scoped lang="scss">
 p {
   font-size: 14px !important;
-  color: $white-opacity-lightner-5 !important;
+  color: $white-medium-emphasis !important;
 }
 
 .content {
@@ -86,7 +86,7 @@ p {
 
 .link {
   display: block;
-  color: $white-opacity-lightner-5;
+  color: $white-medium-emphasis;
   font-size: 14px;
   transition: color 175ms ease-out;
 }
@@ -96,7 +96,7 @@ p {
 }
 
 .link:hover {
-  color: $white-opacity-full !important;
+  color: $white-high-emphasis !important;
 }
 
 .subtitle {

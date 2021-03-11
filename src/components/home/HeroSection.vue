@@ -5,7 +5,7 @@
         <div :class="['wrapper', { 'full-width': isFullWidth }]">
           <h1
             :class="[
-              'title has-text-white',
+              'title',
               `is-${titleSize}`,
               { 'is-spaced': isSpaced },
               { 'is-desktop-centered': isDesktopCentered },

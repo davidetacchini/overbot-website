@@ -1,5 +1,5 @@
 <template>
-  <div class="columns is-mobile is-scrollable" v-dragscroll.x="!touchDevice">
+  <div class="columns is-mobile is-scrollable" v-dragscroll.x="!canScroll">
     <loader v-if="$store.getters.loading" />
     <error-message v-else-if="$store.getters.error" />
     <div
@@ -8,24 +8,17 @@
       :key="value.id"
       class="column is-two-fifths-desktop is-two-fifths-tablet is-full-mobile server-column"
     >
-      <div class="server box">
-        <div v-if="index === 0">
-          <span class="server__icon icon has-text-warning">
-            <i class="fas fa-medal"></i>
-          </span>
-        </div>
+      <div :class="['server box', { 'first-place': index === 0 }]">
         <img
           class="server__region"
           :src="require(`@/assets/images/flags/${getRegionFlag(value.region)}`)"
           :alt="value.region"
         />
         <img class="server__image" :src="value.icon" :alt="value.name" typ />
-        <h1 class="server__title title is-5">
-          {{ value.name }}
-        </h1>
-        <div class="box server__commands-run has-text-white">
+        <h1 class="server__title title is-5">{{ value.name }}</h1>
+        <div class="box inner-shadow server__commands-run">
           <p>
-            <span class="has-text-white opacity-75">Commands run: </span>
+            <span class="has-text-grey">Commands run: </span>
             <span class="has-text-weight-bold has-text-white">{{ value.commands_run }} </span>
           </p>
         </div>
@@ -42,12 +35,6 @@ import ErrorMessage from '../ErrorMessage';
 export default {
   name: 'Servers',
 
-  data: () => {
-    return {
-      touchDevice: 'ontouchstart' in window || navigator.msMaxTouchPoints || false,
-    };
-  },
-
   components: {
     Loader,
     ErrorMessage,
@@ -56,6 +43,9 @@ export default {
   computed: {
     servers() {
       return this.$store.getters.servers;
+    },
+    canScroll() {
+      return 'ontouchstart' in window || navigator.msMaxTouchPoints || false;
     },
   },
 
@@ -76,43 +66,20 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.is-scrollable {
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-  cursor: -o-grab;
-  cursor: grab;
-}
-
-.is-scrollable:active {
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-  cursor: -o-grabbing;
-  cursor: grabbing;
-}
-
-.is-scrollable::-webkit-scrollbar {
-  display: none;
-}
-
 .server-column {
   max-width: 250px;
 }
 
+.first-place {
+  box-shadow: 0 0 10px 0 $primary;
+}
+
 .server {
   position: relative;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
   min-height: 300px;
   user-select: none !important;
   text-align: center;
   transition: transform 175ms ease-in-out, box-shadow 175ms ease-in-out;
-
-  &:hover &__title {
-    white-space: normal;
-    overflow: auto;
-    text-overflow: initial;
-  }
 
   &__title {
     padding: 30px 0 12px;
@@ -125,13 +92,6 @@ export default {
     border-radius: 50%;
     pointer-events: none;
     width: 70%;
-  }
-
-  &__icon {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 25px;
   }
 
   &__region {
@@ -150,11 +110,25 @@ export default {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .server {
-    &:hover {
-      box-shadow: 0 0 10px $primary;
-    }
+@media screen and (max-width: 1407px) {
+  .is-scrollable {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: -o-grab;
+    cursor: grab;
+  }
+
+  .is-scrollable:active {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: -o-grabbing;
+    cursor: grabbing;
+  }
+
+  .is-scrollable::-webkit-scrollbar {
+    display: none;
   }
 }
 </style>

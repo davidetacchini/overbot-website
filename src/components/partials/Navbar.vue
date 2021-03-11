@@ -1,7 +1,7 @@
 <template>
   <b-navbar class="is-spaced">
     <template slot="brand">
-      <b-navbar-item tag="router-link" to="/" class="is-size-4 has-text-weight-bold has-text-white"
+      <b-navbar-item tag="router-link" to="/" class="is-size-4 has-text-weight-bold"
         >OverBot</b-navbar-item
       >
     </template>
