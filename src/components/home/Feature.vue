@@ -11,7 +11,7 @@
     <div class="column is-two-fifths-desktop is-full-mobile">
       <h1 class="title is-3">{{ title }}</h1>
       <h2 class="subtitle is-5">{{ content }}</h2>
-      <div v-if="hasButton" class="button">
+      <div v-if="hasButton">
         <base-button :link="buttonLink" :action="buttonAction" />
       </div>
     </div>
@@ -58,21 +58,22 @@ img {
   user-select: none;
 }
 
-.features .columns {
+.columns {
   align-items: center;
   padding: 3rem 0;
 }
 
-.features .columns:first-child {
+.columns:first-child {
   padding-top: unset !important;
 }
 
-.features .columns:last-child {
+.columns:last-child {
   padding-bottom: unset !important;
 }
 
-.features .button {
+.button {
   max-width: fit-content !important;
+  margin: 0 auto !important;
 }
 
 @media screen and (max-width: 768px) {
