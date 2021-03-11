@@ -44,13 +44,27 @@ export default {
 
 <style lang="scss">
 .wrapper {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
+}
+
+.has-text-white {
+  color: $white-high-emphasis !important;
+}
+
+.has-text-grey {
+  color: $white-medium-emphasis !important;
 }
 
 .box {
   background-color: $color-charlie !important;
   border-radius: $border-radius !important;
+
+  &.inner-shadow {
+    -moz-box-shadow: inset 0 0 5px $hr-color !important;
+    -webkit-box-shadow: inset 0 0 5px $hr-color !important;
+    box-shadow: inset 0 0 5px $hr-color !important;
+  }
 }
 
 hr {
@@ -58,30 +72,16 @@ hr {
   height: 1px !important;
 }
 
-.opacity-75 {
-  opacity: 0.75 !important;
-}
-
 .button {
-  background-color: $color-alpha !important;
   padding: 25px 10px !important;
-  border-radius: $border-radius !important;
+  border-radius: $button-border-radius !important;
   font-size: 1rem !important;
   border: unset !important;
   font-weight: bolder !important;
-  transition: background-color 0.2s ease-out !important;
-
-  &:hover {
-    background-color: rgb(50, 197, 242) !important;
-  }
-
-  &__content {
-    color: $color-bravo;
-  }
 }
 
 .menu-title {
-  color: $white-opacity-full !important;
+  color: $white-high-emphasis !important;
   font-weight: bolder !important;
 }
 
@@ -100,7 +100,7 @@ hr {
 }
 
 .router-link-active {
-  color: $white-opacity-full !important;
+  color: $white-high-emphasis !important;
 }
 
 @media screen and (max-width: 768px) {
