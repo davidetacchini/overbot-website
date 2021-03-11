@@ -40,6 +40,6 @@ img {
 }
 
 .back-home > a:hover {
-  color: $white-opacity-full !important;
+  color: $white-high-emphasis !important;
 }
 </style>

@@ -3,7 +3,7 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title is-spaced">Privacy Policy</h1>
-        <p class="has-text-white opacity-75">
+        <p class="has-text-grey">
           Last update on September 2, 2020.
         </p>
         <br />

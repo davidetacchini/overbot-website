@@ -13,7 +13,7 @@
       </div>
       <div class="columns">
         <div class="column">
-          <div class="box shards has-text-white">
+          <div class="box shards">
             <h1 class="title is-5">Shards</h1>
             <status-info />
             <div class="columns is-multiline is-mobile">

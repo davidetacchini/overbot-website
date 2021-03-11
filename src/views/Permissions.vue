@@ -9,7 +9,7 @@
         Required
       </span>
     </h1>
-    <h2 class="subtitle is-6 has-text-white opacity-75">
+    <h2 class="subtitle is-6">
       The following list details what permissions OverBot requires to ensure proper operation.
     </h2>
     <div class="columns is-multiline is-mobile">
