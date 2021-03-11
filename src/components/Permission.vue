@@ -1,11 +1,11 @@
 <template>
   <div class="box permission">
     <div class="columns is-multiline">
-      <div class="column is-full">
+      <div class="column is-full inline-block">
         <span class="icon permission__icon">
           <i :class="['fas', `fa-${value.icon}`]"></i>
         </span>
-        <span class="permission__title">
+        <span class="title is-6">
           {{ value.name }}
           <b-tooltip
             v-if="value.required"
@@ -22,7 +22,7 @@
         </span>
       </div>
       <div class="column">
-        <span class="permission__subtitle opacity-75">{{ value.desc }}</span>
+        <h2 class="subtitle is-6">{{ value.desc }}</h2>
       </div>
     </div>
   </div>
@@ -45,12 +45,7 @@ export default {
   &__icon {
     margin-right: 10px;
     font-size: 1rem;
-  }
-
-  &__title,
-  &__subtitle,
-  &__icon {
-    color: $white-opacity-full;
+    color: $white-high-emphasis;
   }
 
   &__required {
