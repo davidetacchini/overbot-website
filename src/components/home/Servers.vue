@@ -4,12 +4,12 @@
     <error-message v-else-if="$store.getters.error" />
     <div
       v-else
-      v-for="(value, key) in servers"
+      v-for="(value, index) in servers"
       :key="value.id"
       class="column is-two-fifths-desktop is-two-fifths-tablet is-full-mobile server-column"
     >
       <div class="server box">
-        <div v-if="key === 0">
+        <div v-if="index === 0">
           <span class="server__icon icon has-text-warning">
             <i class="fas fa-medal"></i>
           </span>
@@ -111,17 +111,17 @@ export default {
     text-overflow: initial;
   }
 
-  &__image {
-    border-radius: 50%;
-    // pointer-events: none;
-    width: 70%;
-  }
-
   &__title {
     padding: 12px 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  &__image {
+    border-radius: 50%;
+    pointer-events: none;
+    width: 70%;
   }
 
   &__icon {
