@@ -149,7 +149,7 @@
 }
 
 a {
-  color: $color-alpha !important;
+  color: $primary !important;
 }
 
 p {

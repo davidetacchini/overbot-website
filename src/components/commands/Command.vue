@@ -90,7 +90,7 @@ h2 {
 
     &--read-more {
       font-size: 0.875rem;
-      color: $color-alpha;
+      color: $primary;
       background-color: transparent;
       outline: unset;
       border: unset;
