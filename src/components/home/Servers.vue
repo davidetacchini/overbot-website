@@ -20,12 +20,15 @@
           :alt="value.region"
         />
         <img class="server__image" :src="value.icon" :alt="value.name" typ />
-        <h1 class="server__title title is-4">
+        <h1 class="server__title title is-5">
           {{ value.name }}
         </h1>
-        <h2 class="server__subtitle subtitle is-6 has-text-grey">
-          Commands run: {{ value.commands_run }}
-        </h2>
+        <div class="box server__commands-run has-text-white">
+          <p>
+            <span class="has-text-white opacity-75">Commands run: </span>
+            <span class="has-text-weight-bold has-text-white">{{ value.commands_run }} </span>
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -99,11 +102,11 @@ export default {
 
 .server {
   position: relative;
-  transition: transform 175ms ease-in-out, box-shadow 175ms ease-in-out;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
   min-height: 300px;
   user-select: none !important;
   text-align: center;
+  transition: transform 175ms ease-in-out, box-shadow 175ms ease-in-out;
 
   &:hover &__title {
     white-space: normal;
@@ -112,7 +115,7 @@ export default {
   }
 
   &__title {
-    padding: 12px 0;
+    padding: 30px 0 12px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -138,16 +141,19 @@ export default {
     width: 30px;
   }
 
-  &__subtitle {
-    line-height: 1.5;
+  &__commands-run {
+    background-color: $color-bravo !important;
+    padding: 8px 12px;
+    border: unset !important;
+    border-radius: $border-radius;
+    font-size: 0.875rem !important;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .server {
     &:hover {
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-      transform: translateY(-5px);
+      box-shadow: 0 0 10px $primary;
     }
   }
 }

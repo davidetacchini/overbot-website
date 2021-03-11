@@ -9,8 +9,8 @@
       <img :src="image" :alt="imageAlt" />
     </div>
     <div class="column is-two-fifths-desktop is-full-mobile">
-      <h1 class="title is-3">{{ title }}</h1>
-      <h2 class="subtitle is-5">{{ content }}</h2>
+      <h1 class="title">{{ title }}</h1>
+      <h2 class="subtitle has-text-white opacity-75">{{ content }}</h2>
       <div v-if="hasButton">
         <base-button :link="buttonLink" :action="buttonAction" />
       </div>
@@ -44,7 +44,11 @@ export default {
 <style scoped lang="scss">
 .title {
   margin-bottom: 35px !important;
-  font-size: 1.9rem !important;
+  font-size: 1.625rem !important;
+}
+
+.subtitle {
+  font-size: 1.1875rem !important;
 }
 
 .column-reverse {
@@ -53,7 +57,7 @@ export default {
 }
 
 img {
-  width: 14rem;
+  width: 13rem;
   pointer-events: none;
   user-select: none;
 }
@@ -64,11 +68,11 @@ img {
 }
 
 .columns:first-child {
-  padding-top: unset !important;
+  padding-top: unset;
 }
 
 .columns:last-child {
-  padding-bottom: unset !important;
+  padding-bottom: unset;
 }
 
 .button {
