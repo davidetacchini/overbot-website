@@ -10,7 +10,7 @@
         <p>
           By using our Website/Bot, you agree that you have read and agree to this policy.
         </p>
-        <h1 class="title is-4 margin-top">
+        <h1 class="title is-4 block">
           What personal information do we collect from the users that use OverBot?
         </h1>
         <div class="content">
@@ -27,7 +27,7 @@
             Some information listed above may only be stored when specific commands are runned.
           </p>
         </div>
-        <h1 class="title is-4 margin-top">How do we use your information?</h1>
+        <h1 class="title is-4 block">How do we use your information?</h1>
         <div class="content">
           <ul>
             <li>
@@ -38,7 +38,7 @@
             The above information is visible only to those who are part of the OverBot staff.
           </p>
         </div>
-        <h1 class="title is-4 margin-top">Agreement</h1>
+        <h1 class="title is-4 block">Agreement</h1>
         <p>
           By using OverBot, you agree to the terms of this Privacy Policy. If you do not agree to
           these terms you must not use our service.
@@ -53,7 +53,7 @@
   margin: 0 auto !important;
 }
 
-.margin-top {
-  margin-top: 3rem;
+.block {
+  margin-top: 3rem !important;
 }
 </style>
