@@ -1,42 +1,39 @@
 <template>
-  <section class="hero is-dark">
-    <div class="hero-body">
-      <div class="container">
-        <error-message v-if="$store.getters.error" />
-        <div class="box countdown has-text-white">
-          This page automatically refreshes every 30 seconds. Next update in:
-          {{ countDown }}
-        </div>
-        <loader v-if="$store.getters.loading" />
-        <div v-else>
-          <div class="columns is-multiline is-mobile">
-            <status title="Bot Status" :data="bot" />
-            <status title="Server Information" :data="host" />
-          </div>
-          <div class="columns">
-            <div class="column">
-              <div class="box shards has-text-white">
-                <h1 class="title is-5">Shards</h1>
-                <status-info />
-                <div class="columns is-multiline is-mobile">
-                  <div
-                    v-for="value in shards"
-                    :key="value.id"
-                    class="column shard-column is-one-fifth-desktop is-one-third-tablet is-half-mobile"
-                  >
-                    <shard :value="value" />
-                  </div>
-                </div>
+  <container>
+    <error-message v-if="$store.getters.error" />
+    <div class="box countdown has-text-white">
+      This page automatically refreshes every 30 seconds. Next update in:
+      {{ countDown }}
+    </div>
+    <loader v-if="$store.getters.loading" />
+    <div v-else>
+      <div class="columns is-multiline is-mobile">
+        <status title="Bot Status" :data="bot" />
+        <status title="Server Information" :data="host" />
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="box shards has-text-white">
+            <h1 class="title is-5">Shards</h1>
+            <status-info />
+            <div class="columns is-multiline is-mobile">
+              <div
+                v-for="value in shards"
+                :key="value.id"
+                class="column shard-column is-one-fifth-desktop is-one-third-tablet is-half-mobile"
+              >
+                <shard :value="value" />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </container>
 </template>
 
 <script>
+import Container from '@/components/Container';
 import Loader from '@/components/Loader';
 import ErrorMessage from '@/components/ErrorMessage';
 import Status from '@/components/status/Status';
@@ -50,6 +47,7 @@ export default {
     };
   },
   components: {
+    Container,
     Loader,
     ErrorMessage,
     Status,
