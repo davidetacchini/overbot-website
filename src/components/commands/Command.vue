@@ -5,10 +5,10 @@
       <h2 class="command__description subtitle">
         {{ value.short_desc }}
         <button
-          @click.prevent="showMore = !showMore"
           v-if="value.long_desc.split('.').length > 2"
           class="command__description--read-more"
           href="#"
+          @click.prevent="showMore = !showMore"
         >
           <span>{{ showMore ? 'Show less' : 'Show more' }}</span>
         </button>
@@ -19,7 +19,7 @@
         </transition>
       </h2>
       <hr v-if="value.aliases" />
-      <div class="command__aliases" v-if="value.aliases">
+      <div v-if="value.aliases" class="command__aliases">
         <h2 class="subtitle is-6 opacity-75">Aliases: {{ value.aliases.join(', ') }}</h2>
       </div>
     </div>
@@ -42,12 +42,7 @@ export default {
 
   methods: {
     formatDescription(value) {
-      return value
-        .split('.')
-        .slice(1)
-        .join('.')
-        .replace('\n', '')
-        .replace(/`/g, '');
+      return value.split('.').slice(1).join('.').replace('\n', '').replace(/`/g, '');
     },
   },
 };
