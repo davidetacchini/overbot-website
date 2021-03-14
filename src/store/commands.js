@@ -1,23 +1,37 @@
 import api from '../services/api';
-import { getBySearch } from './helpers.js';
+import { sortAlphabetically, sortByCategory, sortBySearch } from '../common/helpers.js';
 
 const state = {
   commands: [],
+  categories: ['All'],
   search: '',
+  category: 'all',
 };
 
 const getters = {
-  filteredBySearch: (state) => {
-    return getBySearch(state.commands, state.search);
+  commands: (state) => {
+    const sortedAlphabetically = sortAlphabetically(state.commands);
+    return sortByCategory(sortBySearch(sortedAlphabetically, state.search), state.category);
   },
-  totalFilteredCommands: (state, getters) => {
-    return getters.filteredBySearch.length;
-  },
-  totalCommands: (state) => {
-    return state.commands.length;
+  categories: (state) => {
+    // By default we want to show all the available commands
+    const categories = [...state.categories];
+    state.commands.forEach((command) => {
+      if (command.cog !== null) {
+        categories.push(command.cog);
+      }
+    });
+    categories.sort((a, b) => {
+      return a.localeCompare(b);
+    });
+    // remove all duplicates
+    return [...new Set(categories)];
   },
   search: (state) => {
     return state.search;
+  },
+  category: (state) => {
+    return state.category;
   },
 };
 
@@ -28,6 +42,9 @@ const mutations = {
   SET_SEARCH: (state, payload) => {
     state.search = payload;
   },
+  SET_CATEGORY: (state, payload) => {
+    state.category = payload;
+  },
 };
 
 const actions = {
@@ -37,10 +54,11 @@ const actions = {
       .then(({ data }) => {
         if (!Array.isArray(data)) {
           throw Error('Expected array of objects.');
-        } else commit('SET_COMMANDS', data);
+        } else {
+          commit('SET_COMMANDS', data);
+        }
       })
-      .catch((err) => {
-        console.error(err);
+      .catch(() => {
         commit('SET_ERROR', true);
       })
       .finally(() => {

@@ -1,100 +1,109 @@
 <template>
-  <section class="hero is-dark">
-    <div class="hero-body">
-      <div class="container">
-        <div class="columns is-multiline is-mobile">
-          <div class="column is-full-desktop is-full-tablet is-full-mobile">
-            <input placeholder="Search..." type="search" v-model="search" />
-          </div>
-          <loader v-if="$store.getters.loading" />
-          <error-message v-else-if="$store.getters.error" />
-          <not-found
-            v-else-if="$store.getters.search && totalFilteredCommands === 0"
-          />
-          <total-results v-else />
-          <div
-            v-for="(value, key) in filteredBySearch"
-            :key="key"
-            class="column is-full"
-          >
-            <command v-if="!$store.getters.loading" :value="value" />
-          </div>
-        </div>
+  <container>
+    <error-message v-if="$store.getters.error" />
+    <div class="columns is-multiline is-mobile">
+      <div class="column is-four-fifths-desktop is-three-quarters-tablet is-full-mobile">
+        <input
+          v-model.trim="search"
+          class="input is-primary"
+          type="text"
+          placeholder="Search for a command"
+          :disabled="$store.getters.error"
+        />
+      </div>
+      <div class="column">
+        <category-select v-model="category" :categories="categories" />
       </div>
     </div>
-  </section>
+    <div class="columns is-multiline is-mobile">
+      <loader v-if="$store.getters.loading" />
+      <not-found v-else-if="commands.length === 0" />
+      <div v-for="(value, key) in commands" :key="key" class="column is-full">
+        <command v-if="!$store.getters.loading" :value="value" />
+      </div>
+    </div>
+  </container>
 </template>
 
 <script>
+import { mapGetters, mapMutations, mapActions } from 'vuex';
+import Container from '@/components/Container.vue';
 import Command from '@/components/commands/Command';
 import Loader from '@/components/Loader';
 import ErrorMessage from '@/components/ErrorMessage';
 import NotFound from '@/components/commands/NotFound';
-import TotalResults from '@/components/commands/TotalResults';
+import CategorySelect from '@/components/commands/CategorySelect';
 
 export default {
   components: {
+    Container,
     Command,
     Loader,
     ErrorMessage,
     NotFound,
-    TotalResults,
+    CategorySelect,
   },
+
   computed: {
-    filteredBySearch() {
-      return this.$store.getters.filteredBySearch;
-    },
-    totalFilteredCommands() {
-      return this.$store.getters.totalFilteredCommands;
-    },
-    totalCommands() {
-      return this.$store.getters.totalCommands;
-    },
+    ...mapGetters({
+      commands: 'commands',
+      searchText: 'search',
+      categories: 'categories',
+      categoryText: 'category',
+    }),
     search: {
       get() {
-        return this.$store.getters.search;
+        return this.searchText;
       },
       set(value) {
-        this.$store.commit('SET_SEARCH', value);
+        this.setSearch(value);
+      },
+    },
+    category: {
+      get() {
+        return this.categoryText;
+      },
+      set(value) {
+        this.setCategory(value);
       },
     },
   },
-  created() {
-    this.$store.dispatch('GET_COMMANDS');
+
+  mounted() {
+    // reset search and category everytime we visit /commands
+    this.setSearch('');
+    this.setCategory('all');
+    this.getCommands();
+  },
+
+  methods: {
+    ...mapActions({ getCommands: 'GET_COMMANDS' }),
+    ...mapMutations({
+      setCommands: 'SET_COMMANDS',
+      setSearch: 'SET_SEARCH',
+      setCategory: 'SET_CATEGORY',
+    }),
   },
 };
 </script>
 
 <style scoped lang="scss">
-input {
-  width: 100%;
-  padding: 12px 20px;
-  font-size: 18px;
-  background-color: $color-charlie;
-  border: unset;
-  border-radius: 2rem;
-  outline: none;
-  color: rgba(255, 255, 255, 0.7);
-  transition: padding-left 0.2s linear;
+.input {
+  width: 100% !important;
+  padding: 0 15px !important;
+  font-size: 1rem !important;
+  background-color: $color-charlie !important;
+  border: unset !important;
+  border-radius: $border-radius !important;
+  outline: none !important;
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 
-input[type='search']::-webkit-search-decoration,
-input[type='search']::-webkit-search-cancel-button,
-input[type='search']::-webkit-search-results-button,
-input[type='search']::-webkit-search-results-decoration {
-  -webkit-appearance: none !important;
+input:disabled {
+  opacity: 0.7 !important;
 }
 
 input::placeholder {
-  transition: transform 0.2s linear, opacity 0.2s ease-in-out;
-}
-
-input:focus {
-  padding-left: 25px;
-}
-
-input:focus::placeholder {
-  transform: translateX(5px);
-  opacity: 0;
+  color: $white-medium-emphasis !important;
 }
 </style>
