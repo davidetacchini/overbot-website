@@ -4,7 +4,7 @@
       Bot Permissions
       <span class="tag is-danger">
         <span class="icon">
-          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-exclamation-circle" />
         </span>
         Required
       </span>
@@ -14,9 +14,9 @@
     </h2>
     <div class="columns is-multiline is-mobile">
       <div
-        class="column is-half-desktop is-full-tablet is-full-mobile"
         v-for="(value, key) in permissions"
         :key="key"
+        class="column is-half-desktop is-full-tablet is-full-mobile"
       >
         <permission :value="value" />
       </div>
@@ -25,20 +25,20 @@
 </template>
 
 <script>
-import Container from '../components/Container.vue';
+import Container from '@/components/Container.vue';
 import permissions from '@/assets/json/permissions.json';
 import Permission from '@/components/Permission';
 
 export default {
+  components: {
+    Container,
+    Permission,
+  },
+
   data: () => {
     return {
       permissions,
     };
-  },
-
-  components: {
-    Container,
-    Permission,
   },
 };
 </script>

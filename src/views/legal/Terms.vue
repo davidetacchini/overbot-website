@@ -52,12 +52,8 @@
               use this website or its associated services in violation of any applicable laws or
               regulations;
             </li>
-            <li>
-              use this website in conjunction with sending unauthorized advertising or spam;
-            </li>
-            <li>
-              harvest, collect, or gather user data without the user’s consent; or
-            </li>
+            <li>use this website in conjunction with sending unauthorized advertising or spam;</li>
+            <li>harvest, collect, or gather user data without the user’s consent; or</li>
             <li>
               use this website or its associated services in such a way that may infringe the
               privacy, intellectual property rights, or other rights of third parties.

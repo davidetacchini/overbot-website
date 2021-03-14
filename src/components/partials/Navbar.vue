@@ -12,11 +12,11 @@
       </b-navbar-item>
 
       <b-dropdown v-model="navigation" position="is-bottom-left" aria-role="menu" expanded>
-        <a class="navbar-item" slot="trigger" role="button">
+        <a slot="trigger" class="navbar-item" role="button">
           <div class="dropdown-more">
             <span>More</span>
             <span class="icon">
-              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-chevron-down" />
             </span>
           </div>
         </a>

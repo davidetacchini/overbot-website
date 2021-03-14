@@ -3,7 +3,7 @@
     <div class="columns is-multiline">
       <div class="column is-full inline-block">
         <span class="icon permission__icon">
-          <i :class="['fas', `fa-${value.icon}`]"></i>
+          <i :class="['fas', `fa-${value.icon}`]" />
         </span>
         <span class="title is-6">
           {{ value.name }}
@@ -16,13 +16,15 @@
             label="Required"
           >
             <span class="icon">
-              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-exclamation-circle" />
             </span>
           </b-tooltip>
         </span>
       </div>
       <div class="column">
-        <h2 class="subtitle is-6">{{ value.desc }}</h2>
+        <h2 class="subtitle is-6">
+          {{ value.desc }}
+        </h2>
       </div>
     </div>
   </div>

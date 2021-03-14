@@ -9,8 +9,12 @@
       <img :src="image" :alt="imageAlt" />
     </div>
     <div class="column is-two-fifths-desktop is-full-mobile">
-      <h1 class="title">{{ title }}</h1>
-      <h2 class="subtitle">{{ content }}</h2>
+      <h1 class="title">
+        {{ title }}
+      </h1>
+      <h2 class="subtitle">
+        {{ content }}
+      </h2>
       <div v-if="hasButton">
         <base-button :link="buttonLink" :action="buttonAction" />
       </div>

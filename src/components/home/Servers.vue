@@ -1,10 +1,10 @@
 <template>
-  <div class="columns is-mobile is-scrollable" v-dragscroll.x="!canScroll">
+  <div v-dragscroll.x="!canScroll" class="columns is-mobile is-scrollable">
     <loader v-if="$store.getters.loading" />
     <error-message v-else-if="$store.getters.error" />
     <div
-      v-else
       v-for="(value, index) in servers"
+      v-else
       :key="value.id"
       class="column is-two-fifths-desktop is-two-fifths-tablet is-full-mobile server-column"
     >
@@ -14,8 +14,10 @@
           :src="require(`@/assets/images/flags/${getRegionFlag(value.region)}`)"
           :alt="value.region"
         />
-        <img class="server__image" :src="value.icon" :alt="value.name" typ />
-        <h1 class="server__title title is-5">{{ value.name }}</h1>
+        <img class="server__image" :src="value.icon" :alt="value.name" />
+        <h1 class="server__title title is-5">
+          {{ value.name }}
+        </h1>
         <div class="box inner-shadow server__commands-run">
           <p>
             <span class="has-text-grey">Commands run: </span>
@@ -28,6 +30,7 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex';
 import regions from '@/assets/json/regions.json';
 import Loader from '../Loader';
 import ErrorMessage from '../ErrorMessage';
@@ -41,15 +44,18 @@ export default {
   },
 
   computed: {
-    servers() {
-      return this.$store.getters.servers;
-    },
+    ...mapGetters(['servers']),
     canScroll() {
       return 'ontouchstart' in window || navigator.msMaxTouchPoints || false;
     },
   },
 
+  mounted() {
+    this.getServers();
+  },
+
   methods: {
+    ...mapActions({ getServers: 'GET_SERVERS' }),
     get(object, key, defaultValue) {
       var result = object[key];
       return typeof result !== 'undefined' ? result : defaultValue;
@@ -57,10 +63,6 @@ export default {
     getRegionFlag(region) {
       return this.get(regions, region, region);
     },
-  },
-
-  mounted() {
-    this.$store.dispatch('GET_SERVERS');
   },
 };
 </script>

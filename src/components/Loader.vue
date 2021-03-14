@@ -1,8 +1,8 @@
 <template>
   <div class="column">
     <div class="spinner">
-      <div class="double-bounce1"></div>
-      <div class="double-bounce2"></div>
+      <div class="double-bounce1" />
+      <div class="double-bounce2" />
     </div>
   </div>
 </template>
@@ -12,5 +12,3 @@ export default {
   name: 'Loader',
 };
 </script>
-
-<style scoped lang="scss"></style>

@@ -13,8 +13,10 @@
           >
             {{ title }}
           </h1>
-          <h2 class="wrapper__subtitle subtitle is-5">{{ subtitle }}</h2>
-          <slot></slot>
+          <h2 class="wrapper__subtitle subtitle is-5">
+            {{ subtitle }}
+          </h2>
+          <slot />
         </div>
       </div>
     </div>

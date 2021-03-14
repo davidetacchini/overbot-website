@@ -2,7 +2,7 @@
   <section class="hero is-dark">
     <div class="hero-body">
       <div class="container">
-        <slot></slot>
+        <slot />
       </div>
     </div>
   </section>

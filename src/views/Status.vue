@@ -33,6 +33,7 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex';
 import Container from '@/components/Container';
 import Loader from '@/components/Loader';
 import ErrorMessage from '@/components/ErrorMessage';
@@ -41,11 +42,6 @@ import StatusInfo from '@/components/status/StatusInfo';
 import Shard from '@/components/status/Shard';
 
 export default {
-  data: () => {
-    return {
-      countDown: 30,
-    };
-  },
   components: {
     Container,
     Loader,
@@ -54,20 +50,17 @@ export default {
     StatusInfo,
     Shard,
   },
+
+  data: () => {
+    return {
+      countDown: 30,
+    };
+  },
+
   computed: {
-    bot() {
-      return this.$store.getters.bot;
-    },
-    host() {
-      return this.$store.getters.host;
-    },
-    shards() {
-      return this.$store.getters.shards;
-    },
+    ...mapGetters(['bot', 'host', 'shards']),
   },
-  mounted() {
-    this.$store.dispatch('GET_STATS');
-  },
+
   watch: {
     countDown: {
       handler(value) {
@@ -76,12 +69,20 @@ export default {
             this.countDown--;
           }, 1000);
         } else {
-          this.$store.dispatch('GET_STATS');
+          this.getStats();
           this.countDown = 30;
         }
       },
       immediate: true,
     },
+  },
+
+  mounted() {
+    this.getStats();
+  },
+
+  methods: {
+    ...mapActions({ getStats: 'GET_STATS' }),
   },
 };
 </script>
