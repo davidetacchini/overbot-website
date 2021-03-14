@@ -8,28 +8,25 @@
 </template>
 
 <script>
-import Navbar from './components/partials/Navbar';
-import BaseFooter from './components/partials/BaseFooter';
+import { mapActions } from 'vuex';
+import Navbar from '@/components/partials/Navbar';
+import BaseFooter from '@/components/partials/BaseFooter';
 
 export default {
-  name: 'app',
+  name: 'App',
 
   components: {
     Navbar,
     BaseFooter,
   },
 
-  mounted() {
-    this.$Progress.finish();
-  },
-
   created() {
     this.$Progress.start();
     this.$router.beforeEach((to, from, next) => {
       // Reset the store/index.js state every request
-      this.$store.dispatch('RESET_STATE');
+      this.resetState();
       if (to.meta.progress !== undefined) {
-        let meta = to.meta.progress;
+        const meta = to.meta.progress;
         this.$Progress.parseMeta(meta);
       }
       this.$Progress.start();
@@ -38,6 +35,14 @@ export default {
     this.$router.afterEach(() => {
       this.$Progress.finish();
     });
+  },
+
+  mounted() {
+    this.$Progress.finish();
+  },
+
+  methods: {
+    ...mapActions({ resetState: 'RESET_STATE' }),
   },
 };
 </script>
