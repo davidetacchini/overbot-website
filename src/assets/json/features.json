@@ -20,10 +20,10 @@
     "buttonAction": null
   },
   {
-    "image": "statistics.svg",
-    "alt": "Statistics",
-    "title": "Check your statistics",
-    "content": "OverBot also allows you to check both your quick play and competitive statistics in a single embed, so you can easily compare them!",
+    "image": "stats.svg",
+    "alt": "Stats",
+    "title": "Check your stats",
+    "content": "OverBot also allows you to check both your quick play and competitive stats in a single embed, so you can easily compare them!",
     "reversed": true,
     "button": false,
     "buttonLink": null,
@@ -43,7 +43,7 @@
     "image": "trivia.svg",
     "alt": "Trivia",
     "title": "Play Overwatch trivia",
-    "content": "You can play Overwatch trivia with OverBot! It has few commands which makes it more immersive, such as statistics and best trivia players! You can also contribute and submit new questions to be added to the game!",
+    "content": "You can play Overwatch trivia with OverBot! It has few commands which makes it more immersive, such as stats and best trivia players! You can also contribute and submit new questions to be added to the game!",
     "reversed": true,
     "button": false,
     "buttonLink": null,
