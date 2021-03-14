@@ -33,7 +33,9 @@ const actions = {
       .then(({ data }) => {
         if (typeof data !== 'object' || data === null) {
           throw Error('Expected object of objects.');
-        } else commit('SET_STATS', data);
+        } else {
+          commit('SET_STATS', data);
+        }
       })
       .catch(() => {
         commit('SET_ERROR', true);

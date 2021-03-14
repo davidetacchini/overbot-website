@@ -23,7 +23,9 @@ const actions = {
       .then(({ data }) => {
         if (!Array.isArray(data)) {
           throw Error('Expected array of objects.');
-        } else commit('SET_SERVERS', data);
+        } else {
+          commit('SET_SERVERS', data);
+        }
       })
       .catch(() => {
         commit('SET_ERROR', true);
