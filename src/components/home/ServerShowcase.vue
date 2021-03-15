@@ -3,25 +3,25 @@
     <base-loader v-if="$store.getters.loading" />
     <error-message v-else-if="$store.getters.error" />
     <div
-      v-for="(value, index) in servers"
+      v-for="(server, index) in servers"
       v-else
-      :key="value.id"
+      :key="server.id"
       class="column is-two-fifths-desktop is-two-fifths-tablet is-full-mobile server-column"
     >
       <div :class="['server box', { 'first-place': index === 0 }]">
         <img
           class="server__region"
-          :src="require(`@/assets/images/flags/${getRegionFlag(value.region)}`)"
-          :alt="value.region"
+          :src="require(`@/assets/images/flags/${getRegionFlag(server.region)}`)"
+          :alt="server.region"
         />
-        <img class="server__image" :src="value.icon" :alt="value.name" />
+        <img class="server__image" :src="server.icon" :alt="server.name" />
         <h1 class="server__title title is-5">
-          {{ value.name }}
+          {{ server.name }}
         </h1>
         <div class="box inner-shadow server__commands-run">
           <p>
             <span class="has-text-grey">Commands run: </span>
-            <span class="has-text-weight-bold has-text-white">{{ value.commands_run }} </span>
+            <span class="has-text-weight-bold has-text-white">{{ server.commands_run }} </span>
           </p>
         </div>
       </div>
@@ -36,7 +36,7 @@ import BaseLoader from '../BaseLoader';
 import ErrorMessage from '../ErrorMessage';
 
 export default {
-  name: 'Servers',
+  name: 'ServerShowcase',
 
   components: {
     BaseLoader,

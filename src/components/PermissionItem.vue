@@ -3,12 +3,12 @@
     <div class="columns is-multiline">
       <div class="column is-full inline-block">
         <span class="icon permission__icon">
-          <i :class="['fas', `fa-${value.icon}`]" />
+          <i :class="['fas', `fa-${permission.icon}`]" />
         </span>
         <span class="title is-6">
-          {{ value.name }}
+          {{ permission.name }}
           <b-tooltip
-            v-if="value.required"
+            v-if="permission.required"
             class="permission__required"
             type="is-danger"
             :animated="true"
@@ -23,7 +23,7 @@
       </div>
       <div class="column">
         <h2 class="subtitle is-6">
-          {{ value.desc }}
+          {{ permission.desc }}
         </h2>
       </div>
     </div>
@@ -35,7 +35,7 @@ export default {
   name: 'PermissionItem',
 
   props: {
-    value: Object,
+    permission: Object,
   },
 };
 </script>

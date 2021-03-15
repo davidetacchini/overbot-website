@@ -2,21 +2,21 @@
   <div
     :class="[
       'columns is-multiline is-mobile is-centered has-text-centered',
-      { 'column-reverse': isReversed },
+      { 'column-reverse': feature.reversed },
     ]"
   >
     <div class="column is-two-fifths-desktop is-full-mobile">
-      <img :src="image" :alt="imageAlt" />
+      <img :src="require(`@/assets/images/home/${feature.image}`)" :alt="feature.alt" />
     </div>
     <div class="column is-two-fifths-desktop is-full-mobile">
       <h1 class="title">
-        {{ title }}
+        {{ feature.title }}
       </h1>
       <h2 class="subtitle">
-        {{ content }}
+        {{ feature.content }}
       </h2>
-      <div v-if="hasButton">
-        <base-button :link="buttonLink" :action="buttonAction" />
+      <div v-if="feature.button">
+        <base-button :link="feature.buttonLink" :action="feature.buttonAction" />
       </div>
     </div>
   </div>
@@ -33,14 +33,7 @@ export default {
   },
 
   props: {
-    image: String,
-    title: String,
-    content: String,
-    imageAlt: String,
-    isReversed: Boolean,
-    hasButton: Boolean,
-    buttonLink: String,
-    buttonAction: String,
+    feature: Object,
   },
 };
 </script>

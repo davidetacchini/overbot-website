@@ -1,11 +1,11 @@
 <template>
   <div class="command box">
-    <h1 class="command__title title is-5">{{ value.name }} {{ value.signature }}</h1>
+    <h1 class="command__title title is-5">{{ command.name }} {{ command.signature }}</h1>
     <div class="command__info box inner-shadow">
       <h2 class="command__description subtitle">
-        {{ value.short_desc }}
+        {{ command.short_desc }}
         <button
-          v-if="value.long_desc.split('.').length > 2"
+          v-if="command.long_desc.split('.').length > 2"
           class="command__description--read-more"
           href="#"
           @click.prevent="showMore = !showMore"
@@ -14,13 +14,13 @@
         </button>
         <transition name="slide-fade">
           <div v-if="showMore" class="command__description--more">
-            {{ formatDescription(value.long_desc) }}
+            {{ formatDescription(command.long_desc) }}
           </div>
         </transition>
       </h2>
-      <hr v-if="value.aliases" />
-      <div v-if="value.aliases" class="command__aliases">
-        <h2 class="subtitle is-6 opacity-75">Aliases: {{ value.aliases.join(', ') }}</h2>
+      <hr v-if="command.aliases" />
+      <div v-if="command.aliases" class="command__aliases">
+        <h2 class="subtitle is-6 opacity-75">Aliases: {{ command.aliases.join(', ') }}</h2>
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@ export default {
   name: 'CommandItem',
 
   props: {
-    value: Object,
+    command: Object,
   },
 
   data: () => {
@@ -41,8 +41,8 @@ export default {
   },
 
   methods: {
-    formatDescription(value) {
-      return value.split('.').slice(1).join('.').replace('\n', '').replace(/`/g, '');
+    formatDescription(command) {
+      return command.split('.').slice(1).join('.').replace('\n', '').replace(/`/g, '');
     },
   },
 };

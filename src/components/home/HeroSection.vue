@@ -7,7 +7,7 @@
             :class="[
               'title',
               `is-${titleSize}`,
-              { 'is-spaced': isSpaced },
+              { isSpaced: isSpaced },
               { 'is-desktop-centered': isDesktopCentered },
             ]"
           >

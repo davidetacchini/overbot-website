@@ -18,11 +18,11 @@
             <shard-tooltip />
             <div class="columns is-multiline is-mobile">
               <div
-                v-for="value in shards"
-                :key="value.id"
+                v-for="shard in shards"
+                :key="shard.id"
                 class="column shard-column is-one-fifth-desktop is-one-third-tablet is-half-mobile"
               >
-                <shard-item :value="value" />
+                <shard-item :shard="shard" />
               </div>
             </div>
           </div>

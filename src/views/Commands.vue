@@ -12,8 +12,8 @@
     <div class="columns is-multiline is-mobile">
       <base-loader v-if="$store.getters.loading" />
       <command-not-found v-else-if="commands.length === 0" />
-      <div v-for="(value, key) in commands" :key="key" class="column is-full">
-        <command-item v-if="!$store.getters.loading" :value="value" />
+      <div v-for="(command, index) in commands" :key="index" class="column is-full">
+        <command-item v-if="!$store.getters.loading" :command="command" />
       </div>
     </div>
   </base-container>

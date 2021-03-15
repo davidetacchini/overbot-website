@@ -14,11 +14,11 @@
     </h2>
     <div class="columns is-multiline is-mobile">
       <div
-        v-for="(value, key) in permissions"
-        :key="key"
+        v-for="(permission, index) in permissions"
+        :key="index"
         class="column is-half-desktop is-full-tablet is-full-mobile"
       >
-        <permission-item :value="value" />
+        <permission-item :permission="permission" />
       </div>
     </div>
   </base-container>

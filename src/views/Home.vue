@@ -1,27 +1,27 @@
 <template>
   <div>
     <hero-section
-      section-size="medium"
+      sectionSize="medium"
       title="The best Overwatch bot for Discord"
-      title-size="2"
+      titleSize="2"
       subtitle="OverBot has many features for Overwatch players that allow 
       them to view their overall stats, stay up to date with the latest 
       news, link their Overwatch profiles and more!"
-      :is-spaced="true"
+      :isSpaced="true"
     >
       <div class="columns is-mobile">
         <div class="column is-one-quarter-tablet is-half-mobile">
           <base-button
             link="https://discord.com/api/oauth2/authorize?client_id=547546531666984961&permissions=288832&scope=bot"
             action="Invite"
-            :is-stretched="true"
+            :isStretched="true"
           />
         </div>
         <div class="column is-one-quarter-tablet is-half-mobile">
           <base-button
             link="https://top.gg/bot/547546531666984961/vote"
             action="Upvote"
-            :is-stretched="true"
+            :isStretched="true"
           />
         </div>
       </div>
@@ -30,18 +30,7 @@
     <section class="hero is-medium is-dark features">
       <div class="hero-body">
         <div class="container">
-          <feature-item
-            v-for="(value, key) in features"
-            :key="key"
-            :image="require(`@/assets/images/home/${value.image}`)"
-            :alt="value.image"
-            :title="value.title"
-            :content="value.content"
-            :is-reversed="value.reversed"
-            :has-button="value.button"
-            :button-link="value.buttonLink"
-            :button-action="value.buttonAction"
-          />
+          <feature-item v-for="(feature, index) in features" :key="index" :feature="feature" />
         </div>
       </div>
     </section>
@@ -49,23 +38,24 @@
     <hr />
 
     <hero-section
-      section-size="medium"
-      :is-full-width="true"
+      sectionSize="medium"
+      :isFullWidth="true"
       title="Most active servers"
-      title-size="3"
-      :is-spaced="true"
-      :is-desktop-centered="true"
-      ><servers
-    /></hero-section>
+      titleSize="3"
+      :isSpaced="true"
+      :isDesktopCentered="true"
+    >
+      <server-showcase />
+    </hero-section>
 
     <hr />
 
     <hero-section
-      section-size="medium"
+      sectionSize="medium"
       title="Need Help?"
-      title-size="3"
+      titleSize="3"
       subtitle="If you got any questions or issues with OverBot don't hesitate to join the official Discord server!"
-      :is-spaced="true"
+      :isSpaced="true"
     >
       <div class="columns">
         <div class="column is-3">
@@ -73,7 +63,7 @@
             link="https://discord.gg/8g3jnxv"
             color="is-primary"
             action="Join here"
-            :is-stretched="true"
+            :isStretched="true"
           />
         </div>
       </div>
@@ -86,13 +76,14 @@ import features from '@/assets/json/features.json';
 import HeroSection from '@/components/home/HeroSection';
 import BaseButton from '@/components/BaseButton';
 import FeatureItem from '@/components/home/FeatureItem';
+import ServerShowcase from '@/components/home/ServerShowcase';
 
 export default {
   components: {
     HeroSection,
     BaseButton,
     FeatureItem,
-    Servers: () => import('@/components/home/Servers'),
+    ServerShowcase,
   },
 
   data: () => {

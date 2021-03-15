@@ -36,7 +36,6 @@ const actions = {
           throw Error('Expected object of objects.');
         } else {
           commit('SET_STATS', data);
-          commit('SET_ERROR', false);
         }
       })
       .catch(() => {
