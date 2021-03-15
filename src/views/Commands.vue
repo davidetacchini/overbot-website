@@ -82,24 +82,3 @@ export default {
   },
 };
 </script>
-
-<style scoped lang="scss">
-.input {
-  width: 100% !important;
-  padding: 0 15px !important;
-  font-size: 1rem !important;
-  background-color: $color-charlie !important;
-  border: unset !important;
-  border-radius: $border-radius !important;
-  outline: none !important;
-  color: rgba(255, 255, 255, 0.7) !important;
-}
-
-input:disabled {
-  opacity: 0.7 !important;
-}
-
-input::placeholder {
-  color: $white-medium-emphasis !important;
-}
-</style>
