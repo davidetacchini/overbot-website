@@ -1,54 +1,54 @@
 <template>
-  <container>
+  <base-container>
     <error-message v-if="$store.getters.error" />
     <div class="box countdown has-text-white">
       This page automatically refreshes every 30 seconds. Next update in:
       {{ countDown }}
     </div>
-    <loader v-if="$store.getters.loading" />
+    <base-loader v-if="$store.getters.loading" />
     <div v-else>
       <div class="columns is-multiline is-mobile">
-        <status title="Bot Status" :data="bot" />
-        <status title="Server Information" :data="host" />
+        <status-item title="Bot Status" :data="bot" />
+        <status-item title="Server Information" :data="host" />
       </div>
       <div class="columns">
         <div class="column">
           <div class="box shards">
             <h1 class="title is-5">Shards</h1>
-            <status-info />
+            <shard-tooltip />
             <div class="columns is-multiline is-mobile">
               <div
                 v-for="value in shards"
                 :key="value.id"
                 class="column shard-column is-one-fifth-desktop is-one-third-tablet is-half-mobile"
               >
-                <shard :value="value" />
+                <shard-item :value="value" />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </container>
+  </base-container>
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
-import Container from '@/components/Container';
-import Loader from '@/components/Loader';
+import BaseContainer from '@/components/BaseContainer';
 import ErrorMessage from '@/components/ErrorMessage';
-import Status from '@/components/status/Status';
-import StatusInfo from '@/components/status/StatusInfo';
-import Shard from '@/components/status/Shard';
+import BaseLoader from '@/components/BaseLoader';
+import StatusItem from '@/components/status/StatusItem';
+import ShardItem from '@/components/status/ShardItem';
+import ShardTooltip from '@/components/status/ShardTooltip';
 
 export default {
   components: {
-    Container,
-    Loader,
+    BaseContainer,
     ErrorMessage,
-    Status,
-    StatusInfo,
-    Shard,
+    BaseLoader,
+    StatusItem,
+    ShardTooltip,
+    ShardItem,
   },
 
   data: () => {

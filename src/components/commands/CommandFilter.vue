@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'CategorySelect',
+  name: 'CommandFilter',
 
   props: {
     value: String,

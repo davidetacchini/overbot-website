@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'Shard',
+  name: 'ShardItem',
 
   props: {
     value: Object,

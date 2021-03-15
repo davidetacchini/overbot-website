@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: 'Permission',
+  name: 'PermissionItem',
 
   props: {
     value: Object,

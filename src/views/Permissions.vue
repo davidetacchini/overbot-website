@@ -1,5 +1,5 @@
 <template>
-  <container>
+  <base-container>
     <h1 class="title is-spaced">
       Bot Permissions
       <span class="tag is-danger">
@@ -18,21 +18,21 @@
         :key="key"
         class="column is-half-desktop is-full-tablet is-full-mobile"
       >
-        <permission :value="value" />
+        <permission-item :value="value" />
       </div>
     </div>
-  </container>
+  </base-container>
 </template>
 
 <script>
-import Container from '@/components/Container.vue';
 import permissions from '@/assets/json/permissions.json';
-import Permission from '@/components/Permission';
+import BaseContainer from '@/components/BaseContainer.vue';
+import PermissionItem from '@/components/PermissionItem';
 
 export default {
   components: {
-    Container,
-    Permission,
+    BaseContainer,
+    PermissionItem,
   },
 
   data: () => {

@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: 'Command',
+  name: 'CommandItem',
 
   props: {
     value: Object,

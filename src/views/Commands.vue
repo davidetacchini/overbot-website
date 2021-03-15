@@ -1,47 +1,43 @@
 <template>
-  <container>
+  <base-container>
     <error-message v-if="$store.getters.error" />
     <div class="columns is-multiline is-mobile">
       <div class="column is-four-fifths-desktop is-three-quarters-tablet is-full-mobile">
-        <input
-          v-model.trim="search"
-          class="input is-primary"
-          type="text"
-          placeholder="Search for a command"
-          :disabled="$store.getters.error"
-        />
+        <command-search-bar v-model.trim="search" />
       </div>
       <div class="column">
-        <category-select v-model="category" :categories="categories" />
+        <command-filter v-model="category" :categories="categories" />
       </div>
     </div>
     <div class="columns is-multiline is-mobile">
-      <loader v-if="$store.getters.loading" />
-      <not-found v-else-if="commands.length === 0" />
+      <base-loader v-if="$store.getters.loading" />
+      <command-not-found v-else-if="commands.length === 0" />
       <div v-for="(value, key) in commands" :key="key" class="column is-full">
-        <command v-if="!$store.getters.loading" :value="value" />
+        <command-item v-if="!$store.getters.loading" :value="value" />
       </div>
     </div>
-  </container>
+  </base-container>
 </template>
 
 <script>
 import { mapGetters, mapMutations, mapActions } from 'vuex';
-import Container from '@/components/Container.vue';
-import Command from '@/components/commands/Command';
-import Loader from '@/components/Loader';
+import BaseContainer from '@/components/BaseContainer.vue';
+import BaseLoader from '@/components/BaseLoader';
 import ErrorMessage from '@/components/ErrorMessage';
-import NotFound from '@/components/commands/NotFound';
-import CategorySelect from '@/components/commands/CategorySelect';
+import CommandSearchBar from '@/components/commands/CommandSearchBar';
+import CommandFilter from '@/components/commands/CommandFilter';
+import CommandItem from '@/components/commands/CommandItem';
+import CommandNotFound from '@/components/commands/CommandNotFound';
 
 export default {
   components: {
-    Container,
-    Command,
-    Loader,
+    BaseContainer,
+    BaseLoader,
     ErrorMessage,
-    NotFound,
-    CategorySelect,
+    CommandSearchBar,
+    CommandFilter,
+    CommandItem,
+    CommandNotFound,
   },
 
   computed: {

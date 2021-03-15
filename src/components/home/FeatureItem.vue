@@ -26,7 +26,7 @@
 import BaseButton from '@/components/BaseButton';
 
 export default {
-  name: 'Feature',
+  name: 'FeatureItem',
 
   components: {
     BaseButton,

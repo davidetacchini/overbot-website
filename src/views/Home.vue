@@ -30,7 +30,7 @@
     <section class="hero is-medium is-dark features">
       <div class="hero-body">
         <div class="container">
-          <feature
+          <feature-item
             v-for="(value, key) in features"
             :key="key"
             :image="require(`@/assets/images/home/${value.image}`)"
@@ -82,17 +82,17 @@
 </template>
 
 <script>
-import Feature from '@/components/home/Feature';
+import features from '@/assets/json/features.json';
 import HeroSection from '@/components/home/HeroSection';
 import BaseButton from '@/components/BaseButton';
-import features from '@/assets/json/features.json';
+import FeatureItem from '@/components/home/FeatureItem';
 
 export default {
   components: {
-    Servers: () => import('@/components/home/Servers'),
-    Feature,
     HeroSection,
     BaseButton,
+    FeatureItem,
+    Servers: () => import('@/components/home/Servers'),
   },
 
   data: () => {

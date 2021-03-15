@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <navbar />
+    <the-navbar />
     <router-view />
-    <base-footer />
+    <the-footer />
     <vue-progress-bar />
   </div>
 </template>
 
 <script>
 import { mapActions } from 'vuex';
-import Navbar from '@/components/partials/Navbar';
-import BaseFooter from '@/components/partials/BaseFooter';
+import TheNavbar from '@/components/layout/TheNavbar';
+import TheFooter from '@/components/layout/TheFooter';
 
 export default {
   name: 'App',
 
   components: {
-    Navbar,
-    BaseFooter,
+    TheNavbar,
+    TheFooter,
   },
 
   created() {
