@@ -30,7 +30,7 @@ const actions = {
   async GET_STATS({ commit }) {
     commit('SET_STATE');
     await api
-      .get('/statistic')
+      .get('/statistics')
       .then(({ data }) => {
         if (typeof data !== 'object' || data === null) {
           throw Error('Expected object of objects.');
