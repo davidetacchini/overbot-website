@@ -31,10 +31,3 @@ export const sortBySearch = (commands, searchText) => {
     return base;
   });
 };
-
-export const defaultState = () => {
-  return {
-    loading: true,
-    error: false,
-  };
-};
