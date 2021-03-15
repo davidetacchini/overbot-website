@@ -6,7 +6,7 @@
     ]"
   >
     <div class="column is-two-fifths-desktop is-full-mobile">
-      <img :src="require(`@/assets/images/home/${feature.image}`)" :alt="feature.alt" />
+      <img :src="require(`@/assets/images/features/${feature.image}`)" :alt="feature.alt" />
     </div>
     <div class="column is-two-fifths-desktop is-full-mobile">
       <h1 class="title">
