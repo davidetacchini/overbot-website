@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex';
 import TheNavbar from '@/components/layout/TheNavbar';
 import TheFooter from '@/components/layout/TheFooter';
 
@@ -23,8 +22,6 @@ export default {
   created() {
     this.$Progress.start();
     this.$router.beforeEach((to, from, next) => {
-      // Reset the store/index.js state every request
-      this.resetState();
       if (to.meta.progress !== undefined) {
         const meta = to.meta.progress;
         this.$Progress.parseMeta(meta);
@@ -39,10 +36,6 @@ export default {
 
   mounted() {
     this.$Progress.finish();
-  },
-
-  methods: {
-    ...mapActions({ resetState: 'RESET_STATE' }),
   },
 };
 </script>

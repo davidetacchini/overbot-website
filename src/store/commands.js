@@ -49,6 +49,7 @@ const mutations = {
 
 const actions = {
   async GET_COMMANDS({ commit }) {
+    commit('SET_STATE');
     await api
       .get('/commands')
       .then(({ data }) => {

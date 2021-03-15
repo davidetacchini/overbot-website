@@ -18,6 +18,7 @@ const mutations = {
 
 const actions = {
   async GET_SERVERS({ commit }) {
+    commit('SET_STATE');
     await api
       .get('/servers')
       .then(({ data }) => {

@@ -28,13 +28,15 @@ const mutations = {
 
 const actions = {
   async GET_STATS({ commit }) {
+    commit('SET_STATE');
     await api
-      .get('/statistics')
+      .get('/statistic')
       .then(({ data }) => {
         if (typeof data !== 'object' || data === null) {
           throw Error('Expected object of objects.');
         } else {
           commit('SET_STATS', data);
+          commit('SET_ERROR', false);
         }
       })
       .catch(() => {
