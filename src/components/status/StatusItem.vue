@@ -3,7 +3,7 @@
     <div class="box">
       <h1 class="title is-5">{{ title }}</h1>
       <div class="columns is-multiline">
-        <div v-for="(value, key) in data" :key="key" class="column is-6">
+        <div v-for="(value, key) in item" :key="key" class="column is-6">
           <div class="box data inner-shadow">
             <p>
               <span class="has-text-grey">{{ key + ': ' }}</span>
@@ -24,7 +24,7 @@ export default {
 
   props: {
     title: String,
-    data: Object,
+    item: Object,
   },
 
   methods: {

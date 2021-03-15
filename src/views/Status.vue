@@ -8,8 +8,8 @@
     <base-loader v-if="$store.getters.loading" />
     <div v-else>
       <div class="columns is-multiline is-mobile">
-        <status-item title="Bot Status" :data="bot" />
-        <status-item title="Server Information" :data="host" />
+        <status-item title="Bot Status" :item="bot" />
+        <status-item title="Server Information" :item="host" />
       </div>
       <div class="columns">
         <div class="column">

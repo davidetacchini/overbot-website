@@ -1,8 +1,8 @@
 import api from '../services/api';
 
 const state = {
-  bot: Array,
-  host: Array,
+  bot: Object,
+  host: Object,
   shards: Array,
 };
 
