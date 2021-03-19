@@ -12,7 +12,7 @@ import VueDragscroll from 'vue-dragscroll';
 
 const options = {
   color: 'rgb(100, 201, 255)',
-  failedColor: 'rgb(255, 69, 58)',
+  failedColor: 'rgb(255, 105, 97)',
   thickness: '1.5px',
 };
 
