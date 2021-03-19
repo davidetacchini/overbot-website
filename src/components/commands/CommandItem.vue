@@ -1,5 +1,5 @@
 <template>
-  <div class="command box">
+  <div :class="['command', 'box', { 'is-premium': showMore }]">
     <h1 class="command__title title is-5">{{ command.name }} {{ command.signature }}</h1>
     <div class="command__info box inner-shadow">
       <h2 class="command__description subtitle">
@@ -74,6 +74,10 @@ h2 {
 
 .command {
   padding: 15px !important;
+
+  &.is-premium {
+    box-shadow: 0 0 10px 0 $primary !important;
+  }
 
   &__title {
     margin-bottom: 12px !important;
