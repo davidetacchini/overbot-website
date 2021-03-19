@@ -5,15 +5,15 @@
         <h1 class="title is-spaced">Terms of Service</h1>
         <p>
           These Terms of Service govern your use of the website located at
-          <a href="https://overbot.netlify.app">https://overbot.netlify.app</a>
+          <a href="https://overbot.me">https://overbot.me</a>
           and any related services provided by OverBot.
         </p>
         <p>
           By accessing
-          <a href="https://overbot.netlify.app">https://overbot.netlify.app</a>, you agree to abide
-          by these Terms of Service and to comply with all applicable laws and regulations. If you
-          do not agree with these Terms of Service, you are prohibited from using or accessing this
-          website or using any other services provided by OverBot.
+          <a href="https://overbot.me">https://overbot.me</a>, you agree to abide by these Terms of
+          Service and to comply with all applicable laws and regulations. If you do not agree with
+          these Terms of Service, you are prohibited from using or accessing this website or using
+          any other services provided by OverBot.
         </p>
         <p>
           We, OverBot, reserve the right to review and amend any of these Terms of Service at our
