@@ -1,7 +1,7 @@
 <template>
   <b-navbar class="is-spaced">
     <template slot="brand">
-      <b-navbar-item tag="router-link" to="/" class="is-size-4 has-text-weight-bold"
+      <b-navbar-item tag="router-link" to="/" class="logo is-size-5 has-text-weight-bold"
         >OverBot</b-navbar-item
       >
     </template>
@@ -38,7 +38,7 @@
 
 <script>
 export default {
-  name: 'AppHeader',
+  name: 'TheHeader',
 
   data: () => {
     return {
@@ -72,7 +72,12 @@ export default {
   transition: color 175ms ease-out;
 }
 
+.navbar-item:not(.logo) {
+  font-size: 0.875rem !important;
+}
+
 .dropdown-more .icon {
-  font-size: 0.875rem;
+  max-height: 0 !important;
+  font-size: 0.7rem !important;
 }
 </style>

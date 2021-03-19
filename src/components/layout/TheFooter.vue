@@ -42,7 +42,7 @@
 
 <script>
 export default {
-  name: 'AppFooter',
+  name: 'TheFooter',
 
   data: () => {
     return {
