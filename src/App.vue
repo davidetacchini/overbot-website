@@ -46,14 +46,6 @@ export default {
   margin: 0 auto;
 }
 
-.has-text-white {
-  color: $white-high-emphasis !important;
-}
-
-.has-text-grey {
-  color: $white-medium-emphasis !important;
-}
-
 .box {
   background-color: $color-charlie !important;
   border-radius: $border-radius !important;
@@ -81,10 +73,6 @@ hr {
 .menu-title {
   color: $white-high-emphasis !important;
   font-weight: bolder !important;
-}
-
-.menu-title:not(:first-of-type) {
-  margin-top: 10px !important;
 }
 
 .menu-item {
