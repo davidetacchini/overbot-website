@@ -16,19 +16,15 @@ $button-border-radius: 4px !important;
 
 // Bulma colors override
 $primary: rgb(88, 166, 255);
-$danger: rgb(255, 105, 97);
-$dark: $color-bravo;
+$success: rgb(126, 231, 135);
+$warning: rgb(242, 204, 96);
+$danger: rgb(255, 123, 114);
 $white: $white-high-emphasis;
 $grey: $white-medium-emphasis;
+$dark: $color-bravo;
 
 // Footer
 $footer-background-color: $color-charlie;
-
-// Old scheme
-// $color-bravo: rgb(23, 24, 27);
-// $color-charlie: rgb(36, 37, 42);
-// $color-delta: rgba(255, 255, 255, 0.1);
-// $primary: rgb(100, 201, 255);
 
 @import './scss/misc.scss';
 @import './scss/navbar.scss';
