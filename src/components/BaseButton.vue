@@ -3,13 +3,9 @@
     :href="link"
     target="_blank"
     rel="noopener"
-    :class="[
-      'button is-fullwidth',
-      color !== undefined ? color : 'is-primary',
-      { 'is-stretched': isStretched },
-    ]"
+    :class="['button is-fullwidth', setColor, { 'is-stretched': isStretched }]"
   >
-    <span class="button__content">{{ action }}</span>
+    {{ action }}
   </a>
 </template>
 
@@ -22,6 +18,12 @@ export default {
     color: String,
     link: String,
     isStretched: Boolean,
+  },
+
+  computed: {
+    setColor() {
+      return this.color !== undefined ? this.color : 'is-primary';
+    },
   },
 };
 </script>

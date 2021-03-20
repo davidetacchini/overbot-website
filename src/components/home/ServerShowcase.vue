@@ -9,15 +9,9 @@
       class="column is-two-fifths-desktop is-two-fifths-tablet is-full-mobile server-column"
     >
       <div :class="['server box', { 'first-place': index === 0 }]">
-        <img
-          class="server__region"
-          :src="require(`@/assets/images/flags/${getRegionFlag(server.region)}`)"
-          :alt="server.region"
-        />
+        <img class="server__region" :src="setRegionFlag(server.region)" :alt="server.region" />
         <img class="server__image" :src="server.icon" :alt="server.name" />
-        <h1 class="server__title title is-5">
-          {{ server.name }}
-        </h1>
+        <h1 class="server__title title is-5">{{ server.name }}</h1>
         <div class="box inner-shadow server__commands-run">
           <p>
             <span class="has-text-grey">Commands run: </span>
@@ -60,8 +54,9 @@ export default {
       var result = object[key];
       return typeof result !== 'undefined' ? result : defaultValue;
     },
-    getRegionFlag(region) {
-      return this.get(regions, region, region);
+    setRegionFlag(region) {
+      const flag = this.get(regions, region, region);
+      return require(`@/assets/images/flags/${flag}`);
     },
   },
 };
