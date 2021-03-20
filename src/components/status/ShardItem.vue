@@ -1,13 +1,5 @@
 <template>
-  <div
-    :class="[
-      'box has-text-dark has-background-success',
-      {
-        'has-background-warning': shard.latency >= 150 && shard.latency < 500,
-      },
-      { 'has-background-danger': shard.latency >= 500 },
-    ]"
-  >
+  <div :class="['box has-text-dark', setShardBgColor]">
     <p>
       Shard:
       <span class="has-text-weight-bold">{{ shard.id }}</span>
@@ -27,6 +19,18 @@ export default {
 
   props: {
     shard: Object,
+  },
+
+  computed: {
+    setShardBgColor() {
+      if (this.shard.latency < 150) {
+        return 'has-background-success';
+      } else if (this.shard.latency >= 150 && this.shard.latency < 500) {
+        return 'has-background-warning';
+      } else {
+        return 'has-background-danger';
+      }
+    },
   },
 };
 </script>

@@ -11,20 +11,16 @@
         <status-item title="Bot Status" :item="bot" />
         <status-item title="Server Information" :item="host" />
       </div>
-      <div class="columns">
-        <div class="column">
-          <div class="box shards">
-            <h1 class="title is-5">Shards</h1>
-            <shard-tooltip />
-            <div class="columns is-multiline is-mobile">
-              <div
-                v-for="shard in shards"
-                :key="shard.id"
-                class="column shard-column is-one-fifth-desktop is-one-third-tablet is-half-mobile"
-              >
-                <shard-item :shard="shard" />
-              </div>
-            </div>
+      <div class="box shards">
+        <h1 class="title is-5">Shards</h1>
+        <shard-tooltip />
+        <div class="columns is-multiline is-mobile">
+          <div
+            v-for="shard in shards"
+            :key="shard.id"
+            class="column shard-column is-one-fifth-desktop is-one-third-tablet is-half-mobile"
+          >
+            <shard-item :shard="shard" />
           </div>
         </div>
       </div>

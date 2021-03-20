@@ -7,19 +7,19 @@
         </span>
         <span class="title is-6">
           {{ permission.name }}
-          <b-tooltip
-            v-if="permission.required"
-            class="permission__required"
-            type="is-danger"
-            :animated="true"
-            :delay="50"
-            label="Required"
-          >
-            <span class="icon">
-              <i class="fas fa-exclamation-circle" />
-            </span>
-          </b-tooltip>
         </span>
+        <b-tooltip
+          v-if="permission.required"
+          class="permission__required"
+          type="is-danger"
+          :animated="true"
+          :delay="50"
+          label="Required"
+        >
+          <span class="icon">
+            <i class="fas fa-exclamation-circle" />
+          </span>
+        </b-tooltip>
       </div>
       <div class="column">
         <h2 class="subtitle is-6">
