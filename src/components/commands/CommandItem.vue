@@ -1,5 +1,5 @@
 <template>
-  <div :class="['command', 'box', { 'is-premium': showMore }]">
+  <div :class="['command', 'box', { 'is-premium': command.is_premium }]">
     <h1 class="command__title title is-5">{{ command.name }} {{ command.signature }}</h1>
     <div class="command__info box inner-shadow">
       <h2 class="command__description subtitle">
