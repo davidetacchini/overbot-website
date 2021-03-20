@@ -2,7 +2,8 @@
   <section class="hero is-dark">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title is-spaced">Terms of Service</h1>
+        <h1 class="title">Terms of Service</h1>
+        <hr />
         <p>
           These Terms of Service govern your use of the website located at
           <a href="https://overbot.me">https://overbot.me</a>

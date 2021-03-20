@@ -1,6 +1,6 @@
 <template>
   <base-container>
-    <h1 class="title is-spaced">
+    <h1 class="title">
       Bot Permissions
       <span class="tag is-danger">
         <span class="icon">
@@ -9,6 +9,7 @@
         Required
       </span>
     </h1>
+    <hr />
     <h2 class="subtitle is-6">
       The following list details what permissions OverBot requires to ensure proper operation.
     </h2>

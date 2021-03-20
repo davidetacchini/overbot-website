@@ -2,7 +2,8 @@
   <section class="hero is-dark">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title is-spaced">Privacy Policy</h1>
+        <h1 class="title">Privacy Policy</h1>
+        <hr />
         <p class="has-text-grey">Last update on September 2, 2020.</p>
         <br />
         <p>By using our Website/Bot, you agree that you have read and agree to this policy.</p>
