@@ -96,7 +96,7 @@ export default {
 
 <style scoped lang="scss">
 hr {
-  background-color: $hr-color !important;
+  background-color: $color-delta !important;
   height: 2px !important;
   width: 20% !important;
   margin: 50px auto !important;
