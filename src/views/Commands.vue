@@ -1,6 +1,6 @@
 <template>
   <base-container>
-    <error-message v-if="$store.getters.error" />
+    <error-alert v-if="$store.getters.error" />
     <div class="columns is-multiline is-mobile">
       <div class="column is-four-fifths-desktop is-three-quarters-tablet is-full-mobile">
         <command-search-bar v-model.trim="search" />
@@ -23,7 +23,7 @@
 import { mapGetters, mapMutations, mapActions } from 'vuex';
 import BaseContainer from '@/components/BaseContainer.vue';
 import BaseLoader from '@/components/BaseLoader';
-import ErrorMessage from '@/components/ErrorMessage';
+import ErrorAlert from '@/components/ErrorAlert';
 import CommandSearchBar from '@/components/commands/CommandSearchBar';
 import CommandFilter from '@/components/commands/CommandFilter';
 import CommandItem from '@/components/commands/CommandItem';
@@ -33,7 +33,7 @@ export default {
   components: {
     BaseContainer,
     BaseLoader,
-    ErrorMessage,
+    ErrorAlert,
     CommandSearchBar,
     CommandFilter,
     CommandItem,

@@ -1,7 +1,7 @@
 <template>
   <div v-dragscroll.x="!canScroll" class="columns is-mobile is-scrollable">
     <base-loader v-if="$store.getters.loading" />
-    <error-message v-else-if="$store.getters.error" />
+    <error-alert v-else-if="$store.getters.error" />
     <div
       v-for="(server, index) in servers"
       v-else
@@ -27,14 +27,14 @@
 import { mapGetters, mapActions } from 'vuex';
 import regions from '@/assets/json/regions.json';
 import BaseLoader from '../BaseLoader';
-import ErrorMessage from '../ErrorMessage';
+import ErrorAlert from '../ErrorAlert';
 
 export default {
   name: 'ServerShowcase',
 
   components: {
     BaseLoader,
-    ErrorMessage,
+    ErrorAlert,
   },
 
   computed: {
