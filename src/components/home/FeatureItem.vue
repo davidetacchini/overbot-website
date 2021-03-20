@@ -54,9 +54,10 @@ export default {
 }
 
 img {
-  width: 13rem;
+  width: 10rem;
   pointer-events: none;
   user-select: none;
+  opacity: 0.87;
 }
 
 .columns {
