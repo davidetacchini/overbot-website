@@ -6,7 +6,7 @@
     ]"
   >
     <div class="column is-two-fifths-desktop is-full-mobile">
-      <img :src="require(`@/assets/images/features/${feature.image}`)" :alt="feature.alt" />
+      <img :src="featureImage" :alt="feature.alt" />
     </div>
     <div class="column is-two-fifths-desktop is-full-mobile">
       <h1 class="title">
@@ -28,12 +28,18 @@ import BaseButton from '@/components/BaseButton';
 export default {
   name: 'FeatureItem',
 
+  props: {
+    feature: Object,
+  },
+
   components: {
     BaseButton,
   },
 
-  props: {
-    feature: Object,
+  computed: {
+    featureImage() {
+      return require(`@/assets/images/features/${this.feature.image}`);
+    },
   },
 };
 </script>

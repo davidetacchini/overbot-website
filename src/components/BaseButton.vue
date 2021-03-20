@@ -3,7 +3,7 @@
     :href="link"
     target="_blank"
     rel="noopener"
-    :class="['button is-fullwidth', setColor, { 'is-stretched': isStretched }]"
+    :class="['button is-fullwidth', buttonColor, { 'is-stretched': isStretched }]"
   >
     {{ action }}
   </a>
@@ -21,7 +21,7 @@ export default {
   },
 
   computed: {
-    setColor() {
+    buttonColor() {
       return this.color !== undefined ? this.color : 'is-primary';
     },
   },

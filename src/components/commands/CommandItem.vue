@@ -1,5 +1,5 @@
 <template>
-  <div :class="['command', 'box', { 'is-premium': command.is_premium }]">
+  <div :class="['box command', { 'is-premium': command.is_premium }]">
     <h1 class="command__title title is-5">{{ command.name }} {{ command.signature }}</h1>
     <div class="command__info box no-border inner-shadow">
       <h2 class="command__description subtitle">
@@ -7,20 +7,19 @@
         <button
           v-if="command.long_desc.split('.').length > 2"
           class="command__description--read-more"
-          href="#"
           @click.prevent="showMore = !showMore"
         >
-          <span>{{ showMore ? 'Show less' : 'Show more' }}</span>
+          <span>{{ showText }}</span>
         </button>
         <transition name="slide-fade">
           <div v-if="showMore" class="command__description--more">
-            {{ formatDescription(command.long_desc) }}
+            {{ longDescription }}
           </div>
         </transition>
       </h2>
       <hr v-if="command.aliases" />
       <div v-if="command.aliases" class="command__aliases">
-        <p class="has-text-grey">Aliases: {{ command.aliases.join(', ') }}</p>
+        <p class="has-text-grey">Aliases: {{ aliases }}</p>
       </div>
     </div>
   </div>
@@ -40,9 +39,20 @@ export default {
     };
   },
 
-  methods: {
-    formatDescription(command) {
-      return command.split('.').slice(1).join('.').replace('\n', '').replace(/`/g, '');
+  computed: {
+    aliases() {
+      return this.command.aliases.join(', ');
+    },
+    showText() {
+      return this.showMore ? 'Show less' : 'Show more';
+    },
+    longDescription() {
+      return this.command.long_desc
+        .split('.')
+        .slice(1)
+        .join('.')
+        .replace('\n', '')
+        .replace(/`/g, '');
     },
   },
 };

@@ -1,5 +1,5 @@
 <template>
-  <div :class="['box has-text-dark', setShardBgColor]">
+  <div :class="['box has-text-dark', shardBgColor]">
     <p>
       Shard:
       <span class="has-text-weight-bold">{{ shard.id }}</span>
@@ -22,7 +22,7 @@ export default {
   },
 
   computed: {
-    setShardBgColor() {
+    shardBgColor() {
       if (this.shard.latency < 150) {
         return 'has-background-success';
       } else if (this.shard.latency >= 150 && this.shard.latency < 500) {
