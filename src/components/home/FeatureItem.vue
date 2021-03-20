@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[
-      'columns is-multiline is-mobile is-centered has-text-centered',
+      'columns is-multiline is-mobile is-centered is-vcentered has-text-centered',
       { 'column-reverse': feature.reversed },
     ]"
   >
@@ -61,7 +61,6 @@ img {
 }
 
 .columns {
-  align-items: center;
   padding: 3rem 0;
 }
 
@@ -80,7 +79,7 @@ img {
 
 @media screen and (max-width: 768px) {
   img {
-    width: 9rem;
+    width: 8rem;
     display: flex;
     margin: 0 auto;
   }

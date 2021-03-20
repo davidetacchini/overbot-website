@@ -1,9 +1,9 @@
 <template>
   <div id="app">
+    <vue-progress-bar />
     <the-navbar />
     <router-view />
     <the-footer />
-    <vue-progress-bar />
   </div>
 </template>
 
@@ -49,16 +49,21 @@ export default {
 .box {
   background-color: $color-charlie !important;
   border-radius: $border-radius !important;
+  border: 1px solid $color-delta !important;
+
+  &.no-border {
+    border: unset !important;
+  }
 
   &.inner-shadow {
-    -moz-box-shadow: inset 0 0 5px $hr-color !important;
-    -webkit-box-shadow: inset 0 0 5px $hr-color !important;
-    box-shadow: inset 0 0 5px $hr-color !important;
+    -moz-box-shadow: inset 0 0 5px $color-delta !important;
+    -webkit-box-shadow: inset 0 0 5px $color-delta !important;
+    box-shadow: inset 0 0 5px $color-delta !important;
   }
 }
 
 hr {
-  background-color: $hr-color !important;
+  background-color: $color-delta !important;
   height: 1px !important;
 }
 

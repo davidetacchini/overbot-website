@@ -25,7 +25,7 @@ export default {
   padding: 0 15px !important;
   font-size: 1rem !important;
   background-color: $color-charlie !important;
-  border: unset !important;
+  border: 1px solid $color-delta !important;
   border-radius: $border-radius !important;
   outline: none !important;
   color: rgba(255, 255, 255, 0.7) !important;

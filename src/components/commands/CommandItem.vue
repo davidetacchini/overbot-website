@@ -1,7 +1,7 @@
 <template>
   <div :class="['command', 'box', { 'is-premium': command.is_premium }]">
     <h1 class="command__title title is-5">{{ command.name }} {{ command.signature }}</h1>
-    <div class="command__info box inner-shadow">
+    <div class="command__info box no-border inner-shadow">
       <h2 class="command__description subtitle">
         {{ command.short_desc }}
         <button
@@ -20,7 +20,7 @@
       </h2>
       <hr v-if="command.aliases" />
       <div v-if="command.aliases" class="command__aliases">
-        <h2 class="subtitle is-6 opacity-75">Aliases: {{ command.aliases.join(', ') }}</h2>
+        <p class="has-text-grey">Aliases: {{ command.aliases.join(', ') }}</p>
       </div>
     </div>
   </div>

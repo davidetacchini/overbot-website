@@ -3,7 +3,11 @@
     :href="link"
     target="_blank"
     rel="noopener"
-    :class="['button is-fullwidth is-primary', color, { 'is-stretched': isStretched }]"
+    :class="[
+      'button is-fullwidth',
+      color !== undefined ? color : 'is-primary',
+      { 'is-stretched': isStretched },
+    ]"
   >
     <span class="button__content">{{ action }}</span>
   </a>
