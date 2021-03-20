@@ -1,14 +1,6 @@
 <template>
   <base-container>
-    <h1 class="title">
-      Bot Permissions
-      <span class="tag is-danger">
-        <span class="icon">
-          <i class="fas fa-exclamation-circle" />
-        </span>
-        Required
-      </span>
-    </h1>
+    <h1 class="title">Bot Permissions</h1>
     <hr />
     <h2 class="subtitle is-6">
       The following list details what permissions OverBot requires to ensure proper operation.
@@ -43,3 +35,13 @@ export default {
   },
 };
 </script>
+
+<style scoped lang="scss">
+.tag {
+  font-size: 0.875rem !important;
+}
+
+.icon {
+  margin-right: 3px !important;
+}
+</style>
