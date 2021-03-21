@@ -12,8 +12,8 @@
   {
     "image": "rank.svg",
     "alt": "Rank",
-    "title": "Check your SR",
-    "content": "OverBot allows you to check your SR and more!",
+    "title": "Check your SRs",
+    "content": "OverBot allows you to check your SRs and more!",
     "reversed": false,
     "button": false,
     "buttonLink": null,
