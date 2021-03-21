@@ -1,19 +1,12 @@
 <template>
-  <section :class="['hero is-dark', `is-${sectionSize}`]">
+  <section class="hero is-medium">
     <div class="hero-body">
       <div class="container">
         <div :class="['wrapper', { 'full-width': isFullWidth }]">
-          <h1
-            :class="[
-              'title',
-              `is-${titleSize}`,
-              { 'is-spaced': isSpaced },
-              { 'is-desktop-centered': isDesktopCentered },
-            ]"
-          >
+          <h1 :class="['title is-3 is-spaced', titleClass]">
             {{ title }}
           </h1>
-          <h2 class="wrapper__subtitle subtitle is-5">
+          <h2 class="subtitle is-5">
             {{ subtitle }}
           </h2>
           <slot />
@@ -28,31 +21,25 @@ export default {
   name: 'HeroSection',
 
   props: {
-    sectionSize: String,
-    isFullWidth: Boolean,
     title: String,
-    titleSize: String,
     subtitle: String,
-    isSpaced: Boolean,
-    isDesktopCentered: Boolean,
+    titleClass: String,
+    isFullWidth: Boolean,
   },
 };
 </script>
 
 <style scoped lang="scss">
-.wrapper__subtitle {
+.subtitle {
   margin-bottom: 3rem !important;
+  line-height: 1.5 !important;
 }
 
 .full-width {
-  max-width: fit-content !important;
-}
-
-.subtitle {
-  line-height: 1.5;
+  max-width: fit-content;
 }
 
 .is-desktop-centered {
-  text-align: center !important;
+  text-align: center;
 }
 </style>

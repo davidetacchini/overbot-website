@@ -5,15 +5,19 @@
         <p>{{ content }}</p>
       </div>
       <div class="column is-narrow" v-if="button">
-        <base-button :link="button.link" :action="button.action" :color="buttonColor" />
+        <a
+          :class="['button is-fullwidth', buttonColor]"
+          :href="button.link"
+          target="_blank"
+          :action="button.action"
+          >{{ button.action }}</a
+        >
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import BaseButton from '@/components/BaseButton';
-
 export default {
   name: 'BaseAlert',
 
@@ -21,10 +25,6 @@ export default {
     type: String,
     content: String,
     button: Object,
-  },
-
-  components: {
-    BaseButton,
   },
 
   computed: {

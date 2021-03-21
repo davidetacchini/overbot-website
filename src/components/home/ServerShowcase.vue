@@ -76,7 +76,6 @@ export default {
   min-height: 300px;
   user-select: none !important;
   text-align: center;
-  transition: transform 175ms ease-in-out, box-shadow 175ms ease-in-out;
 
   &__title {
     padding: 30px 0 12px;

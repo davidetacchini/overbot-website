@@ -50,16 +50,19 @@ export default {
         Status: '/status',
       },
       dropdownRoutes: {
-        Discord: {
+        'Find us online': {
           isTitle: true,
         },
         'top.gg': 'https://top.gg/bot/547546531666984961',
-        'discordbotlist.com': 'https://discordbotlist.com/bots/547546531666984961',
-        'discord.bots.gg': 'https://discord.bots.gg/bots/547546531666984961',
+        'dbl.com': 'https://discordbotlist.com/bots/547546531666984961',
+        'bots.gg': 'https://discord.bots.gg/bots/547546531666984961',
         Social: {
           isTitle: true,
         },
         GitHub: 'https://github.com/davidetacchini/overbot',
+        Help: {
+          isTitle: true,
+        },
         'Support Server': 'https://discord.gg/8g3jnxv',
       },
     };

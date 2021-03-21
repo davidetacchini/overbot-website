@@ -67,33 +67,6 @@ hr {
   height: 1px !important;
 }
 
-.button {
-  padding: 25px 10px !important;
-  border-radius: $button-border-radius !important;
-  font-size: 1rem !important;
-  border: unset !important;
-  font-weight: bolder !important;
-}
-
-.menu-title {
-  color: $white-high-emphasis !important;
-  font-weight: bolder !important;
-}
-
-.menu-item {
-  display: block !important;
-  margin-left: 10px !important;
-  position: relative !important;
-}
-
-.menu-item > a {
-  transition: color 175ms ease-out !important;
-}
-
-.router-link-active {
-  color: $white-high-emphasis !important;
-}
-
 @media screen and (max-width: 768px) {
   .wrapper {
     text-align: center;

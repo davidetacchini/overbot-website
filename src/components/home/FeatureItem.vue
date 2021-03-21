@@ -16,14 +16,25 @@
         {{ feature.content }}
       </h2>
       <div v-if="feature.button">
-        <base-button :link="feature.buttonLink" :action="feature.buttonAction" />
+        <home-button
+          v-if="feature.button.link"
+          :link="feature.button.link"
+          :action="feature.button.action"
+          cls="is-primary is-outlined"
+        />
+        <home-button
+          v-else
+          :path="feature.button.path"
+          :action="feature.button.action"
+          cls="is-primary is-outlined"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import BaseButton from '@/components/BaseButton';
+import HomeButton from '@/components/home/HomeButton';
 
 export default {
   name: 'FeatureItem',
@@ -33,7 +44,7 @@ export default {
   },
 
   components: {
-    BaseButton,
+    HomeButton,
   },
 
   computed: {
