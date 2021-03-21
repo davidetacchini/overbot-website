@@ -1,13 +1,13 @@
 <template>
   <div class="circles-status">
     <b-tooltip type="is-black" :animated="true" :delay="50" label="Operational">
-      <div class="circle has-background-success" />
+      <div class="circle bg-success" />
     </b-tooltip>
     <b-tooltip type="is-black" :animated="true" :delay="50" label="Partial Outage">
-      <div class="circle has-background-warning" />
+      <div class="circle bg-warning" />
     </b-tooltip>
     <b-tooltip type="is-black" :animated="true" :delay="50" label="Major Outage">
-      <div class="circle has-background-danger" />
+      <div class="circle bg-danger" />
     </b-tooltip>
   </div>
 </template>
@@ -30,6 +30,7 @@ export default {
   padding: 10px;
   background-color: $color-bravo;
   border-radius: 3rem;
+  border: 1px solid $color-delta;
 }
 
 .circle {

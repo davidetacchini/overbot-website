@@ -1,5 +1,5 @@
 <template>
-  <base-alert type="danger" :content="content" :button="button" />
+  <base-alert type="bg-danger" :content="content" :button="button" />
 </template>
 
 <script>
@@ -15,7 +15,7 @@ export default {
   data: () => {
     return {
       content:
-        'Ops! Something bad happened. Please refresh the page. If this error persists, contact the support server',
+        'Ops! Something bad happened. Please refresh the page. If this error persists, contact the support server.',
       button: {
         link: 'https://discord.com/invite/8g3jnxv',
         text: 'Join now',

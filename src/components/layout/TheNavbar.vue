@@ -75,9 +75,4 @@ export default {
 .navbar-item:not(.logo) {
   font-size: 0.875rem !important;
 }
-
-.dropdown-more .icon {
-  max-height: 0 !important;
-  font-size: 0.7rem !important;
-}
 </style>

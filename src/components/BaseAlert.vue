@@ -48,28 +48,4 @@ export default {
     font-size: 0.875rem !important;
   }
 }
-
-.info {
-  background-color: rgb(17, 30, 46) !important;
-  color: rgb(121, 192, 255) !important;
-  border: 1px solid rgba(56, 139, 253, 0.4) !important;
-}
-
-.success {
-  background-color: rgb(17, 31, 28) !important;
-  color: rgb(86, 211, 100) !important;
-  border: 1px solid rgba(46, 160, 67, 0.4) !important;
-}
-
-.warning {
-  background-color: rgb(32, 27, 22) !important;
-  color: rgb(227, 179, 65) !important;
-  border: 1px solid rgba(187, 128, 9, 0.4) !important;
-}
-
-.danger {
-  background-color: rgb(36, 22, 28) !important;
-  color: rgb(255, 123, 114) !important;
-  border: 1px solid rgba(248, 81, 73, 0.4) !important;
-}
 </style>

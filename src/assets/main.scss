@@ -23,12 +23,22 @@ $white: $white-high-emphasis;
 $grey: $white-medium-emphasis;
 $dark: $color-bravo;
 
+// Typography
+$title-color: $white-high-emphasis !important;
+$subtitle-color: $white-medium-emphasis !important;
+
 // Footer
 $footer-background-color: $color-charlie;
 
-@import './scss/misc.scss';
+body,
+html {
+  background-color: $color-bravo !important;
+}
+
 @import './scss/navbar.scss';
+@import './scss/dropdown.scss';
 @import './scss/loader.scss';
+@import './scss/background.scss';
 
 @import '~bulma';
 @import '~buefy/src/scss/buefy';

@@ -1,0 +1,14 @@
+$dropdown-content-background-color: $color-charlie;
+$dropdown-item-color: $white-medium-emphasis;
+$dropdown-item-hover-color: $white-high-emphasis;
+$dropdown-divider-background-color: $color-delta;
+$dropdown-item-hover-background-color: transparent;
+
+.dropdown-content {
+  border: 1px solid $color-delta !important;
+}
+
+.dropdown-more .icon {
+  max-height: 0 !important;
+  font-size: 0.7rem !important;
+}
