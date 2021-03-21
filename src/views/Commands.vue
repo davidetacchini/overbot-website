@@ -65,7 +65,7 @@ export default {
     },
   },
 
-  mounted() {
+  created() {
     // reset search and category everytime we visit /commands
     this.setSearch('');
     this.setCategory('all');

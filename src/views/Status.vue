@@ -12,7 +12,7 @@
         <status-item title="Server Information" :item="host" />
       </div>
       <div class="box shards">
-        <h1 class="title is-5">Shards</h1>
+        <h1 class="title is-5">Shards Status</h1>
         <shard-tooltip />
         <div class="columns is-multiline is-mobile">
           <div
@@ -73,7 +73,7 @@ export default {
     },
   },
 
-  mounted() {
+  created() {
     this.getStats();
   },
 
