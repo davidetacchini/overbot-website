@@ -24,4 +24,11 @@ export default {
 .button {
   min-height: 3rem !important;
 }
+
+@media screen and (max-width: 768px) {
+  .is-stretched {
+    max-width: 200px !important;
+    margin: 0 auto !important;
+  }
+}
 </style>
