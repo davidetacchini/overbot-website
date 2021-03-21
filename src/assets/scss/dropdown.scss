@@ -12,3 +12,18 @@ $dropdown-item-hover-background-color: transparent;
   max-height: 0 !important;
   font-size: 0.7rem !important;
 }
+
+.menu-title {
+  color: $white-high-emphasis !important;
+  font-weight: bolder !important;
+}
+
+.menu-item {
+  display: block !important;
+  margin-left: 10px !important;
+  position: relative !important;
+}
+
+.menu-item > a {
+  transition: color 175ms ease-out !important;
+}
