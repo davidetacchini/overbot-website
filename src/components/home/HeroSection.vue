@@ -30,6 +30,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    text-align: center;
+  }
+}
+
 .subtitle {
   margin-bottom: 3rem !important;
   line-height: 1.5 !important;

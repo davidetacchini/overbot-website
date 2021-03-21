@@ -41,11 +41,6 @@ export default {
 </script>
 
 <style lang="scss">
-.wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 .box {
   background-color: $color-charlie !important;
   border-radius: $border-radius !important;
@@ -65,11 +60,5 @@ export default {
 hr {
   background-color: $color-delta !important;
   height: 1px !important;
-}
-
-@media screen and (max-width: 768px) {
-  .wrapper {
-    text-align: center;
-  }
 }
 </style>
