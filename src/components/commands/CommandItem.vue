@@ -60,11 +60,11 @@ export default {
 
 <style scoped lang="scss">
 .slide-fade-enter-active {
-  transition: all 0.3s ease;
+  transition: all 175ms ease;
 }
 
 .slide-fade-leave-active {
-  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 175ms cubic-bezier(1, 0.5, 0.8, 1);
 }
 
 .slide-fade-enter,
