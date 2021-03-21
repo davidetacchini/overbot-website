@@ -1,6 +1,6 @@
 <template>
   <div :class="['notification', type]">
-    <div class="columns is-vcentered">
+    <div class="columns is-mobile is-vcentered">
       <div class="column">
         <p>{{ content }}</p>
       </div>
