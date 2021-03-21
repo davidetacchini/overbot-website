@@ -36,6 +36,6 @@ input:disabled {
 }
 
 input::placeholder {
-  color: $white-medium-emphasis !important;
+  color: $grey !important;
 }
 </style>

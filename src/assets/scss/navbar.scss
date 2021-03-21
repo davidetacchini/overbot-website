@@ -1,13 +1,13 @@
 $navbar-background-color: transparent;
-$navbar-item-color: $white-medium-emphasis;
-$navbar-item-hover-color: $white-high-emphasis;
+$navbar-item-color: $grey;
+$navbar-item-hover-color: $white;
 $navbar-item-hover-background-color: transparent;
-$navbar-burger-color: $white-medium-emphasis;
+$navbar-burger-color: $grey;
 
 .navbar-burger {
-  color: $white-medium-emphasis !important;
+  color: $grey !important;
 }
 
 .router-link-active {
-  color: $white-high-emphasis !important;
+  color: $white !important;
 }

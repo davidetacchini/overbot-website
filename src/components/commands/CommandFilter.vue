@@ -32,7 +32,7 @@ export default {
     width: 100% !important;
     height: 100% !important;
     background-color: $color-charlie !important;
-    color: $white-medium-emphasis !important;
+    color: $grey !important;
     border: 1px solid $color-delta !important;
     border-radius: $border-radius !important;
     outline: unset !important;

@@ -1,6 +1,6 @@
 $dropdown-content-background-color: $color-charlie;
-$dropdown-item-color: $white-medium-emphasis;
-$dropdown-item-hover-color: $white-high-emphasis;
+$dropdown-item-color: $grey;
+$dropdown-item-hover-color: $white;
 $dropdown-divider-background-color: $color-delta;
 $dropdown-item-hover-background-color: transparent;
 
@@ -14,7 +14,7 @@ $dropdown-item-hover-background-color: transparent;
 }
 
 .menu-title {
-  color: $white-high-emphasis !important;
+  color: $white !important;
   font-weight: bolder !important;
 }
 

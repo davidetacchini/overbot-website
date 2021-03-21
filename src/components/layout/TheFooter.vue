@@ -76,7 +76,7 @@ export default {
 <style scoped lang="scss">
 p {
   font-size: 14px !important;
-  color: $white-medium-emphasis !important;
+  color: $grey !important;
 }
 
 .content {
@@ -86,7 +86,7 @@ p {
 
 .link {
   display: block;
-  color: $white-medium-emphasis;
+  color: $grey;
   font-size: 14px;
   transition: color 175ms ease-out;
 }
@@ -96,7 +96,7 @@ p {
 }
 
 .link:hover {
-  color: $white-high-emphasis !important;
+  color: $white !important;
 }
 
 .subtitle {

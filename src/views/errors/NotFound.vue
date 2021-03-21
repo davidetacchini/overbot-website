@@ -40,6 +40,6 @@ img {
 }
 
 .back-home > a:hover {
-  color: $white-high-emphasis !important;
+  color: $white !important;
 }
 </style>

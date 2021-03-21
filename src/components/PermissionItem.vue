@@ -47,7 +47,7 @@ export default {
   &__icon {
     margin-right: 10px;
     font-size: 1rem;
-    color: $white-high-emphasis;
+    color: $white;
   }
 
   &__required {
