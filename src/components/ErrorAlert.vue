@@ -18,7 +18,7 @@ export default {
         'Ops! Something bad happened. Please refresh the page. If this error persists, contact the support server.',
       button: {
         link: 'https://discord.com/invite/8g3jnxv',
-        text: 'Join now',
+        action: 'Join now',
       },
     };
   },

@@ -5,7 +5,7 @@
         <p>{{ content }}</p>
       </div>
       <div class="column is-narrow" v-if="button">
-        <base-button :link="button.link" :action="button.text" :color="buttonColor" />
+        <base-button :link="button.link" :action="button.action" :color="buttonColor" />
       </div>
     </div>
   </div>
