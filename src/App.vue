@@ -71,10 +71,5 @@ hr {
   .wrapper {
     text-align: center;
   }
-
-  .is-stretched {
-    max-width: 200px !important;
-    margin: 0 auto !important;
-  }
 }
 </style>

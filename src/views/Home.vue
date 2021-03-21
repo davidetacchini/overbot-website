@@ -8,7 +8,7 @@
     >
       <div class="columns is-mobile">
         <div class="column is-one-quarter-tablet is-half-mobile">
-          <home-button :link="links.invite" action="Add to Discord" cls="is-primary is-stretched" />
+          <home-button :link="links.invite" action="Add to Discord" cls="is-primary" />
         </div>
         <div class="column is-one-quarter-tablet is-half-mobile">
           <home-button path="/premium" action="Get Premium" cls="is-primary is-outlined" />
