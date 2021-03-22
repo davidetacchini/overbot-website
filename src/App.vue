@@ -64,5 +64,6 @@ hr {
 
 .button {
   transition: all 175ms ease-in-out !important;
+  font-weight: bold !important;
 }
 </style>

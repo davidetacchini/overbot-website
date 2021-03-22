@@ -52,4 +52,8 @@ export default {
   padding: 25px;
   border-radius: 50%;
 }
+
+.button {
+  font-size: 0.9rem !important;
+}
 </style>
