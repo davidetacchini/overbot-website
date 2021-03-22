@@ -13,7 +13,7 @@
   },
   {
     "id": 3,
-    "name": "SRs performance chart",
+    "name": "SRs performance graph",
     "description": "Unlock the 'profile graph' command and see your SRs performance wrapped in a graph.",
     "icon": "chart-line"
   },
