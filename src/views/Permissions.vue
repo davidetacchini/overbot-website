@@ -1,5 +1,5 @@
 <template>
-  <base-container>
+  <base-section>
     <h1 class="title">Bot Permissions</h1>
     <hr />
     <h2 class="subtitle is-6">
@@ -7,25 +7,25 @@
     </h2>
     <div class="columns is-multiline is-mobile">
       <div
-        v-for="(permission, index) in permissions"
-        :key="index"
+        v-for="permission in permissions"
+        :key="permission.id"
         class="column is-half-desktop is-full-tablet is-full-mobile"
       >
-        <permission-item :permission="permission" />
+        <permission-box :permission="permission" />
       </div>
     </div>
-  </base-container>
+  </base-section>
 </template>
 
 <script>
 import permissions from '@/assets/json/permissions.json';
-import BaseContainer from '@/components/BaseContainer.vue';
-import PermissionItem from '@/components/PermissionItem';
+import BaseSection from '@/components/BaseSection.vue';
+import PermissionBox from '@/components/permissions/PermissionBox';
 
 export default {
   components: {
-    BaseContainer,
-    PermissionItem,
+    BaseSection,
+    PermissionBox,
   },
 
   data: () => {
@@ -35,13 +35,3 @@ export default {
   },
 };
 </script>
-
-<style scoped lang="scss">
-.tag {
-  font-size: 0.875rem !important;
-}
-
-.icon {
-  margin-right: 3px !important;
-}
-</style>

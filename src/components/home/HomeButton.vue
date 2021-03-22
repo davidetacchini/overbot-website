@@ -1,8 +1,8 @@
 <template>
-  <router-link v-if="path" :to="path" :class="['button is-fullwidth', cls]">
+  <router-link v-if="path" :to="path" :class="['button', cls]">
     {{ action }}
   </router-link>
-  <a v-else :href="link" target="_blank" rel="noopener" :class="['button is-fullwidth', cls]">
+  <a v-else :href="link" target="_blank" rel="noopener" :class="['button', cls]">
     {{ action }}
   </a>
 </template>
@@ -28,7 +28,6 @@ export default {
 @media screen and (max-width: 768px) {
   .is-stretched {
     max-width: 200px !important;
-    margin: 0 auto !important;
   }
 }
 </style>

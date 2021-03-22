@@ -61,4 +61,8 @@ hr {
   background-color: $color-delta !important;
   height: 1px !important;
 }
+
+.button {
+  transition: all 175ms ease-in-out !important;
+}
 </style>

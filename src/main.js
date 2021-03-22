@@ -11,8 +11,8 @@ import VueProgressBar from 'vue-progressbar';
 import VueDragscroll from 'vue-dragscroll';
 
 const options = {
-  color: 'rgb(100, 201, 255)',
-  failedColor: 'rgb(255, 105, 97)',
+  color: 'rgb(88, 166, 255)',
+  failedColor: 'rgb(255, 123, 114)',
   thickness: '1.5px',
 };
 

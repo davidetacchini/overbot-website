@@ -12,6 +12,7 @@
         <img class="server__region" :src="setRegionFlag(server.region)" :alt="server.region" />
         <img class="server__image" :src="server.icon" :alt="server.name" />
         <h1 class="server__title title is-5">{{ server.name }}</h1>
+        <p class="server__members">Members: {{ server.members }}</p>
         <div class="box inner-shadow server__commands-run">
           <p>
             <span class="has-text-grey">Commands run: </span>
@@ -77,17 +78,24 @@ export default {
   user-select: none !important;
   text-align: center;
 
+  &__image {
+    border-radius: 50%;
+    pointer-events: none;
+    width: 70%;
+  }
+
   &__title {
-    padding: 30px 0 12px;
+    margin-top: 25px !important;
+    margin-bottom: 0 !important;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  &__image {
-    border-radius: 50%;
-    pointer-events: none;
-    width: 70%;
+  &__members {
+    font-size: 0.875rem;
+    color: $grey;
+    margin-bottom: 20px;
   }
 
   &__region {

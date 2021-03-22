@@ -1,11 +1,9 @@
 [
   {
     "id": 1,
-    "image": "multilingual.svg",
-    "alt": "Multilingual",
     "title": "Multilingual",
-    "content": "OverBot supports up to 7 languages by far! You can help translating if your language is not available yet!",
-    "reversed": true,
+    "description": "OverBot supports up to 7 languages! You can help translating if your language is not available yet.",
+    "icon": "language",
     "button": {
       "link": "https://github.com/davidetacchini/overbot",
       "action": "Help translating"
@@ -13,29 +11,23 @@
   },
   {
     "id": 2,
-    "image": "rank.svg",
-    "alt": "Rank",
     "title": "Check your SRs",
-    "content": "OverBot allows you to check your SRs and more!",
-    "reversed": false,
+    "description": "Check your roles skill rating!",
+    "icon": "star",
     "button": null
   },
   {
     "id": 3,
-    "image": "stats.svg",
-    "alt": "Stats",
     "title": "Check your stats",
-    "content": "OverBot also allows you to check both your quick play and competitive stats in a single embed, so you can easily compare them!",
-    "reversed": true,
+    "description": "Check both your quick play and competitive stats in a single embed, so you can easily compare them.",
+    "icon": "stream",
     "button": null
   },
   {
     "id": 4,
-    "image": "link.svg",
-    "alt": "Link",
     "title": "Link your profiles",
-    "content": "OverBot offers you an easy way to link up to 5 profiles to your Discord ID and check your stats in a much easier and faster way without using any external links! Upgrade to Premium to be able to link more profiles!",
-    "reversed": false,
+    "description": "Link up to 5 profiles to your Discord ID without using any external links. Upgrade to Premium to be able to link more profiles!",
+    "icon": "link",
     "button": {
       "path": "/premium",
       "action": "Upgrade to Premium"
@@ -43,20 +35,16 @@
   },
   {
     "id": 5,
-    "image": "trivia.svg",
-    "alt": "Trivia",
     "title": "Play Overwatch trivia",
-    "content": "You can play Overwatch trivia with OverBot! It has few commands which makes it more immersive, such as stats and best trivia players! You can also contribute and submit new questions to be added to the game!",
-    "reversed": true,
+    "description": "Play Overwatch trivia and climb the leaderboard! It is also possible to contribute by submit new questions to be added to the game.",
+    "icon": "question-circle",
     "button": null
   },
   {
     "id": 6,
-    "image": "news.svg",
-    "alt": "News",
     "title": "News and more",
-    "content": "When using OverBot, you can check the latest Overwatch news,  patch notes and server status information!",
-    "reversed": false,
+    "description": "Check the latest Overwatch news, patch notes and server status information.",
+    "icon": "rss",
     "button": null
   }
 ]

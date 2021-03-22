@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-dark">
+  <section class="hero">
     <div class="hero-body">
       <div class="container">
         <slot />
@@ -10,6 +10,6 @@
 
 <script>
 export default {
-  name: 'BaseContainer',
+  name: 'BaseSection',
 };
 </script>

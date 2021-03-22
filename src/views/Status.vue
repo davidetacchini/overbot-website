@@ -1,5 +1,5 @@
 <template>
-  <base-container>
+  <base-section>
     <error-alert v-if="$store.getters.error" />
     <div class="box countdown has-text-white">
       This page automatically refreshes every 30 seconds. Next update in:
@@ -25,12 +25,12 @@
         </div>
       </div>
     </div>
-  </base-container>
+  </base-section>
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
-import BaseContainer from '@/components/BaseContainer';
+import BaseSection from '@/components/BaseSection';
 import ErrorAlert from '@/components/ErrorAlert';
 import BaseLoader from '@/components/BaseLoader';
 import StatusItem from '@/components/status/StatusItem';
@@ -39,7 +39,7 @@ import ShardTooltip from '@/components/status/ShardTooltip';
 
 export default {
   components: {
-    BaseContainer,
+    BaseSection,
     ErrorAlert,
     BaseLoader,
     StatusItem,

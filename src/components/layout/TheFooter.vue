@@ -1,10 +1,11 @@
 <template>
   <footer class="footer">
-    <div class="content">
+    <div class="container">
       <div class="columns is-multiline is-mobile">
         <div class="column">
           <h1 class="title is-4">OverBot</h1>
           <p>Copyright &copy; {{ currentYear }} OverBot. All rights reserved.</p>
+          <br />
           <p>OverBot is not affiliated with Blizzard Entertainment.</p>
         </div>
         <div class="column is-full-mobile">
@@ -77,11 +78,6 @@ export default {
 p {
   font-size: 14px !important;
   color: $grey !important;
-}
-
-.content {
-  max-width: 90%;
-  margin: 0 auto;
 }
 
 .link {

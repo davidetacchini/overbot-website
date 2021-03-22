@@ -1,104 +1,47 @@
 <template>
-  <div
-    :class="[
-      'columns is-multiline is-mobile is-centered is-vcentered has-text-centered',
-      { 'column-reverse': feature.reversed },
-    ]"
-  >
-    <div class="column is-two-fifths-desktop is-full-mobile">
-      <img :src="featureImage" :alt="feature.alt" />
+  <div class="columns is-multiline is-mobile">
+    <div class="column is-narrow">
+      <span class="icon">
+        <i :class="['fas', `fa-${feature.icon}`]" />
+      </span>
     </div>
-    <div class="column is-two-fifths-desktop is-full-mobile">
-      <h1 class="title">
+    <div class="column">
+      <h1 class="title is-5 is-spaced">
         {{ feature.title }}
       </h1>
-      <h2 class="subtitle">
-        {{ feature.content }}
+      <h2 class="subtitle is-6">
+        {{ feature.description }}
       </h2>
       <div v-if="feature.button">
-        <home-button
-          v-if="feature.button.link"
-          :link="feature.button.link"
-          :action="feature.button.action"
-          cls="is-primary is-outlined"
-        />
-        <home-button
-          v-else
-          :path="feature.button.path"
-          :action="feature.button.action"
-          cls="is-primary is-outlined"
-        />
+        <a v-if="feature.button.link" :href="feature.button.link" target="_blank" rel="noopener">
+          {{ feature.button.action }}
+        </a>
+        <router-link v-else :to="feature.button.path">{{ feature.button.action }}</router-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import HomeButton from '@/components/home/HomeButton';
-
 export default {
   name: 'FeatureItem',
 
   props: {
     feature: Object,
   },
-
-  components: {
-    HomeButton,
-  },
-
-  computed: {
-    featureImage() {
-      return require(`@/assets/images/features/${this.feature.image}`);
-    },
-  },
 };
 </script>
 
 <style scoped lang="scss">
-.title {
-  margin-bottom: 35px !important;
-  font-size: 1.625rem !important;
+.column {
+  margin-top: 3rem !important;
 }
 
-.subtitle {
-  font-size: 1.1875rem !important;
-}
-
-.column-reverse {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-img {
-  width: 10rem;
-  pointer-events: none;
-  user-select: none;
-  opacity: 0.87;
-}
-
-.columns {
-  padding: 3rem 0;
-}
-
-.columns:first-child {
-  padding-top: unset;
-}
-
-.columns:last-child {
-  padding-bottom: unset;
-}
-
-.button {
-  max-width: fit-content !important;
-  margin: 0 auto !important;
-}
-
-@media screen and (max-width: 768px) {
-  img {
-    width: 8rem;
-    display: flex;
-    margin: 0 auto;
-  }
+.icon {
+  font-size: 1.5rem;
+  color: $primary;
+  background-color: $color-delta;
+  padding: 25px;
+  border-radius: 50%;
 }
 </style>

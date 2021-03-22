@@ -1,5 +1,5 @@
 <template>
-  <base-container>
+  <base-section>
     <error-alert v-if="$store.getters.error" />
     <div class="columns is-multiline is-mobile">
       <div class="column is-four-fifths-desktop is-three-quarters-tablet is-full-mobile">
@@ -16,12 +16,12 @@
         <command-item v-if="!$store.getters.loading" :command="command" />
       </div>
     </div>
-  </base-container>
+  </base-section>
 </template>
 
 <script>
 import { mapGetters, mapMutations, mapActions } from 'vuex';
-import BaseContainer from '@/components/BaseContainer.vue';
+import BaseSection from '@/components/BaseSection.vue';
 import BaseLoader from '@/components/BaseLoader';
 import ErrorAlert from '@/components/ErrorAlert';
 import CommandSearchBar from '@/components/commands/CommandSearchBar';
@@ -31,7 +31,7 @@ import CommandNotFound from '@/components/commands/CommandNotFound';
 
 export default {
   components: {
-    BaseContainer,
+    BaseSection,
     BaseLoader,
     ErrorAlert,
     CommandSearchBar,

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "question": "What is OverBot Premium?",
+    "answer": "OverBot Premium is a subscription you can get to support the development of the bot. It allows you to unlock exclusive perks."
+  },
+  {
+    "id": 2,
+    "question": "What payment methods are supported?",
+    "answer": "OverBot uses DonateBot for donations. DonateBot interfaces with PayPal, so your payment will be handled by PayPal."
+  },
+  {
+    "id": 3,
+    "question": "What is the money used for?",
+    "answer": "All the money raised from the subscriptions will be in the first place used to pay the server's monthly fees."
+  },
+  {
+    "id": 4,
+    "question": "Is my payment secure?",
+    "answer": "Your payment is 100% secure. We don’t have access to your Paypal account information, everything is processed securely through DonateBot (official donation bot from Discord)."
+  },
+  {
+    "id": 5,
+    "question": "Can I get a refund if I don't like it?",
+    "answer": "If you are unhappy with your subscription or have encountered an issue please contact us at (ADD LINK)"
+  },
+  {
+    "id": 6,
+    "question": "Can I transfer my Premium subscription to another Discord account?",
+    "answer": "No. Once you are subscribed, you can't change your account. If you got any problem don't hesitate to contact us on our official Discord server."
+  },
+  {
+    "id": 7,
+    "question": "Is my subscription valid for multiple Discord accounts?",
+    "answer": "No. The Premium subscription is valid for one Discord account only."
+  }
+]
