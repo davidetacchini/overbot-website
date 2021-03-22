@@ -6,7 +6,7 @@
       </span>
     </div>
     <div class="column">
-      <h1 class="title is-5 is-spaced">
+      <h1 class="title is-5 is-spaced has-text-weight-bold">
         {{ feature.title }}
       </h1>
       <h2 class="subtitle is-6">

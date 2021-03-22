@@ -2,7 +2,9 @@
   <div>
     <base-section class="is-medium">
       <div class="is-stretch">
-        <h1 class="title is-3 is-spaced">The best Overwatch bot for Discord</h1>
+        <h1 class="title is-3 has-text-weight-bold is-spaced">
+          The best Overwatch bot for Discord
+        </h1>
         <h2 class="subtitle is-5">
           OverBot has many features for Overwatch players that allow them to view their overall
           stats, stay up to date with the latest news, link their Overwatch profiles and more!
@@ -28,7 +30,7 @@
 
     <base-section class="is-medium is-charlie">
       <div class="is-stretch">
-        <h1 class="title is-4 is-spaced">What exactly does OverBot offer?</h1>
+        <h1 class="title is-4 has-text-weight-bold is-spaced">What exactly does OverBot offer?</h1>
         <h2 class="subtitle is-6">Here's why you should start using OverBot today.</h2>
         <div class="columns is-multiline is-mobile is-centered">
           <div
@@ -49,7 +51,7 @@
 
     <base-section class="is-medium">
       <div class="is-stretch">
-        <h1 class="title is-3 is-spaced">Need Help?</h1>
+        <h1 class="title is-3 has-text-weight-bold is-spaced">Need Help?</h1>
         <h2 class="subtitle is-5">
           If you got any questions or issues with OverBot don't hesitate to join the official
           Discord server!
