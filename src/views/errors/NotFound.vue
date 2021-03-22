@@ -1,29 +1,20 @@
 <template>
-  <div>
-    <section class="hero is-dark">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <div class="wrapper">
-            <img src="@/assets/images/not-found.svg" alt="Not Found Img" />
-            <div class="back-home">
-              <a href="/" class="title is-4 has-text-grey">Back to homepage</a>
-            </div>
-          </div>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <img src="@/assets/images/not-found.svg" alt="Not Found Image" />
+        <div class="back-home">
+          <a href="/" class="button is-outlined is-primary">Go to homepage</a>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <style scoped lang="scss">
-.wrapper {
-  max-width: 550px;
-}
-
-@media screen and (max-width: 560px) {
-  .wrapper > h1 {
-    font-size: 1.5rem;
-  }
+.container {
+  max-width: 550px !important;
+  margin: 0 auto !important;
 }
 
 img {
@@ -33,13 +24,5 @@ img {
 
 .back-home {
   padding-top: 2rem;
-}
-
-.back-home > a {
-  transition: color 0.2s;
-}
-
-.back-home > a:hover {
-  color: $white !important;
 }
 </style>
