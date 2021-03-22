@@ -4,7 +4,7 @@
       <div class="container has-text-centered">
         <img src="@/assets/images/not-found.svg" alt="Not Found Image" />
         <div class="back-home">
-          <a href="/" class="button is-outlined is-primary">Go to homepage</a>
+          <router-link to="/" class="button is-outlined is-primary">Go to homepage</router-link>
         </div>
       </div>
     </div>
