@@ -13,10 +13,18 @@
         {{ feature.description }}
       </h2>
       <div v-if="feature.button">
-        <a v-if="feature.button.link" :href="feature.button.link" target="_blank" rel="noopener">
+        <a
+          class="button is-outlined is-primary"
+          v-if="feature.button.link"
+          :href="feature.button.link"
+          target="_blank"
+          rel="noopener"
+        >
           {{ feature.button.action }}
         </a>
-        <router-link v-else :to="feature.button.path">{{ feature.button.action }}</router-link>
+        <router-link class="button is-outlined is-danger" v-else :to="feature.button.path">{{
+          feature.button.action
+        }}</router-link>
       </div>
     </div>
   </div>
@@ -43,5 +51,9 @@ export default {
   background-color: $color-delta;
   padding: 25px;
   border-radius: 50%;
+}
+
+.feature-link {
+  color: $primary;
 }
 </style>

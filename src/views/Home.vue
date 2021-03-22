@@ -12,14 +12,14 @@
             <home-button
               :link="links.invite"
               action="Add to Discord"
-              cls="is-primary is-fullwidth"
+              cls="is-primary is-fullwidth  has-text-weight-bold"
             />
           </div>
           <div class="column is-one-quarter-tablet is-half-mobile">
             <home-button
               path="/premium"
               action="Get Premium"
-              cls="is-danger is-outlined is-fullwidth"
+              cls="is-danger is-outlined is-fullwidth has-text-weight-bold"
             />
           </div>
         </div>
@@ -58,8 +58,8 @@
           <div class="column is-one-quarter">
             <home-button
               :link="links.discord"
-              action="Join here"
-              cls="is-primary is-stretched is-fullwidth"
+              action="Get support"
+              cls="is-primary is-stretched is-fullwidth has-text-weight-bold"
             />
           </div>
         </div>
