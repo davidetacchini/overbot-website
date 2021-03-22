@@ -38,10 +38,6 @@
 </template>
 
 <style scoped lang="scss">
-.hero-body {
-  margin: 0 auto !important;
-}
-
 .block {
   margin-top: 2.5rem !important;
 }
