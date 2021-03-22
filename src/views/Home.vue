@@ -43,7 +43,7 @@
     </base-section>
 
     <base-section class="is-medium">
-      <h1 class="title is-spaced is-3">Most active servers</h1>
+      <h1 class="title is-3">Most active servers</h1>
       <server-showcase />
     </base-section>
 
