@@ -6,7 +6,7 @@
       </div>
       <div class="column is-narrow" v-if="button">
         <a
-          :class="['button is-fullwidth', buttonColor]"
+          :class="['button is-fullwidth p-4', buttonColor]"
           :href="button.link"
           target="_blank"
           :action="button.action"
@@ -44,7 +44,6 @@ export default {
   }
 
   .button {
-    padding: 14px !important;
     font-size: 0.875rem !important;
   }
 }

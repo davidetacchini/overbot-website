@@ -11,8 +11,8 @@
       <div :class="['server box', { 'first-place': index === 0 }]">
         <img class="server__region" :src="setRegionFlag(server.region)" :alt="server.region" />
         <img class="server__image" :src="server.icon" :alt="server.name" />
-        <h1 class="server__title title is-5">{{ server.name }}</h1>
-        <p class="server__members">Members: {{ server.members }}</p>
+        <h1 class="server__title title is-5 mt-5 mb-0">{{ server.name }}</h1>
+        <p class="server__members mb-5">Members: {{ server.members }}</p>
         <div class="box inner-shadow server__commands-run">
           <p>
             <span class="has-text-grey">Commands run: </span>
@@ -85,8 +85,6 @@ export default {
   }
 
   &__title {
-    margin-top: 25px !important;
-    margin-bottom: 0 !important;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -95,7 +93,6 @@ export default {
   &__members {
     font-size: 0.875rem;
     color: $grey;
-    margin-bottom: 20px;
   }
 
   &__region {

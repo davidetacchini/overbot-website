@@ -3,9 +3,7 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <img src="@/assets/images/not-found.svg" alt="Not Found Image" />
-        <div class="back-home">
-          <router-link to="/" class="button is-outlined is-primary">Go to homepage</router-link>
-        </div>
+        <router-link to="/" class="button is-outlined is-primary mt-5">Go to homepage</router-link>
       </div>
     </div>
   </section>
@@ -20,9 +18,5 @@
 img {
   pointer-events: none;
   user-select: none;
-}
-
-.back-home {
-  padding-top: 2rem;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div :class="['box', shardBgColor]">
+  <div :class="['box p-2', shardBgColor]">
     <p>
       Shard:
       <span class="has-text-weight-bold">{{ shard.id }}</span>
@@ -38,9 +38,5 @@ export default {
 <style scoped lang="scss">
 p {
   font-size: 0.875rem;
-}
-
-.box {
-  padding: 10px !important;
 }
 </style>

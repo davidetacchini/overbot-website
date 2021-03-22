@@ -1,40 +1,36 @@
 <template>
   <footer class="footer">
     <div class="container">
-      <div class="columns is-multiline is-mobile">
-        <div class="column">
+      <div class="columns is-multiline">
+        <div class="column is-6">
           <h1 class="title is-4">OverBot</h1>
           <p>Copyright &copy; {{ currentYear }} OverBot. All rights reserved.</p>
           <br />
           <p>OverBot is not affiliated with Blizzard Entertainment.</p>
         </div>
-        <div class="column is-full-mobile">
-          <div class="columns is-multiline is-mobile is-full-tablet">
-            <div class="column">
-              <h1 class="title is-6">Navigation</h1>
-              <router-link v-for="(value, key) in navigation" :key="key" :to="value" class="link">
-                {{ key }}
-              </router-link>
-            </div>
-            <div class="column is-one-third-desktop is-full-mobile">
-              <h1 class="title is-6">Resources</h1>
-              <a
-                v-for="(value, key) in resources"
-                :key="key"
-                :href="value"
-                target="_blank"
-                rel="noopener"
-                class="link"
-                >{{ key }}</a
-              >
-            </div>
-            <div class="column is-one-third-desktop is-full-mobile">
-              <h1 class="title is-6">Legal</h1>
-              <router-link v-for="(value, key) in legal" :key="key" :to="value" class="link">
-                {{ key }}
-              </router-link>
-            </div>
-          </div>
+        <div class="column is-2">
+          <h1 class="title is-6">Navigation</h1>
+          <router-link v-for="(value, key) in navigation" :key="key" :to="value" class="link">
+            {{ key }}
+          </router-link>
+        </div>
+        <div class="column is-2">
+          <h1 class="title is-6">Resources</h1>
+          <a
+            v-for="(value, key) in resources"
+            :key="key"
+            :href="value"
+            target="_blank"
+            rel="noopener"
+            class="link"
+            >{{ key }}</a
+          >
+        </div>
+        <div class="column is-2">
+          <h1 class="title is-6">Legal</h1>
+          <router-link v-for="(value, key) in legal" :key="key" :to="value" class="link">
+            {{ key }}
+          </router-link>
         </div>
       </div>
     </div>
@@ -76,14 +72,14 @@ export default {
 
 <style scoped lang="scss">
 p {
-  font-size: 14px !important;
-  color: $grey !important;
+  font-size: 0.875rem;
+  color: $grey;
 }
 
 .link {
   display: block;
   color: $grey;
-  font-size: 14px;
+  font-size: 0.875rem;
   transition: color 175ms ease-out;
 }
 
@@ -93,10 +89,5 @@ p {
 
 .link:hover {
   color: $white !important;
-}
-
-.subtitle {
-  padding: 0 !important;
-  margin: 0 !important;
 }
 </style>

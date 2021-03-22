@@ -22,7 +22,7 @@
           Service will take effect immediately from the date of publication.
         </p>
         <p>These Terms of Service were last updated on 8 March 2021.</p>
-        <h1 class="title is-4 block">Limitations of Use</h1>
+        <h1 class="title is-5 block">Limitations of Use</h1>
         <p>
           By using this website, you warrant on behalf of yourself, your users, and other parties
           you represent that you will not:
@@ -61,7 +61,7 @@
             </li>
           </ul>
         </div>
-        <h1 class="title is-4 block">Intellectual Property</h1>
+        <h1 class="title is-5 block">Intellectual Property</h1>
         <p>
           The intellectual property in the materials contained in this website are owned by or
           licensed to OverBot and are protected by applicable copyright and trademark law. We grant
@@ -73,7 +73,7 @@
           automatically terminate if you violate any of these restrictions or the Terms of Service,
           and may be terminated by OverBot at any time.
         </p>
-        <h1 class="title is-4 block">Liability</h1>
+        <h1 class="title is-5 block">Liability</h1>
         <p>
           Our website and the materials on our website are provided on an 'as is' basis. To the
           extent permitted by law, OverBot makes no warranties, expressed or implied, and hereby
@@ -99,14 +99,14 @@
           of liability for consequential or incidental damages, these limitations may not apply to
           you.
         </p>
-        <h1 class="title is-4 block">Accuracy of Materials</h1>
+        <h1 class="title is-5 block">Accuracy of Materials</h1>
         <p>
           The materials appearing on our website are not comprehensive and are for general
           information purposes only. OverBot does not warrant or make any representations concerning
           the accuracy, likely results, or reliability of the use of the materials on this website,
           or otherwise relating to such materials or on any resources linked to this website.
         </p>
-        <h1 class="title is-4 block">Links</h1>
+        <h1 class="title is-5 block">Links</h1>
         <p>
           OverBot has not reviewed all of the sites linked to its website and is not responsible for
           the contents of any such linked site. The inclusion of any link does not imply
@@ -114,18 +114,18 @@
           at your own risk and we strongly advise you make your own investigations with respect to
           the suitability of those sites.
         </p>
-        <h1 class="title is-4 block">Right to Terminate</h1>
+        <h1 class="title is-5 block">Right to Terminate</h1>
         <p>
           We may suspend or terminate your right to use our website and terminate these Terms of
           Service immediately upon written notice to you for any breach of these Terms of Service.
         </p>
-        <h1 class="title is-4 block">Severance</h1>
+        <h1 class="title is-5 block">Severance</h1>
         <p>
           Any term of these Terms of Service which is wholly or partially void or unenforceable is
           severed to the extent that it is void or unenforceable. The validity of the remainder of
           these Terms of Service is not affected.
         </p>
-        <h1 class="title is-4 block">Governing Law</h1>
+        <h1 class="title is-5 block">Governing Law</h1>
         <p>
           These Terms of Service are governed by and construed in accordance with the laws of Italy.
           You irrevocably submit to the exclusive jurisdiction of the courts in that State or
@@ -150,6 +150,11 @@ a {
 }
 
 p {
-  margin-top: 1.25rem !important;
+  margin-top: 1rem !important;
+}
+
+p,
+ul {
+  color: $grey;
 }
 </style>

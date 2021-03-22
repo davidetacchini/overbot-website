@@ -1,5 +1,5 @@
 <template>
-  <div class="columns is-multiline is-mobile">
+  <div class="columns is-multiline is-mobile mt-6">
     <div class="column is-narrow">
       <span class="icon">
         <i :class="['fas', `fa-${feature.icon}`]" />
@@ -41,10 +41,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.column {
-  margin-top: 3rem !important;
-}
-
 .icon {
   font-size: 1.5rem;
   color: $primary;
