@@ -52,8 +52,4 @@ export default {
   padding: 25px;
   border-radius: 50%;
 }
-
-.feature-link {
-  color: $primary;
-}
 </style>
