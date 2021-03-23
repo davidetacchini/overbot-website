@@ -1,12 +1,17 @@
 <template>
-  <input
-    :value="value"
-    @input="$emit('input', $event.target.value)"
-    class="input is-primary"
-    type="text"
-    placeholder="Search for a command"
-    :disabled="$store.getters.error"
-  />
+  <div class="control has-icons-left">
+    <input
+      :value="value"
+      @input="$emit('input', $event.target.value)"
+      class="input is-primary"
+      type="text"
+      placeholder="Search for a command"
+      :disabled="$store.getters.error"
+    />
+    <span class="icon is-left has-text-grey">
+      <i class="fas fa-search" />
+    </span>
+  </div>
 </template>
 
 <script>
@@ -21,14 +26,10 @@ export default {
 
 <style scoped lang="scss">
 .input {
-  width: 100% !important;
-  padding: 0 15px !important;
-  font-size: 1rem !important;
   background-color: $color-charlie !important;
-  border: 1px solid $color-delta !important;
+  border-color: $color-delta !important;
   border-radius: $border-radius !important;
-  outline: none !important;
-  color: rgba(255, 255, 255, 0.7) !important;
+  color: $white !important;
 }
 
 input:disabled {

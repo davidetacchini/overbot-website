@@ -1,14 +1,23 @@
 <template>
-  <div class="select is-primary">
-    <select
-      :value="value"
-      @input="$emit('input', $event.target.value)"
-      :disabled="$store.getters.error"
-    >
-      <option v-for="(category, index) in categories" :key="index" :value="category.toLowerCase()">
-        {{ category }}
-      </option>
-    </select>
+  <div class="control has-icons-left">
+    <div class="select is-primary">
+      <select
+        :value="value"
+        @input="$emit('input', $event.target.value)"
+        :disabled="$store.getters.error"
+      >
+        <option
+          v-for="(category, index) in categories"
+          :key="index"
+          :value="category.toLowerCase()"
+        >
+          {{ category }}
+        </option>
+      </select>
+    </div>
+    <span class="icon has-text-grey is-left">
+      <i class="fas fa-filter" />
+    </span>
   </div>
 </template>
 
@@ -32,10 +41,9 @@ export default {
     width: 100% !important;
     height: 100% !important;
     background-color: $color-charlie !important;
-    color: $grey !important;
-    border: 1px solid $color-delta !important;
+    border-color: $color-delta !important;
     border-radius: $border-radius !important;
-    outline: unset !important;
+    color: $grey !important;
   }
 
   &.is-primary:hover:after {
