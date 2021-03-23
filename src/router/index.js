@@ -43,7 +43,7 @@ const routes = [
     name: 'Premium',
     component: () => import(/* webpackChunkName: "premium" */ '../views/Premium.vue'),
     meta: {
-      title: 'Upgrade to Premium - OverBot',
+      title: 'Premium - OverBot',
     },
   },
   {

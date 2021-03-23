@@ -1,7 +1,7 @@
 <template>
   <div class="columns is-multiline is-mobile">
     <div class="column is-narrow mt-5">
-      <span class="icon">
+      <span class="icon p-5">
         <i :class="['fas', `fa-${perk.icon}`]" />
       </span>
     </div>
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'PerkCard',
+  name: 'PerkItem',
 
   props: {
     perk: Object,
@@ -30,6 +30,8 @@ export default {
 .icon {
   font-size: 1.5rem;
   color: $danger;
+  background-color: $color-charlie;
+  border-radius: 50%;
 }
 
 .subtitle {

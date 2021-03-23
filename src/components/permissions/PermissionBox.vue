@@ -21,6 +21,7 @@
 
 <script>
 import RequiredTooltip from '@/components/permissions/RequiredTooltip';
+
 export default {
   name: 'PermissionBox',
 

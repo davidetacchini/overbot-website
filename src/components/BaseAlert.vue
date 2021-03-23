@@ -1,6 +1,11 @@
 <template>
   <div :class="['notification', type]">
     <div class="columns is-mobile is-vcentered">
+      <div class="column is-narrow" v-if="icon">
+        <span class="icon">
+          <i :class="['fas', `fa-${icon}`]" />
+        </span>
+      </div>
       <div class="column">
         <p>{{ content }}</p>
       </div>
@@ -23,6 +28,7 @@ export default {
 
   props: {
     type: String,
+    icon: String,
     content: String,
     button: Object,
   },

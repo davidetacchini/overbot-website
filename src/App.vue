@@ -63,7 +63,29 @@ hr {
 }
 
 .button {
+  padding: 14px 28px !important;
   transition: all 175ms ease-in-out !important;
   font-weight: bold !important;
+}
+
+.is-charlie {
+  background-color: $color-charlie !important;
+}
+
+.shine {
+  background-image: linear-gradient(
+    to right,
+    transparent 33%,
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 66%
+  );
+  background-size: 300% 100%;
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: right;
+  }
 }
 </style>

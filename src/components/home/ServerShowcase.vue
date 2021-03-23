@@ -2,21 +2,23 @@
   <div v-dragscroll.x="!canScroll" class="columns is-mobile is-scrollable">
     <base-loader v-if="$store.getters.loading" />
     <error-alert v-else-if="$store.getters.error" />
-    <div
-      v-for="(server, index) in servers"
-      v-else
-      :key="server.id"
-      class="column is-two-fifths-desktop is-two-fifths-tablet is-full-mobile server-column"
-    >
+    <div v-for="(server, index) in servers" v-else :key="server.id" class="column server-column">
       <div :class="['server box', { 'first-place': index === 0 }]">
         <img class="server__region" :src="setRegionFlag(server.region)" :alt="server.region" />
         <img class="server__image" :src="server.icon" :alt="server.name" />
-        <h1 class="server__title title is-5 mt-5 mb-0">{{ server.name }}</h1>
-        <p class="server__members mb-5">Members: {{ server.members }}</p>
-        <div class="box inner-shadow server__commands-run">
+        <h1 class="server__title title has-text-weight-bold is-6 mt-3">{{ server.name }}</h1>
+        <div class="box no-border server__info">
           <p>
             <span class="has-text-grey">Commands run: </span>
-            <span class="has-text-weight-bold has-text-white">{{ server.commands_run }} </span>
+            <span class="has-text-weight-bold has-text-white">{{ server.commands_run }}</span>
+          </p>
+          <p>
+            <span class="has-text-grey">Members: </span>
+            <span class="has-text-weight-bold has-text-white">{{ server.members }}</span>
+          </p>
+          <p>
+            <span class="has-text-grey">Joined on: </span>
+            <span class="has-text-weight-bold has-text-white">{{ server.joined_on }}</span>
           </p>
         </div>
       </div>
@@ -65,7 +67,8 @@ export default {
 
 <style scoped lang="scss">
 .server-column {
-  max-width: 250px;
+  min-width: 250px !important;
+  max-width: 250px !important;
 }
 
 .first-place {
@@ -81,7 +84,7 @@ export default {
   &__image {
     border-radius: 50%;
     pointer-events: none;
-    width: 70%;
+    width: 110px;
   }
 
   &__title {
@@ -102,34 +105,32 @@ export default {
     width: 30px;
   }
 
-  &__commands-run {
-    background-color: $color-bravo !important;
-    padding: 8px 12px;
-    border: unset !important;
+  &__info {
+    background-color: $color-delta !important;
+    padding: 8px;
     border-radius: $border-radius;
     font-size: 0.875rem !important;
+    text-align: left !important;
   }
 }
 
-@media screen and (max-width: 1407px) {
-  .is-scrollable {
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    cursor: -webkit-grab;
-    cursor: -moz-grab;
-    cursor: -o-grab;
-    cursor: grab;
-  }
+.is-scrollable {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: -o-grab;
+  cursor: grab;
+}
 
-  .is-scrollable:active {
-    cursor: -webkit-grabbing;
-    cursor: -moz-grabbing;
-    cursor: -o-grabbing;
-    cursor: grabbing;
-  }
+.is-scrollable:active {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: -o-grabbing;
+  cursor: grabbing;
+}
 
-  .is-scrollable::-webkit-scrollbar {
-    display: none;
-  }
+.is-scrollable::-webkit-scrollbar {
+  display: none;
 }
 </style>

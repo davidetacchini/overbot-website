@@ -1,10 +1,10 @@
 <template>
-  <div class="column is-half-desktop is-full-tablet is-full-mobile">
+  <div class="column is-6-desktop is-12-tablet is-12-mobile">
     <div class="box">
       <h1 class="title is-5">{{ title }}</h1>
       <div class="columns is-multiline">
         <div v-for="(value, key) in item" :key="key" class="column is-6">
-          <div class="box data no-border inner-shadow">
+          <div class="box data no-border">
             <p>
               <span class="has-text-grey">{{ key + ': ' }}</span>
               <span class="has-text-weight-bold has-text-white">
@@ -39,7 +39,7 @@ export default {
 
 <style scoped lang="scss">
 .data {
-  background-color: $color-bravo !important;
+  background-color: $color-delta !important;
   padding: 12px;
 }
 

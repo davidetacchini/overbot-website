@@ -7,20 +7,20 @@
   },
   {
     "id": 2,
-    "name": "Less commands cooldown",
+    "name": "Cooldown reduce",
     "description": "Reduce commands cooldown by 50%; from 3 seconds to 1.5 second per command.",
     "icon": "hourglass-half"
   },
   {
     "id": 3,
-    "name": "SRs performance graph",
+    "name": "SRs performance graph*",
     "description": "Unlock the 'profile graph' command and see your SRs performance wrapped in a graph.",
     "icon": "chart-line"
   },
   {
     "id": 4,
     "name": "Change embeds color",
-    "description": "Customize the embeds by changing their color.",
+    "description": "Customize most of the embeds by changing their color.",
     "icon": "palette"
   },
   {

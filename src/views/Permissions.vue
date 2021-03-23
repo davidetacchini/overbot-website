@@ -5,11 +5,11 @@
     <h2 class="subtitle is-6">
       The following list details what permissions OverBot requires to ensure proper operation.
     </h2>
-    <div class="columns is-multiline is-mobile">
+    <div class="columns is-multiline">
       <div
         v-for="permission in permissions"
         :key="permission.id"
-        class="column is-half-desktop is-full-tablet is-full-mobile"
+        class="column is-6-desktop is-6-tablet is-12-mobile"
       >
         <permission-box :permission="permission" />
       </div>

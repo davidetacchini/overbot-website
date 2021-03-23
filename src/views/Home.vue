@@ -2,28 +2,16 @@
   <div>
     <base-section class="is-medium">
       <div class="is-stretch">
-        <h1 class="title is-3 has-text-weight-bold is-spaced">
+        <h1 class="title is-3 is-size-4-mobile has-text-weight-bold is-spaced">
           The best Overwatch bot for Discord
         </h1>
-        <h2 class="subtitle is-5">
+        <h2 class="subtitle is-5 is-size-6-mobile">
           OverBot has many features for Overwatch players that allow them to view their overall
           stats, stay up to date with the latest news, link their Overwatch profiles and more!
         </h2>
-        <div class="columns is-mobile">
-          <div class="column is-one-quarter-tablet is-half-mobile">
-            <home-button
-              :link="links.invite"
-              action="Add to Discord"
-              cls="is-primary is-fullwidth"
-            />
-          </div>
-          <div class="column is-one-quarter-tablet is-half-mobile">
-            <home-button
-              path="/premium"
-              action="Get Premium"
-              cls="is-danger is-outlined is-fullwidth"
-            />
-          </div>
+        <div class="buttons mt-6">
+          <home-button :link="links.invite" action="Add to Discord" cls="is-primary" />
+          <home-button path="/premium" action="Get Premium" cls="is-danger is-outlined shine" />
         </div>
       </div>
     </base-section>
@@ -32,11 +20,11 @@
       <div class="is-stretch">
         <h1 class="title is-4 has-text-weight-bold is-spaced">What exactly does OverBot offer?</h1>
         <h2 class="subtitle is-6">Here's why you should start using OverBot today.</h2>
-        <div class="columns is-multiline is-mobile is-centered">
+        <div class="columns is-multiline is-centered">
           <div
             v-for="feature in features"
             :key="feature.id"
-            class="column is-half-desktop is-half-tablet is-full-mobile"
+            class="column is-6-desktop is-6-tablet is-12-mobile"
           >
             <feature-item :feature="feature" />
           </div>
@@ -45,26 +33,21 @@
     </base-section>
 
     <base-section class="is-medium">
-      <h1 class="title is-3">Most active servers</h1>
-      <server-showcase />
+      <div class="is-stretch">
+        <h1 class="title is-4 has-text-weight-bold is-spaced">Most active servers</h1>
+        <h2 class="subtitle is-6 has-text-primary">Tracking command usage since 11/26/2020.</h2>
+        <server-showcase />
+      </div>
     </base-section>
 
     <base-section class="is-medium">
       <div class="is-stretch">
-        <h1 class="title is-3 has-text-weight-bold is-spaced">Need Help?</h1>
-        <h2 class="subtitle is-5">
+        <h1 class="title is-4 has-text-weight-bold is-spaced">Looking for support?</h1>
+        <h2 class="subtitle is-6 is-size-6-mobile">
           If you got any questions or issues with OverBot don't hesitate to join the official
-          Discord server!
+          Discord server.
         </h2>
-        <div class="columns">
-          <div class="column is-one-quarter">
-            <home-button
-              :link="links.discord"
-              action="Get support"
-              cls="is-primary is-stretched is-fullwidth"
-            />
-          </div>
-        </div>
+        <home-button :link="links.discord" action="Get support" cls="is-primary is-outlined" />
       </div>
     </base-section>
   </div>
@@ -102,9 +85,5 @@ export default {
 .is-stretch {
   max-width: 800px !important;
   margin: 0 auto !important;
-}
-
-.is-charlie {
-  background-color: $color-charlie !important;
 }
 </style>

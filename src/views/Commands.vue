@@ -1,18 +1,18 @@
 <template>
   <base-section>
     <error-alert v-if="$store.getters.error" />
-    <div class="columns is-multiline is-mobile">
-      <div class="column is-four-fifths-desktop is-three-quarters-tablet is-full-mobile">
+    <div class="columns is-multiline">
+      <div class="column">
         <command-search-bar v-model.trim="search" />
       </div>
-      <div class="column">
+      <div class="column is-2-desktop is-3-tablet">
         <command-filter v-model="category" :categories="categories" />
       </div>
     </div>
-    <div class="columns is-multiline is-mobile">
+    <div class="columns is-multiline">
       <base-loader v-if="$store.getters.loading" />
       <command-not-found v-else-if="commands.length === 0" />
-      <div v-for="(command, index) in commands" :key="index" class="column is-full">
+      <div v-for="(command, index) in commands" :key="index" class="column is-12">
         <command-item v-if="!$store.getters.loading" :command="command" />
       </div>
     </div>

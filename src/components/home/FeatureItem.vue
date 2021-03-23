@@ -1,30 +1,30 @@
 <template>
-  <div class="columns is-multiline is-mobile mt-6">
-    <div class="column is-narrow">
-      <span class="icon">
+  <div class="columns is-multiline is-mobile">
+    <div class="column is-narrow mt-5">
+      <span class="icon p-5">
         <i :class="['fas', `fa-${feature.icon}`]" />
       </span>
     </div>
-    <div class="column">
-      <h1 class="title is-5 is-spaced has-text-weight-bold">
+    <div class="column mt-5">
+      <h1 class="title is-6 has-text-weight-bold">
         {{ feature.title }}
       </h1>
-      <h2 class="subtitle is-6">
+      <h2 class="subtitle is-6 mb-2">
         {{ feature.description }}
       </h2>
       <div v-if="feature.button">
         <a
-          class="button is-outlined is-primary"
           v-if="feature.button.link"
+          class="feature-link"
           :href="feature.button.link"
           target="_blank"
           rel="noopener"
         >
           {{ feature.button.action }}
         </a>
-        <router-link class="button is-outlined is-danger" v-else :to="feature.button.path">{{
-          feature.button.action
-        }}</router-link>
+        <router-link v-else class="feature-link" :to="feature.button.path">
+          {{ feature.button.action }}
+        </router-link>
       </div>
     </div>
   </div>
@@ -45,11 +45,20 @@ export default {
   font-size: 1.5rem;
   color: $primary;
   background-color: $color-delta;
-  padding: 25px;
   border-radius: 50%;
 }
 
-.button {
+.feature-link,
+.subtitle {
   font-size: 0.9rem !important;
+}
+
+.feature-link {
+  color: $primary;
+  transition: color 175ms ease-in-out;
+}
+
+.feature-link:hover {
+  color: $danger;
 }
 </style>
