@@ -17,21 +17,26 @@
   {
     "id": 4,
     "question": "Is my payment secure?",
-    "answer": "Your payment is 100% secure. We don’t have access to your Paypal account information, everything is processed securely through DonateBot."
+    "answer": "Your payment is 100% secure. We don’t have access to your Paypal account information, everything is processed securely through PayPal."
   },
   {
     "id": 5,
     "question": "Can I get a refund if I don't like it?",
-    "answer": "If you are unhappy with your subscription or have encountered an issue please contact us at (ADD LINK)"
+    "answer": "If you are unhappy with your subscription or have encountered an issue please join the <a class='has-text-primary has-text-outlined' href='https://discord.gg/8g3jnxv' target='_blank' rel='noopener'>support server</a>."
   },
   {
     "id": 6,
-    "question": "Can I transfer my Premium subscription to another Discord account?",
-    "answer": "No. Once you are subscribed, you can't change your account. If you got any problem don't hesitate to contact us on our official Discord server."
+    "question": "Can I transfer my Premium subscription to another Discord account/server?",
+    "answer": "Yes. <a class='has-text-primary has-text-outlined' href='https://discord.gg/8g3jnxv' target='_blank' rel='noopener'>Click here</a> to join the support server and open a new ticket."
   },
   {
     "id": 7,
-    "question": "Is my subscription valid for multiple Discord accounts?",
-    "answer": "No. The Premium subscription is valid for one Discord account only."
+    "question": "Is my subscription valid for multiple Discord accounts/servers?",
+    "answer": "No. The Premium subscription is valid for one Discord account/server only."
+  },
+  {
+    "id": 8,
+    "question": "Where can I get help with my Premium subscription?",
+    "answer": "Join the <a class='has-text-primary has-text-outlined' href='https://discord.gg/8g3jnxv' target='_blank' rel='noopener'>support server</a> to get help with your subscription."
   }
 ]

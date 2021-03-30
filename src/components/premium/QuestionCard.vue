@@ -12,7 +12,7 @@
     </template>
     <div class="card-content">
       <div class="content">
-        <p class="has-text-grey">{{ faq.answer }}</p>
+        <p class="has-text-grey" v-html="faq.answer"></p>
       </div>
     </div>
   </b-collapse>

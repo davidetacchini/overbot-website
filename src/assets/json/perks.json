@@ -25,7 +25,7 @@
   },
   {
     "id": 5,
-    "name": "Discord role",
+    "name": "Discord role*",
     "description": "Receive the Premium role on OverBot's official Discord server.",
     "icon": "award"
   }

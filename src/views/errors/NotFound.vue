@@ -3,7 +3,7 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <img src="@/assets/images/not-found.svg" alt="Not Found Image" />
-        <router-link to="/" class="button is-outlined is-primary mt-5">Go to homepage</router-link>
+        <router-link to="/" class="button is-primary is-outlined mt-5">Go to homepage</router-link>
       </div>
     </div>
   </section>

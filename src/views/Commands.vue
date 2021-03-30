@@ -12,8 +12,8 @@
     <div class="columns is-multiline">
       <base-loader v-if="$store.getters.loading" />
       <command-not-found v-else-if="commands.length === 0" />
-      <div v-for="(command, index) in commands" :key="index" class="column is-12">
-        <command-item v-if="!$store.getters.loading" :command="command" />
+      <div v-else v-for="(command, index) in commands" :key="index" class="column is-12">
+        <command-item :command="command" />
       </div>
     </div>
   </base-section>

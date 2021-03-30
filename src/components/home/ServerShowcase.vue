@@ -3,7 +3,7 @@
     <base-loader v-if="$store.getters.loading" />
     <error-alert v-else-if="$store.getters.error" />
     <div v-for="(server, index) in servers" v-else :key="server.id" class="column server-column">
-      <div :class="['server box', { 'first-place': index === 0 }]">
+      <div :class="['server box has-background-dark', { 'first-place': index === 0 }]">
         <img class="server__region" :src="setRegionFlag(server.region)" :alt="server.region" />
         <img class="server__image" :src="server.icon" :alt="server.name" />
         <h1 class="server__title title has-text-weight-bold is-6 mt-3">{{ server.name }}</h1>
@@ -72,7 +72,7 @@ export default {
 }
 
 .first-place {
-  box-shadow: 0 0 10px 0 $primary;
+  box-shadow: 0 0 10px $primary;
 }
 
 .server {
@@ -106,7 +106,7 @@ export default {
   }
 
   &__info {
-    background-color: $color-delta !important;
+    background-color: $color-charlie !important;
     padding: 8px;
     border-radius: $border-radius;
     font-size: 0.875rem !important;

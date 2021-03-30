@@ -55,6 +55,12 @@ export default {
     -webkit-box-shadow: inset 0 0 5px $color-delta !important;
     box-shadow: inset 0 0 5px $color-delta !important;
   }
+
+  &.outer-shadow {
+    box-shadow: 0 0 10px $color-charlie !important;
+    -webkit-box-shadow: 0 0 10px $color-charlie !important;
+    -moz-box-shadow: 0 0 10px $color-charlie !important;
+  }
 }
 
 hr {

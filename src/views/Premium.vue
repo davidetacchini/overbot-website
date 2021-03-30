@@ -1,12 +1,13 @@
 <template>
-  <div>
-    <base-section>
-      <h1 class="title">Upgrade to Premium</h1>
-      <hr />
-      <base-alert type="bg-warning" :content="content" :button="button" />
-      <br />
-      <h1 class="title is-4">Premium Perks</h1>
-      <hr />
+  <div id="premium">
+    <base-section class="is-medium has-text-centered">
+      <h3 class="title is-6 has-text-danger mb-3">INTRODUCING</h3>
+      <h1 class="title has-text-weight-bold is-spaced">OverBot Premium</h1>
+      <h2 class="subtitle is-6">Upgrade to Premium to unlock more perks!</h2>
+      <a href="#plans" class="button is-white is-outlined mt-5 p-5">View our plans</a>
+    </base-section>
+    <base-section class="is-charlie">
+      <h1 class="title has-text-centered has-text-weight-bold">Premium Perks</h1>
       <div class="columns is-variable is-6-desktop is-6-tablet is-multiline is-mobile">
         <div
           v-for="perk in perks"
@@ -15,15 +16,24 @@
         >
           <perk-item :perk="perk" />
         </div>
-        <div class="column is-12 has-text-centered my-6">
-          <upgrade-button />
-          <div class="mt-2 has-text-weight-bold">
-            <span class="title is-4">$4.99</span>
-            <span class="is-size-7 has-text-grey"> / one-time purchase</span>
-          </div>
+      </div>
+    </base-section>
+    <base-section class="is-medium has-text-centered" id="plans">
+      <h1 class="title has-text-weight-bold mb-6">Pricing and plans</h1>
+      <div class="columns is-centered">
+        <div
+          v-for="plan in plans"
+          :key="plan.id"
+          class="column is-3-desktop is-6-tablet is-12-mobile"
+        >
+          <plan-box :plan="plan" />
         </div>
       </div>
-      <base-alert type="bg-info" :content="graph" icon="info-circle" />
+    </base-section>
+    <base-section class="is-charlie">
+      <h1 class="title is-4">Notes</h1>
+      <hr />
+      <p v-for="(note, index) in notes" :key="index" class="has-text-grey note" v-html="note"></p>
     </base-section>
     <base-section>
       <h1 class="title is-4">Frequently Asked Questions</h1>
@@ -39,36 +49,46 @@
 
 <script>
 import perks from '@/assets/json/perks.json';
+import plans from '@/assets/json/plans.json';
 import faqs from '@/assets/json/faqs.json';
 import BaseSection from '@/components/BaseSection';
-import BaseAlert from '@/components/BaseAlert';
 import PerkItem from '@/components/premium/PerkItem';
-import UpgradeButton from '@/components/premium/UpgradeButton';
+import PlanBox from '@/components/premium/PlanBox';
 import QuestionCard from '@/components/premium/QuestionCard';
 
 export default {
   components: {
     BaseSection,
-    BaseAlert,
     PerkItem,
-    UpgradeButton,
+    PlanBox,
     QuestionCard,
   },
 
   data: () => {
     return {
       perks,
+      plans,
       faqs,
-      graph: `*OverBot is tracking players skill ratings since December 23rd, 2020. Every time a player uses the "-profile rating"
-        command his profile SRs are saved. Duplicates are not accepted, so if a player runs the command twice within the same day
-        for the same profile and the SRs are equals, they won't be saved. That said, you can understand that the more you use
-        "-profile rating" the more accurate the graph will be.`,
-      content: 'To unlock the Premium benefits you must have joined the official support server.',
-      button: {
-        link: 'https://discord.gg/8g3jnxv',
-        action: 'Join now',
-      },
+      notes: [
+        `*OverBot is tracking players skill ratings since <b>December 23rd, 2020</b>. 
+        Every time a player uses the "-profile rating" command his profile SRs are saved. 
+        Duplicates are not accepted, so if a player runs the command twice within the same day
+        for the same profile and the SRs are equals, they won't be saved. That said, you can 
+        understand that the more you use "-profile rating" the more accurate the graph will be.`,
+        `*Join the <a class="has-text-primary has-text-outlined" href="https://discord.gg/8g3jnxv" target="_blank" rel="noopener">support server</a> 
+        and ask for the role to be set. The subscription is not affected by the role, it's just something extra.`,
+      ],
     };
   },
 };
 </script>
+
+<style scoped lang="scss">
+.note {
+  font-size: 0.875rem !important;
+
+  &:not(:last-of-type) {
+    margin-bottom: 1rem !important;
+  }
+}
+</style>
