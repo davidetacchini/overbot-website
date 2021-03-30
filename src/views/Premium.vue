@@ -33,6 +33,7 @@
     <base-section class="is-charlie">
       <h1 class="title is-4">Notes</h1>
       <hr />
+      <base-alert type="bg-info" :content="content" :button="button" />
       <p v-for="(note, index) in notes" :key="index" class="has-text-grey note" v-html="note"></p>
     </base-section>
     <base-section>
@@ -55,6 +56,7 @@ import BaseSection from '@/components/BaseSection';
 import PerkItem from '@/components/premium/PerkItem';
 import PlanBox from '@/components/premium/PlanBox';
 import QuestionCard from '@/components/premium/QuestionCard';
+import BaseAlert from '@/components/BaseAlert';
 
 export default {
   components: {
@@ -62,6 +64,7 @@ export default {
     PerkItem,
     PlanBox,
     QuestionCard,
+    BaseAlert,
   },
 
   data: () => {
@@ -78,6 +81,12 @@ export default {
         `*Join the <a class="has-text-primary has-text-outlined" href="https://discord.gg/8g3jnxv" target="_blank" rel="noopener">support server</a> 
         and ask for the role to be set. The subscription is not affected by the role, it's just something extra.`,
       ],
+      content:
+        'It could takes up to 5 minutes for the Premium to be set. If you got issues join the support server.',
+      button: {
+        link: 'https://discord.com/invite/8g3jnxv',
+        action: 'Join now',
+      },
     };
   },
 };
