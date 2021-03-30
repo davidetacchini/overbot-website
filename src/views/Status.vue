@@ -8,8 +8,8 @@
     <base-loader v-if="$store.getters.loading" />
     <div v-else>
       <div class="columns is-multiline is-mobile">
-        <status-item title="Bot Status" :item="bot" />
-        <status-item title="Server Information" :item="host" />
+        <status-box title="Bot Status" :item="bot" />
+        <status-box title="Server Information" :item="host" />
       </div>
       <div class="box shards">
         <h1 class="title is-5">Shards Status</h1>
@@ -20,7 +20,7 @@
             :key="shard.id"
             class="column shard-column is-one-fifth-desktop is-one-third-tablet is-half-mobile"
           >
-            <shard-item :shard="shard" />
+            <shard-box :shard="shard" />
           </div>
         </div>
       </div>
@@ -33,8 +33,8 @@ import { mapGetters, mapActions } from 'vuex';
 import BaseSection from '@/components/BaseSection';
 import ErrorAlert from '@/components/ErrorAlert';
 import BaseLoader from '@/components/BaseLoader';
-import StatusItem from '@/components/status/StatusItem';
-import ShardItem from '@/components/status/ShardItem';
+import StatusBox from '@/components/status/StatusBox';
+import ShardBox from '@/components/status/ShardBox';
 import ShardTooltip from '@/components/status/ShardTooltip';
 
 export default {
@@ -42,9 +42,9 @@ export default {
     BaseSection,
     ErrorAlert,
     BaseLoader,
-    StatusItem,
+    StatusBox,
     ShardTooltip,
-    ShardItem,
+    ShardBox,
   },
 
   data: () => {

@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'StatusItem',
+  name: 'StatusBox',
 
   props: {
     title: String,
