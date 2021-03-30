@@ -30,7 +30,7 @@ export default {
 .icon {
   font-size: 1.5rem;
   color: $danger;
-  background-color: $color-bravo;
+  background-color: $color-delta;
   border-radius: 50%;
 }
 
