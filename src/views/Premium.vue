@@ -82,7 +82,7 @@ export default {
         and ask for the role to be set. The subscription is not affected by the role, it's just something extra.`,
       ],
       content:
-        'It could takes up to 5 minutes for the Premium to be set. If you got issues join the support server.',
+        'It may take up to 5 minutes for the Premium to be set. If you have issues join the support server.',
       button: {
         link: 'https://discord.com/invite/8g3jnxv',
         action: 'Join now',
