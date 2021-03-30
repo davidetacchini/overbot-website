@@ -11,8 +11,8 @@
           stats, stay up to date with the latest news, link their Overwatch profiles and more!
         </h2>
         <div class="buttons mt-6">
-          <home-button :link="links.invite" action="Add to Discord" cls="is-primary" />
-          <home-button path="/premium" action="Get Premium" cls="is-danger is-outlined shine" />
+          <home-button :link="links.invite" action="Add to Discord" class="is-primary" />
+          <home-button path="/premium" action="Get Premium" class="is-danger is-outlined shine" />
         </div>
       </div>
     </base-section>
@@ -50,7 +50,7 @@
           If you got any questions or issues with OverBot don't hesitate to join the official
           Discord server.
         </h2>
-        <home-button :link="links.discord" action="Get support" cls="is-primary is-outlined" />
+        <home-button :link="links.discord" action="Get support" class="is-primary is-outlined" />
       </div>
     </base-section>
   </div>

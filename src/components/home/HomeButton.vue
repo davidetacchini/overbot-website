@@ -1,8 +1,8 @@
 <template>
-  <router-link v-if="path" :to="path" :class="['button p-5', cls]">
+  <router-link v-if="path" :to="path" class="button p-5">
     {{ action }}
   </router-link>
-  <a v-else :href="link" target="_blank" rel="noopener" :class="['button p-5', cls]">
+  <a v-else :href="link" target="_blank" rel="noopener" class="button p-5">
     {{ action }}
   </a>
 </template>
@@ -14,7 +14,6 @@ export default {
   props: {
     link: String,
     path: String,
-    cls: String,
     action: String,
   },
 };
