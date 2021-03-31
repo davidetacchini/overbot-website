@@ -14,7 +14,6 @@ const getters = {
     return sortByCategory(sortBySearch(sortedAlphabetically, state.search), state.category);
   },
   categories: (state) => {
-    // By default we want to show all the available commands
     const categories = [...state.categories];
     state.commands.forEach((command) => {
       if (command.cog !== null) {
