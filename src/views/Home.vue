@@ -37,7 +37,7 @@
       <div class="is-stretch">
         <h1 class="title is-4 has-text-weight-bold is-spaced">Most active servers</h1>
         <h2 class="subtitle is-6 has-text-primary">
-          Tracking command usage since November 26th, 2020.
+          Tracking command usage since March 31st, 2021.
         </h2>
         <server-showcase />
       </div>

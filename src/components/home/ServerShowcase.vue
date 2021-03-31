@@ -18,7 +18,9 @@
           </p>
           <p>
             <span class="has-text-grey">Joined on: </span>
-            <span class="has-text-weight-bold has-text-white">{{ server.joined_on }}</span>
+            <span class="has-text-weight-bold has-text-white">{{
+              server.joined_at.split(' ')[0]
+            }}</span>
           </p>
         </div>
       </div>
