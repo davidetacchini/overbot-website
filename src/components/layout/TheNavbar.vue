@@ -1,9 +1,10 @@
 <template>
   <b-navbar class="is-spaced">
     <template slot="brand">
-      <b-navbar-item tag="router-link" to="/" class="logo is-size-5 has-text-weight-bold"
-        >OverBot</b-navbar-item
-      >
+      <b-navbar-item tag="router-link" to="/">
+        <img v-if="$route.path !== '/premium'" :src="require(`@/assets/logo.png`)" alt="Logo" />
+        <img v-else :src="require(`@/assets/premium.png`)" alt="Premium Logo" />
+      </b-navbar-item>
     </template>
 
     <template slot="start">
@@ -73,9 +74,6 @@ export default {
 <style scoped lang="scss">
 .navbar-item {
   transition: color 175ms ease-out;
-}
-
-.navbar-item:not(.logo) {
   font-size: 0.875rem !important;
 }
 </style>
