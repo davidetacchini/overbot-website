@@ -1,44 +1,44 @@
 [
   {
     "id": 1,
-    "name": "Send Messages",
-    "icon": "comments",
+    "title": "Send Messages",
     "description": "Allows OverBot to send messages to your Discord server",
+    "icon": "comments",
     "required": true
   },
   {
     "id": 2,
-    "name": "Manage Messages",
-    "icon": "edit",
+    "title": "Manage Messages",
     "description": "Used to delete and edit messages",
+    "icon": "edit",
     "required": true
   },
   {
     "id": 3,
-    "name": "Manage Nicknames",
-    "icon": "user-tag",
+    "title": "Manage Nicknames",
     "description": "Used to change member nicknames",
+    "icon": "user-tag",
     "required": true
   },
   {
     "id": 4,
-    "name": "Embed Links",
-    "icon": "link",
+    "title": "Embed Links",
     "description": "Allows OverBot to embed links",
+    "icon": "link",
     "required": true
   },
   {
     "id": 5,
-    "name": "Add Reactions",
-    "icon": "plus-circle",
+    "title": "Add Reactions",
     "description": "Enables the bot to add reactions to messages",
+    "icon": "plus-circle",
     "required": true
   },
   {
     "id": 6,
-    "name": "Use External Emojis",
-    "icon": "external-link-alt",
+    "title": "Use External Emojis",
     "description": "Enables the bot to use external emojis",
+    "icon": "external-link-alt",
     "required": true
   }
 ]
