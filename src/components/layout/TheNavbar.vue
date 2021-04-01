@@ -2,8 +2,12 @@
   <b-navbar class="is-spaced">
     <template slot="brand">
       <b-navbar-item tag="router-link" to="/">
-        <img v-if="$route.path !== '/premium'" :src="require(`@/assets/logo.png`)" alt="Logo" />
-        <img v-else :src="require(`@/assets/premium.png`)" alt="Premium Logo" />
+        <img
+          v-if="$route.path !== '/premium'"
+          :src="require(`@/assets/logos/default.png`)"
+          alt="Logo"
+        />
+        <img v-else :src="require(`@/assets/logos/premium.png`)" alt="Premium Logo" />
       </b-navbar-item>
     </template>
 
