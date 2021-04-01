@@ -7,6 +7,7 @@
         <img class="server__region" :src="setRegionFlag(server.region)" :alt="server.region" />
         <img class="server__image" :src="server.icon" :alt="server.name" />
         <h1 class="server__title title has-text-weight-bold is-6 mt-3">{{ server.name }}</h1>
+        <span v-if="server.is_premium" class="tag bg-danger shine">Premium</span>
         <div class="box no-border server__info">
           <p>
             <span class="has-text-grey">Commands run: </span>
@@ -75,6 +76,13 @@ export default {
 
 .first-place {
   box-shadow: 0 0 10px $primary;
+}
+
+.tag {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .server {
