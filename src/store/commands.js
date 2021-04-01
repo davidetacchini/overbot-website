@@ -3,7 +3,7 @@ import { sortAlphabetically, sortByCategory, sortBySearch } from '../common/help
 
 const state = {
   commands: [],
-  categories: ['All'],
+  categories: ['All', 'Premium'],
   search: '',
   category: 'all',
 };

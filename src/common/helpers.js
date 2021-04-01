@@ -7,6 +7,10 @@ export const sortAlphabetically = (commands) => {
 export const sortByCategory = (commands, category) => {
   if (category === 'all') {
     return commands;
+  } else if (category == 'premium') {
+    return commands.filter((command) => {
+      return command.is_premium === true;
+    });
   }
   return commands.filter((command) => {
     if (command.cog !== null) {
