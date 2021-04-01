@@ -5,13 +5,13 @@
     <h2 class="subtitle is-6">
       The following list details what permissions OverBot requires to ensure proper operation.
     </h2>
-    <div class="columns is-multiline">
+    <div class="columns is-variable is-6-desktop is-6-tablet is-multiline">
       <div
         v-for="permission in permissions"
         :key="permission.id"
-        class="column is-6-desktop is-6-tablet is-12-mobile"
+        class="column is-4-desktop is-6-tablet is-12-mobile"
       >
-        <permission-box :permission="permission" />
+        <item-card :item="permission" iconColor="bg-white" />
       </div>
     </div>
   </base-section>
@@ -19,13 +19,13 @@
 
 <script>
 import permissions from '@/assets/json/permissions.json';
-import BaseSection from '@/components/BaseSection.vue';
-import PermissionBox from '@/components/permissions/PermissionBox';
+import BaseSection from '@/components/BaseSection';
+import ItemCard from '@/components/ItemCard';
 
 export default {
   components: {
     BaseSection,
-    PermissionBox,
+    ItemCard,
   },
 
   data: () => {
