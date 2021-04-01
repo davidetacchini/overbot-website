@@ -27,7 +27,7 @@
             :key="feature.id"
             class="column is-6-desktop is-6-tablet is-12-mobile"
           >
-            <feature-item :feature="feature" />
+            <item-card :item="feature" iconColor="bg-info" />
           </div>
         </div>
       </div>
@@ -60,14 +60,14 @@
 import features from '@/assets/json/features.json';
 import BaseSection from '@/components/BaseSection';
 import HomeButton from '@/components/home/HomeButton';
-import FeatureItem from '@/components/home/FeatureItem';
+import ItemCard from '@/components/ItemCard';
 import ServerShowcase from '@/components/home/ServerShowcase';
 
 export default {
   components: {
     BaseSection,
     HomeButton,
-    FeatureItem,
+    ItemCard,
     ServerShowcase,
   },
 

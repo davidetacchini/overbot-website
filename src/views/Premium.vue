@@ -14,7 +14,7 @@
           :Key="perk.id"
           class="column is-4-desktop is-6-tablet is-12-mobile"
         >
-          <perk-item :perk="perk" />
+          <item-card :item="perk" iconColor="bg-danger" />
         </div>
       </div>
     </base-section>
@@ -53,7 +53,7 @@ import perks from '@/assets/json/perks.json';
 import plans from '@/assets/json/plans.json';
 import faqs from '@/assets/json/faqs.json';
 import BaseSection from '@/components/BaseSection';
-import PerkItem from '@/components/premium/PerkItem';
+import ItemCard from '@/components/ItemCard';
 import PlanBox from '@/components/premium/PlanBox';
 import QuestionCard from '@/components/premium/QuestionCard';
 import BaseAlert from '@/components/BaseAlert';
@@ -61,7 +61,7 @@ import BaseAlert from '@/components/BaseAlert';
 export default {
   components: {
     BaseSection,
-    PerkItem,
+    ItemCard,
     PlanBox,
     QuestionCard,
     BaseAlert,

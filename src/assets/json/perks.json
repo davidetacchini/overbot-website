@@ -1,31 +1,31 @@
 [
   {
     "id": 1,
-    "name": "Link more profiles",
+    "title": "Link more profiles",
     "description": "Be able to connect up to 25 Overwatch profiles to your Discord ID.",
     "icon": "sort-amount-up"
   },
   {
     "id": 2,
-    "name": "Cooldown reduce",
+    "title": "Cooldown reduce",
     "description": "Reduce commands cooldown by 50%; from 3 seconds to 1.5 second per command.",
     "icon": "hourglass-half"
   },
   {
     "id": 3,
-    "name": "SRs performance graph*",
+    "title": "SRs performance graph*",
     "description": "Unlock the 'profile graph' command and see your SRs performance wrapped in a graph.",
     "icon": "chart-line"
   },
   {
     "id": 4,
-    "name": "Change embeds color",
+    "title": "Change embeds color",
     "description": "Customize most of the embeds by changing their color.",
     "icon": "palette"
   },
   {
     "id": 5,
-    "name": "Discord role*",
+    "title": "Discord role*",
     "description": "Get access to the Premium role on OverBot's official Discord server.",
     "icon": "award"
   }
