@@ -33,7 +33,7 @@
       </div>
     </base-section>
 
-    <base-section class="is-medium">
+    <base-section class="is-medium" id="servers">
       <div class="is-stretch">
         <h1 class="title is-4 has-text-weight-bold is-spaced">Most active servers</h1>
         <h2 class="subtitle is-6 has-text-primary">
