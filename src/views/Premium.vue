@@ -8,7 +8,7 @@
     </base-section>
     <base-section class="is-charlie">
       <h1 class="title has-text-centered has-text-weight-bold">Premium Perks</h1>
-      <div class="columns is-variable is-6-desktop is-6-tablet is-multiline is-mobile">
+      <div class="columns is-variable is-6-desktop is-6-tablet is-multiline">
         <div
           v-for="perk in perks"
           :Key="perk.id"
