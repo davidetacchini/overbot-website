@@ -3,7 +3,7 @@
     <h1 class="command__title title is-5">{{ command.name }} {{ command.signature }}</h1>
     <div class="command__info box no-border">
       <h2 class="command__description subtitle">
-        {{ command.short_desc }}
+        {{ command.short_desc.replace('`[Premium]`', '') }}
         <button
           v-if="command.long_desc.split('.').length > 2"
           class="command__description--read-more"
@@ -81,7 +81,7 @@ h2 {
   padding: 15px !important;
 
   &.is-premium {
-    box-shadow: 0 0 10px 0 $primary !important;
+    box-shadow: 0 0 10px 0 $danger !important;
   }
 
   &__title {
