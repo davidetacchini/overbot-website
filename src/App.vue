@@ -57,9 +57,9 @@ export default {
   }
 
   &.outer-shadow {
-    box-shadow: 0 0 10px $color-charlie !important;
-    -webkit-box-shadow: 0 0 10px $color-charlie !important;
-    -moz-box-shadow: 0 0 10px $color-charlie !important;
+    box-shadow: 0 0 15px $color-delta !important;
+    -webkit-box-shadow: 0 0 15px $color-delta !important;
+    -moz-box-shadow: 0 0 15px $color-delta !important;
   }
 }
 
