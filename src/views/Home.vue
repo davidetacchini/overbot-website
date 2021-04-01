@@ -6,7 +6,7 @@
         <h1 class="title is-3 is-size-4-mobile has-text-weight-bold is-spaced">
           The best Overwatch bot for Discord
         </h1>
-        <h2 class="subtitle is-5 is-size-6-mobile">
+        <h2 class="subtitle is-6">
           OverBot has many features for Overwatch players that allow them to view their overall
           stats, stay up to date with the latest news, link their Overwatch profiles and more!
         </h2>

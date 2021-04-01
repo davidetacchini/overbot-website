@@ -7,6 +7,9 @@
       Servers:
       <span class="has-text-weight-bold">{{ shard.guild_count }}</span>
       <br />
+      Members:
+      <span class="has-text-weight-bold">{{ shard.member_count }}</span>
+      <br />
       Latency:
       <span class="has-text-weight-bold">{{ shard.latency }}ms</span>
     </p>

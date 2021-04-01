@@ -1,7 +1,7 @@
 <template>
   <div :class="['box command', { 'is-premium': command.is_premium }]">
     <h1 class="command__title title is-5">{{ command.name }} {{ command.signature }}</h1>
-    <div class="command__info box no-border">
+    <div class="command__info box no-border mb-2">
       <h2 class="command__description subtitle">
         {{ command.short_desc.replace('`[Premium]`', '') }}
         <button
@@ -17,9 +17,9 @@
           </div>
         </transition>
       </h2>
-      <div v-if="command.aliases" class="command__aliases mt-4">
-        <p class="has-text-grey">Aliases: {{ aliases }}</p>
-      </div>
+    </div>
+    <div v-if="command.aliases" class="command__aliases">
+      <p class="has-text-grey">Aliases: {{ aliases }}</p>
     </div>
   </div>
 </template>
@@ -90,7 +90,7 @@ h2 {
 
   &__info {
     border: unset !important;
-    background-color: $color-delta !important;
+    background-color: $color-charlie !important;
     padding: 12px !important;
   }
 
@@ -109,9 +109,13 @@ h2 {
     }
 
     &--more {
-      background-color: $color-delta !important;
+      background-color: $color-charlie !important;
       white-space: pre-line !important;
     }
+  }
+
+  &__aliases p {
+    font-size: 0.875rem !important;
   }
 }
 </style>

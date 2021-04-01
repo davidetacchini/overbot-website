@@ -28,7 +28,7 @@ export default {
   align-items: center;
   width: 120px;
   padding: 10px;
-  background-color: $color-bravo;
+  background-color: $color-charlie;
   border-radius: 3rem;
   border: 1px solid $color-delta;
 }
