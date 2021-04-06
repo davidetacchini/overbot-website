@@ -26,7 +26,7 @@ export default {
 
 <style scoped lang="scss">
 .input {
-  background-color: $color-charlie !important;
+  background-color: $color-bravo !important;
   border-color: $color-delta !important;
   border-radius: $border-radius !important;
   color: $white !important;

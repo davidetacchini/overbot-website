@@ -42,7 +42,7 @@ export default {
 
 <style lang="scss">
 .box {
-  background-color: $color-bravo !important;
+  background-color: $color-charlie !important;
   border-radius: $border-radius !important;
   border: 1px solid $color-delta !important;
   box-shadow: unset !important;

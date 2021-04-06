@@ -1,7 +1,7 @@
 <template>
   <div :class="['box command', { 'is-premium': command.is_premium }]">
     <h1 class="command__title title is-5">{{ command.name }} {{ command.signature }}</h1>
-    <div class="command__info box no-border mb-2">
+    <div class="command__info box no-border outer-shadow mb-2">
       <h2 class="command__description subtitle">
         {{ command.short_desc.replace('`[Premium]`', '') }}
         <button
@@ -89,13 +89,11 @@ h2 {
   }
 
   &__info {
-    border: unset !important;
-    background-color: $color-charlie !important;
     padding: 12px !important;
   }
 
   &__description {
-    font-size: 1rem !important;
+    font-size: 0.95rem !important;
 
     &--read-more {
       font-size: 0.875rem;
@@ -109,7 +107,6 @@ h2 {
     }
 
     &--more {
-      background-color: $color-charlie !important;
       white-space: pre-line !important;
     }
   }
