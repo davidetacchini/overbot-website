@@ -43,7 +43,7 @@
 
 <script>
 export default {
-  name: 'TheHeader',
+  name: 'TheNavbar',
 
   data: () => {
     return {
