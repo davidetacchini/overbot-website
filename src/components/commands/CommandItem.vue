@@ -79,9 +79,19 @@ h2 {
 
 .command {
   padding: 15px !important;
+  position: relative;
 
   &.is-premium {
     box-shadow: 0 0 10px 0 $danger !important;
+
+    &::after {
+      content: 'PREMIUM';
+      position: absolute;
+      right: 0.5rem;
+      top: 0.5rem;
+      font-size: 0.875rem;
+      color: $danger;
+    }
   }
 
   &__title {
