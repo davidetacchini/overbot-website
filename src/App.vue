@@ -8,11 +8,11 @@
 </template>
 
 <script>
-import TheNavbar from '@/components/layout/TheNavbar';
-import TheFooter from '@/components/layout/TheFooter';
+import TheNavbar from "@/components/layout/TheNavbar";
+import TheFooter from "@/components/layout/TheFooter";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
     TheNavbar,

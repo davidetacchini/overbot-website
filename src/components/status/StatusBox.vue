@@ -6,7 +6,7 @@
         <div v-for="(value, key) in item" :key="key" class="column is-6">
           <div class="box data no-border outer-shadow">
             <p>
-              <span class="has-text-grey">{{ key + ': ' }}</span>
+              <span class="has-text-grey">{{ key + ": " }}</span>
               <span class="has-text-weight-bold has-text-white">
                 {{ formatNumber(value) }}
               </span>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'StatusBox',
+  name: "StatusBox",
 
   props: {
     title: String,

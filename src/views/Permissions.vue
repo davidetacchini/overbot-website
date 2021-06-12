@@ -18,9 +18,9 @@
 </template>
 
 <script>
-import permissions from '@/assets/json/permissions.json';
-import BaseSection from '@/components/BaseSection';
-import ItemCard from '@/components/ItemCard';
+import permissions from "@/assets/json/permissions.json";
+import BaseSection from "@/components/BaseSection";
+import ItemCard from "@/components/ItemCard";
 
 export default {
   components: {

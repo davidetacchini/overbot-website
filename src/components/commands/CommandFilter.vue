@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'CommandFilter',
+  name: "CommandFilter",
 
   props: {
     value: String,

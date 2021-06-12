@@ -1,4 +1,4 @@
-import api from '../services/api';
+import api from "../services/api";
 
 const state = {
   servers: Array,
@@ -18,21 +18,21 @@ const mutations = {
 
 const actions = {
   async GET_SERVERS({ commit }) {
-    commit('SET_STATE');
+    commit("SET_STATE");
     await api
-      .get('/servers')
+      .get("/servers")
       .then(({ data }) => {
         if (!Array.isArray(data)) {
-          throw Error('Expected array of objects.');
+          throw Error("Expected array of objects.");
         } else {
-          commit('SET_SERVERS', data);
+          commit("SET_SERVERS", data);
         }
       })
       .catch(() => {
-        commit('SET_ERROR', true);
+        commit("SET_ERROR", true);
       })
       .finally(() => {
-        commit('SET_LOADING', false);
+        commit("SET_LOADING", false);
       });
   },
 };

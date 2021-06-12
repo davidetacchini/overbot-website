@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: 'PlanBox',
+  name: "PlanBox",
 
   props: {
     plan: Object,
@@ -27,7 +27,7 @@ export default {
 
   data: () => {
     return {
-      link: 'https://donatebot.io/checkout/550685823784321035?id=',
+      link: "https://donatebot.io/checkout/550685823784321035?id=",
     };
   },
 };

@@ -20,7 +20,7 @@
           <p>
             <span class="has-text-grey">Joined on: </span>
             <span class="has-text-weight-bold has-text-white">
-              {{ server.joined_at.split(' ')[0] }}
+              {{ server.joined_at.split(" ")[0] }}
             </span>
           </p>
         </div>
@@ -30,13 +30,13 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex';
-import regions from '@/assets/json/regions.json';
-import BaseLoader from '../BaseLoader';
-import ErrorAlert from '../ErrorAlert';
+import { mapGetters, mapActions } from "vuex";
+import regions from "@/assets/json/regions.json";
+import BaseLoader from "../BaseLoader";
+import ErrorAlert from "../ErrorAlert";
 
 export default {
-  name: 'ServerShowcase',
+  name: "ServerShowcase",
 
   components: {
     BaseLoader,
@@ -44,9 +44,9 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['servers']),
+    ...mapGetters(["servers"]),
     canScroll() {
-      return 'ontouchstart' in window || navigator.msMaxTouchPoints || false;
+      return "ontouchstart" in window || navigator.msMaxTouchPoints || false;
     },
   },
 
@@ -55,10 +55,10 @@ export default {
   },
 
   methods: {
-    ...mapActions({ getServers: 'GET_SERVERS' }),
+    ...mapActions({ getServers: "GET_SERVERS" }),
     get(object, key, defaultValue) {
       var result = object[key];
-      return typeof result !== 'undefined' ? result : defaultValue;
+      return typeof result !== "undefined" ? result : defaultValue;
     },
     setRegionFlag(region) {
       const flag = this.get(regions, region, region);

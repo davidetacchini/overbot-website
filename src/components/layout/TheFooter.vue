@@ -39,25 +39,25 @@
 
 <script>
 export default {
-  name: 'TheFooter',
+  name: "TheFooter",
 
   data: () => {
     return {
       navigation: {
-        Commands: '/commands',
-        Permissions: '/permissions',
-        Premium: '/premium',
-        Status: '/status',
+        Commands: "/commands",
+        Permissions: "/permissions",
+        Premium: "/premium",
+        Status: "/status",
       },
       resources: {
-        Freepik: 'https://www.flaticon.com/authors/freepik',
-        Flaticon: 'https://www.flaticon.com/',
-        'Ow-API': 'https://ow-api.com/',
-        unDraw: 'https://undraw.co/',
+        Freepik: "https://www.flaticon.com/authors/freepik",
+        Flaticon: "https://www.flaticon.com/",
+        "Ow-API": "https://ow-api.com/",
+        unDraw: "https://undraw.co/",
       },
       legal: {
-        'Privacy Policy': '/privacy',
-        'Terms of Service': '/terms',
+        "Privacy Policy": "/privacy",
+        "Terms of Service": "/terms",
       },
     };
   },

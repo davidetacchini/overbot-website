@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: 'ItemCard',
+  name: "ItemCard",
 
   props: {
     item: Object,

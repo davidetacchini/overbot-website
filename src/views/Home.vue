@@ -57,11 +57,11 @@
 </template>
 
 <script>
-import features from '@/assets/json/features.json';
-import BaseSection from '@/components/BaseSection';
-import HomeButton from '@/components/home/HomeButton';
-import ItemCard from '@/components/ItemCard';
-import ServerShowcase from '@/components/home/ServerShowcase';
+import features from "@/assets/json/features.json";
+import BaseSection from "@/components/BaseSection";
+import HomeButton from "@/components/home/HomeButton";
+import ItemCard from "@/components/ItemCard";
+import ServerShowcase from "@/components/home/ServerShowcase";
 
 export default {
   components: {
@@ -75,8 +75,8 @@ export default {
     return {
       links: {
         invite:
-          'https://discord.com/api/oauth2/authorize?client_id=547546531666984961&permissions=288832&scope=bot',
-        discord: 'https://discord.gg/8g3jnxv',
+          "https://discord.com/api/oauth2/authorize?client_id=547546531666984961&permissions=288832&scope=bot",
+        discord: "https://discord.gg/8g3jnxv",
       },
       features,
     };

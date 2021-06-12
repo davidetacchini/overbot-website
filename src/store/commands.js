@@ -1,11 +1,11 @@
-import api from '../services/api';
-import { sortAlphabetically, sortByCategory, sortBySearch } from '../common/helpers.js';
+import api from "../services/api";
+import { sortAlphabetically, sortByCategory, sortBySearch } from "../common/helpers.js";
 
 const state = {
   commands: [],
-  categories: ['All', 'Premium'],
-  search: '',
-  category: 'all',
+  categories: ["All", "Premium"],
+  search: "",
+  category: "all",
 };
 
 const getters = {
@@ -48,21 +48,21 @@ const mutations = {
 
 const actions = {
   async GET_COMMANDS({ commit }) {
-    commit('SET_STATE');
+    commit("SET_STATE");
     await api
-      .get('/commands')
+      .get("/commands")
       .then(({ data }) => {
         if (!Array.isArray(data)) {
-          throw Error('Expected array of objects.');
+          throw Error("Expected array of objects.");
         } else {
-          commit('SET_COMMANDS', data);
+          commit("SET_COMMANDS", data);
         }
       })
       .catch(() => {
-        commit('SET_ERROR', true);
+        commit("SET_ERROR", true);
       })
       .finally(() => {
-        commit('SET_LOADING', false);
+        commit("SET_LOADING", false);
       });
   },
 };

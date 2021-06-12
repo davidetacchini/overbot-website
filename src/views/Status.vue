@@ -29,13 +29,13 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex';
-import BaseSection from '@/components/BaseSection';
-import ErrorAlert from '@/components/ErrorAlert';
-import BaseLoader from '@/components/BaseLoader';
-import StatusBox from '@/components/status/StatusBox';
-import ShardBox from '@/components/status/ShardBox';
-import ShardTooltip from '@/components/status/ShardTooltip';
+import { mapGetters, mapActions } from "vuex";
+import BaseSection from "@/components/BaseSection";
+import ErrorAlert from "@/components/ErrorAlert";
+import BaseLoader from "@/components/BaseLoader";
+import StatusBox from "@/components/status/StatusBox";
+import ShardBox from "@/components/status/ShardBox";
+import ShardTooltip from "@/components/status/ShardTooltip";
 
 export default {
   components: {
@@ -54,7 +54,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['bot', 'host', 'shards']),
+    ...mapGetters(["bot", "host", "shards"]),
   },
 
   watch: {
@@ -78,7 +78,7 @@ export default {
   },
 
   methods: {
-    ...mapActions({ getStats: 'GET_STATS' }),
+    ...mapActions({ getStats: "GET_STATS" }),
   },
 };
 </script>

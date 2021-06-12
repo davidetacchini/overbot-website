@@ -20,14 +20,14 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations, mapActions } from 'vuex';
-import BaseSection from '@/components/BaseSection.vue';
-import BaseLoader from '@/components/BaseLoader';
-import ErrorAlert from '@/components/ErrorAlert';
-import CommandSearchBar from '@/components/commands/CommandSearchBar';
-import CommandFilter from '@/components/commands/CommandFilter';
-import CommandItem from '@/components/commands/CommandItem';
-import CommandNotFound from '@/components/commands/CommandNotFound';
+import { mapGetters, mapMutations, mapActions } from "vuex";
+import BaseSection from "@/components/BaseSection.vue";
+import BaseLoader from "@/components/BaseLoader";
+import ErrorAlert from "@/components/ErrorAlert";
+import CommandSearchBar from "@/components/commands/CommandSearchBar";
+import CommandFilter from "@/components/commands/CommandFilter";
+import CommandItem from "@/components/commands/CommandItem";
+import CommandNotFound from "@/components/commands/CommandNotFound";
 
 export default {
   components: {
@@ -42,10 +42,10 @@ export default {
 
   computed: {
     ...mapGetters({
-      commands: 'commands',
-      searchText: 'search',
-      categories: 'categories',
-      categoryText: 'category',
+      commands: "commands",
+      searchText: "search",
+      categories: "categories",
+      categoryText: "category",
     }),
     search: {
       get() {
@@ -67,17 +67,17 @@ export default {
 
   created() {
     // reset search and category everytime we visit /commands
-    this.setSearch('');
-    this.setCategory('all');
+    this.setSearch("");
+    this.setCategory("all");
     this.getCommands();
   },
 
   methods: {
-    ...mapActions({ getCommands: 'GET_COMMANDS' }),
+    ...mapActions({ getCommands: "GET_COMMANDS" }),
     ...mapMutations({
-      setCommands: 'SET_COMMANDS',
-      setSearch: 'SET_SEARCH',
-      setCategory: 'SET_CATEGORY',
+      setCommands: "SET_COMMANDS",
+      setSearch: "SET_SEARCH",
+      setCategory: "SET_CATEGORY",
     }),
   },
 };

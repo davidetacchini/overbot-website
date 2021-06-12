@@ -6,9 +6,8 @@
 
 <script>
 export default {
-  name: 'CommandNotFound',
+  name: "CommandNotFound",
 };
 </script>
 
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>

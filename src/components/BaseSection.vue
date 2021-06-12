@@ -10,6 +10,6 @@
 
 <script>
 export default {
-  name: 'BaseSection',
+  name: "BaseSection",
 };
 </script>

@@ -1,4 +1,4 @@
-import api from '../services/api';
+import api from "../services/api";
 
 const state = {
   bot: Object,
@@ -28,21 +28,21 @@ const mutations = {
 
 const actions = {
   async GET_STATS({ commit }) {
-    commit('SET_STATE');
+    commit("SET_STATE");
     await api
-      .get('/statistics')
+      .get("/statistics")
       .then(({ data }) => {
-        if (typeof data !== 'object' || data === null) {
-          throw Error('Expected object of objects.');
+        if (typeof data !== "object" || data === null) {
+          throw Error("Expected object of objects.");
         } else {
-          commit('SET_STATS', data);
+          commit("SET_STATS", data);
         }
       })
       .catch(() => {
-        commit('SET_ERROR', true);
+        commit("SET_ERROR", true);
       })
       .finally(() => {
-        commit('SET_LOADING', false);
+        commit("SET_LOADING", false);
       });
   },
 };

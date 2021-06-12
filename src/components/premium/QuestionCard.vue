@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'QuestionCard',
+  name: "QuestionCard",
 
   props: {
     faq: Object,

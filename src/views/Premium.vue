@@ -49,14 +49,14 @@
 </template>
 
 <script>
-import perks from '@/assets/json/perks.json';
-import plans from '@/assets/json/plans.json';
-import faqs from '@/assets/json/faqs.json';
-import BaseSection from '@/components/BaseSection';
-import ItemCard from '@/components/ItemCard';
-import PlanBox from '@/components/premium/PlanBox';
-import QuestionCard from '@/components/premium/QuestionCard';
-import BaseAlert from '@/components/BaseAlert';
+import perks from "@/assets/json/perks.json";
+import plans from "@/assets/json/plans.json";
+import faqs from "@/assets/json/faqs.json";
+import BaseSection from "@/components/BaseSection";
+import ItemCard from "@/components/ItemCard";
+import PlanBox from "@/components/premium/PlanBox";
+import QuestionCard from "@/components/premium/QuestionCard";
+import BaseAlert from "@/components/BaseAlert";
 
 export default {
   components: {
@@ -82,10 +82,10 @@ export default {
         and ask for the role to be set. The subscription is not affected by the role, it's just something extra.`,
       ],
       content:
-        'It may take up to 5 minutes for the Premium to be set. If you have issues join the support server.',
+        "It may take up to 5 minutes for the Premium to be set. If you have issues join the support server.",
       button: {
-        link: 'https://discord.com/invite/8g3jnxv',
-        action: 'Join now',
+        link: "https://discord.com/invite/8g3jnxv",
+        action: "Join now",
       },
     };
   },

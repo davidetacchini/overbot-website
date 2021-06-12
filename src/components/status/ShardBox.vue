@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'ShardBox',
+  name: "ShardBox",
 
   props: {
     shard: Object,
@@ -27,11 +27,11 @@ export default {
   computed: {
     shardBgColor() {
       if (this.shard.latency < 150) {
-        return 'bg-success';
+        return "bg-success";
       } else if (this.shard.latency >= 150 && this.shard.latency < 500) {
-        return 'bg-warning';
+        return "bg-warning";
       } else {
-        return 'bg-danger';
+        return "bg-danger";
       }
     },
   },

@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'BaseAlert',
+  name: "BaseAlert",
 
   props: {
     type: String,
@@ -35,7 +35,7 @@ export default {
 
   computed: {
     buttonColor() {
-      return this.button.color !== undefined ? this.button.color : 'is-success';
+      return this.button.color !== undefined ? this.button.color : "is-success";
     },
   },
 };

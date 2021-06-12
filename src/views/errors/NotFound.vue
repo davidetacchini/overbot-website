@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import BaseSection from '@/components/BaseSection';
+import BaseSection from "@/components/BaseSection";
 
 export default {
   components: {
@@ -18,7 +18,6 @@ export default {
   },
 };
 </script>
-
 
 <style scoped lang="scss">
 .is-stretch {

@@ -1,9 +1,9 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from "vue";
+import Vuex from "vuex";
 // Modules
-import home from './home';
-import status from './status';
-import commands from './commands';
+import home from "./home";
+import status from "./status";
+import commands from "./commands";
 
 Vue.use(Vuex);
 

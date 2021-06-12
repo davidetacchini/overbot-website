@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'HomeButton',
+  name: "HomeButton",
 
   props: {
     link: String,

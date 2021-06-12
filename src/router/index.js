@@ -1,79 +1,79 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
-import NotFound from '../views/errors/NotFound.vue';
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home.vue";
+import NotFound from "../views/errors/NotFound.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
+    path: "/",
+    name: "Home",
     component: Home,
     meta: {
-      title: 'OverBot - The best Overwatch bot for Discord',
+      title: "OverBot - The best Overwatch bot for Discord",
     },
   },
   {
-    path: '/commands',
-    name: 'Commands',
-    component: () => import(/* webpackChunkName: "commands" */ '../views/Commands.vue'),
+    path: "/commands",
+    name: "Commands",
+    component: () => import(/* webpackChunkName: "commands" */ "../views/Commands.vue"),
     meta: {
-      title: 'Commands - OverBot',
+      title: "Commands - OverBot",
     },
   },
   {
-    path: '/status',
-    name: 'Status',
-    component: () => import(/* webpackChunkName: "status" */ '../views/Status.vue'),
+    path: "/status",
+    name: "Status",
+    component: () => import(/* webpackChunkName: "status" */ "../views/Status.vue"),
     meta: {
-      title: 'Status - OverBot',
+      title: "Status - OverBot",
     },
   },
   {
-    path: '/permissions',
-    name: 'Permissions',
-    component: () => import(/* webpackChunkName: "permissions" */ '../views/Permissions.vue'),
+    path: "/permissions",
+    name: "Permissions",
+    component: () => import(/* webpackChunkName: "permissions" */ "../views/Permissions.vue"),
     meta: {
-      title: 'Permissions - OverBot',
+      title: "Permissions - OverBot",
     },
   },
   {
-    path: '/premium',
-    name: 'Premium',
-    component: () => import(/* webpackChunkName: "premium" */ '../views/Premium.vue'),
+    path: "/premium",
+    name: "Premium",
+    component: () => import(/* webpackChunkName: "premium" */ "../views/Premium.vue"),
     meta: {
-      title: 'Premium - OverBot',
+      title: "Premium - OverBot",
     },
   },
   {
-    path: '/privacy',
-    name: 'Privacy',
-    component: () => import(/* webpackChunkName: "privacy" */ '../views/legal/Privacy.vue'),
+    path: "/privacy",
+    name: "Privacy",
+    component: () => import(/* webpackChunkName: "privacy" */ "../views/legal/Privacy.vue"),
     meta: {
-      title: 'Privacy Policy - OverBot',
+      title: "Privacy Policy - OverBot",
     },
   },
   {
-    path: '/terms',
-    name: 'Terms',
-    component: () => import(/* webpackChunkName: "terms" */ '../views/legal/Terms.vue'),
+    path: "/terms",
+    name: "Terms",
+    component: () => import(/* webpackChunkName: "terms" */ "../views/legal/Terms.vue"),
     meta: {
-      title: 'Terms of Service - OverBot',
+      title: "Terms of Service - OverBot",
     },
   },
   {
-    path: '*',
-    name: 'Not Found',
+    path: "*",
+    name: "Not Found",
     component: NotFound,
     meta: {
-      title: 'Page Not Found - OverBot',
+      title: "Page Not Found - OverBot",
     },
   },
 ];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   routes,
   scrollBehavior() {
     return { x: 0, y: 0 };

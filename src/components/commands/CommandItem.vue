@@ -3,7 +3,7 @@
     <h1 class="command__title title is-5">{{ command.name }} {{ command.signature }}</h1>
     <div class="command__info box no-border outer-shadow mb-2">
       <h2 class="command__description subtitle">
-        {{ command.short_desc.replace('`[Premium]`', '') }}
+        {{ command.short_desc.replace("`[Premium]`", "") }}
         <button
           v-if="command.long_desc.split('.').length > 2"
           class="command__description--read-more"
@@ -26,7 +26,7 @@
 
 <script>
 export default {
-  name: 'CommandItem',
+  name: "CommandItem",
 
   props: {
     command: Object,
@@ -40,18 +40,18 @@ export default {
 
   computed: {
     aliases() {
-      return this.command.aliases.join(', ');
+      return this.command.aliases.join(", ");
     },
     showText() {
-      return this.showMore ? 'Show less' : 'Show more';
+      return this.showMore ? "Show less" : "Show more";
     },
     longDescription() {
       return this.command.long_desc
-        .split('.')
+        .split(".")
         .slice(1)
-        .join('.')
-        .replace('\n', '')
-        .replace(/`/g, '');
+        .join(".")
+        .replace("\n", "")
+        .replace(/`/g, "");
     },
   },
 };
@@ -85,7 +85,7 @@ h2 {
     box-shadow: 0 0 10px 0 $danger !important;
 
     &::after {
-      content: 'PREMIUM';
+      content: "PREMIUM";
       position: absolute;
       right: 0.5rem;
       top: 0.5rem;

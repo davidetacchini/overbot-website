@@ -45,31 +45,31 @@
 
 <script>
 export default {
-  name: 'TheNavbar',
+  name: "TheNavbar",
 
   data: () => {
     return {
-      navigation: 'home',
+      navigation: "home",
       routes: {
-        Commands: '/commands',
-        Permissions: '/permissions',
-        Premium: '/premium',
-        Status: '/status',
+        Commands: "/commands",
+        Permissions: "/permissions",
+        Premium: "/premium",
+        Status: "/status",
       },
       dropdownRoutes: {
-        'Find us online': {
+        "Find us online": {
           isTitle: true,
         },
-        'top.gg': 'https://top.gg/bot/547546531666984961',
-        'bots.gg': 'https://discord.bots.gg/bots/547546531666984961',
+        "top.gg": "https://top.gg/bot/547546531666984961",
+        "bots.gg": "https://discord.bots.gg/bots/547546531666984961",
         Social: {
           isTitle: true,
         },
-        GitHub: 'https://github.com/davidetacchini/overbot',
+        GitHub: "https://github.com/davidetacchini/overbot",
         Help: {
           isTitle: true,
         },
-        'Support Server': 'https://discord.gg/8g3jnxv',
+        "Support Server": "https://discord.gg/8g3jnxv",
       },
     };
   },

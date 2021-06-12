@@ -5,9 +5,9 @@ export const sortAlphabetically = (commands) => {
 };
 
 export const sortByCategory = (commands, category) => {
-  if (category === 'all') {
+  if (category === "all") {
     return commands;
-  } else if (category == 'premium') {
+  } else if (category == "premium") {
     return commands.filter((command) => {
       return command.is_premium === true;
     });
@@ -27,7 +27,7 @@ export const sortBySearch = (commands, searchText) => {
   return commands.filter((command) => {
     let base = command.name.includes(search) || command.long_desc.toLowerCase().includes(search);
     if (command.aliases) {
-      base += command.aliases.join(', ').includes(search);
+      base += command.aliases.join(", ").includes(search);
     }
     if (command.signature) {
       base += command.signature.includes(search);
