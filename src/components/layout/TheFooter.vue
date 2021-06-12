@@ -3,7 +3,7 @@
     <div class="container">
       <div class="columns is-multiline">
         <div class="column is-6">
-          <h1 class="title is-4">OverBot</h1>
+          <img src="@/assets/logos/banner.svg" alt="OverBot Banner" />
           <p>Copyright &copy; {{ currentYear }} OverBot. All rights reserved.</p>
           <br />
           <p>OverBot is not affiliated with Blizzard Entertainment.</p>
@@ -71,6 +71,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+img {
+  width: 10rem;
+  margin-bottom: 1rem;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 p {
   font-size: 0.875rem;
   color: $grey;
