@@ -51,16 +51,10 @@ export default {
     border: unset !important;
   }
 
-  &.inner-shadow {
-    -moz-box-shadow: inset 0 0 5px $color-delta !important;
-    -webkit-box-shadow: inset 0 0 5px $color-delta !important;
-    box-shadow: inset 0 0 5px $color-delta !important;
-  }
-
   &.outer-shadow {
-    box-shadow: 0 0 15px $color-delta !important;
-    -webkit-box-shadow: 0 0 15px $color-delta !important;
-    -moz-box-shadow: 0 0 15px $color-delta !important;
+    box-shadow: 0 0 8px $color-delta !important;
+    -webkit-box-shadow: 0 0 8px $color-delta !important;
+    -moz-box-shadow: 0 0 8px $color-delta !important;
   }
 }
 
