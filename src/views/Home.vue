@@ -27,7 +27,7 @@
             :key="feature.id"
             class="column is-6-desktop is-6-tablet is-12-mobile"
           >
-            <item-card :item="feature" iconColor="bg-info" />
+            <item-card :item="feature" iconColor="bg-primary" />
           </div>
         </div>
       </div>

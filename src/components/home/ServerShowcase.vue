@@ -75,7 +75,7 @@ export default {
 }
 
 .first-place {
-  box-shadow: 0 0 10px $primary !important;
+  box-shadow: 0 0 8px $primary !important;
 }
 
 .tag {

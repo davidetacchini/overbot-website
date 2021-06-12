@@ -82,7 +82,7 @@ h2 {
   position: relative;
 
   &.is-premium {
-    box-shadow: 0 0 10px 0 $danger !important;
+    box-shadow: 0 0 8px $danger !important;
 
     &::after {
       content: "PREMIUM";
