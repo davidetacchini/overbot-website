@@ -11,8 +11,8 @@
   },
   {
     "id": 2,
-    "title": "Check your SRs",
-    "description": "Check your roles skill rating!",
+    "title": "Check your Skill Ratings",
+    "description": "Check your roles Skill Rating directly from Discord!",
     "icon": "star",
     "button": null
   },
@@ -25,8 +25,8 @@
   },
   {
     "id": 4,
-    "title": "Link your profiles",
-    "description": "Link up to 5 profiles to your Discord ID without using any external links. Upgrade to Premium to be able to link more profiles!",
+    "title": "Connect your profiles",
+    "description": "Connect up to 5 profiles to your Discord ID without using any external links. Upgrade to Premium to be able to connect more profiles!",
     "icon": "link",
     "button": {
       "path": "/premium",
@@ -35,9 +35,9 @@
   },
   {
     "id": 5,
-    "title": "Trivia",
-    "description": "Play Overwatch trivia and climb the leaderboard! It is also possible to contribute by submit new questions to be added to the game.",
-    "icon": "question-circle",
+    "title": "Fun",
+    "description": "Ask OverBot a role, hero or map to play next! Play Overwatch trivia while you're waiting for a game or enojoy some Overwatch memes!",
+    "icon": "laugh-squint",
     "button": null
   },
   {

@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "title": "Link more profiles",
+    "title": "Connect more profiles",
     "description": "Be able to connect up to 25 Overwatch profiles to your Discord ID.",
     "icon": "sort-amount-up"
   },
   {
     "id": 2,
     "title": "Cooldown reduce",
-    "description": "Reduce commands cooldown by 50%; from 3 seconds to 1.5 second per command.",
+    "description": "Reduce commands cooldown by 50%: from 3 seconds to 1.5 second per command.",
     "icon": "hourglass-half"
   },
   {
@@ -19,7 +19,7 @@
   },
   {
     "id": 4,
-    "title": "Change embeds color",
+    "title": "Custom embeds color",
     "description": "Customize most of the embeds by changing their color.",
     "icon": "palette"
   },
