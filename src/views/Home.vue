@@ -21,7 +21,7 @@
       <div class="is-stretch">
         <h1 class="title is-4 has-text-weight-bold is-spaced">What exactly does OverBot offer?</h1>
         <h2 class="subtitle is-6">Here's why you should start using OverBot today.</h2>
-        <div class="columns is-multiline is-centered">
+        <div class="columns is-multiline">
           <div
             v-for="feature in features"
             :key="feature.id"
