@@ -3,9 +3,9 @@
     <h1 class="command__title title is-5">{{ command.name }} {{ command.signature }}</h1>
     <div class="command__info box no-border outer-shadow mb-2">
       <h2 class="command__description subtitle">
-        {{ command.short_desc.replace("`[Premium]`", "") }}
+        {{ shortDescription }}
         <button
-          v-if="command.long_desc.split('.').length > 2"
+          v-if="isLongDescription"
           class="command__description--read-more"
           @click.prevent="showMore = !showMore"
         >
@@ -44,6 +44,12 @@ export default {
     },
     showText() {
       return this.showMore ? "Show less" : "Show more";
+    },
+    isLongDescription() {
+      return this.command.long_desc.split(".").length > 2;
+    },
+    shortDescription() {
+      return this.command.short_desc.replace("`[Premium]`", "");
     },
     longDescription() {
       return this.command.long_desc
