@@ -1,30 +1,20 @@
 [
   {
     "id": 1,
-    "title": "Multilingual",
-    "description": "OverBot supports up to 7 languages! You can help translating if your language is not available yet.",
-    "icon": "language",
-    "button": {
-      "link": "https://github.com/davidetacchini/overbot",
-      "action": "Help translating"
-    }
-  },
-  {
-    "id": 2,
     "title": "Check your Skill Ratings",
     "description": "Check your roles Skill Rating directly from Discord!",
     "icon": "star",
     "button": null
   },
   {
-    "id": 3,
+    "id": 2,
     "title": "Check your stats",
     "description": "Check both your quick play and competitive stats in a single embed, so you can easily compare them.",
     "icon": "stream",
     "button": null
   },
   {
-    "id": 4,
+    "id": 3,
     "title": "Connect your profiles",
     "description": "Connect up to 5 profiles to your Discord ID without using any external links. Upgrade to Premium to be able to connect more profiles!",
     "icon": "link",
@@ -34,14 +24,14 @@
     }
   },
   {
-    "id": 5,
+    "id": 4,
     "title": "Fun",
     "description": "Ask OverBot a role, hero or map to play next! Play Overwatch trivia while you're waiting for a game or enjoy some Overwatch memes!",
     "icon": "laugh-squint",
     "button": null
   },
   {
-    "id": 6,
+    "id": 5,
     "title": "News and more",
     "description": "Check the latest Overwatch news, patch notes and server status information.",
     "icon": "rss",
