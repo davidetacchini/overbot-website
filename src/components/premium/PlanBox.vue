@@ -2,7 +2,7 @@
   <div class="box has-background-dark no-border outer-shadow">
     <h1 class="title">{{ plan.type }}</h1>
     <h1 class="title is-2 has-text-weight-bold">${{ plan.price }}</h1>
-    <h2 class="subtitle is-6 has-text-grey">one-time purchase</h2>
+    <h2 class="subtitle is-6 has-text-grey">Single payment</h2>
     <a
       :href="link + plan.id"
       target="_blank"
