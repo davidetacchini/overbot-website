@@ -67,6 +67,7 @@ hr {
   padding: 14px 28px !important;
   transition: all 175ms ease-in-out !important;
   font-weight: bold !important;
+  border-radius: 8px !important;
 }
 
 .is-charlie {
