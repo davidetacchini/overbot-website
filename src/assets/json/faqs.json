@@ -7,7 +7,7 @@
   {
     "id": 2,
     "question": "What payment methods are supported?",
-    "answer": "OverBot uses DonateBot for donations. DonateBot interfaces with PayPal, so your payment will be handled by PayPal."
+    "answer": "OverBot uses DonateBot for handling payments. DonateBot interfaces with PayPal, so your payment will be handled by PayPal."
   },
   {
     "id": 3,
@@ -17,7 +17,7 @@
   {
     "id": 4,
     "question": "Is my payment secure?",
-    "answer": "Your payment is 100% secure. We don’t have access to your Paypal account information, everything is processed securely through PayPal."
+    "answer": "Yes, your payment is 100% secure. Payments are handled by DonateBot, a payment processor that uses PayPal for handling transactions. Your transactions are protected by PayPal's Purchase Protection for Buyers."
   },
   {
     "id": 5,
@@ -27,7 +27,7 @@
   {
     "id": 6,
     "question": "Can I transfer my Premium subscription to another Discord account/server?",
-    "answer": "Yes. <a class='has-text-primary has-text-outlined' href='https://discord.gg/8g3jnxv' target='_blank' rel='noopener'>Click here</a> to join the support server and open a new ticket."
+    "answer": "Yes. <a class='has-text-primary has-text-outlined' href='https://discord.gg/8g3jnxv' target='_blank' rel='noopener'>Click here</a> to join the support server and open a new ticket requesting a subscription transfer."
   },
   {
     "id": 7,
