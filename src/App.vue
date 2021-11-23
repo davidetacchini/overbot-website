@@ -42,7 +42,7 @@ export default {
 
 <style lang="scss">
 .container {
-    max-width: 1240px !important;
+  max-width: 1240px !important;
 }
 
 .box {

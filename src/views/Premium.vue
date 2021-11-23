@@ -34,9 +34,15 @@
       <h1 class="title is-4">Notes</h1>
       <hr />
       <base-alert type="bg-info" :content="content" :button="button" />
-        <ol type="1">
-          <li v-for="(note, index) in notes" :key="index" :id="'note-' + (index + 1)" class="has-text-grey note" v-html="note" />
-        </ol>
+      <ol type="1">
+        <li
+          v-for="(note, index) in notes"
+          :key="index"
+          :id="'note-' + (index + 1)"
+          class="has-text-grey note"
+          v-html="note"
+        />
+      </ol>
     </base-section>
     <base-section>
       <h1 class="title is-4">Frequently Asked Questions</h1>
