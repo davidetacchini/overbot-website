@@ -41,6 +41,10 @@ export default {
 </script>
 
 <style lang="scss">
+.container {
+    max-width: 1240px !important;
+}
+
 .box {
   background-color: $color-charlie !important;
   border-radius: $border-radius !important;
@@ -64,11 +68,8 @@ hr {
 }
 
 .button {
-  padding: 14px 28px !important;
   transition: all 175ms ease-in-out !important;
-  font-weight: bold !important;
   border-radius: 8px !important;
-  font-weight: 300 !important;
 }
 
 .is-charlie {
