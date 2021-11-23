@@ -2,7 +2,6 @@
   <div>
     <base-section class="is-medium">
       <div class="is-stretch">
-        <h3 class="title is-6 has-text-primary mb-3">RENEWED</h3>
         <h1 class="title is-3 is-size-4-mobile has-text-weight-bold is-spaced">
           The best Overwatch bot for Discord
         </h1>
