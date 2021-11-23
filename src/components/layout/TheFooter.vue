@@ -4,9 +4,9 @@
       <div class="columns is-multiline">
         <div class="column is-6">
           <img src="@/assets/logos/banner.svg" alt="OverBot Banner" />
-          <p>Copyright &copy; {{ currentYear }} OverBot. All rights reserved.</p>
-          <br />
-          <p>OverBot is not affiliated with Blizzard Entertainment.</p>
+          <p class="mb-5">The best Overwatch stats bot for Discord</p>
+          <p class="mb-2 opacity-50">OverBot is not affiliated with Blizzard Entertainment.</p>
+          <p class="opacity-50">Copyright &copy; 2019 - {{ currentYear }} OverBot. All rights reserved.</p>
         </div>
         <div class="column is-2">
           <h1 class="title is-6">Navigation</h1>
@@ -81,6 +81,10 @@ img {
 p {
   font-size: 0.875rem;
   color: $grey;
+
+  &.opacity-50 {
+    opacity: .5;
+  }
 }
 
 .link {
