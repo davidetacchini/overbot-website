@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Send Messages",
     "description": "Allows OverBot to send messages to your Discord server",
-    "icon": "comments",
+    "icon": "paper-plane",
     "required": true
   },
   {
