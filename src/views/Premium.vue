@@ -24,7 +24,7 @@
         <div
           v-for="plan in plans"
           :key="plan.id"
-          class="column is-3-desktop is-6-tablet is-12-mobile"
+          class="column is-4-desktop is-6-tablet is-12-mobile"
         >
           <plan-box :plan="plan" />
         </div>
@@ -34,7 +34,9 @@
       <h1 class="title is-4">Notes</h1>
       <hr />
       <base-alert type="bg-info" :content="content" :button="button" />
-      <p v-for="(note, index) in notes" :key="index" class="has-text-grey note" v-html="note"></p>
+        <ol type="1">
+          <li v-for="(note, index) in notes" :key="index" :id="'note-' + (index + 1)" class="has-text-grey note" v-html="note" />
+        </ol>
     </base-section>
     <base-section>
       <h1 class="title is-4">Frequently Asked Questions</h1>
@@ -73,12 +75,12 @@ export default {
       plans,
       faqs,
       notes: [
-        `*OverBot is tracking players skill ratings since <b>December 23rd, 2020</b>. 
+        `OverBot is tracking players skill ratings since <b>December 23rd, 2020</b>. 
         Whenever a player runs the "-profile rating" command his profile SRs are saved.
         Duplicates are not accepted: if a player runs the command twice within the same day
         for the same profile and the SRs are equals, they won't be saved. That said, you can 
         understand that the more "-profile rating" is used the more accurate the graph will be.`,
-        `*Join the <a class="has-text-primary has-text-outlined" href="https://discord.gg/8g3jnxv" target="_blank" rel="noopener">support server</a> 
+        `Join the <a class="has-text-primary has-text-outlined" href="https://discord.gg/8g3jnxv" target="_blank" rel="noopener">support server</a> 
         and ask for the role to be set. The subscription is not affected by the role, it's just something extra.`,
       ],
       content:
