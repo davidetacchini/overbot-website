@@ -92,4 +92,13 @@ hr {
     background-position: right;
   }
 }
+
+.note {
+  color: inherit;
+}
+
+.note:focus,
+.note:hover {
+  color: $danger;
+}
 </style>
