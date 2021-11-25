@@ -7,8 +7,8 @@
   },
   {
     "id": 2,
-    "title": "Cooldown reduce",
-    "description": "Reduce commands cooldown by 50%: from 3 seconds to 1.5 second per command.",
+    "title": "Global cooldown reduce",
+    "description": "Reduce global cooldown by 50%: from 3 seconds to 1.5 second per command.",
     "icon": "hourglass-half"
   },
   {
@@ -19,12 +19,18 @@
   },
   {
     "id": 4,
+    "title": "Overwatch news <span class='tag bg-info shine'>NEW</span>",
+    "description": "Set up a channel to receive the latest Overwatch news.",
+    "icon": "rss"
+  },
+  {
+    "id": 5,
     "title": "Custom embeds color",
     "description": "Customize most of the embeds by changing their color.",
     "icon": "tint"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Discord role<sup><a href='#note-2' class='note'>2</a></sup>",
     "description": "Get access to the Premium role on OverBot's official Discord server.",
     "icon": "award"
