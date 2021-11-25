@@ -40,5 +40,12 @@
     "description": "Enables the bot to use external emojis",
     "icon": "external-link-alt",
     "required": true
+  },
+  {
+    "id": 7,
+    "title": "Manage Channels",
+    "description": "Allows OverBot to create channels.",
+    "icon": "hashtag",
+    "required": true
   }
 ]
