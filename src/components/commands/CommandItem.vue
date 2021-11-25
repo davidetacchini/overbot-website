@@ -1,26 +1,25 @@
 <template>
-  <div :class="['box command', { 'is-premium': command.is_premium }]">
+  <div :class="['box command p-4', { 'is-premium': command.is_premium }]">
     <h1 class="command__title title is-5">{{ command.name }} {{ command.signature }}</h1>
-    <div class="command__info box no-border outer-shadow mb-2">
-      <h2 class="command__description subtitle">
-        {{ command.short_desc }}
-        <button
-          v-if="isLongDescription"
-          class="command__description--read-more"
-          @click.prevent="showMore = !showMore"
-        >
-          <span>{{ showText }}</span>
-        </button>
-        <transition name="slide-fade">
-          <div v-if="showMore" class="command__description--more">
-            {{ longDescription }}
-          </div>
-        </transition>
-      </h2>
-    </div>
+    <h2 class="command__description subtitle mb-2">
+      {{ command.short_desc }}
+      <button
+        v-if="isLongDescription"
+        class="command__description--read-more"
+        @click.prevent="showMore = !showMore"
+      >
+        <span>{{ showText }}</span>
+      </button>
+      <transition name="slide-fade">
+        <div v-if="showMore" class="command__description--more">
+          {{ longDescription }}
+        </div>
+      </transition>
+    </h2>
     <div v-if="command.aliases" class="command__aliases">
       <p class="has-text-grey">Aliases: {{ aliases }}</p>
     </div>
+    <div class="command__cooldown"></div>
   </div>
 </template>
 
@@ -81,7 +80,6 @@ h2 {
 }
 
 .command {
-  padding: 15px !important;
   position: relative;
 
   &.is-premium {
@@ -98,11 +96,7 @@ h2 {
   }
 
   &__title {
-    margin-bottom: 12px !important;
-  }
-
-  &__info {
-    padding: 12px !important;
+    margin-bottom: 10px !important;
   }
 
   &__description {
