@@ -41,6 +41,11 @@ export default {
 </script>
 
 <style lang="scss">
+html,
+body {
+  background-color: $color-beta !important;
+}
+
 .container {
   max-width: 1240px !important;
 }

@@ -29,11 +29,6 @@ $subtitle-color: $grey !important;
 // Footer
 $footer-background-color: $color-charlie;
 
-html,
-body {
-  background-color: $color-beta !important;
-}
-
 @import './scss/navbar.scss';
 @import './scss/dropdown.scss';
 @import './scss/loader.scss';
