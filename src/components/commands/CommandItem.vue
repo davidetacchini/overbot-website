@@ -19,7 +19,9 @@
     <div v-if="command.aliases" class="command__aliases">
       <p class="has-text-grey">Aliases: {{ aliases }}</p>
     </div>
-    <div class="command__cooldown"></div>
+    <div v-if="command.cooldown" class="command__cooldown">
+      <p class="has-text-grey">Cooldown: {{ command.cooldown }}s</p>
+    </div>
   </div>
 </template>
 
@@ -118,7 +120,8 @@ h2 {
     }
   }
 
-  &__aliases p {
+  &__aliases p,
+  &__cooldown p {
     font-size: 0.875rem !important;
   }
 }
