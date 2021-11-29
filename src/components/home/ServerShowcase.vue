@@ -7,21 +7,19 @@
         <img class="server__region" :src="setRegionFlag(server.region)" :alt="server.region" />
         <img class="server__image" :src="server.icon" :alt="server.name" />
         <h1 class="server__title title has-text-weight-bold is-6 mt-3">{{ server.name }}</h1>
+        <h2 class="server__subtitle subtitle is-7">
+          JOINED ON {{ server.joined_at.split(" ")[0] }}
+        </h2>
         <span v-if="server.is_premium" class="tag bg-danger shine">Premium</span>
-        <div class="box no-border server__info">
+        <hr />
+        <div class="server__info">
           <p>
-            <span class="has-text-grey">Commands run: </span>
-            <span class="has-text-weight-bold has-text-white">{{ server.commands_run }}</span>
+            <span class="has-text-grey is-size-7">COMMANDS RUNNED: </span>
+            <span class="has-text-white">{{ server.commands_run }}</span>
           </p>
           <p>
-            <span class="has-text-grey">Members: </span>
-            <span class="has-text-weight-bold has-text-white">{{ server.members }}</span>
-          </p>
-          <p>
-            <span class="has-text-grey">Joined on: </span>
-            <span class="has-text-weight-bold has-text-white">
-              {{ server.joined_at.split(" ")[0] }}
-            </span>
+            <span class="has-text-grey is-size-7">MEMBERS COUNT: </span>
+            <span class="has-text-white">{{ server.members }}</span>
           </p>
         </div>
       </div>
@@ -116,11 +114,7 @@ export default {
   }
 
   &__info {
-    background-color: $color-charlie !important;
-    padding: 8px;
-    border-radius: $border-radius;
     font-size: 0.875rem !important;
-    text-align: left !important;
   }
 }
 
