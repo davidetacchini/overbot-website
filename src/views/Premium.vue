@@ -1,7 +1,7 @@
 <template>
   <div id="premium">
     <base-section class="is-medium has-text-centered">
-      <h3 class="title is-6 has-text-danger mb-3">INTRODUCING</h3>
+      <h3 class="title is-6 has-text-danger mb-3">NOW CHEAPER BY 50%</h3>
       <h1 class="title has-text-weight-bold is-spaced">OverBot Premium</h1>
       <h2 class="subtitle is-6">Upgrade to Premium to unlock more perks!</h2>
       <a href="#plans" class="button is-white is-outlined mt-5 p-5">View our plans</a>
