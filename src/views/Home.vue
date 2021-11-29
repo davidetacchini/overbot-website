@@ -32,7 +32,18 @@
       </div>
     </base-section>
 
-    <base-section class="is-medium" id="servers">
+    <base-section class="is-medium">
+      <div class="is-stretch">
+        <h1 class="title is-4 has-text-weight-bold is-spaced">Get more with OverBot Premium!</h1>
+        <h2 class="subtitle is-6 is-size-6-mobile">
+          Improve your experience by subscribing to one of our Premium plans. By purchasing a
+          Premium plan you are supporting OverBot's development whilst unlocking extra features.
+        </h2>
+        <home-button path="/premium" action="Get Premium" class="is-danger is-outlined shine" />
+      </div>
+    </base-section>
+
+    <base-section class="is-medium is-charlie" id="servers">
       <div class="is-stretch">
         <h1 class="title is-4 has-text-weight-bold is-spaced mb-6">Weekly most active servers</h1>
         <server-showcase />
