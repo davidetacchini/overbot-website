@@ -47,5 +47,12 @@
     "description": "Allows OverBot to create channels.",
     "icon": "hashtag",
     "required": true
+  },
+  {
+    "id": 8,
+    "title": "Use Application Commands",
+    "description": "Enables OverBot slash commands and context menu commands.",
+    "icon": "hashtag",
+    "required": true
   }
 ]
