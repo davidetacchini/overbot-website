@@ -19,7 +19,7 @@
   },
   {
     "id": 4,
-    "title": "News channel <span class='tag bg-info shine'>NEW</span>",
+    "title": "Newsboard <span class='tag bg-info shine'>NEW</span>",
     "description": "Set up a channel to receive the latest Overwatch news.",
     "icon": "rss"
   },
