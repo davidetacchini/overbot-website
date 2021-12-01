@@ -14,7 +14,7 @@
   {
     "id": 3,
     "title": "SRs performance graph<sup><a href='#note-1' class='note'>1</a></sup>",
-    "description": "Unlock the 'profile graph' command and see your SRs performance wrapped in a graph.",
+    "description": "Unlock the 'profile graph' command to see your SRs performance wrapped in a graph.",
     "icon": "chart-line"
   },
   {
