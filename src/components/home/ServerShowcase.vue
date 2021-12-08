@@ -4,7 +4,6 @@
     <error-alert v-else-if="$store.getters.error" />
     <div v-for="(server, index) in servers" v-else :key="server.id" class="column server-column">
       <div :class="['server box has-background-dark', { 'first-place': index === 0 }]">
-        <img class="server__region" :src="setRegionFlag(server.region)" :alt="server.region" />
         <img class="server__image" :src="server.icon" :alt="server.name" />
         <h1 class="server__title title has-text-weight-bold is-6 mt-3">{{ server.name }}</h1>
         <h2 class="server__subtitle subtitle is-7">
@@ -29,7 +28,6 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
-import regions from "@/assets/json/regions.json";
 import BaseLoader from "../BaseLoader";
 import ErrorAlert from "../ErrorAlert";
 
@@ -54,14 +52,6 @@ export default {
 
   methods: {
     ...mapActions({ getServers: "GET_SERVERS" }),
-    get(object, key, defaultValue) {
-      var result = object[key];
-      return typeof result !== "undefined" ? result : defaultValue;
-    },
-    setRegionFlag(region) {
-      const flag = this.get(regions, region, region);
-      return require(`@/assets/images/flags/${flag}`);
-    },
   },
 };
 </script>
