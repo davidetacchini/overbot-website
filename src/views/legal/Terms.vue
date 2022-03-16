@@ -6,12 +6,12 @@
         <hr />
         <p>
           These Terms of Service govern your use of the website located at
-          <a href="https://overbot.me">https://overbot.me</a>
+          <a href="https://overbot.netlify.app">https://overbot.netlify.app</a>
           and any related services provided by OverBot.
         </p>
         <p>
           By accessing
-          <a href="https://overbot.me">https://overbot.me</a>, you agree to abide by these Terms of
+          <a href="https://overbot.netlify.app">https://overbot.netlify.app</a>, you agree to abide by these Terms of
           Service and to comply with all applicable laws and regulations. If you do not agree with
           these Terms of Service, you are prohibited from using or accessing this website or using
           any other services provided by OverBot.
