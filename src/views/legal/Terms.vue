@@ -11,10 +11,10 @@
         </p>
         <p>
           By accessing
-          <a href="https://overbot.netlify.app">https://overbot.netlify.app</a>, you agree to abide by these Terms of
-          Service and to comply with all applicable laws and regulations. If you do not agree with
-          these Terms of Service, you are prohibited from using or accessing this website or using
-          any other services provided by OverBot.
+          <a href="https://overbot.netlify.app">https://overbot.netlify.app</a>, you agree to abide
+          by these Terms of Service and to comply with all applicable laws and regulations. If you
+          do not agree with these Terms of Service, you are prohibited from using or accessing this
+          website or using any other services provided by OverBot.
         </p>
         <p>
           We, OverBot, reserve the right to review and amend any of these Terms of Service at our
