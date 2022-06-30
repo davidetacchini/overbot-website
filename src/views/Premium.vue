@@ -2,7 +2,10 @@
   <div id="premium">
     <base-section class="is-medium has-text-centered">
       <h1 class="title has-text-weight-bold is-spaced">OverBot Premium</h1>
-      <h2 class="subtitle is-6">Upgrade to Premium to unlock more perks!</h2>
+      <h2 class="subtitle is-6">
+        OverBot is a project founded and maintained by a single person.<br />
+        If you'd like to support this project, consider upgrading to one of the Premium plans.
+      </h2>
       <a href="#plans" class="button is-white is-outlined mt-5 p-5">View our plans</a>
     </base-section>
     <base-section class="is-charlie">
@@ -81,10 +84,8 @@ export default {
       faqs,
       notes: [
         `OverBot is tracking players skill ratings since <b>December 23rd, 2020</b>. 
-        Whenever a player runs the "-profile rating" command his profile SRs are saved.
-        Duplicates are not accepted: if a player runs the command twice within the same day
-        for the same profile and the SRs are equals, they won't be saved. That said, you can 
-        understand that the more "-profile rating" is used the more accurate the graph will be.`,
+        Whenever a player runs the "/profile rating" command his profile SRs are saved.
+        Thus, the more "/profile rating" is used over time the more accurate the graph will be.`,
         `Join the <a class="has-text-primary has-text-outlined" href="https://discord.gg/8g3jnxv" target="_blank" rel="noopener">support server</a> 
         and ask for the role to be set. The subscription is not affected by the role, it's just something extra.`,
       ],
