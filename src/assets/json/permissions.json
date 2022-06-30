@@ -28,13 +28,6 @@
     "required": true
   },
   {
-    "id": 5,
-    "title": "Add Reactions",
-    "description": "Enables the bot to add reactions to messages",
-    "icon": "plus-circle",
-    "required": true
-  },
-  {
     "id": 6,
     "title": "Use External Emojis",
     "description": "Enables the bot to use external emojis",
