@@ -1,48 +1,41 @@
 [
   {
     "id": 1,
-    "title": "Send Messages",
-    "description": "Allows OverBot to send messages to your Discord server",
-    "icon": "paper-plane",
-    "required": true
-  },
-  {
-    "id": 2,
-    "title": "Manage Messages",
-    "description": "Used to delete and edit messages",
-    "icon": "edit",
-    "required": true
-  },
-  {
-    "id": 3,
-    "title": "Manage Nicknames",
-    "description": "Used to change member nicknames",
-    "icon": "user-tag",
-    "required": true
-  },
-  {
-    "id": 4,
-    "title": "Embed Links",
-    "description": "Allows OverBot to embed links",
-    "icon": "link",
-    "required": true
-  },
-  {
-    "id": 6,
-    "title": "Use External Emojis",
-    "description": "Enables the bot to use external emojis",
-    "icon": "external-link-alt",
-    "required": true
-  },
-  {
-    "id": 7,
     "title": "Manage Channels",
     "description": "Allows OverBot to create channels.",
     "icon": "hashtag",
     "required": true
   },
   {
-    "id": 8,
+    "id": 2,
+    "title": "Manage Nicknames",
+    "description": "Used to change member nicknames",
+    "icon": "user-tag",
+    "required": true
+  },
+  {
+    "id": 3,
+    "title": "Send Messages",
+    "description": "Allows OverBot to send messages to your Discord server",
+    "icon": "paper-plane",
+    "required": true
+  },
+  {
+    "id": 4,
+    "title": "Manage Messages",
+    "description": "Used to delete and edit messages",
+    "icon": "edit",
+    "required": true
+  },
+  {
+    "id": 5,
+    "title": "Use External Emojis",
+    "description": "Enables the bot to use external emojis",
+    "icon": "external-link-alt",
+    "required": true
+  },
+  {
+    "id": 6,
     "title": "Use Application Commands",
     "description": "Enables OverBot slash commands and context menu commands.",
     "icon": "hashtag",
