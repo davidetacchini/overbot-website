@@ -25,13 +25,6 @@ export const sortBySearch = (commands, searchText) => {
     return commands;
   }
   return commands.filter((command) => {
-    let base = command.name.includes(search) || command.long_desc.toLowerCase().includes(search);
-    if (command.aliases) {
-      base += command.aliases.join(", ").includes(search);
-    }
-    if (command.signature) {
-      base += command.signature.includes(search);
-    }
-    return base;
+    return command.name.includes(search) || command.description.toLowerCase().includes(search);
   });
 };
