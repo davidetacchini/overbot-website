@@ -1,11 +1,11 @@
-$dropdown-content-background-color: $color-charlie;
+$dropdown-content-background-color: $color-beta;
 $dropdown-item-color: $grey;
 $dropdown-item-hover-color: $white;
-$dropdown-divider-background-color: $color-delta;
+$dropdown-divider-background-color: $color-gamma;
 $dropdown-item-hover-background-color: transparent;
 
 .dropdown-content {
-  border: 1px solid $color-delta !important;
+  border: 1px solid $color-gamma !important;
 }
 
 .dropdown-more .icon {

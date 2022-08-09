@@ -30,7 +30,7 @@ export default {
   padding: 10px;
   background-color: transparent;
   border-radius: 3rem;
-  border: 1px solid $color-delta;
+  border: 1px solid $color-gamma;
 }
 
 .circle {

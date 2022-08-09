@@ -43,7 +43,7 @@ export default {
 <style lang="scss">
 html,
 body {
-  background-color: $color-beta !important;
+  background-color: $color-alpha !important;
 }
 
 .container {
@@ -51,9 +51,9 @@ body {
 }
 
 .box {
-  background-color: $color-charlie !important;
+  background-color: $color-beta !important;
   border-radius: $border-radius !important;
-  border: 1px solid $color-delta !important;
+  border: 1px solid $color-gamma !important;
   box-shadow: unset !important;
 
   &.no-border {
@@ -61,14 +61,14 @@ body {
   }
 
   &.outer-shadow {
-    box-shadow: 0 0 8px $color-delta !important;
-    -webkit-box-shadow: 0 0 8px $color-delta !important;
-    -moz-box-shadow: 0 0 8px $color-delta !important;
+    box-shadow: 0 0 8px $color-gamma !important;
+    -webkit-box-shadow: 0 0 8px $color-gamma !important;
+    -moz-box-shadow: 0 0 8px $color-gamma !important;
   }
 }
 
 hr {
-  background-color: $color-delta !important;
+  background-color: $color-gamma !important;
   height: 1px !important;
 }
 
@@ -78,7 +78,7 @@ hr {
 }
 
 .is-charlie {
-  background-color: $color-charlie !important;
+  background-color: $color-beta !important;
 }
 
 .shine {

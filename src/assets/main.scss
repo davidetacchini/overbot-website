@@ -5,9 +5,9 @@
 $family-primary: 'Open Sans', sans-serif;
 
 // Custom colors
-$color-beta: rgb(10, 13, 16);
-$color-charlie: rgb(13, 17, 23);
-$color-delta: rgb(33, 38, 45);
+$color-alpha: rgb(10, 13, 16);
+$color-beta: rgb(13, 17, 23);
+$color-gamma: rgb(33, 38, 45);
 
 $white-high-emphasis: rgba(255, 255, 255, 0.87);
 $white-medium-emphasis: rgba(255, 255, 255, 0.6);
@@ -20,14 +20,14 @@ $warning: rgb(242, 204, 96);
 $danger: rgb(255, 123, 114);
 $white: $white-high-emphasis;
 $grey: $white-medium-emphasis;
-$dark: $color-beta;
+$dark: $color-alpha;
 
 // Typography
 $title-color: $white !important;
 $subtitle-color: $grey !important;
 
 // Footer
-$footer-background-color: $color-charlie;
+$footer-background-color: $color-beta;
 
 @import './scss/navbar.scss';
 @import './scss/dropdown.scss';

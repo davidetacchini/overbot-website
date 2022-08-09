@@ -31,13 +31,13 @@ export default {
 <style scoped lang="scss">
 .card {
   user-select: none !important;
-  background-color: $color-charlie !important;
+  background-color: $color-beta !important;
   border-radius: $border-radius !important;
-  border: 1px solid $color-delta !important;
+  border: 1px solid $color-gamma !important;
   cursor: pointer !important;
 
   button {
-    background-color: $color-charlie !important;
+    background-color: $color-alpha !important;
     border: unset !important;
     border-radius: $border-radius !important;
     outline: unset !important;

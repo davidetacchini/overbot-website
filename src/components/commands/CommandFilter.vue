@@ -40,8 +40,8 @@ export default {
   select {
     width: 100% !important;
     height: 100% !important;
-    background-color: $color-beta !important;
-    border-color: $color-delta !important;
+    background-color: $color-alpha !important;
+    border-color: $color-gamma !important;
     border-radius: $border-radius !important;
     color: $grey !important;
   }
