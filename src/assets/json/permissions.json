@@ -36,6 +36,13 @@
   },
   {
     "id": 6,
+    "title": "Embed Links",
+    "description": "Allows OverBot to use embeds.",
+    "icon": "link",
+    "required": true
+  },
+  {
+    "id": 7,
     "title": "Use Application Commands",
     "description": "Enables OverBot slash commands and context menu commands.",
     "icon": "hashtag",
