@@ -1,6 +1,6 @@
 <template>
   <div :class="['box command p-4', { 'is-premium': command.is_premium }]">
-    <h1 class="command__title title is-5">/{{ command.name }}</h1>
+    <h1 class="command__title title is-5">{{ command.name }}</h1>
     <h2 class="command__description subtitle mb-2">{{ command.description }}</h2>
     <div v-if="command.guild_only" class="tag">
       <p class="has-text-grey">Server only</p>
