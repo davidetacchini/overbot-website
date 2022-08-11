@@ -5,8 +5,11 @@
       <div class="column">
         <command-search-bar v-model.trim="search" />
       </div>
-      <div class="column is-2-desktop is-3-tablet">
-        <command-filter v-model="category" :categories="categories" />
+      <div class="column is-3-tablet">
+        <command-filter v-model="type" :items="types" icon="filter" />
+      </div>
+      <div class="column is-3-tablet">
+        <command-filter v-model="category" :items="categories" icon="cog" />
       </div>
     </div>
     <div class="columns is-multiline">
@@ -44,6 +47,8 @@ export default {
     ...mapGetters({
       commands: "commands",
       searchText: "search",
+      types: "types",
+      typeText: "type",
       categories: "categories",
       categoryText: "category",
     }),
@@ -53,6 +58,14 @@ export default {
       },
       set(value) {
         this.setSearch(value);
+      },
+    },
+    type: {
+      get() {
+        return this.typeText;
+      },
+      set(value) {
+        this.setType(value);
       },
     },
     category: {
@@ -68,6 +81,7 @@ export default {
   created() {
     // reset search and category everytime we visit /commands
     this.setSearch("");
+    this.setType("app commands");
     this.setCategory("all");
     this.getCommands();
   },
@@ -77,6 +91,7 @@ export default {
     ...mapMutations({
       setCommands: "SET_COMMANDS",
       setSearch: "SET_SEARCH",
+      setType: "SET_TYPE",
       setCategory: "SET_CATEGORY",
     }),
   },

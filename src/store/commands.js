@@ -1,21 +1,31 @@
 import api from "../services/api";
-import { sortAlphabetically, sortByCategory, sortBySearch } from "../common/helpers.js";
+import { sortAlphabetically, sortByType, sortByCategory, sortBySearch } from "../common/helpers.js";
 
 const state = {
   commands: [],
+  types: ["App Commands", "Context Menus"],
   categories: ["All", "Premium"],
   search: "",
+  type: "app commands",
   category: "all",
 };
 
 const getters = {
   commands: (state) => {
-    const sortedAlphabetically = sortAlphabetically(state.commands);
+    const sortedByType = sortByType(state.commands, state.type);
+    const sortedAlphabetically = sortAlphabetically(sortedByType);
     return sortByCategory(sortBySearch(sortedAlphabetically, state.search), state.category);
   },
+  types: (state) => {
+    return state.types;
+  },
   categories: (state) => {
-    const categories = [...state.categories];
-    state.commands.forEach((command) => {
+    let categories = [];
+    if (state.type == "app commands") {
+      categories = [...state.categories];
+    }
+    const commands = sortByType(state.commands, state.type);
+    commands.forEach((command) => {
       if (command.cog !== null) {
         categories.push(command.cog);
       }
@@ -29,6 +39,9 @@ const getters = {
   search: (state) => {
     return state.search;
   },
+  type: (state) => {
+    return state.type;
+  },
   category: (state) => {
     return state.category;
   },
@@ -40,6 +53,9 @@ const mutations = {
   },
   SET_SEARCH: (state, payload) => {
     state.search = payload;
+  },
+  SET_TYPE: (state, payload) => {
+    state.type = payload;
   },
   SET_CATEGORY: (state, payload) => {
     state.category = payload;

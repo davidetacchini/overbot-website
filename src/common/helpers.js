@@ -4,10 +4,22 @@ export const sortAlphabetically = (commands) => {
   });
 };
 
+export const sortByType = (commands, type) => {
+  if (type === "app commands") {
+    return commands.filter((command) => {
+      return command.type === "App Command";
+    });
+  } else if (type == "context menus") {
+    return commands.filter((command) => {
+      return command.type === "Context Menu";
+    });
+  }
+};
+
 export const sortByCategory = (commands, category) => {
   if (category === "all") {
     return commands;
-  } else if (category == "premium") {
+  } else if (category === "premium") {
     return commands.filter((command) => {
       return command.is_premium === true;
     });

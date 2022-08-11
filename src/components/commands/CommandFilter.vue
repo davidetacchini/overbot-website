@@ -6,17 +6,13 @@
         @input="$emit('input', $event.target.value)"
         :disabled="$store.getters.error"
       >
-        <option
-          v-for="(category, index) in categories"
-          :key="index"
-          :value="category.toLowerCase()"
-        >
-          {{ category }}
+        <option v-for="(item, index) in items" :key="index" :value="item.toLowerCase()">
+          {{ item }}
         </option>
       </select>
     </div>
     <span class="icon has-text-grey is-left">
-      <i class="fas fa-filter" />
+      <i :class="['fas', `fa-${icon}`]" />
     </span>
   </div>
 </template>
@@ -27,7 +23,8 @@ export default {
 
   props: {
     value: String,
-    categories: Array,
+    items: Array,
+    icon: String,
   },
 };
 </script>
