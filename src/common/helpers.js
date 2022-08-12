@@ -37,6 +37,9 @@ export const sortBySearch = (commands, searchText) => {
     return commands;
   }
   return commands.filter((command) => {
-    return command.name.includes(search) || command.description.toLowerCase().includes(search);
+    return (
+      command.name.toLowerCase().includes(search) ||
+      command.description.toLowerCase().includes(search)
+    );
   });
 };
