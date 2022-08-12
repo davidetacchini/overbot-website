@@ -5,10 +5,10 @@
       <div class="column">
         <command-search-bar v-model.trim="search" />
       </div>
-      <div class="column is-3-tablet">
+      <div class="column is-full-tablet is-3-desktop">
         <command-filter v-model="type" :items="types" icon="filter" />
       </div>
-      <div class="column is-3-tablet">
+      <div class="column is-full-tablet is-3-desktop">
         <command-filter v-model="category" :items="categories" icon="cog" />
       </div>
     </div>
