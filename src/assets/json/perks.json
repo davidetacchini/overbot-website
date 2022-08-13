@@ -19,7 +19,7 @@
   },
   {
     "id": 4,
-    "title": "Newsboard",
+    "title": "Newsboard<sup><a href='#note-2' class='note'>2</a></sup>",
     "description": "Set up a channel to receive the latest Overwatch news.",
     "icon": "rss"
   },
@@ -31,7 +31,7 @@
   },
   {
     "id": 6,
-    "title": "Discord role<sup><a href='#note-2' class='note'>2</a></sup>",
+    "title": "Discord role<sup><a href='#note-3' class='note'>3</a></sup>",
     "description": "Get access to the Premium role on OverBot's official Discord server.",
     "icon": "award"
   }

@@ -86,6 +86,7 @@ export default {
         `OverBot is tracking players skill ratings since <b>December 23rd, 2020</b>. 
         Whenever a player runs the "/profile rating" command his profile SRs are saved.
         Thus, the more "/profile rating" is used over time the more accurate the graph will be.`,
+        `News are taken from the <a class="has-text-primary has-text-outlined" href="https://playoverwatch.com/en-us/news/" target="_blank">official Overwatch website</a>.`,
         `Join the <a class="has-text-primary has-text-outlined" href="https://discord.gg/8g3jnxv" target="_blank" rel="noopener">support server</a> 
         and ask for the role to be set. The subscription is not affected by the role, it's just something extra.`,
       ],
