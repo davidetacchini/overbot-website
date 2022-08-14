@@ -17,7 +17,7 @@
     "id": 3,
     "title": "Send Messages",
     "description": "Allows OverBot to send messages to your Discord server",
-    "icon": "paper-plane",
+    "icon": "message",
     "required": true
   },
   {
@@ -45,7 +45,7 @@
     "id": 7,
     "title": "Use Application Commands",
     "description": "Enables OverBot slash commands and context menu commands.",
-    "icon": "hashtag",
+    "icon": "slash",
     "required": true
   }
 ]
