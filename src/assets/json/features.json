@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Check your Skill Ratings",
-    "description": "Check your roles Skill Rating directly from Discord!",
+    "description": "Check your Skill Ratings directly from Discord!",
     "icon": "star",
     "button": null
   },
@@ -35,6 +35,13 @@
     "title": "News and more",
     "description": "Check the latest Overwatch news, patch notes and server status information.",
     "icon": "rss",
+    "button": null
+  },
+  {
+    "id": 6,
+    "title": "Slash Commands and UI Components",
+    "description": "Fully supports Slash Commands and Discord UI Components for a better experience!",
+    "icon": "slash",
     "button": null
   }
 ]
