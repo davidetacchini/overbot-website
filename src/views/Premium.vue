@@ -26,7 +26,7 @@
         <div
           v-for="plan in plans"
           :key="plan.id"
-          class="column is-4-desktop is-6-tablet is-12-mobile"
+          class="column is-4-desktop is-6-tablet is-full-mobile"
         >
           <plan-box :plan="plan" />
         </div>
