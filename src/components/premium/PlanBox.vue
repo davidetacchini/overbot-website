@@ -1,5 +1,5 @@
 <template>
-  <div class="box has-background-darker">
+  <div class="box">
     <h1 class="title is-4 has-text-weight-light">{{ plan.type }}</h1>
     <h1 class="title is-3 has-text-weight-bold">${{ plan.price }}</h1>
     <h2 class="subtitle is-6 has-text-grey">Single payment</h2>
