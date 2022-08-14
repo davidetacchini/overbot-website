@@ -75,8 +75,13 @@ const routes = [
 const router = new VueRouter({
   mode: "history",
   routes,
-  scrollBehavior() {
-    return { x: 0, y: 0 };
+  // eslint-disable-next-line no-unused-vars
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return { selector: to.hash, behaviour: "smooth" };
+    } else {
+      return { x: 0, y: 0, behaviour: "smooth" };
+    }
   },
 });
 
