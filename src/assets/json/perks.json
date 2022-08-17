@@ -7,30 +7,24 @@
   },
   {
     "id": 2,
-    "title": "Global cooldown reduce",
-    "description": "Reduce global cooldown by 50%: from 3 seconds to 1.5 second per command.",
-    "icon": "hourglass-half"
-  },
-  {
-    "id": 3,
     "title": "SRs performance graph<sup><a href='#note-1' class='note'>1</a></sup>",
     "description": "Unlock the 'profile graph' command to see your SRs performance wrapped in a graph.",
     "icon": "chart-line"
   },
   {
-    "id": 4,
+    "id": 3,
     "title": "Newsboard<sup><a href='#note-2' class='note'>2</a></sup>",
     "description": "Set up a channel to receive the latest Overwatch news.",
     "icon": "rss"
   },
   {
-    "id": 5,
+    "id": 4,
     "title": "Custom embeds color",
     "description": "Customize most of the embeds by changing their color.",
     "icon": "tint"
   },
   {
-    "id": 6,
+    "id": 5,
     "title": "Discord role<sup><a href='#note-3' class='note'>3</a></sup>",
     "description": "Get access to the Premium role on OverBot's official Discord server.",
     "icon": "award"
