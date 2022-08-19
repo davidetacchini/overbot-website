@@ -1,18 +1,30 @@
 <template>
   <div class="box">
-    <h1 class="title is-4 has-text-weight-light">{{ plan.type }}</h1>
-    <h1 class="title is-3 has-text-weight-bold">${{ plan.price }}</h1>
-    <h2 class="subtitle is-6 has-text-grey">Single payment</h2>
+    <span class="tag is-medium is-rounded bg-info most-popular" v-if="plan.type === 'Individual'">
+      most popular
+    </span>
+    <h1 class="title is-4 has-text-weight-medium mb-3">{{ plan.type }}</h1>
+    <h1 class="title is-2 has-text-weight-bold">
+      <span class="has-text-grey">$</span> {{ plan.price }}
+    </h1>
+    <h2 class="subtitle has-text-grey" style="font-size: 14px !important">Single payment</h2>
+    <hr />
+    <div class="perks">
+      <div v-for="(perk, index) in plan.perks" :key="index" class="icon-text">
+        <span class="icon">
+          <i class="fas fa-check has-text-success"></i>
+        </span>
+        <span class="has-text-grey" v-html="perk"></span>
+      </div>
+    </div>
+    <hr />
     <a
       :href="link + plan.id"
       target="_blank"
       rel="noopener"
-      class="button is-danger is-outlined p-5 shine mt-4"
+      class="button is-higher is-fullwidth is-danger is-outlined shine p-5"
     >
-      <span class="icon is-small">
-        <i class="fas fa-rocket"></i>
-      </span>
-      <span>Go Premium</span>
+      Get the {{ plan.type }} plan
     </a>
   </div>
 </template>
@@ -32,3 +44,37 @@ export default {
   },
 };
 </script>
+
+<style scoped lang="scss">
+hr {
+  margin-block: 2rem;
+  opacity: 0.5;
+}
+
+.perks {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.perks > *:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.box {
+  padding-block: 2.5rem !important;
+  max-width: 350px !important;
+  margin: auto !important;
+  border-radius: $border-radius !important;
+  position: relative !important;
+}
+
+.most-popular {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  left: 0;
+  max-width: fit-content;
+  margin-inline: auto;
+  text-transform: uppercase;
+}
+</style>
