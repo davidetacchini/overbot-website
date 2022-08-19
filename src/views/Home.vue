@@ -17,7 +17,7 @@
       </div>
     </base-section>
 
-    <base-section class="is-medium is-charlie">
+    <base-section class="is-medium is-beta">
       <div class="is-stretch">
         <h1 class="title is-4 has-text-weight-bold is-spaced">What exactly does OverBot offer?</h1>
         <h2 class="subtitle is-6">Here's why you should start using OverBot today.</h2>
@@ -44,7 +44,7 @@
       </div>
     </base-section>
 
-    <base-section class="is-medium is-charlie" id="servers">
+    <base-section class="is-medium is-beta" id="servers">
       <div class="is-stretch">
         <h1 class="title is-4 has-text-weight-bold is-spaced mb-6">Weekly most active servers</h1>
         <server-showcase />
