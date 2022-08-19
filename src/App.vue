@@ -73,8 +73,8 @@ hr {
 }
 
 .button {
-  transition: all 0.15s ease-out 0s !important;
-  border-radius: 8px !important;
+  transition: all 0.15s ease-out !important;
+  border-radius: $border-radius !important;
 
   &.is-higher {
     height: 55px !important;

@@ -53,7 +53,7 @@ export default {
 
 .item-link {
   color: $primary;
-  transition: color 175ms ease-in-out;
+  transition: color 0.15s ease-out;
 }
 
 .item-link:hover {

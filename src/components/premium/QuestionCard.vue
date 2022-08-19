@@ -49,7 +49,7 @@ export default {
   }
 
   .icon {
-    transition: transform 175ms linear;
+    transition: transform 0.15s linear;
   }
 
   .icon.active {

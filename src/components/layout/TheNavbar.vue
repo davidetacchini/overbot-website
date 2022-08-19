@@ -78,7 +78,7 @@ export default {
 
 <style scoped lang="scss">
 .navbar-item {
-  transition: color 175ms ease-out;
+  transition: color 0.15s ease-out;
   font-size: 0.875rem !important;
 }
 </style>

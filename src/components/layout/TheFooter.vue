@@ -93,7 +93,7 @@ p {
   display: block;
   color: $grey;
   font-size: 0.875rem;
-  transition: color 175ms ease-out;
+  transition: color 0.15s ease-out;
 }
 
 .link:not(:first-of-type) {
