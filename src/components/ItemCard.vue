@@ -1,7 +1,7 @@
 <template>
   <div class="columns is-multiline is-mobile">
     <div class="column is-narrow mt-5">
-      <span :class="['icon p-5', iconColor]">
+      <span :class="['icon', iconColor]">
         <i :class="['fas', `fa-${item.icon}`]" />
       </span>
     </div>
@@ -41,8 +41,9 @@ export default {
 
 <style scoped lang="scss">
 .icon {
-  font-size: 1.5rem;
-  border-radius: 50%;
+  font-size: 1.3rem;
+  border-radius: $border-radius;
+  padding: 1.3rem;
 }
 
 .item-link,
