@@ -68,6 +68,16 @@ hr {
   position: relative !important;
 }
 
+@media screen and (max-width: 768px) {
+  hr {
+    margin-block: 1rem;
+  }
+
+  .box {
+    padding-block: 1.75rem !important;
+  }
+}
+
 .most-popular {
   position: absolute;
   top: -15px;
