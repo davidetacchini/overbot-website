@@ -73,11 +73,15 @@ hr {
 }
 
 .button {
-  transition: all 175ms ease-in-out !important;
+  transition: all 0.15s ease-out 0s !important;
   border-radius: 8px !important;
+
+  &.is-higher {
+    height: 55px !important;
+  }
 }
 
-.is-charlie {
+.is-beta {
   background-color: $color-beta !important;
 }
 
