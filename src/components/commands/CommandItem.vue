@@ -19,20 +19,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.slide-fade-enter-active {
-  transition: all 175ms ease;
-}
-
-.slide-fade-leave-active {
-  transition: all 175ms cubic-bezier(1, 0.5, 0.8, 1);
-}
-
-.slide-fade-enter,
-.slide-fade-leave-to {
-  transform: translateX(5px);
-  opacity: 0;
-}
-
 h2 {
   padding: 0 !important;
   margin: 0 !important;
