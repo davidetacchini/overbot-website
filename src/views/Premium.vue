@@ -26,9 +26,16 @@
       </div>
     </base-section>
     <base-section>
-      <h1 class="title is-4">Notes</h1>
+      <h1 class="title is-4">Frequently Asked Questions</h1>
       <hr />
       <base-alert type="bg-info" :content="content" :button="button" />
+      <div class="columns is-multiline">
+        <div v-for="faq in faqs" :key="faq.id" class="column is-12">
+          <question-card :faq="faq" />
+        </div>
+      </div>
+    </base-section>
+    <base-section class="is-beta">
       <ol type="1">
         <li
           v-for="(note, index) in notes.notes"
@@ -38,15 +45,7 @@
           v-html="note"
         />
       </ol>
-    </base-section>
-    <base-section>
-      <h1 class="title is-4">Frequently Asked Questions</h1>
       <hr />
-      <div class="columns is-multiline">
-        <div v-for="faq in faqs" :key="faq.id" class="column is-12">
-          <question-card :faq="faq" />
-        </div>
-      </div>
     </base-section>
   </div>
 </template>
