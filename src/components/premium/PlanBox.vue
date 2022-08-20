@@ -1,6 +1,9 @@
 <template>
   <div class="box">
-    <span class="tag is-medium is-rounded bg-info most-popular" v-if="plan.type === 'Individual'">
+    <span
+      class="tag is-medium is-rounded bg-info shine most-popular"
+      v-if="plan.type === 'Individual'"
+    >
       most popular
     </span>
     <h1 class="title is-4 has-text-weight-medium mb-3">{{ plan.type }}</h1>
@@ -22,7 +25,7 @@
       :href="link + plan.id"
       target="_blank"
       rel="noopener"
-      class="button is-higher is-fullwidth is-danger is-outlined shine p-5"
+      class="button is-higher is-fullwidth bg-info bg-info--button p-5"
     >
       Get the {{ plan.type }} plan
     </a>
@@ -86,5 +89,6 @@ hr {
   max-width: fit-content;
   margin-inline: auto;
   text-transform: uppercase;
+  font-size: 14px !important;
 }
 </style>
