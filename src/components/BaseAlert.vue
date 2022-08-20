@@ -35,7 +35,7 @@ export default {
 
   computed: {
     buttonColor() {
-      return this.button.color !== undefined ? this.button.color : "is-success";
+      return this.button.color !== undefined ? this.button.color : "bg-success bg-success--button";
     },
   },
 };
