@@ -2,7 +2,7 @@
   <div>
     <base-section class="is-medium">
       <div class="is-stretch">
-        <h3 class="title is-6 has-text-danger mb-3">NOW SUPPORTS SLASH COMMANDS</h3>
+        <h3 class="title is-6 has-text-info mb-3">NOW SUPPORTS SLASH COMMANDS</h3>
         <h1 class="title is-3 is-size-4-mobile has-text-weight-bold is-spaced">
           The best Overwatch bot for Discord
         </h1>
@@ -11,8 +11,12 @@
           stats, stay up to date with the latest news, link their Overwatch profiles and more!
         </h2>
         <div class="buttons mt-6">
-          <home-button :link="links.invite" action="Add to Discord" class="is-primary" />
-          <home-button path="/premium" action="Get Premium" class="is-danger is-outlined shine" />
+          <home-button
+            :link="links.invite"
+            action="Add to Discord"
+            class="bg-primary bg-primary--button"
+          />
+          <home-button path="/premium" action="Get Premium" class="bg-info bg-info--button" />
         </div>
       </div>
     </base-section>
@@ -40,7 +44,7 @@
           Improve your experience by subscribing to one of our Premium plans. By purchasing a
           Premium plan you are supporting OverBot's development whilst unlocking extra features.
         </h2>
-        <home-button path="/premium" action="Get Premium" class="is-danger is-outlined" />
+        <home-button path="/premium" action="Get Premium" class="bg-info bg-info--button" />
       </div>
     </base-section>
 
@@ -58,7 +62,11 @@
           If you got any questions or issues with OverBot don't hesitate to join the official
           Discord server.
         </h2>
-        <home-button :link="links.discord" action="Get support" class="is-primary is-outlined" />
+        <home-button
+          :link="links.discord"
+          action="Get support"
+          class="bg-primary bg-primary--button"
+        />
       </div>
     </base-section>
   </div>
