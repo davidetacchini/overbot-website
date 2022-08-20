@@ -22,7 +22,9 @@ const getters = {
   categories: (state) => {
     let categories = [];
     if (state.type == "app commands") {
-      categories = [...state.categories];
+      categories = state.categories;
+    } else {
+      categories = ["All"];
     }
     const commands = sortByType(state.commands, state.type);
     commands.forEach((command) => {
