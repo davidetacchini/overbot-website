@@ -40,7 +40,7 @@
           Improve your experience by subscribing to one of our Premium plans. By purchasing a
           Premium plan you are supporting OverBot's development whilst unlocking extra features.
         </h2>
-        <home-button path="/premium" action="Get Premium" class="is-danger is-outlined shine" />
+        <home-button path="/premium" action="Get Premium" class="is-danger is-outlined" />
       </div>
     </base-section>
 
