@@ -61,7 +61,7 @@ hr {
 }
 
 .box {
-  padding-block: 2.5rem !important;
+  padding-block: 2.5rem 1.75rem !important;
   max-width: 350px !important;
   margin: auto !important;
   border-radius: $border-radius !important;
