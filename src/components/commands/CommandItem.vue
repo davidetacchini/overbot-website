@@ -2,8 +2,13 @@
   <div :class="['box command p-4', { 'is-premium': command.is_premium }]">
     <h1 class="command__title title is-5">{{ command.name }}</h1>
     <h2 class="command__description subtitle mb-2">{{ command.description }}</h2>
-    <div v-if="command.guild_only" class="tag bg-white">
-      <span>Server only</span>
+    <div class="tags">
+      <div v-if="command.is_premium" class="tag bg-info">
+        <span>Premium</span>
+      </div>
+      <div v-if="command.guild_only" class="tag bg-white">
+        <span>Server only</span>
+      </div>
     </div>
   </div>
 </template>
@@ -29,15 +34,6 @@ h2 {
 
   &.is-premium {
     box-shadow: 0 0 4px $info !important;
-
-    &::after {
-      content: "PREMIUM";
-      position: absolute;
-      right: 0.5rem;
-      top: 0.3rem;
-      font-size: 0.8rem;
-      color: $info;
-    }
   }
 
   &__title {
