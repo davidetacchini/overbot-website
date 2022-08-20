@@ -1,11 +1,8 @@
 <template>
   <div id="premium">
     <base-section class="is-medium has-text-centered">
-      <h1 class="title has-text-weight-bold is-spaced">OverBot Premium</h1>
-      <h2 class="subtitle is-6">
-        OverBot is a project founded and maintained by a single person.<br />
-        If you'd like to support this project, consider upgrading to one of the Premium plans.
-      </h2>
+      <h1 class="title is-1 has-text-weight-bold is-spaced">OverBot Premium</h1>
+      <h2 class="subtitle is-6">Get access to more perks by upgrading to one of the plans!</h2>
       <div class="columns is-centered plans">
         <div
           v-for="plan in plans"
@@ -24,7 +21,7 @@
           :Key="perk.id"
           class="column is-4-desktop is-6-tablet is-12-mobile"
         >
-          <item-card :item="perk" iconColor="bg-danger" />
+          <item-card :item="perk" iconColor="bg-info" />
         </div>
       </div>
     </base-section>
