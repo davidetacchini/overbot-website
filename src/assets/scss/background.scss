@@ -2,34 +2,64 @@
   background-color: rgb(46, 32, 17) !important;
   color: rgb(255, 196, 121) !important;
   border: 1px solid rgba(253, 174, 56, 0.4) !important;
+  transition: border-color 0.15s ease-out !important;
+
+  &--button:hover {
+    border-color: rgba(253, 174, 56, 1) !important;
+  }
 }
 
 .bg-white {
   background-color: rgb(36, 36, 36) !important;
   color: rgb(177, 186, 196) !important;
   border: 1px solid rgba(139, 148, 158, 0.4) !important;
+  transition: border-color 0.15s ease-out !important;
+
+  &--button:hover {
+    border-color: rgba(139, 148, 158, 1) !important;
+  }
 }
 
 .bg-info {
   background-color: rgb(17, 30, 46) !important;
   color: rgb(121, 192, 255) !important;
   border: 1px solid rgba(56, 139, 253, 0.4) !important;
+  transition: border-color 0.15s ease-out !important;
+
+  &--button:hover {
+    border-color: rgba(56, 139, 253, 1) !important;
+  }
 }
 
 .bg-success {
   background-color: rgb(17, 31, 28) !important;
   color: rgb(86, 211, 100) !important;
   border: 1px solid rgba(46, 160, 67, 0.4) !important;
+  transition: border-color 0.15s ease-out !important;
+
+  &--button:hover {
+    border-color: rgba(46, 160, 67, 1) !important;
+  }
 }
 
 .bg-warning {
   background-color: rgb(32, 27, 22) !important;
   color: rgb(227, 179, 65) !important;
   border: 1px solid rgba(187, 128, 9, 0.4) !important;
+  transition: border-color 0.15s ease-out !important;
+
+  &--button:hover {
+    border-color: rgba(187, 128, 9, 1) !important;
+  }
 }
 
 .bg-danger {
   background-color: rgb(36, 22, 28) !important;
   color: rgb(255, 123, 114) !important;
   border: 1px solid rgba(248, 81, 73, 0.4) !important;
+  transition: border-color 0.15s ease-out !important;
+
+  &--button:hover {
+    border-color: rgba(248, 81, 73, 1) !important;
+  }
 }
