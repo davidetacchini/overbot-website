@@ -65,6 +65,8 @@ export default {
         return this.typeText;
       },
       set(value) {
+        this.setCategory("all"); // reset category if type changes
+        this.setSearch(""); // reset search if type changes
         this.setType(value);
       },
     },
