@@ -70,6 +70,7 @@ body {
 hr {
   background-color: $color-gamma !important;
   height: 1px !important;
+  opacity: 0.5 !important;
 }
 
 .button {
@@ -104,10 +105,11 @@ hr {
 
 .note {
   color: inherit;
+  transition: color 0.15s ease-out;
 }
 
 .note:focus,
 .note:hover {
-  color: $danger;
+  color: $info;
 }
 </style>
