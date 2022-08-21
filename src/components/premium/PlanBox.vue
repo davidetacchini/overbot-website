@@ -63,7 +63,7 @@ hr {
 
 @media screen and (max-width: 768px) {
   hr {
-    margin-block: 1rem;
+    margin-block: 1.5rem;
   }
 
   .box {
