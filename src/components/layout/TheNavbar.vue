@@ -90,6 +90,10 @@ export default {
     margin: 0 auto !important;
     padding: 1.5rem 3rem !important;
   }
+
+  .navbar-start > *:not(last-of-type) {
+    margin-right: 0.5rem !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
