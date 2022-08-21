@@ -4,26 +4,22 @@
       <div class="container">
         <h1 class="title">Privacy Policy</h1>
         <hr />
-        <p>Last update on March 22nd, 2021.</p>
+        <p>Last update on August 21, 2022.</p>
         <br />
         <p>By using our Website/Bot, you agree that you have read and agree to this policy.</p>
-        <h1 class="title is-5 block">
-          What personal information do we collect from the users that use OverBot?
-        </h1>
+        <h1 class="title is-5 block">What information do we collect from users that use OverBot?</h1>
         <div class="content">
           <ul>
-            <li>
-              Public information about your discord server (server ID, server name, server icon,
-              channel names, channel IDs, member IDs)
-            </li>
-            <li>Public information about members (member ID, member name, member icon)</li>
+            <li>Public information about Servers (ID, channel IDs).</li>
+            <li>Public information about Members (ID).</li>
+            <li>Public information about Overwatch profiles (platform, username, skill ratings).</li>
           </ul>
           <p>Some information listed above may only be stored when specific commands are runned.</p>
         </div>
         <h1 class="title is-5 block">How do we use your information?</h1>
         <div class="content">
           <ul>
-            <li>Your information is used within the Bot for features which require them.</li>
+            <li>Your information is used within the Bot for features that require them.</li>
           </ul>
           <p>Your information is visible only to those who are part of the OverBot staff.</p>
         </div>
