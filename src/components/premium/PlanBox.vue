@@ -51,16 +51,6 @@ export default {
 <style scoped lang="scss">
 hr {
   margin-block: 2rem;
-  opacity: 0.5;
-}
-
-.perks {
-  display: inline-block;
-  font-size: 14px;
-}
-
-.perks > *:not(:last-of-type) {
-  margin-bottom: 1rem;
 }
 
 .box {
@@ -79,6 +69,16 @@ hr {
   .box {
     padding-block: 1.75rem !important;
   }
+}
+
+
+.perks {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.perks > *:not(:last-of-type) {
+  margin-bottom: 1rem;
 }
 
 .most-popular {
