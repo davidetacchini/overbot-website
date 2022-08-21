@@ -57,6 +57,6 @@ export default {
 }
 
 .item-link:hover {
-  color: $danger;
+  color: $info;
 }
 </style>
