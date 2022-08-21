@@ -6,7 +6,7 @@
       </span>
     </div>
     <div class="column mt-5">
-      <h1 v-html="item.title" class="title is-6" />
+      <h1 v-html="item.title" class="title is-6 is-spaced mb-2" />
       <h2 class="subtitle is-6 mb-2">
         {{ item.description }}
       </h2>
