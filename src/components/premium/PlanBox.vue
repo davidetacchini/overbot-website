@@ -71,7 +71,6 @@ hr {
   }
 }
 
-
 .perks {
   display: inline-block;
   font-size: 14px;
