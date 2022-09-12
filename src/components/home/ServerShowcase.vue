@@ -13,7 +13,7 @@
         <h2 class="server__subtitle subtitle is-7">
           JOINED ON {{ server.joined_at.split(" ")[0] }}
         </h2>
-        <span v-if="server.is_premium" class="tag bg-danger shine">Premium</span>
+        <span v-if="server.is_premium" class="tag bg-info is-rounded shine">Premium</span>
         <hr />
         <div class="server__info">
           <p>
