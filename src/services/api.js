@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://overbot-api.herokuapp.com/api",
+  baseURL: "https://overbot-api.vercel.app/api",
   headers: {
     "Content-Type": "application/json",
   },
