@@ -1,9 +1,6 @@
 <template>
   <div class="box">
-    <span
-      class="tag is-medium is-rounded bg-info shine most-popular"
-      v-if="plan.type === 'Individual'"
-    >
+    <span class="tag is-medium is-rounded bg-info shine most-popular" v-if="plan.type === 'Server'">
       most popular
     </span>
     <h1 class="title is-4 has-text-weight-medium mb-3">{{ plan.type }}</h1>
