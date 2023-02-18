@@ -57,6 +57,7 @@ export default {
         Permissions: "/permissions",
         Premium: "/premium",
         Status: "/status",
+        Supporters: "/supporters",
       },
       dropdownRoutes: {
         "Find us online": {
