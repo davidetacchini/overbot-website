@@ -4,6 +4,7 @@ import Vuex from "vuex";
 import home from "./home";
 import status from "./status";
 import commands from "./commands";
+import supporters from "./supporters";
 
 Vue.use(Vuex);
 
@@ -44,6 +45,7 @@ const store = new Vuex.Store({
     home,
     status,
     commands,
+    supporters,
   },
 });
 
