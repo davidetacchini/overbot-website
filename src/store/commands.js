@@ -14,7 +14,8 @@ const getters = {
   commands: (state) => {
     const sortedByType = sortByType(state.commands, state.type);
     const sortedAlphabetically = sortAlphabetically(sortedByType);
-    return sortByCategory(sortBySearch(sortedAlphabetically, state.search), state.category);
+    const sortedBySearch = sortBySearch(sortedAlphabetically, state.search);
+    return sortByCategory(sortedBySearch, state.category);
   },
   types: (state) => {
     return state.types;
