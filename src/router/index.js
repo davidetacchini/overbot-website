@@ -47,6 +47,14 @@ const routes = [
     },
   },
   {
+    path: "/supporters",
+    name: "Supporters",
+    component: () => import(/* webpackChunkName: "supporters" */ "../views/Supporters.vue"),
+    meta: {
+      title: "Supporters - OverBot",
+    },
+  },
+  {
     path: "/privacy",
     name: "Privacy",
     component: () => import(/* webpackChunkName: "privacy" */ "../views/legal/Privacy.vue"),
