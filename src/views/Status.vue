@@ -30,18 +30,12 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
-import BaseSection from "@/components/BaseSection";
-import ErrorAlert from "@/components/ErrorAlert";
-import BaseLoader from "@/components/BaseLoader";
 import StatusBox from "@/components/status/StatusBox";
 import ShardBox from "@/components/status/ShardBox";
 import ShardTooltip from "@/components/status/ShardTooltip";
 
 export default {
   components: {
-    BaseSection,
-    ErrorAlert,
-    BaseLoader,
     StatusBox,
     ShardTooltip,
     ShardBox,

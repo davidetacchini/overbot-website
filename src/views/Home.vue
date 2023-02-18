@@ -74,16 +74,12 @@
 
 <script>
 import features from "@/assets/json/features.json";
-import BaseSection from "@/components/BaseSection";
 import HomeButton from "@/components/home/HomeButton";
-import ItemCard from "@/components/ItemCard";
 import ServerShowcase from "@/components/home/ServerShowcase";
 
 export default {
   components: {
-    BaseSection,
     HomeButton,
-    ItemCard,
     ServerShowcase,
   },
 

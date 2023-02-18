@@ -32,16 +32,9 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
-import BaseLoader from "../BaseLoader";
-import ErrorAlert from "../ErrorAlert";
 
 export default {
   name: "ServerShowcase",
-
-  components: {
-    BaseLoader,
-    ErrorAlert,
-  },
 
   computed: {
     ...mapGetters(["servers"]),

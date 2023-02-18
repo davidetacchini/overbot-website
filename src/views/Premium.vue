@@ -55,16 +55,12 @@ import plans from "@/assets/json/plans.json";
 import perks from "@/assets/json/perks.json";
 import notes from "@/assets/json/notes.json";
 import faqs from "@/assets/json/faqs.json";
-import BaseSection from "@/components/BaseSection";
-import ItemCard from "@/components/ItemCard";
 import PlanBox from "@/components/premium/PlanBox";
 import QuestionCard from "@/components/premium/QuestionCard";
 import BaseAlert from "@/components/BaseAlert";
 
 export default {
   components: {
-    BaseSection,
-    ItemCard,
     PlanBox,
     QuestionCard,
     BaseAlert,

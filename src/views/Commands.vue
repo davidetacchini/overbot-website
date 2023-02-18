@@ -24,9 +24,6 @@
 
 <script>
 import { mapGetters, mapMutations, mapActions } from "vuex";
-import BaseSection from "@/components/BaseSection.vue";
-import BaseLoader from "@/components/BaseLoader";
-import ErrorAlert from "@/components/ErrorAlert";
 import CommandSearchBar from "@/components/commands/CommandSearchBar";
 import CommandFilter from "@/components/commands/CommandFilter";
 import CommandItem from "@/components/commands/CommandItem";
@@ -34,9 +31,6 @@ import CommandNotFound from "@/components/commands/CommandNotFound";
 
 export default {
   components: {
-    BaseSection,
-    BaseLoader,
-    ErrorAlert,
     CommandSearchBar,
     CommandFilter,
     CommandItem,

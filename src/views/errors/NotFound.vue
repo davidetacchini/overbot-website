@@ -9,16 +9,6 @@
   </base-section>
 </template>
 
-<script>
-import BaseSection from "@/components/BaseSection";
-
-export default {
-  components: {
-    BaseSection,
-  },
-};
-</script>
-
 <style scoped lang="scss">
 .is-stretch {
   max-width: 550px !important;
