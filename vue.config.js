@@ -8,5 +8,5 @@ module.exports = {
   },
 
   publicPath:
-    process.env.NODE_ENV === "production" ? "https://overbot.netlify.app" : "http://localhost:8080",
+    process.env.NODE_ENV === "production" ? "" : "",
 };
