@@ -1,5 +1,6 @@
 <template>
   <base-section>
+    <error-alert v-if="$store.getters.error" />
     <h1 class="title">Supporters</h1>
     <hr />
     <h2 class="subtitle is-4">Users</h2>
