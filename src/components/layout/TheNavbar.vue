@@ -35,7 +35,14 @@
               :has-link="!value.isTitle"
               :class="[value.isTitle ? 'menu-title' : 'menu-item']"
             >
-              <a v-if="!value.isTitle" :href="value" target="_blank" rel="noopener">{{ key }}</a>
+              <a
+                v-if="!value.isTitle && !value.isRoute"
+                :href="value"
+                target="_blank"
+                rel="noopener"
+                >{{ key }}</a
+              >
+              <router-link v-else-if="value.isRoute" :to="value.link">{{ key }}</router-link>
               <span v-else>{{ key }}</span>
             </b-dropdown-item>
           </b-dropdown>
@@ -57,9 +64,15 @@ export default {
         Permissions: "/permissions",
         Premium: "/premium",
         Status: "/status",
-        Supporters: "/supporters",
       },
       dropdownRoutes: {
+        Navigation: {
+          isTitle: true,
+        },
+        Supporters: {
+          isRoute: true,
+          link: "/supporters",
+        },
         "Find us online": {
           isTitle: true,
         },
