@@ -50,6 +50,7 @@ export default {
         Permissions: "/permissions",
         Premium: "/premium",
         Status: "/status",
+        Supporters: "/supporters",
       },
       resources: {
         Freepik: "https://www.flaticon.com/authors/freepik",
