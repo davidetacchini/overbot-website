@@ -1,7 +1,5 @@
 <template>
-  <base-loader v-if="$store.getters.loading" />
-  <error-alert v-else-if="$store.getters.error" />
-  <div v-else class="column is-2-desktop is-3-tablet is-12-mobile">
+  <div class="column is-2-desktop is-3-tablet is-12-mobile">
     <div class="item box has-background-dark">
       <img
         class="item__image"
