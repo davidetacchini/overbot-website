@@ -3,24 +3,24 @@
     "id": 1,
     "title": "Connect more profiles",
     "description": "Be able to connect up to 25 Overwatch profiles to your Discord ID.",
-    "icon": "sort-amount-up"
+    "icon": "text-plus"
   },
   {
     "id": 2,
     "title": "Newsboard<sup><a href='#note-1' class='note'>1</a></sup>",
     "description": "Set up a channel to receive the latest Overwatch news.",
-    "icon": "rss"
+    "icon": "news"
   },
   {
     "id": 3,
     "title": "Custom embeds color",
     "description": "Customize most of the embeds by changing their color.",
-    "icon": "tint"
+    "icon": "droplet"
   },
   {
     "id": 4,
     "title": "Discord role<sup><a href='#note-2' class='note'>2</a></sup>",
     "description": "Get access to the Premium role on OverBot's official Discord server.",
-    "icon": "award"
+    "icon": "brand-discord"
   }
 ]

@@ -9,7 +9,7 @@
       :disabled="$store.getters.error"
     />
     <span class="icon is-left has-text-grey">
-      <i class="fas fa-search" />
+      <i class="ti ti-search" />
     </span>
   </div>
 </template>

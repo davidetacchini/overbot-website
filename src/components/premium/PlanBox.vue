@@ -12,7 +12,7 @@
     <div class="perks">
       <div v-for="(perk, index) in plan.perks" :key="index" class="icon-text">
         <span class="icon">
-          <i class="fas fa-check has-text-success"></i>
+          <i class="ti ti-check has-text-success"></i>
         </span>
         <span class="has-text-grey" v-html="perk"></span>
       </div>

@@ -23,7 +23,7 @@
               <div class="dropdown-more">
                 <span>More</span>
                 <span class="icon">
-                  <i class="fas fa-chevron-down" />
+                  <i class="ti ti-chevron-down" />
                 </span>
               </div>
             </a>

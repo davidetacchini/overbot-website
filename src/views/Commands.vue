@@ -9,7 +9,7 @@
         <command-filter v-model="type" :items="types" icon="filter" />
       </div>
       <div class="column is-full-tablet is-3-desktop">
-        <command-filter v-model="category" :items="categories" icon="cog" />
+        <command-filter v-model="category" :items="categories" icon="settings" />
       </div>
     </div>
     <div class="columns is-multiline">

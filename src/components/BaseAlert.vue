@@ -3,7 +3,7 @@
     <div class="columns is-mobile is-vcentered">
       <div class="column is-narrow" v-if="icon">
         <span class="icon">
-          <i :class="['fas', `fa-${icon}`]" />
+          <i :class="['ti', `ti-${icon}`]" />
         </span>
       </div>
       <div class="column">

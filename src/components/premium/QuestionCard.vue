@@ -5,7 +5,7 @@
         <p class="card-header-title has-text-white">{{ faq.question }}</p>
         <div class="card-header-icon">
           <span :class="['icon', { active: props.open }]">
-            <i class="fas fa-chevron-down"></i>
+            <i class="ti ti-chevron-down"></i>
           </span>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default {
   }
 
   .icon {
-    transition: transform 0.15s linear;
+    transition: transform 200ms ease 0s;
   }
 
   .icon.active {

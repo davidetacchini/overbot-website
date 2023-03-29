@@ -3,14 +3,14 @@
     "id": 1,
     "title": "Check your Skill Ratings",
     "description": "Check your Skill Ratings directly from Discord!",
-    "icon": "star",
+    "icon": "stars",
     "button": null
   },
   {
     "id": 2,
     "title": "Check your stats",
     "description": "Check both your quick play and competitive stats in a single embed, so you can easily compare them.",
-    "icon": "stream",
+    "icon": "list",
     "button": null
   },
   {
@@ -27,14 +27,14 @@
     "id": 4,
     "title": "Fun",
     "description": "Ask OverBot a role, hero or map to play next! Play Overwatch trivia while you're waiting for a game or enjoy some Overwatch memes!",
-    "icon": "laugh-squint",
+    "icon": "mood-happy",
     "button": null
   },
   {
     "id": 5,
     "title": "News and more",
     "description": "Check the latest Overwatch news, patch notes and server status information.",
-    "icon": "rss",
+    "icon": "news",
     "button": null
   },
   {
