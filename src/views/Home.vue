@@ -40,7 +40,7 @@
     <base-section class="is-medium">
       <div class="is-stretch">
         <h1 class="title is-4 has-text-weight-bold is-spaced">Get more with OverBot Premium!</h1>
-        <h2 class="subtitle is-6 is-size-6-mobile">
+        <h2 class="subtitle is-6">
           Improve your experience by subscribing to one of our Premium plans. By purchasing a
           Premium plan you are supporting OverBot's development whilst unlocking extra features.
         </h2>
@@ -51,14 +51,20 @@
     <base-section class="is-medium is-beta" id="servers">
       <div class="is-stretch">
         <h1 class="title is-4 has-text-weight-bold is-spaced mb-6">Weekly most active servers</h1>
-        <server-showcase />
+        <error-alert v-if="$store.getters.error" />
+        <base-loader v-if="$store.getters.loading" />
+        <div v-else v-dragscroll.x="!canScroll" class="columns is-mobile is-scrollable">
+          <div v-for="(server, index) in servers" :key="server.id" class="column server-column">
+            <server-card :server="server" :index="index" />
+          </div>
+        </div>
       </div>
     </base-section>
 
     <base-section class="is-medium">
       <div class="is-stretch">
         <h1 class="title is-4 has-text-weight-bold is-spaced">Looking for support?</h1>
-        <h2 class="subtitle is-6 is-size-6-mobile">
+        <h2 class="subtitle is-6">
           If you got any questions or issues with OverBot don't hesitate to join the official
           Discord server.
         </h2>
@@ -73,14 +79,15 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from "vuex";
 import features from "@/assets/json/features.json";
 import HomeButton from "@/components/home/HomeButton";
-import ServerShowcase from "@/components/home/ServerShowcase";
+import ServerCard from "@/components/home/ServerCard";
 
 export default {
   components: {
     HomeButton,
-    ServerShowcase,
+    ServerCard,
   },
 
   data: () => {
@@ -93,6 +100,21 @@ export default {
       features,
     };
   },
+
+  computed: {
+    ...mapGetters(["servers"]),
+    canScroll() {
+      return "ontouchstart" in window || navigator.msMaxTouchPoints || false;
+    },
+  },
+
+  created() {
+    this.getServers();
+  },
+
+  methods: {
+    ...mapActions({ getServers: "GET_SERVERS" }),
+  },
 };
 </script>
 
@@ -100,5 +122,30 @@ export default {
 .is-stretch {
   max-width: 800px !important;
   margin: 0 auto !important;
+}
+
+.server-column {
+  min-width: 250px !important;
+  max-width: 250px !important;
+}
+
+.is-scrollable {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: -o-grab;
+  cursor: grab;
+}
+
+.is-scrollable:active {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: -o-grabbing;
+  cursor: grabbing;
+}
+
+.is-scrollable::-webkit-scrollbar {
+  display: none;
 }
 </style>
