@@ -53,8 +53,6 @@ export default {
         Supporters: "/supporters",
       },
       resources: {
-        Freepik: "https://www.flaticon.com/authors/freepik",
-        Flaticon: "https://www.flaticon.com/",
         "Ow-API": "https://ow-api.com/",
         unDraw: "https://undraw.co/",
       },
