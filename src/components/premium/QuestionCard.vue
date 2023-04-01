@@ -10,10 +10,8 @@
         </div>
       </div>
     </template>
-    <div class="card-content">
-      <div class="content">
-        <p class="has-text-grey" v-html="faq.answer"></p>
-      </div>
+    <div class="content card-content">
+      <p class="has-text-grey" v-html="faq.answer"></p>
     </div>
   </b-collapse>
 </template>
