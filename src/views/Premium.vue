@@ -1,7 +1,7 @@
 <template>
   <div id="premium">
     <base-section class="is-medium has-text-centered">
-      <h1 class="title is-1 has-text-weight-bold is-spaced">OverBot Premium</h1>
+      <h1 class="title is-1 has-text-weight-bold is-spaced title-gradient">OverBot Premium</h1>
       <h2 class="subtitle is-6">Get access to more perks by upgrading to one of the plans!</h2>
       <div class="columns is-centered plans">
         <div
@@ -94,5 +94,15 @@ export default {
 
 .plans {
   margin-top: 4rem !important;
+}
+
+@supports (background-clip: text) {
+  .title-gradient {
+    background-image: linear-gradient(60deg, $primary, $info);
+    background-image: -webkit-linear-gradient(60deg, $primary, $info);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 </style>
