@@ -5,8 +5,8 @@
         <div class="column is-6">
           <img src="@/assets/logos/banner.svg" alt="OverBot Banner" />
           <p class="mb-5">The best Overwatch stats bot for Discord</p>
-          <p class="mb-2 opacity-50">OverBot is not affiliated with Blizzard Entertainment.</p>
-          <p class="opacity-50">
+          <p class="mb-2 dimmed">OverBot is not affiliated with Blizzard Entertainment.</p>
+          <p class="dimmed">
             Copyright &copy; 2019 - {{ currentYear }} OverBot. All rights reserved.
           </p>
         </div>
@@ -83,7 +83,7 @@ p {
   font-size: 0.875rem;
   color: $grey;
 
-  &.opacity-50 {
+  &.dimmed {
     opacity: 0.5;
   }
 }
