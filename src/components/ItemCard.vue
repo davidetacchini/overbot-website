@@ -2,7 +2,7 @@
   <div class="columns is-multiline is-mobile">
     <div class="column is-narrow mt-5">
       <span :class="['icon', iconColor]">
-        <i :class="['ti', `ti-${item.icon}`]" />
+        <i :class="['ti', `ti-${item.icon}`]"></i>
       </span>
     </div>
     <div class="column mt-5">

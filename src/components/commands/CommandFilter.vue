@@ -12,7 +12,7 @@
       </select>
     </div>
     <span class="icon has-text-grey is-left">
-      <i :class="['ti', `ti-${icon}`]" />
+      <i :class="['ti', `ti-${icon}`]"></i>
     </span>
   </div>
 </template>
