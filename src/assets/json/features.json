@@ -25,8 +25,8 @@
   },
   {
     "id": 4,
-    "title": "Fun",
-    "description": "Ask OverBot a role, hero or map to play next! Play Overwatch trivia while you're waiting for a game or enjoy some Overwatch memes!",
+    "title": "Fun commands",
+    "description": "Ask OverBot a role or hero to play next! Play Overwatch trivia while you're waiting for a game or enjoy some Overwatch memes!",
     "icon": "mood-happy",
     "button": null
   },
