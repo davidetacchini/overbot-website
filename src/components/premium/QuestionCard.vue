@@ -1,5 +1,5 @@
 <template>
-  <b-collapse :open="false" class="card" animation="slide" aria-id="premiumQuestion">
+  <b-collapse :open="false" class="card py-2" animation="slide" aria-id="premiumQuestion">
     <template #trigger="props">
       <div class="card-header" role="button" aria-controls="premiumQuestion">
         <p class="card-header-title has-text-white">{{ faq.question }}</p>
