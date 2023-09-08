@@ -53,7 +53,7 @@ export default {
         Supporters: "/supporters",
       },
       resources: {
-        "Ow-API": "https://ow-api.com/",
+        "OverFast API": "https://github.com/TeKrop/overfast-api",
         unDraw: "https://undraw.co/",
       },
       legal: {
