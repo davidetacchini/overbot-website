@@ -4,7 +4,7 @@
 
 $family-primary: 'Roboto', sans-serif;
 
-// Custom colors
+// Custom variables
 $color-alpha: rgb(10, 13, 16);
 $color-beta: rgb(13, 17, 23);
 $color-gamma: rgb(33, 38, 45);
@@ -13,7 +13,7 @@ $white-high-emphasis: rgba(255, 255, 255, 0.87);
 $white-medium-emphasis: rgba(255, 255, 255, 0.6);
 $border-radius: 0.5rem;
 
-// Bulma colors override
+// Bulma variables override: COLORS
 $primary: rgb(255, 166, 87);
 $success: rgb(126, 231, 135);
 $warning: rgb(242, 204, 96);
@@ -23,11 +23,11 @@ $white: $white-high-emphasis;
 $grey: $white-medium-emphasis;
 $dark: $color-alpha;
 
-// Typography
+// Bulma variables override: TYPOGRAPHY
 $title-color: $white !important;
 $subtitle-color: $grey !important;
 
-// Footer
+// Bulma variables override: FOOTER
 $footer-background-color: $color-beta;
 
 @import './scss/navbar.scss';
