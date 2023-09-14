@@ -55,7 +55,7 @@
         <base-loader v-if="$store.getters.loading" />
         <div v-else v-dragscroll.x="!canScroll" class="columns is-mobile is-scrollable">
           <div v-for="(server, index) in servers" :key="server.id" class="column server-column">
-            <server-card :server="server" :index="index" />
+            <home-server-card :server="server" :index="index" />
           </div>
         </div>
       </div>
@@ -82,12 +82,12 @@
 import { mapGetters, mapActions } from "vuex";
 import features from "@/assets/json/features.json";
 import HomeButton from "@/components/home/HomeButton";
-import ServerCard from "@/components/home/ServerCard";
+import HomeServerCard from "@/components/home/HomeServerCard";
 
 export default {
   components: {
     HomeButton,
-    ServerCard,
+    HomeServerCard,
   },
 
   data: () => {

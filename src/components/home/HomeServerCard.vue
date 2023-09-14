@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: "ServerCard",
+  name: "HomeServerCard",
 
   props: {
     server: Object,
