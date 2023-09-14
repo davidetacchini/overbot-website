@@ -44,6 +44,7 @@ export default {
 <style scoped lang="scss">
 .notification {
   padding: 12px 20px !important;
+  border-radius: $border-radius !important;
 
   p {
     font-size: 0.875rem !important;
