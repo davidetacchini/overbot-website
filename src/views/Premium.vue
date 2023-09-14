@@ -9,7 +9,7 @@
           :key="plan.id"
           class="column is-4-desktop is-6-tablet is-full-mobile"
         >
-          <plan-box :plan="plan" />
+          <premium-plan-box :plan="plan" />
         </div>
       </div>
     </base-section>
@@ -31,7 +31,7 @@
       <base-alert type="bg-info" :content="content" :button="button" />
       <div class="columns is-multiline">
         <div v-for="faq in faqs" :key="faq.id" class="column is-12">
-          <question-card :faq="faq" />
+          <premium-question-card :faq="faq" />
         </div>
       </div>
     </base-section>
@@ -55,14 +55,14 @@ import plans from "@/assets/json/plans.json";
 import perks from "@/assets/json/perks.json";
 import notes from "@/assets/json/notes.json";
 import faqs from "@/assets/json/faqs.json";
-import PlanBox from "@/components/premium/PlanBox";
-import QuestionCard from "@/components/premium/QuestionCard";
+import PremiumPlanBox from "@/components/premium/PremiumPlanBox";
+import PremiumQuestionCard from "@/components/premium/PremiumQuestionCard";
 import BaseAlert from "@/components/BaseAlert";
 
 export default {
   components: {
-    PlanBox,
-    QuestionCard,
+    PremiumPlanBox,
+    PremiumQuestionCard,
     BaseAlert,
   },
 
