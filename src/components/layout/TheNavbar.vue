@@ -73,11 +73,6 @@ export default {
           isRoute: true,
           link: "/supporters",
         },
-        "Find us online": {
-          isTitle: true,
-        },
-        "top.gg": "https://top.gg/bot/547546531666984961",
-        "bots.gg": "https://discord.bots.gg/bots/547546531666984961",
         Social: {
           isTitle: true,
         },
