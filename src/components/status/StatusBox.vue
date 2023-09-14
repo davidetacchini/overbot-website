@@ -23,8 +23,14 @@ export default {
   name: "StatusBox",
 
   props: {
-    title: String,
-    item: Object,
+    title: {
+      type: String,
+      required: true,
+    },
+    item: {
+      type: Object,
+      required: true,
+    },
   },
 
   methods: {
