@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: "QuestionCard",
+  name: "PremiumQuestionCard",
 
   props: {
     faq: Object,

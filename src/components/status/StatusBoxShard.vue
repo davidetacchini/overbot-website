@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: "ShardBox",
+  name: "StatusBoxShard",
 
   props: {
     shard: Object,
