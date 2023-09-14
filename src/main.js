@@ -13,7 +13,7 @@ import VueDragscroll from "vue-dragscroll";
 import BaseSection from "@/components/BaseSection";
 import BaseLoader from "@/components/BaseLoader";
 import ErrorAlert from "@/components/ErrorAlert";
-import ItemCard from "@/components/ItemCard";
+import BaseCard from "@/components/BaseCard";
 
 const options = {
   color: "rgb(255, 166, 87)",
@@ -28,7 +28,7 @@ Vue.use(VueDragscroll);
 Vue.component("BaseSection", BaseSection);
 Vue.component("BaseLoader", BaseLoader);
 Vue.component("ErrorAlert", ErrorAlert);
-Vue.component("ItemCard", ItemCard);
+Vue.component("BaseCard", BaseCard);
 
 Vue.config.productionTip = false;
 
