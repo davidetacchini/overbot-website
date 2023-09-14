@@ -1,8 +1,8 @@
 import api from "../services/api";
 
 const state = {
-  bot: Object,
-  host: Object,
+  bot: {},
+  host: {},
   shards: Array,
 };
 
@@ -20,8 +20,8 @@ const getters = {
 
 const mutations = {
   SET_STATS: (state, payload) => {
-    state.bot = payload.bot;
-    state.host = payload.host;
+    Object.assign(state.bot, payload.bot);
+    Object.assign(state.host, payload.host);
     state.shards = payload.shards;
   },
 };
