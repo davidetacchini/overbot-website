@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  name: "ItemCard",
+  name: "BaseCard",
 
   props: {
     item: Object,

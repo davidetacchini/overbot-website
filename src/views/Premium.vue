@@ -21,7 +21,7 @@
           :Key="perk.id"
           class="column is-4-desktop is-6-tablet is-12-mobile"
         >
-          <item-card :item="perk" iconColor="bg-info" />
+          <base-card :item="perk" iconColor="bg-info" />
         </div>
       </div>
     </base-section>

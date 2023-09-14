@@ -11,7 +11,7 @@
         :key="permission.id"
         class="column is-4-desktop is-6-tablet is-12-mobile"
       >
-        <item-card :item="permission" iconColor="bg-white" />
+        <base-card :item="permission" iconColor="bg-white" />
       </div>
     </div>
   </base-section>
