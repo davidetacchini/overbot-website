@@ -8,15 +8,13 @@ import supporters from "./supporters";
 
 Vue.use(Vuex);
 
-const defaultState = () => {
-  return {
-    loading: true,
-    error: false,
-  };
+const defaultState = {
+  loading: true,
+  error: false,
 };
 
 const store = new Vuex.Store({
-  state: defaultState(),
+  state: defaultState,
 
   getters: {
     loading: (state) => {
@@ -35,7 +33,7 @@ const store = new Vuex.Store({
       state.error = payload;
     },
     SET_STATE: (state) => {
-      Object.assign(state, defaultState());
+      Object.assign(state, defaultState);
     },
   },
 
