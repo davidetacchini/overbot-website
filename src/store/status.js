@@ -20,8 +20,8 @@ const getters = {
 
 const mutations = {
   SET_STATS: (state, payload) => {
-    Object.assign(state.bot, payload.bot);
-    Object.assign(state.host, payload.host);
+    state.bot = payload.bot;
+    state.host = payload.host;
     state.shards = payload.shards;
   },
 };
