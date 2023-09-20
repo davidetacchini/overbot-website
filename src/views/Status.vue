@@ -13,14 +13,14 @@
       </div>
       <div class="box shards">
         <h1 class="title is-5">Shards Status</h1>
-        <status-box-tooltip />
+        <status-shard-tooltip />
         <div class="columns is-multiline is-mobile">
           <div
             v-for="shard in shards"
             :key="shard.id"
             class="column shard-column is-one-fifth-desktop is-one-third-tablet is-half-mobile"
           >
-            <status-box-shard :shard="shard" />
+            <status-shard :shard="shard" />
           </div>
         </div>
       </div>
@@ -31,14 +31,14 @@
 <script>
 import { mapGetters, mapActions } from "vuex";
 import StatusBox from "@/components/status/StatusBox";
-import StatusBoxShard from "@/components/status/StatusBoxShard";
-import StatusBoxTooltip from "@/components/status/StatusBoxTooltip";
+import StatusShard from "@/components/status/StatusShard";
+import StatusShardTooltip from "@/components/status/StatusShardTooltip";
 
 export default {
   components: {
     StatusBox,
-    StatusBoxShard,
-    StatusBoxTooltip,
+    StatusShard,
+    StatusShardTooltip,
   },
 
   data: () => {

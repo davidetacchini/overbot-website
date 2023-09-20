@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: "StatusBoxTooltip",
+  name: "StatusShardTooltip",
 };
 </script>
 

@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "CommandItem",
+  name: "CommandListItem",
 
   props: {
     command: Object,

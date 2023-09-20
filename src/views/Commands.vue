@@ -12,13 +12,7 @@
         <command-filter v-model="category" :items="categories" icon="settings" />
       </div>
     </div>
-    <div class="columns is-multiline">
-      <base-loader v-if="$store.getters.loading" />
-      <command-not-found v-else-if="commands.length === 0" />
-      <div v-else v-for="(command, index) in commands" :key="index" class="column is-12">
-        <command-item :command="command" />
-      </div>
-    </div>
+    <command-list :commands="commands"></command-list>
   </base-section>
 </template>
 
@@ -26,15 +20,13 @@
 import { mapGetters, mapMutations, mapActions } from "vuex";
 import CommandSearchBar from "@/components/commands/CommandSearchBar";
 import CommandFilter from "@/components/commands/CommandFilter";
-import CommandItem from "@/components/commands/CommandItem";
-import CommandNotFound from "@/components/commands/CommandNotFound";
+import CommandList from "../components/commands/CommandList.vue";
 
 export default {
   components: {
     CommandSearchBar,
     CommandFilter,
-    CommandItem,
-    CommandNotFound,
+    CommandList,
   },
 
   computed: {

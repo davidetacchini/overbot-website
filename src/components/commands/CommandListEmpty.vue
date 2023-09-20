@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "CommandNotFound",
+  name: "CommandListEmpty",
 };
 </script>
 
