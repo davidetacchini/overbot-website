@@ -26,7 +26,7 @@
   {
     "id": 4,
     "title": "Fun commands",
-    "description": "Ask OverBot a role or hero to play next! Play Overwatch trivia while you're waiting for a game or enjoy some Overwatch memes!",
+    "description": "Ask OverBot a role, a hero or a map to play next! Play Overwatch trivia while you're waiting for a game or let OverBot decide your next golden gun!",
     "icon": "mood-happy",
     "button": null
   },
@@ -39,7 +39,7 @@
   },
   {
     "id": 6,
-    "title": "Slash Commands and UI Components",
+    "title": "Slash Commands",
     "description": "Fully supports Slash Commands and Discord UI Components for a better experience!",
     "icon": "slash",
     "button": null

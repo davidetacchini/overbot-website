@@ -7,36 +7,30 @@
   },
   {
     "id": 2,
-    "title": "Manage Nicknames",
-    "description": "Used to change member nicknames",
-    "icon": "user-cog"
-  },
-  {
-    "id": 3,
     "title": "Send Messages",
     "description": "Allows OverBot to send messages to your Discord server",
     "icon": "send"
   },
   {
-    "id": 4,
+    "id": 3,
     "title": "Manage Messages",
     "description": "Used to delete and edit messages",
     "icon": "edit"
   },
   {
-    "id": 5,
+    "id": 4,
     "title": "Use External Emojis",
     "description": "Enables the bot to use external emojis",
     "icon": "external-link"
   },
   {
-    "id": 6,
+    "id": 5,
     "title": "Embed Links",
     "description": "Allows OverBot to use embeds.",
     "icon": "link"
   },
   {
-    "id": 7,
+    "id": 6,
     "title": "Use Application Commands",
     "description": "Enables OverBot slash commands and context menu commands.",
     "icon": "slash"
