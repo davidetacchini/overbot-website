@@ -3,15 +3,9 @@
     <base-section class="is-medium has-text-centered">
       <h1 class="title is-1 has-text-weight-bold is-spaced title-gradient">OverBot Premium</h1>
       <h2 class="subtitle is-6">Get access to more perks by upgrading to one of the plans!</h2>
-      <div class="columns is-centered plans">
-        <div
-          v-for="plan in plans"
-          :key="plan.id"
-          class="column is-4-desktop is-6-tablet is-full-mobile"
-        >
-          <premium-plan-box :plan="plan" />
-        </div>
-      </div>
+      <h1 class="title pt-6 is-3 has-text-weight-bold has-text-info-light">
+        OverBot Premium will soon be available as a Discord Subscription.
+      </h1>
     </base-section>
     <base-section class="is-beta">
       <h1 class="title has-text-centered has-text-weight-bold">Premium Perks</h1>
@@ -28,7 +22,6 @@
     <base-section>
       <h1 class="title is-4">Frequently Asked Questions</h1>
       <hr />
-      <base-alert type="bg-info" :content="content" :button="button" />
       <div class="columns is-multiline">
         <div v-for="faq in faqs" :key="faq.id" class="column is-12">
           <premium-question-card :faq="faq" />
@@ -51,33 +44,21 @@
 </template>
 
 <script>
-import plans from "@/assets/json/plans.json";
 import perks from "@/assets/json/perks.json";
 import notes from "@/assets/json/notes.json";
 import faqs from "@/assets/json/faqs.json";
-import PremiumPlanBox from "@/components/premium/PremiumPlanBox";
 import PremiumQuestionCard from "@/components/premium/PremiumQuestionCard";
-import BaseAlert from "@/components/BaseAlert";
 
 export default {
   components: {
-    PremiumPlanBox,
     PremiumQuestionCard,
-    BaseAlert,
   },
 
   data: () => {
     return {
       perks,
-      plans,
       faqs,
       notes,
-      content:
-        "It may take up to 5 minutes for the Premium to be set. If you encounter any issues join the support server.",
-      button: {
-        link: "https://discord.com/invite/8g3jnxv",
-        action: "Join now",
-      },
     };
   },
 };
