@@ -2,7 +2,7 @@
   <div id="premium">
     <base-section class="is-medium has-text-centered">
       <h1 class="title is-1 has-text-weight-bold is-spaced title-gradient">OverBot Premium</h1>
-      <h2 class="subtitle is-6">Get access to more perks by upgrading to one of the plans!</h2>
+      <h2 class="subtitle is-6">Get access to more perks by upgrading to the Premium plan!</h2>
       <h1 class="title pt-6 is-3 has-text-weight-bold has-text-info-light">
         OverBot Premium will soon be available as a Discord Subscription.
       </h1>
