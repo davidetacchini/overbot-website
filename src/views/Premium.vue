@@ -3,9 +3,13 @@
     <base-section class="is-medium has-text-centered">
       <h1 class="title is-1 has-text-weight-bold is-spaced title-gradient">OverBot Premium</h1>
       <h2 class="subtitle is-6">Get access to more perks by upgrading to the Premium plan!</h2>
-      <h1 class="title pt-6 is-3 has-text-weight-bold has-text-info-light">
-        OverBot Premium will soon be available as a Discord Subscription.
-      </h1>
+      <a
+        href="https://discord.com/application-directory/547546531666984961/premium"
+        target="_blank"
+        class="button mt-5 p-5 bg-info bg-info--button"
+      >
+        Upgrade
+      </a>
     </base-section>
     <base-section class="is-beta">
       <h1 class="title has-text-centered has-text-weight-bold">Premium Perks</h1>
