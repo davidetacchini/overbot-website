@@ -3,6 +3,7 @@ import api from "../services/api";
 const state = {
   bot: {},
   host: {},
+  version: "",
   shards: Array,
 };
 
@@ -16,10 +17,15 @@ const getters = {
   shards: (state) => {
     return state.shards;
   },
+  version: (state) => {
+    return state.version;
+  },
 };
 
 const mutations = {
   SET_STATS: (state, payload) => {
+    state.version = payload.bot.Version;
+    delete payload.bot.Version;
     state.bot = payload.bot;
     state.host = payload.host;
     state.shards = payload.shards;

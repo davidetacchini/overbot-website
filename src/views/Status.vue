@@ -8,8 +8,8 @@
     <base-loader v-if="$store.getters.loading" />
     <div v-else>
       <div class="columns is-multiline is-mobile">
-        <status-box title="Bot Status" :item="bot" />
-        <status-box title="Server Information" :item="host" />
+        <status-box title="Bot Status" :item="bot" :version="version" />
+        <status-box title="Host Information" :item="host" />
       </div>
       <div class="box shards">
         <h1 class="title is-5">Shards Status</h1>
@@ -48,7 +48,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["bot", "host", "shards"]),
+    ...mapGetters(["bot", "version", "host", "shards"]),
   },
 
   watch: {

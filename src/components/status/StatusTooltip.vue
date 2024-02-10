@@ -1,13 +1,13 @@
 <template>
   <div class="circles-status">
     <b-tooltip type="is-black" :animated="true" :delay="50" label="Operational">
-      <div class="circle bg-success" />
+      <div class="circle bg-success"></div>
     </b-tooltip>
     <b-tooltip type="is-black" :animated="true" :delay="50" label="Partial Outage">
-      <div class="circle bg-warning" />
+      <div class="circle bg-warning"></div>
     </b-tooltip>
     <b-tooltip type="is-black" :animated="true" :delay="50" label="Major Outage">
-      <div class="circle bg-danger" />
+      <div class="circle bg-danger"></div>
     </b-tooltip>
   </div>
 </template>
