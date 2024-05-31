@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Connect more profiles",
-    "description": "Be able to connect up to 25 Overwatch profiles to your Discord ID.",
+    "description": "Connect up to 25 Overwatch profiles to your Discord ID.",
     "icon": "text-plus"
   },
   {
@@ -19,8 +19,14 @@
   },
   {
     "id": 4,
-    "title": "Discord role<sup><a href='#note-2' class='note'>2</a></sup>",
-    "description": "Get access to the Premium role on OverBot's official Discord server.",
+    "title": "Usage stats",
+    "description": "View your command usage statistics, including the number and types of commands used.",
+    "icon": "list-numbers"
+  },
+  {
+    "id": 5,
+    "title": "Discord role",
+    "description": "Gain access to the Premium role on OverBot's official Discord server.",
     "icon": "brand-discord"
   }
 ]
